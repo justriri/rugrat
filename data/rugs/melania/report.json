@@ -1,0 +1,39 @@
+{
+  "slug": "melania",
+  "name": "Melania Meme",
+  "symbol": "MELANIA",
+  "mint": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P",
+  "ticks": 321,
+  "events": 21,
+  "byTag": {
+    "SMART": 15,
+    "WHALE": 6
+  },
+  "peak": {
+    "timestamp": 1737334200,
+    "price": 12.96680256989211
+  },
+  "collapse": {
+    "timestamp": 1737393300,
+    "price": 6.459150065762193
+  },
+  "paperSolUsd": 250.26,
+  "signalEvent": {
+    "id": "4mrZ5nxE64Py:DPH...Fum:b24",
+    "at": "2025-01-19T23:44:19Z",
+    "wallet": "DPH...Fum",
+    "usd": 1847912
+  },
+  "taggedWallets": {
+    "DEV": 1,
+    "SMART": 4,
+    "WHALE": 3
+  },
+  "cleaning": {
+    "rawCandles": 321,
+    "malformedDropped": 0,
+    "duplicateTimestampsDropped": 0,
+    "outOfOrderResorted": false,
+    "outsideWindowDropped": 0
+  }
+}

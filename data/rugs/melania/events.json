@@ -1,0 +1,847 @@
+{
+ "paperSolUsd": 250.26,
+ "window": {
+  "from": "2025-01-19T21:05:00Z",
+  "to": "2025-01-20T23:55:00Z",
+  "collapse": "2025-01-20T17:15:00Z"
+ },
+ "rules": {
+  "tapeSampleStepSec": 90,
+  "candidateTopN": 40,
+  "whaleSingleTradeUsd": 250000,
+  "maxRecipientCandidates": 30,
+  "walletMaxPages": 100,
+  "botFilter": {
+   "maxMevTradeFraction": 0.1
+  },
+  "smart": {
+   "topN": 5,
+   "minRealizedProfitUsd": 1000000,
+   "minSoldFractionOfBought": 0.8,
+   "lastSellBeforeCollapse": true,
+   "lastBuyBeforePeak": true
+  },
+  "whale": {
+   "topN": 3
+  },
+  "eventMinUsd": {
+   "INSIDER": 0,
+   "SMART": 800000,
+   "WHALE": 8000000,
+   "DEV": 0
+  },
+  "devMove": {
+   "minPctSupply": 0.002,
+   "burstGapSec": 30,
+   "burstMaxSec": 120
+  },
+  "tradeBurst": {
+   "gapSec": 180,
+   "maxSec": 900
+  }
+ },
+ "duplicatesDropped": 0,
+ "events": [
+  {
+   "id": "2SNkfzpoKDCP:HQy...XMu:b9",
+   "timestamp": 1737321304,
+   "walletAddress": "HQyjjjs6tr1YsUcXd2yLaCdwyU3en8GcMa1w6FpzwXMu",
+   "tag": "SMART",
+   "action": "BUY",
+   "amount": 899995,
+   "amountUnit": "USD",
+   "signature": "2SNkfzpoKDCPAwQgWSuZ4fiD8xMBgfU8ACtJbCXJS7ANqA7moYAfnTgEYvcgeaTnbfCCKTErnraygBmX4wVdHZB6",
+   "signatures": [
+    "2SNkfzpoKDCPAwQgWSuZ4fiD8xMBgfU8ACtJbCXJS7ANqA7moYAfnTgEYvcgeaTnbfCCKTErnraygBmX4wVdHZB6",
+    "2bsuDqudfSwRP7YdofGeQ1P7w6F1WADHCiHcp9jyJJDDSEK1V9SC1vJv9Tm4JBAxkSEW8ZTejumHo2vGumfBzAGR",
+    "3PqivD91xXCKBViy7oGpSC3jDZSRvZPeFbckNjZCBZEoraaVWPkaR8C1Leypd7KZ2GhKtFg9TXG1e3y2CKn79sQC",
+    "3a4sxxmyuuX5re5cz7yE3pLRzS4QjGvqpALUZXGbZ74uqfLQUK5hunaWgKLWfY51kfGzroybM7cgZ6tvigubdw51",
+    "61radJ4d2Rj3gnSqkX98ABeEkUbyCptZRd2Zih4zRhmNgP6ThuUEvdRTBwqg7S1DSKV3mt96WZwG78uytTdd5ZvZ",
+    "45xaJhWJFnTK4FbVhkryL1Asq2wxJVQMADjRitNfA1wVhK8bvrRp6uhuetXmi5yA3NZRZ1eTi8UCeQK6CFVFVFQR",
+    "5itMxYdRdBZP3nSFMpJVXCB8BPWZeXDyEtmcqeyMDa77zMZXDLyqWFuTWacqKdvBs1hfQuSBPnaPVNxDAUE7tfqM",
+    "3iJtV2gFfqjK1HZriLzG8btnymcNajHq9kHgcG4UtYKKtqgRTxqSPFeH5Xeyjc6sejsAiSHYMpxR5hrANPMNisbD",
+    "rXVZjF6bBXXQcBkY51CV5mR4sYNRtcXGBrwoG7NBmg11WmoLQg9hEvz7Wu5iGWCFPpUxaxXruvFtWFL7UfCUC1E"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 4 of the candidates by realised profit. Recorded trades 2025-01-19T21:15:04Z to 2025-01-19T22:54:21Z: bought $899,995, sold $2,009,353 (realised $1,109,358); sold 94% of the MELANIA bought; last sell 2025-01-19T22:54:21Z, before the collapse marker 2025-01-20T17:15:00Z; last buy 2025-01-19T21:20:07Z, before the peak 2025-01-20T00:50:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "note": "Bought 758.6K MELANIA for $899,995 across 9 transactions (303s)."
+  },
+  {
+   "id": "3VvGzbvJh8Ax:7nm...7BU:b8",
+   "timestamp": 1737322747,
+   "walletAddress": "7nmKYpLxDi7QKxP1DWhYBtZ6D4dqs383exY7Bmpd17BU",
+   "tag": "SMART",
+   "action": "BUY",
+   "amount": 1420207,
+   "amountUnit": "USD",
+   "signature": "3VvGzbvJh8AxMQD3NYBopHb3xSfDjMNwpiWf8whQTfnjYSrGqjRhNAWwmEzwCHH2Bpq8FsFhwMPwokkrmzhnwxbM",
+   "signatures": [
+    "3VvGzbvJh8AxMQD3NYBopHb3xSfDjMNwpiWf8whQTfnjYSrGqjRhNAWwmEzwCHH2Bpq8FsFhwMPwokkrmzhnwxbM",
+    "3m6ipUFDHxH5pzPxsx6EC87k54k25oM374ZaGYaxJGf3XGEDTCgQqxpTiw8nkjpbDM3KCwtqfmSweh5KRyz2sTNa",
+    "2N5uDWa76WinKABq5pEYrYcdKPyx7yDn9TkoCHJH7nwk4adjnkbvwfGoqXTgs3Ek5A3UyNv7VwuuxnuL9ZkyJJ82",
+    "31Ceben9t81rfzabzfE1DeJU18sDUWeDoV93MJGNWabt9i9nhxrHT73bfUoQpRry82Rg6vsYsU4jFiAK1f6wS9EH",
+    "3CqQ2ZKwKWtARxb7SquddTU1V74an3AQNcxzkWA8SZiMXvyHMfaajcesgtGtubGaP3uinfLJHKtECVjH1QqtEubF",
+    "AQjzM4UpzTFsoT6iJKV7n8dRdeS3FgwTSEDyWNVmUpgUygwMXjMm7q7e2xznRnU8fhaAdWJCmUZ9J9vffzW8UFB",
+    "5qGKY3Y3BzYM8ZJ4aKBSMhaWGyBRzL5D5H321z97ZBthEXW3TBCypwJhEyaRn4ueF51K2Q3jsCZ9suZRpndviepy",
+    "4hVqknbL6xSiXKM3tZURhZ5e1K1rBhw9c3YXrMsXz7GM36xV8nKqNWMmry4eSkwFNNz8f5fUUZqJtGEDaGFxa22J"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 2 of the candidates by realised profit. Recorded trades 2025-01-19T21:39:07Z to 2025-01-20T05:50:41Z: bought $1,420,207, sold $5,050,286 (realised $3,630,079); sold 114% of the MELANIA bought; last sell 2025-01-20T05:50:41Z, before the collapse marker 2025-01-20T17:15:00Z; last buy 2025-01-19T21:43:05Z, before the peak 2025-01-20T00:50:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "note": "Bought 417.9K MELANIA for $1,420,207 across 8 transactions (238s)."
+  },
+  {
+   "id": "39xiQf8HMjDT:8DR...yXj:b4",
+   "timestamp": 1737324726,
+   "walletAddress": "8DRxtGXP8uYQ1T5JCSN6XG6SJWkFt2TpFFf6DJvKZyXj",
+   "tag": "SMART",
+   "action": "BUY",
+   "amount": 1000055,
+   "amountUnit": "USD",
+   "signature": "39xiQf8HMjDTQoqvNX2HEtcxYpVBCuPoLEj8CLXt1tRRdg9Lc5Vfeq2Km6AstpRbp6LWG3vubuVPEUjd5WGfGq9c",
+   "signatures": [
+    "39xiQf8HMjDTQoqvNX2HEtcxYpVBCuPoLEj8CLXt1tRRdg9Lc5Vfeq2Km6AstpRbp6LWG3vubuVPEUjd5WGfGq9c",
+    "2YvqHS7fZkEVZSj8u1foT6GzKyoPWpymNKELmqytEcxGkD7i9iZpfYNvJkgLCfFCUmVERDm9WN2dRzdJGkRtFJcF",
+    "4n38LW5DGCMzTj6VqkPBKr8xh14yZFGEyj8s8SQF9swDZwKmKLztTLbhX9poKN4fUL4PWywihhYvVPFS6rxvNuJi",
+    "3jnztT3uEtmonEPWEwxkCAPDiPEFgm5H6xbjwWktyUBQ44wm4BfCrcSfczLzh3PSVhwCvJ84ivTsN3ZXKDsfyzMQ"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 3 of the candidates by realised profit. Recorded trades 2025-01-19T22:12:06Z to 2025-01-20T15:48:52Z: bought $1,500,101, sold $3,160,585 (realised $1,660,484); sold 95% of the MELANIA bought; last sell 2025-01-20T15:48:52Z, before the collapse marker 2025-01-20T17:15:00Z; last buy 2025-01-19T22:35:16Z, before the peak 2025-01-20T00:50:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "note": "Bought 229.5K MELANIA for $1,000,055 across 4 transactions (96s)."
+  },
+  {
+   "id": "4mrZ5nxE64Py:DPH...Fum:b24",
+   "timestamp": 1737330259,
+   "walletAddress": "DPHqSqkv3ARYZKfnbjauqhSF3DWGyXEqhnfYNvG9WFum",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 1847912,
+   "amountUnit": "USD",
+   "signature": "4mrZ5nxE64PyNThLYttLbBvMtFYRhrXcD9M6gzRhW9hQRessPvYjYrX4d2KHwbkPCY38AS3Vaz2mz5AxKGzVuqv5",
+   "signatures": [
+    "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"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 1 of the candidates by realised profit. Recorded trades 2025-01-19T21:09:23Z to 2025-01-20T03:01:44Z: bought $135,686, sold $13,326,100 (realised $13,190,414); sold 95% of the MELANIA bought; last sell 2025-01-20T03:01:44Z, before the collapse marker 2025-01-20T17:15:00Z; last buy 2025-01-19T21:09:39Z, before the peak 2025-01-20T00:50:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "note": "Sold 313.4K MELANIA for $1,847,912 across 24 transactions (884s)."
+  },
+  {
+   "id": "5EwUAHCpeHQn:DPH...Fum:b16",
+   "timestamp": 1737331205,
+   "walletAddress": "DPHqSqkv3ARYZKfnbjauqhSF3DWGyXEqhnfYNvG9WFum",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 931584,
+   "amountUnit": "USD",
+   "signature": "5EwUAHCpeHQn6mdkEBSina9t2pQEugHpHHWDPpnBx63MjBFaEa3JzxnTifqy1NrLiE8ZVFgrbVe31MW2pVygnZog",
+   "signatures": [
+    "5EwUAHCpeHQn6mdkEBSina9t2pQEugHpHHWDPpnBx63MjBFaEa3JzxnTifqy1NrLiE8ZVFgrbVe31MW2pVygnZog",
+    "34aQUqkSB2FjhqfepLKdKrAHoGKhfyq7S8pUKnty8ZaKLKNTFeK4hGFDwAmonvH3NWBHwsKnFukKnTuwbYLZgRgN",
+    "2gLeQCMxJZufRnATdYz6DdaRRRTC156GHe8KpFj838e2CMA5BLdAtW7uBZqDsrjEUpn8Z3UGAyunbs4an4qKcpew",
+    "47s3kwu1kE7v7oGpghviDht3YHRmERxWNbghxVm3aoaRnefcfom6pvpaxK4zLc6sXbJipFNyDNpQutukSaJf4qzd",
+    "5DCAw4oNCRGbALpRMGy9J7U9SUBeqmzsr68TvokTY9gahS6XtGvf18cMwifMGzMgDMovHoSniFBhCReApzMvJ8uJ",
+    "chuPxY4qjKDv4d5ob7N9rPkhBGAk1xynsy7v9KHYbAA3PBR3J9g9m6g6gJEM2XSroqQJRuKEBzWadWv4SvBq8vG",
+    "MC9ckM22C5kw61ifWjn7nV4tHzrGtLM3pCXr4YdTtaEtqRQa2rMyWJaac9UcLbhXLRCEvVndvZ8VvbWiZHRTWuU",
+    "KDQpJzmUACUG3czms1rg3NtAJRqEnVtoGxrhXcKFbgzQGKA8wJbxcMq38vu3YW2z1JWhefzQPiFQKuqU5xss9YP",
+    "bP3Q2kRNGxKsALPQTXMFig5eQaYjCSy6CjoeNAW1vrWAoCkBibu9rfmic41dajM9T9EiEkn1CxQkK7VyVGUCBuB",
+    "3wudG1cJF2nPvLFQPWucc1vfoiRfHpc5GrNZafrXAUd6LwzydPAhgmRUS9QFHrAjtY6uS8sdeBtmKEZjj3mZBP2Y",
+    "2e1NKf3QdVPfKHLENjxUAowiZFrrw7NeC2t5cDCpEhJFg1kXeaPcpCagJwY41eAjAr19yyJAoNxMi9Ze2WDRtS8x",
+    "48YXoAgPxiNxSphY31NvUW7P2qrM7aQopcmJXeiePzfPPdPiQbQCkavMEDbuhUgDwfiA7WoDD8186NigWduUicTW",
+    "3WbESVSrUhYPPRryiZ56exLchGatxpnny1anBygDeUxPwDqrJ1fUuA3PLYPpwFWf1XDCPm6o8SFsZpUt4pCDyjVk",
+    "3THk1LF7ghRmE5MpP9fhJVWn87q557QAZrgCxmKME5faBw7ovPkmx47A7oR5F5qNyTT4z1rqeme8gjJEz5ztTGRY",
+    "5A4Ux1Y5gfWkVz7DEeqPS26EfZJZbP1oG2xzjBRaQ2DWzdm9fUqJDovUzXbkpu8c6rniaVNYBgrn3CNVZKW7pQwz",
+    "2Y4XnF1zh9bS99tifQEiAMgXJjty84ss84uFVQ9BCcSFxMZLBArdN9WGo7tuGLS3JmWNAop3eFnnqxREGMQAbTfB"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 1 of the candidates by realised profit. Recorded trades 2025-01-19T21:09:23Z to 2025-01-20T03:01:44Z: bought $135,686, sold $13,326,100 (realised $13,190,414); sold 95% of the MELANIA bought; last sell 2025-01-20T03:01:44Z, before the collapse marker 2025-01-20T17:15:00Z; last buy 2025-01-19T21:09:39Z, before the peak 2025-01-20T00:50:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "note": "Sold 107.7K MELANIA for $931,584 across 16 transactions (899s)."
+  },
+  {
+   "id": "5P5UNmKQif8H:DPH...Fum:b19",
+   "timestamp": 1737332161,
+   "walletAddress": "DPHqSqkv3ARYZKfnbjauqhSF3DWGyXEqhnfYNvG9WFum",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 1620913,
+   "amountUnit": "USD",
+   "signature": "5P5UNmKQif8HVWGhfvCoWWmjNC9NcyWPDhwVsf4zGHNX1aThuut8xaprPeispPAN4UXY2DFupKk4vbhtWAr5rcDN",
+   "signatures": [
+    "5P5UNmKQif8HVWGhfvCoWWmjNC9NcyWPDhwVsf4zGHNX1aThuut8xaprPeispPAN4UXY2DFupKk4vbhtWAr5rcDN",
+    "3ug1Hja64tB2AuiwBevAzpNwE7KSnk6NfWvStRLCJgBcLn25AbGoKX2wUWQjV811q4R4bLtG9acQtfre3hAs4Crr",
+    "3DvroSnVGKYkgg4cTubKZYmJRkwZMuNyorc3B6r5Mtcf2j5qQhb3d3KApySAnPPv22aWoCg73fWZvuUsMVH7hAcp",
+    "2TUNBB1sozH9nZyo3CBdEEiawbbnkBoWQWy2xDNFRCmtbCmUQTvbnDUF9d2aZgpSGwjMHuXx66YvtXEQH8ZZ6S5G",
+    "2iszr7r8imUH2hSHi3q169FfAKR87p1xwTgnnHm8fNNL6wsueyuJrE3mawUQ9n3pP54GvY83aabzvUysVMUvm8JY",
+    "4eXLpPXPp2yy3HqhGYRB5pVajYg4NCwf5RfCreN8WcKKG3PeWEt3pyMbUpAeWAFEPgDfTRmu9vEQz2jA8fYPhqwF",
+    "3DJKtTe3pjJb644qEvCNK3av6v8cLkM9KXoV1zegPAcSfyGwNsAtHdAenoDyMNT3Hx51QtseLFWModGNsWQRCeP1",
+    "4UXgmzfAoQY6EA9oaKq31UxBjeUdMu92jeHEQ4yztJmmZh5kM751ZJEaXCWH7RXJ2YymK4bpKcx76RjzgBjUQrjT",
+    "5Txq8MkKYsBCnT5Evc7phYD7Baun3C2yqDmi3AnsxYcQo6b7RqqKifvTAu2GJGqeJQadFbpwkMQafwisCD6DU5Dk",
+    "5eUvFEzwS5qbm8qKr8S1LjFMW6aGVBsiyPVe3ixGKtWGZVdPajxgzz5Zk8NSjGiAfrrGrcgFfkv1SuH5CgHzyiCx",
+    "5Dj7FjCgNm2TkXZyL71ZeJwP5DKrh8kgkUGSebFypoFPBtcMVhW1spxoG9hBRWLhXYJasMod2kgoEjF9N4g5jAnb",
+    "2BWb8MhS2UaT4ADLi9pvngwcqc4iYGyriZRFCMZMibyHv5rE6VxTovdJ9FRTBLXPsVz1sx5MABQAhUSNbT4sd75Z",
+    "ZKATX3Siees7Z4ckE1gytFwckByUv9p1oyGNtArFi5R5NEDquG7qG2T5M4cpFYqub4uDXQxPt1LVuGj9mPoqJx9",
+    "5ZThUHahqmDtHcSs9DggnBHsNDqFD38cYY6UEzAgkWLwEq7vggeeszhmQWPXZq3EBLgX6thyWUF4AnyBhLpimQFB",
+    "BAcrfq2tTzFyK8BBeACv5S4s4L3XECo2kKrBwmuvn28iM3Y4HPsbz5rjGCk5Tg2h2HGQhEz1WZZ14KSweLSiPXJ",
+    "vx9QVkJpCwmLneCuRmUinGSo8AVhL3YMqRuFuTRL28iwdw4uRWjELcrCu35RfeyZu8EtQad2JgbHVMNDoLcZMMg",
+    "5mmeNaNwqX28BtkgK9shYWwV1JZvT1uZ39ESaiEBEBrLAGaUtrdjNCbyWCVoXCzLwps1vZmeR2vxEUHA7NdHAm47",
+    "67HmFXkLbQBXVy3FYvSKadjVAbyCza8AvGzSqSEnz7DdpPsAqemSJG1ndG6dCZ53QK14d9UmtdvFV4ckVhJ5mVnX",
+    "TwSE5PW7aJk4J2ewmHwXT1QML9kGSWuTob9bjknuq7rBU6ksbPjvUhqZBo4VbqaKa6nzYJFvKMKEiY4R55AZdXM"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 1 of the candidates by realised profit. Recorded trades 2025-01-19T21:09:23Z to 2025-01-20T03:01:44Z: bought $135,686, sold $13,326,100 (realised $13,190,414); sold 95% of the MELANIA bought; last sell 2025-01-20T03:01:44Z, before the collapse marker 2025-01-20T17:15:00Z; last buy 2025-01-19T21:09:39Z, before the peak 2025-01-20T00:50:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "note": "Sold 155.7K MELANIA for $1,620,913 across 19 transactions (900s)."
+  },
+  {
+   "id": "57DNVj6WEXtg:DPH...Fum:b16",
+   "timestamp": 1737333121,
+   "walletAddress": "DPHqSqkv3ARYZKfnbjauqhSF3DWGyXEqhnfYNvG9WFum",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 1003632,
+   "amountUnit": "USD",
+   "signature": "57DNVj6WEXtgZyXuZYiLoy5QjCadTtGeQfVSMtJ4tW3cs1QyCJszQ2tzuFPRU7v8NXP2W6cJ3XLUJknJrW2BV4n7",
+   "signatures": [
+    "57DNVj6WEXtgZyXuZYiLoy5QjCadTtGeQfVSMtJ4tW3cs1QyCJszQ2tzuFPRU7v8NXP2W6cJ3XLUJknJrW2BV4n7",
+    "29ySxoQBJFL71gxRngqDkuApQJyUgMEpuSgoNdNBL8cWMNUzJhmUEfGDGfLXQqqq9fDrQsaqHV9sHhGNxCsVPFnn",
+    "5feHZuN2Xb3VuvQHC2HPu644ATnSJSUrUa6XKvWS7ZURcPiYbXzDNpi6bdTf3SpUfAgri68jVVfCa9dbMyr5wxm1",
+    "5hVES4A981iUWDFsJa7kTL9YMsQAREhrxqDA1Ws8gVqknTg3jv72vkhccyJYcC2GAFwL3GRvFCENEPuGnutmfDQP",
+    "4mXaGyJ9zC4fddUAk9Y12TnR6bTJVYeqAD3tQojsVLgEwurdSZ58bR9ethkfSAra6zZbhFqxrbdwwC4cMfYewJTe",
+    "3eovNTeoNeGrrvSfc8kWH4Da2UhKm1EqV6pekKXiWquam9fxY4Lhrscgm3P9eXhv5HPFxZtJGyUtYbwYGZdtGsRE",
+    "2JF8UmbE9qdCi7MzoToRAG1CXfX4t5DYcnYa9bHDtoU6SPtX2TAQv8AkYFqCDCg8ADncT12bxhiZQ4roJayWKFp8",
+    "LwsacUN1N6CD2SFRPcM97L6GeZbU4FuWABn8PLG3NDn3GEEsMBaBWFufYsthUkKxkNcXSuLvZNJQFc4WLXH7Soa",
+    "2xUQp9Lb3snpkWaPJE5d3NWbtRFwMwBajFgZwWnNjQK8Gv2b6arSyDSzMRtAAjeFui9vDg6ZEomWXRwLEJwx9Sdn",
+    "3UJSTNMABShTPPSnS3cDMt9qhukwwf8XRGaGfiNi95QVVCpEeTcgLnv2q28AEZ1zbCCQJWzzi9b4ZNv6SbdHZG2z",
+    "42fRLGrqPcCs13QVKyfrkF87VBGoHYxJgGhgmLhBLzgft6NrMwxCoibFvudnLqaeaMwWX6Mxhuf4s8CrcuLjjuvd",
+    "32Rs8xCW8A8imnKjEJKURm1s3bgDiWTbWTcdaw7SRq2CwqGVeKrYRiLDwaAC73ohBL47LyhEv66SrQU5QeUNqhE5",
+    "5EYLfQiMjCs8nnsh8NP6r1Z9jwczQnhP51zBsr9AqhiFHuj8Sq95NQ3hnqiPfmMrBTQxVvoh89zVxSPkLA4KaVAc",
+    "2xu64a683hbpHSsciQePiQ3yk3gU122s45VbAGJfSAKdK4DunRek5MDE9Agb89Yc6e5Yu6TY8KfwSnEYT9mwdUWk",
+    "4Boi9BKN4kzXmWydPi1fhL5B314hmvvPu4YbBeSMyAue9tUGea74nULDnL8RoxajZRQKFae81khsic1tSLa7PGdQ",
+    "3fGFJ42u76T2cjAfUXYnqL5g4eQpRtHiY97vimNaux8tK5wniY1zAbP2VDESMCvtfmLE9Q1BXSCvXtGocovx5jXc"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 1 of the candidates by realised profit. Recorded trades 2025-01-19T21:09:23Z to 2025-01-20T03:01:44Z: bought $135,686, sold $13,326,100 (realised $13,190,414); sold 95% of the MELANIA bought; last sell 2025-01-20T03:01:44Z, before the collapse marker 2025-01-20T17:15:00Z; last buy 2025-01-19T21:09:39Z, before the peak 2025-01-20T00:50:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "note": "Sold 83.5K MELANIA for $1,003,632 across 16 transactions (900s)."
+  },
+  {
+   "id": "5ZNHNd1KhXhY:FsV...M2Z:b5",
+   "timestamp": 1737333781,
+   "walletAddress": "FsV2c42PJXN8kpzgGGTCoRXS3W3uTj6v759DEgTJSM2Z",
+   "tag": "WHALE",
+   "action": "BUY",
+   "amount": 8787360,
+   "amountUnit": "USD",
+   "signature": "5ZNHNd1KhXhYbgBzb6eXNKkuo7tYAfswXqtLu6XB76T7HBZA5VjfHbkd4oD4fyx8gPHSSRW7eWZkX8ghQQjvUZir",
+   "signatures": [
+    "5ZNHNd1KhXhYbgBzb6eXNKkuo7tYAfswXqtLu6XB76T7HBZA5VjfHbkd4oD4fyx8gPHSSRW7eWZkX8ghQQjvUZir",
+    "aiGfj7nZHm3vrmWaWfqH8eH34REWufPuWmRb2g39HDJUDCryeYZaWSCo4p2Bbqdud22v34qgX8CPwsLKHnerxhb",
+    "4Bq4gBzAEcBrkifxmFmkZHoVcYZAc6ZimRgE7U51fQfTDzPfPwm71H24zQxz2rLu6f3VZMUvazV6AF5kWTjzGiPZ",
+    "57GKAsBhnPyAiS2AsmCrm6fx2eN9uuKtpcW8EMjjxSWQBxHE12Fjvb3b8cZ6aKEHX8uGYJC6QcmsAu5GmWZogqY8",
+    "33rGeRyDLPQ6wfmA2VVhAVB8Q6KjEgdVegUTcuSpPPn7k3tuiDhophtfy2cUMaEbtye5w5f7s3x7qWNxzCpvZ7hm"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 2 of the candidates by USD traded inside the replay window ($100,288,809); not a dev, insider or smart-exit wallet and not bot-like."
+    }
+   ],
+   "note": "Bought 736.7K MELANIA for $8,787,360 across 5 transactions (100s)."
+  },
+  {
+   "id": "4h378ciTpXDH:DPH...Fum:b13",
+   "timestamp": 1737334081,
+   "walletAddress": "DPHqSqkv3ARYZKfnbjauqhSF3DWGyXEqhnfYNvG9WFum",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 852887,
+   "amountUnit": "USD",
+   "signature": "4h378ciTpXDH9djCvFF9Nr2ppBKUSo87GWqmT3FgW3mkfphG3kqvF5PEmpfmhjifLSu4Yp8Wrr4rwBMhJPHmHDmc",
+   "signatures": [
+    "4h378ciTpXDH9djCvFF9Nr2ppBKUSo87GWqmT3FgW3mkfphG3kqvF5PEmpfmhjifLSu4Yp8Wrr4rwBMhJPHmHDmc",
+    "5zMi8E2DjjnJ42Rzz5Bugx3wmwxJF3C8kVVMG6THSFkn8bzug3ze66a6uCGS9p9vRBYXYTXEcmpgSo5LotceseA7",
+    "cU5vCCYygQQRsnCf8c7DYikE7aMqMDXm2YC9aPH4WFVwohUdm9xaurTEQBfZRCSGA3UKBFKUGeZWrE4kJyzziXz",
+    "2ENiaHD6uYgAgwfJpNBnsUGWZGnPTZpwuj45Ep3P2szsbQwKZL41bkB86jn8faCzgDy596TiU7GxDMJpmDMRR2AV",
+    "5qAdZ9jwSCoyZWDv5QvNYj1mBP7hHsfx659ZQUw1mzgWP13vCHfuSYxZgxnnyHoP4enqPN3iXZ63BYBGCbTr4bsW",
+    "GT6B1zdt8SSMnv2HYpniJm3v9qHCXLxdF7kGmW6eZDLvv4jvJ6ozrhGVAh7sgAD7W19vdbSpHUPXAuK7ZU6JFn4",
+    "tJSb5QJLs6dkQopCj6MxSPerLdzxxPLyJ5AKeQhTyAy2cDJhqs3kg8HYqR2W5PFVUvT7yUgTfNfNB2z6nstnRsP",
+    "2YG88QUSQGpXyYkuR7CyHh7zWAcp89TE32UDuDVbAXbeYJPSwJSEhvGRZxf9yiXRVj5VTBbWoYgE7eDRTCxeqASf",
+    "3izQdSz7otbD4tZbxrjPmYNswQQZCWaWEZiMWLzZv4bch5UfudybPFRshx5yUFDqjcBUJYcjC9ZBTkVdW5KVakZJ",
+    "31ra6GZ34P1W3cG8zhAPtYDJQKNHZUhrnhq6KuTfce58DUManwN5CJiPwoEZBYUzSryEppzJAWcU2nYn87YoqnJZ",
+    "5DctAqHeC1m4RgWrP843KtY1k7QMKY7Nq6NS4QHoUY9FZrihYN2H7xok7DuYAs99fcQLMm8v7T7ELb3shEZ4YEz2",
+    "21KhTu2ENAHictgnjCJc5virLkyvmiv94g81TBCn4u5rxDEBZ8taBvpLVnMSBK7oKdJYbLrZJdiL3ru1Wx9GWBJJ",
+    "5wVYA4kykedG4jdLWNCPFt499gGNKyjuLNphAHSZjDrnWhWtqLUnDZs3xLMDnix4K8MhDctP3Er1FS2VDp5e8Tax"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 1 of the candidates by realised profit. Recorded trades 2025-01-19T21:09:23Z to 2025-01-20T03:01:44Z: bought $135,686, sold $13,326,100 (realised $13,190,414); sold 95% of the MELANIA bought; last sell 2025-01-20T03:01:44Z, before the collapse marker 2025-01-20T17:15:00Z; last buy 2025-01-19T21:09:39Z, before the peak 2025-01-20T00:50:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "note": "Sold 69.7K MELANIA for $852,887 across 13 transactions (899s)."
+  },
+  {
+   "id": "3HYMxSh5EdvZ:FsV...M2Z",
+   "timestamp": 1737334604,
+   "walletAddress": "FsV2c42PJXN8kpzgGGTCoRXS3W3uTj6v759DEgTJSM2Z",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 9237475,
+   "amountUnit": "USD",
+   "signature": "3HYMxSh5EdvZgZXjdWnTqsBtWH48jYFmFefenirRB4QhgsXcsKUhavb8nws1veYgkoJRDkHcF3mZ3UA5wKpW8vu6",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 2 of the candidates by USD traded inside the replay window ($100,288,809); not a dev, insider or smart-exit wallet and not bot-like."
+    }
+   ],
+   "note": "Sold 736.7K MELANIA for $9,237,475."
+  },
+  {
+   "id": "3xVBXqQ4iaN2:FsV...M2Z:b3",
+   "timestamp": 1737335039,
+   "walletAddress": "FsV2c42PJXN8kpzgGGTCoRXS3W3uTj6v759DEgTJSM2Z",
+   "tag": "WHALE",
+   "action": "BUY",
+   "amount": 8999983,
+   "amountUnit": "USD",
+   "signature": "3xVBXqQ4iaN2WLvY1N3tWJPCiYuV5oyJXSbCCmgj966SoZLwEWKg6kkffybCEqgNxmJKy6ZLHmifUiGCsS3iffxv",
+   "signatures": [
+    "3xVBXqQ4iaN2WLvY1N3tWJPCiYuV5oyJXSbCCmgj966SoZLwEWKg6kkffybCEqgNxmJKy6ZLHmifUiGCsS3iffxv",
+    "5FK2HQLHaSQgEgNMFWLYwLQHsgkiQpVFkrdkaCRNSq521BDsaxAWa3B9dwg9W3QQfyH3KjtX7V2CU7mQaSVTCJ5Z",
+    "2DAXpwqLLHvVCfuuPq3VuwM9kKRHSUagEKbV7An357Qmxcfxqx9k1jdBixVwvQYJ55ofpVuKEo7iu4XYAbk4gK6p"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 2 of the candidates by USD traded inside the replay window ($100,288,809); not a dev, insider or smart-exit wallet and not bot-like."
+    }
+   ],
+   "note": "Bought 772.5K MELANIA for $8,999,983 across 3 transactions (32s)."
+  },
+  {
+   "id": "4RPhLJNcczLk:DPH...Fum:b15",
+   "timestamp": 1737335040,
+   "walletAddress": "DPHqSqkv3ARYZKfnbjauqhSF3DWGyXEqhnfYNvG9WFum",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 1056957,
+   "amountUnit": "USD",
+   "signature": "4RPhLJNcczLkotQaN729b1NmQgjJNaVnQ6yNSzz4mFjp74CyhpmzBk7Gxk4U3fLEeKAWKEZkmAP3HxUsoyEuN8e3",
+   "signatures": [
+    "4RPhLJNcczLkotQaN729b1NmQgjJNaVnQ6yNSzz4mFjp74CyhpmzBk7Gxk4U3fLEeKAWKEZkmAP3HxUsoyEuN8e3",
+    "3Hnk2jTz2t7SxHyufsGvbpoPbFLG77cQPfDU1BgJT1QHNxGxzR4EZb21SVepYqYB4ZAfjav2JVVvmEByRgmBcdxg",
+    "2krwawYrWaKG6a8bFPhi7u9JxcJhsVazeK3ahCn71vHNCZ44ERsmuBtZ9yQTPZc2vDvdUkCXuoDYMQseBibED7Xv",
+    "57fYGeP9pAbgq2sisNMCA4vCaz9Vyen7otQFbPnbVWdDP7a8j43vhHU1vXJVzF2CytH7Z6YFGTe56cwMK38d4SgH",
+    "5bbNfGeXFyj1eMM8esKDwXoGHRMath9vb4tetEek4u7Lx1gjeXja578uGaxyWUTikF5jFEdTaHRZCYNfdDg5Pjzd",
+    "ut9jpddkCqUxEW3kbtg75nQNKryNKETi974Xp1AkKMjcXYXsjmeZC7vk5sExTX73JpG4RjAcj95mLtBJ3wYraYE",
+    "2ExVRHcud2AtDh8MsKTqSpTXD8nF9B3MQEFC93nCAizeFjH9VTxusqEwugpRWZEgM5aNYGsBgxXj675hEeyG3hZk",
+    "238khcMaPGxGohuwTBk1M9YSWUTNGbzhNXL4v5DkxbJSTUmxANNaWxC4zWfBYLeHFx6JDhf7Xym1QeEqchQrY6jA",
+    "3upbF9erBMZgLAr7PrXg1Ds4YNk8mWVmGAQpshVqnSWHkj749qZKcRD485NmRAEdqBWbAJQ1b3v5XEmQFAtGCyZV",
+    "3L8s8NQQVoEtdEUqFT1XQp9o8G8eBaAnqo3ZigrNc1FL2EDXSBYSSEtMXAz6xnnFgvxvDeLw3mQtC3kweguiEiXe",
+    "5d4hjYgMmi5vtQYuBUfTbbuiux6L6WWTfqVD5C3KmG4E8zVEH57Vmep6og2Xm9FLZ5qTrLVvEtHPGGfmBqui5Xr1",
+    "3cF3vUWQimpnQu1acWEZJ4smpH37MZuyCYRTKMfs7TDi2deg9NeCwyuBZyw1VLvs71qhqYgtnXsdrqicxsuahNKu",
+    "2WioD2MKiQ5qyXdStTie3b3GrTiAiRg1BaMjnRmoY8YZ4Hes2LiFnfb2qdZBcXaRgeP3iSsoxN9ae4SqNTnvtZEm",
+    "3LjSa4Y7vCsJR3ZiL5noHijhkJyt5g61xrPPFtyv5zEAE7KqumKiDf9pFnpRzLMbqaUwMwnQYDcjHi2CH7xQeTL1",
+    "2fGuWGGApTbCF3d6FojA1pKeJe7zMJMFr6qJKK4abMbJcSCadTBwQNap3hR7fW27p26RNfoffq3DkUBFADt6c1Dn"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 1 of the candidates by realised profit. Recorded trades 2025-01-19T21:09:23Z to 2025-01-20T03:01:44Z: bought $135,686, sold $13,326,100 (realised $13,190,414); sold 95% of the MELANIA bought; last sell 2025-01-20T03:01:44Z, before the collapse marker 2025-01-20T17:15:00Z; last buy 2025-01-19T21:09:39Z, before the peak 2025-01-20T00:50:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "note": "Sold 85.9K MELANIA for $1,056,957 across 15 transactions (840s)."
+  },
+  {
+   "id": "5DerzAccv5Ep:DPH...Fum:b13",
+   "timestamp": 1737335941,
+   "walletAddress": "DPHqSqkv3ARYZKfnbjauqhSF3DWGyXEqhnfYNvG9WFum",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 988218,
+   "amountUnit": "USD",
+   "signature": "5DerzAccv5EptSb4rm9AFeNQx8pEWgBfKfZ2ausDqR3hUiYZQizMg9EBj3ufUuRFkBn5sVYpfeegPcqpYDJcKGpj",
+   "signatures": [
+    "5DerzAccv5EptSb4rm9AFeNQx8pEWgBfKfZ2ausDqR3hUiYZQizMg9EBj3ufUuRFkBn5sVYpfeegPcqpYDJcKGpj",
+    "3czoGuZQcesi7rSSTVYAbYpaBrS379CL4A2TqTWL9Z2nczDVk19wPm2yvKX7DFyoDPo6jGt6uwqMrcm3ZbVciraN",
+    "4Z2sJx7HQKZyVPANAJk9qH4UABnYQFVNGrC4esQ4SG4MUoBJ3fBT4gwAxqvvLogkTNr2zAZASUgHugH44DzneF6p",
+    "3UU5AjSkJDkuiivdtLL8bq9G2RKwDnLoSdQRSVPidSiM4EF8GB1fJLodiioE5AKuRh5sbgTcLeqgbaQ3zCZ9CMyM",
+    "2CJkTiaL1PuJRJTziLpUQPKkV2twTM6LBXurj81af2UBWjnJfcipyqRmwUBpGrqGajPbLP1qz2s4oBceSaFvpHWH",
+    "4gdk2r1RdVDBbBdqYKBCfnvYbLfEjF9AqKyJZiTfbvMBEtSsVks6suJvWVvde1m8HMSNyCVMcSPeR3LDZJHRQwTs",
+    "29nUcbw4gsNJePdTQrXD7brN5NmefwSrnheGowVhL7STYtF8pr1rxfGgnzHi3DtkJKuXmD7q3UPRCZaG8mbStruE",
+    "4EiknYuJLjT9MtaWRhWa5xsWPqDhsqTkbNZMsMqEcG2LYUhg1QQKV6bxnuUsfeMg2rVzBHtMGk8UHrQbVepcuFPh",
+    "43uXVcUGWH9oBXpY12cF2a21Ud9h8MwDtvUK2Xc5xXLajbGRyiaH4HVh4ofabncGa8S92CD5SqY16z5iaNTBvPPE",
+    "3y6qrpgMy51DUMq3zM5Cvzu3TpXCoK1RNnsFYDchVptz115noCd33FqtLuojqGCCZMM4eL33bmLz2qf7G14AkRJj",
+    "2oxaCuuZX9vdAtSiTgWYGE8u56ns4zg2T1QQtpkx9X5WHigaAwieiRHJcXTtTGC8ZQWtQ99PxvCuLdvHy6bYPFKa",
+    "T5f632eafV1s5AMeUqz5Hf1VsyxTS9A4QrAbNt22ghSHgJ4yAd4Kn2zqKgFpBh6bVPztexKu6NHsDt8T8MoaLcc",
+    "26XaJ2UAWVDYgpBFCMdA9WQniq2hKvpZ2Pcgvr7ZUL71iGq5zD5uaxWXc37yJsya5X9oNTL8FDvjGXRiTowg3eDZ"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 1 of the candidates by realised profit. Recorded trades 2025-01-19T21:09:23Z to 2025-01-20T03:01:44Z: bought $135,686, sold $13,326,100 (realised $13,190,414); sold 95% of the MELANIA bought; last sell 2025-01-20T03:01:44Z, before the collapse marker 2025-01-20T17:15:00Z; last buy 2025-01-19T21:09:39Z, before the peak 2025-01-20T00:50:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "note": "Sold 92.5K MELANIA for $988,218 across 13 transactions (899s)."
+  },
+  {
+   "id": "65uH5dDN35av:FsV...M2Z",
+   "timestamp": 1737336006,
+   "walletAddress": "FsV2c42PJXN8kpzgGGTCoRXS3W3uTj6v759DEgTJSM2Z",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 9486136,
+   "amountUnit": "USD",
+   "signature": "65uH5dDN35avdAP2fDZqxHm1mss1XAFZUQ7fcuXjyoqd76n1XJyaCNkC6Kc7VKTUzTcuQRHXsaXjfSQJ2BQEMHiq",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 2 of the candidates by USD traded inside the replay window ($100,288,809); not a dev, insider or smart-exit wallet and not bot-like."
+    }
+   ],
+   "note": "Sold 772.5K MELANIA for $9,486,136."
+  },
+  {
+   "id": "3qxgawZwhvqc:FsV...M2Z:b3",
+   "timestamp": 1737336492,
+   "walletAddress": "FsV2c42PJXN8kpzgGGTCoRXS3W3uTj6v759DEgTJSM2Z",
+   "tag": "WHALE",
+   "action": "BUY",
+   "amount": 8399608,
+   "amountUnit": "USD",
+   "signature": "3qxgawZwhvqcb2MTfzmFr9TM4Wd9dqm5ocjexckNqdk8yUCBV9gbBFiZ3ToZZTLqynCXoBkudgrUcvwkx7qHAVCn",
+   "signatures": [
+    "3qxgawZwhvqcb2MTfzmFr9TM4Wd9dqm5ocjexckNqdk8yUCBV9gbBFiZ3ToZZTLqynCXoBkudgrUcvwkx7qHAVCn",
+    "5cVrKBaXPUsPz6YabJFTPH4YD8eFxeLkJomFB3Ma2qWEjf7BMN9xeRysbjXHmucrZBqUA2PW7i3iC5WqqvHZLRsc",
+    "D92JajmWGKRWv8ZSxjwer7TMHBqAnQuCDfMiJYs6j5xNJWZzAk1tCaZHUKdTu2S8UyKC6mtqKqiK92tU1JdPm9t"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 2 of the candidates by USD traded inside the replay window ($100,288,809); not a dev, insider or smart-exit wallet and not bot-like."
+    }
+   ],
+   "note": "Bought 842.0K MELANIA for $8,399,608 across 3 transactions (24s)."
+  },
+  {
+   "id": "4GvvCxuv5igD:FsV...M2Z",
+   "timestamp": 1737336674,
+   "walletAddress": "FsV2c42PJXN8kpzgGGTCoRXS3W3uTj6v759DEgTJSM2Z",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 9514398,
+   "amountUnit": "USD",
+   "signature": "4GvvCxuv5igDQ4jo7uXWXwTAdc3zW8ricufMka51TwC94gSyVZhzqv5EFhzz8qXqZAtFgrmSJ1XDuDjHfUUiaeVe",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 2 of the candidates by USD traded inside the replay window ($100,288,809); not a dev, insider or smart-exit wallet and not bot-like."
+    }
+   ],
+   "note": "Sold 901.6K MELANIA for $9,514,398."
+  },
+  {
+   "id": "62aSK4uqrH9G:DPH...Fum:b15",
+   "timestamp": 1737336901,
+   "walletAddress": "DPHqSqkv3ARYZKfnbjauqhSF3DWGyXEqhnfYNvG9WFum",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 1002505,
+   "amountUnit": "USD",
+   "signature": "62aSK4uqrH9GLrvRs2mBbBuQbR1cWi2Z9FR6Yik3jykyLJYXqcpM3RBbtdT9G6btShmcAXPN72w6gK8f31iZ6AiM",
+   "signatures": [
+    "62aSK4uqrH9GLrvRs2mBbBuQbR1cWi2Z9FR6Yik3jykyLJYXqcpM3RBbtdT9G6btShmcAXPN72w6gK8f31iZ6AiM",
+    "5GKXKKWvyg3NpCctrnCRaYT5Bayv6S7D45spPnroHyxofXkgP3jii2bvcoDWSBG4B5ourUHQ1x5qh5de35Cgum79",
+    "3pGRD1wQMJV6hZNAnH2Sw5ys9ZQt1TQS4QoygZVCw1WBJfEeFfbHfjsm8Wwx7NEVaqsuECS9gZqwmgZiKEVdrSuD",
+    "fDDCzXrCTexAqzdVfx92aHkXynbF5UMUpm2FJZNRiRopPzcRxKpDgKm7xqxAfxX7LRGfeyvC93ceafysj78wmy5",
+    "44zbGZS3fHZpbZhqZr8pUzJQRYzDcE4LGFK9Wqqz9um4sVeHbXhhVEsBTZ8uEBL6XLg378ruYr8ivkUJbKEqixKp",
+    "5dEsYpVP2CPvMbSgMzapAJ7ULaqHqQHpPzdEPM7jEP4VFofRLr5m8CKLYfv89JHP7EAPyJjQKd3nAxfKC5mXPYUz",
+    "5vYaEo8vugtj9GFoZYP9mAwnvnEjJv3NCzvs5CzEEEpQK1BvZQHxw9VkAdejeAnY9QbXMMZbXhUuSELDVn9nTvsV",
+    "ktWXL5XdQtg1GC6tfCTTZ6SiWJRVQVXQbJz25jSEC2dowBtvKtDtLKw714ypPLxM55FGfEArAasBkZfYjZLeBtK",
+    "2HfB3fYQQ6gUVTVFKRAcVSNHHzEi9KGbgAeBPn39e36PSSyfaLhTYMiMC3KBkPq4uVnQWd7HRGbcDFrLMBAWUMzZ",
+    "3k5Gcc3UWm29UE9sacNvpsiJorhcAbSubvExbB1zsySeTURUDnjQyQ1vwu473ptuzMpL9qVYW2FgZHV1KEmCBFK3",
+    "3rE92jDym2N7pcgfAfrrmr1ocxxYyibRYPY6vUBZMwf1xtUuqXbQtMhdiYVmEQCX62xUvRMgtibtVcmNUVEmhoz1",
+    "4oyHRvPiaUs4YkLp5MvNXGCWGdA5UvzuC8CPMdphaBgkPVLVbsVashQavb1aqHHL2Xin5jicW8NDMNaf5DgTwTzA",
+    "3upww2BRX9VN67Nuo9LaNXfnrNKPcb3BmEZKT1eynvzoKEqPMD1S1kNqo3fkJaRL1Hm9P29DaTRAzyxK5Qx59ifE",
+    "3gdf35HFBikBWYynBr3bHxx3yCfD6E5vqRc8gwJxUWHpSEiCMEywqS533sbMC64vr4Za3kYuJ9yAdnmHASLvzsPe",
+    "5WBTWz6DvQXNBPgg3vzUZ87zdLek1wmnFZHNWzGfNHErq9bnTr11riBZhviz5U7b1Wdy1D6pjrxvxx9BGpFn1AgS"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 1 of the candidates by realised profit. Recorded trades 2025-01-19T21:09:23Z to 2025-01-20T03:01:44Z: bought $135,686, sold $13,326,100 (realised $13,190,414); sold 95% of the MELANIA bought; last sell 2025-01-20T03:01:44Z, before the collapse marker 2025-01-20T17:15:00Z; last buy 2025-01-19T21:09:39Z, before the peak 2025-01-20T00:50:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "note": "Sold 101.4K MELANIA for $1,002,505 across 15 transactions (900s)."
+  },
+  {
+   "id": "3UTYsqthuXiX:DPH...Fum:b23",
+   "timestamp": 1737337840,
+   "walletAddress": "DPHqSqkv3ARYZKfnbjauqhSF3DWGyXEqhnfYNvG9WFum",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 1838183,
+   "amountUnit": "USD",
+   "signature": "3UTYsqthuXiXugjPQ1dX9oMCUcxmfjrjQgTaEU2u3nm51W1CQTQkq12yhzPtM8yKHjDUSjfmXAbKzL2mgRkGvUai",
+   "signatures": [
+    "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"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 1 of the candidates by realised profit. Recorded trades 2025-01-19T21:09:23Z to 2025-01-20T03:01:44Z: bought $135,686, sold $13,326,100 (realised $13,190,414); sold 95% of the MELANIA bought; last sell 2025-01-20T03:01:44Z, before the collapse marker 2025-01-20T17:15:00Z; last buy 2025-01-19T21:09:39Z, before the peak 2025-01-20T00:50:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "note": "Sold 203.0K MELANIA for $1,838,183 across 23 transactions (860s)."
+  },
+  {
+   "id": "4156zhJJVqYb:7nm...7BU",
+   "timestamp": 1737338971,
+   "walletAddress": "7nmKYpLxDi7QKxP1DWhYBtZ6D4dqs383exY7Bmpd17BU",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 958709,
+   "amountUnit": "USD",
+   "signature": "4156zhJJVqYbkPKxKzwbzAKuC69RzbaKZtRf4Ry46hmFeTVEyqFZ7VnYkWG9Rjhc3ZR58Eevbe61Voq35ytstw7N",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 2 of the candidates by realised profit. Recorded trades 2025-01-19T21:39:07Z to 2025-01-20T05:50:41Z: bought $1,420,207, sold $5,050,286 (realised $3,630,079); sold 114% of the MELANIA bought; last sell 2025-01-20T05:50:41Z, before the collapse marker 2025-01-20T17:15:00Z; last buy 2025-01-19T21:43:05Z, before the peak 2025-01-20T00:50:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "note": "Sold 100.0K MELANIA for $958,709."
+  },
+  {
+   "id": "5NVKvEAUisbc:7nm...7BU",
+   "timestamp": 1737352241,
+   "walletAddress": "7nmKYpLxDi7QKxP1DWhYBtZ6D4dqs383exY7Bmpd17BU",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 1297114,
+   "amountUnit": "USD",
+   "signature": "5NVKvEAUisbcANW2b1gCWkFuMhtiLf9AzWoUfij4g28Dfgy5HTbhdzALdJ6jpUy88uxps8FohmTb9THXMcsVFLwv",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 2 of the candidates by realised profit. Recorded trades 2025-01-19T21:39:07Z to 2025-01-20T05:50:41Z: bought $1,420,207, sold $5,050,286 (realised $3,630,079); sold 114% of the MELANIA bought; last sell 2025-01-20T05:50:41Z, before the collapse marker 2025-01-20T17:15:00Z; last buy 2025-01-19T21:43:05Z, before the peak 2025-01-20T00:50:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "note": "Sold 127.8K MELANIA for $1,297,114."
+  },
+  {
+   "id": "5qdThGY13MhP:8DR...yXj:b3",
+   "timestamp": 1737363040,
+   "walletAddress": "8DRxtGXP8uYQ1T5JCSN6XG6SJWkFt2TpFFf6DJvKZyXj",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 1708448,
+   "amountUnit": "USD",
+   "signature": "5qdThGY13MhPc6hzNPKASR3t6aijBaoubR3oYUNf4R2ZjRDqak6p3SSByvSVvZgz6pg147hEjV62qLm5L5VFU5G1",
+   "signatures": [
+    "5qdThGY13MhPc6hzNPKASR3t6aijBaoubR3oYUNf4R2ZjRDqak6p3SSByvSVvZgz6pg147hEjV62qLm5L5VFU5G1",
+    "5FKFXkTf5VzSdzD3eoWf3bHoaGBoDXVwypbMbgjLJQ8qB5Mf8N56GQyFipJa9JG7C8s1Taee2Kso4qXfdY69zjNJ",
+    "3eWWV732D6XkQcSXwefAt8TSEJPZ9sx4dvXTo8doYDHD3gZY4rEShWoxBKjuMLEZZ6jxigXNJqdTo5shBzPgypAt"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 3 of the candidates by realised profit. Recorded trades 2025-01-19T22:12:06Z to 2025-01-20T15:48:52Z: bought $1,500,101, sold $3,160,585 (realised $1,660,484); sold 95% of the MELANIA bought; last sell 2025-01-20T15:48:52Z, before the collapse marker 2025-01-20T17:15:00Z; last buy 2025-01-19T22:35:16Z, before the peak 2025-01-20T00:50:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "note": "Sold 150.0K MELANIA for $1,708,448 across 3 transactions (79s)."
+  }
+ ],
+ "wallets": [
+  {
+   "address": "GtdNPbbWHJjUWzUoGggCfAxiNJwbe1a7FwHn2mcaHC3D",
+   "display": "Gtd...C3D",
+   "tag": "DEV",
+   "evidence": [
+    {
+     "rule": "jupiter-asset-dev",
+     "detail": "Jupiter asset metadata lists Gtd...C3D as the token's dev (creator) wallet."
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 0,
+    "buyTok": 0,
+    "sellTok": 0,
+    "first": null,
+    "last": 0,
+    "lastSell": 0,
+    "maxTrade": 0,
+    "trades": 0,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "DPHqSqkv3ARYZKfnbjauqhSF3DWGyXEqhnfYNvG9WFum",
+   "display": "DPH...Fum",
+   "tag": "SMART",
+   "evidence": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 1 of the candidates by realised profit. Recorded trades 2025-01-19T21:09:23Z to 2025-01-20T03:01:44Z: bought $135,686, sold $13,326,100 (realised $13,190,414); sold 95% of the MELANIA bought; last sell 2025-01-20T03:01:44Z, before the collapse marker 2025-01-20T17:15:00Z; last buy 2025-01-19T21:09:39Z, before the peak 2025-01-20T00:50:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "stats": {
+    "lastBuy": 1737320979,
+    "buyUsd": 135686.04568958736,
+    "sellUsd": 13326100.091501027,
+    "buyTok": 1820643.508724,
+    "sellTok": 1724542.612826993,
+    "first": 1737320963,
+    "last": 1737342104,
+    "lastSell": 1737342104,
+    "maxTrade": 224292.1667224905,
+    "trades": 241,
+    "mev": 0,
+    "windowUsd": 13461786.137190614
+   }
+  },
+  {
+   "address": "7nmKYpLxDi7QKxP1DWhYBtZ6D4dqs383exY7Bmpd17BU",
+   "display": "7nm...7BU",
+   "tag": "SMART",
+   "evidence": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 2 of the candidates by realised profit. Recorded trades 2025-01-19T21:39:07Z to 2025-01-20T05:50:41Z: bought $1,420,207, sold $5,050,286 (realised $3,630,079); sold 114% of the MELANIA bought; last sell 2025-01-20T05:50:41Z, before the collapse marker 2025-01-20T17:15:00Z; last buy 2025-01-19T21:43:05Z, before the peak 2025-01-20T00:50:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "stats": {
+    "lastBuy": 1737322985,
+    "buyUsd": 1420207.0375458833,
+    "sellUsd": 5050285.771284233,
+    "buyTok": 417901.681043,
+    "sellTok": 477176.07156,
+    "first": 1737322747,
+    "last": 1737352241,
+    "lastSell": 1737352241,
+    "maxTrade": 1166240.4162781965,
+    "trades": 101,
+    "mev": 0,
+    "windowUsd": 6470492.808830116
+   }
+  },
+  {
+   "address": "8DRxtGXP8uYQ1T5JCSN6XG6SJWkFt2TpFFf6DJvKZyXj",
+   "display": "8DR...yXj",
+   "tag": "SMART",
+   "evidence": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 3 of the candidates by realised profit. Recorded trades 2025-01-19T22:12:06Z to 2025-01-20T15:48:52Z: bought $1,500,101, sold $3,160,585 (realised $1,660,484); sold 95% of the MELANIA bought; last sell 2025-01-20T15:48:52Z, before the collapse marker 2025-01-20T17:15:00Z; last buy 2025-01-19T22:35:16Z, before the peak 2025-01-20T00:50:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "stats": {
+    "lastBuy": 1737326116,
+    "buyUsd": 1500101.0927286658,
+    "sellUsd": 3160584.6125904005,
+    "buyTok": 327785.200237,
+    "sellTok": 312228.200237,
+    "first": 1737324726,
+    "last": 1737388132,
+    "lastSell": 1737388132,
+    "maxTrade": 757387.9203471832,
+    "trades": 12,
+    "mev": 0,
+    "windowUsd": 4660685.705319067
+   }
+  },
+  {
+   "address": "HQyjjjs6tr1YsUcXd2yLaCdwyU3en8GcMa1w6FpzwXMu",
+   "display": "HQy...XMu",
+   "tag": "SMART",
+   "evidence": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 4 of the candidates by realised profit. Recorded trades 2025-01-19T21:15:04Z to 2025-01-19T22:54:21Z: bought $899,995, sold $2,009,353 (realised $1,109,358); sold 94% of the MELANIA bought; last sell 2025-01-19T22:54:21Z, before the collapse marker 2025-01-20T17:15:00Z; last buy 2025-01-19T21:20:07Z, before the peak 2025-01-20T00:50:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "stats": {
+    "lastBuy": 1737321607,
+    "buyUsd": 899994.723791403,
+    "sellUsd": 2009353.1934667695,
+    "buyTok": 758602.33795,
+    "sellTok": 709295.23853,
+    "first": 1737321304,
+    "last": 1737327261,
+    "lastSell": 1737327261,
+    "maxTrade": 734974.0673397408,
+    "trades": 13,
+    "mev": 0,
+    "windowUsd": 2909347.9172581728
+   }
+  },
+  {
+   "address": "3P4zW9LFWyf2v75VPGpGTTqVBeeeUqTmWVn3EMXriBZ2",
+   "display": "3P4...BZ2",
+   "tag": "WHALE",
+   "evidence": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 1 of the candidates by USD traded inside the replay window ($105,417,924); not a dev, insider or smart-exit wallet and not bot-like."
+    }
+   ],
+   "stats": {
+    "lastBuy": 1737366718,
+    "buyUsd": 50298715.187226936,
+    "sellUsd": 55119208.720214196,
+    "buyTok": 4916473.784434003,
+    "sellTok": 5177094.888495,
+    "first": 1737323085,
+    "last": 1737366841,
+    "lastSell": 1737366841,
+    "maxTrade": 4340611.610745875,
+    "trades": 120,
+    "mev": 0,
+    "windowUsd": 105417923.9074412
+   }
+  },
+  {
+   "address": "FsV2c42PJXN8kpzgGGTCoRXS3W3uTj6v759DEgTJSM2Z",
+   "display": "FsV...M2Z",
+   "tag": "WHALE",
+   "evidence": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 2 of the candidates by USD traded inside the replay window ($100,288,809); not a dev, insider or smart-exit wallet and not bot-like."
+    }
+   ],
+   "stats": {
+    "lastBuy": 1737341122,
+    "buyUsd": 48941301.01521838,
+    "sellUsd": 51347508.31224919,
+    "buyTok": 4670407.523357001,
+    "sellTok": 4746464.815705001,
+    "first": 1737333781,
+    "last": 1737341357,
+    "lastSell": 1737341357,
+    "maxTrade": 8623977.273932813,
+    "trades": 51,
+    "mev": 0,
+    "windowUsd": 100288809.32746755
+   }
+  },
+  {
+   "address": "4GQeEya6ZTwvXre4Br6ZfDyfe2WQMkcDz2QbkJZazVqS",
+   "display": "4GQ...VqS",
+   "tag": "WHALE",
+   "evidence": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 3 of the candidates by USD traded inside the replay window ($31,883,737); not a dev, insider or smart-exit wallet and not bot-like."
+    }
+   ],
+   "stats": {
+    "lastBuy": 1737429209,
+    "buyUsd": 7388182.422934929,
+    "sellUsd": 24530283.548516102,
+    "buyTok": 798737.1210970004,
+    "sellTok": 2968332.0555659994,
+    "first": 1737360153,
+    "last": 1737429257,
+    "lastSell": 1737429257,
+    "maxTrade": 102431.47335946892,
+    "trades": 3489,
+    "mev": 0,
+    "windowUsd": 31883737.440049995
+   }
+  }
+ ]
+}

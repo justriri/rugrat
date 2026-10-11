@@ -1,0 +1,4738 @@
+{
+ "paperSolUsd": 231.06,
+ "window": {
+  "from": "2024-12-04T22:08:00Z",
+  "to": "2024-12-04T22:59:45Z",
+  "collapse": "2024-12-04T22:37:45Z"
+ },
+ "rules": {
+  "tapeSampleStepSec": 20,
+  "candidateTopN": 40,
+  "whaleSingleTradeUsd": 50000,
+  "maxRecipientCandidates": 40,
+  "walletMaxPages": 80,
+  "botFilter": {
+   "maxMevTradeFraction": 0.1
+  },
+  "smart": {
+   "topN": 5,
+   "minRealizedProfitUsd": 50000,
+   "minSoldFractionOfBought": 0.8,
+   "lastSellBeforeCollapse": true,
+   "lastBuyBeforePeak": true
+  },
+  "whale": {
+   "topN": 3
+  },
+  "eventMinUsd": {
+   "INSIDER": 10000,
+   "SMART": 30000,
+   "WHALE": 100000,
+   "DEV": 0
+  },
+  "devMove": {
+   "minPctSupply": 0.002,
+   "burstGapSec": 20,
+   "burstMaxSec": 120
+  },
+  "tradeBurst": {
+   "gapSec": 45,
+   "maxSec": 240
+  }
+ },
+ "duplicatesDropped": 0,
+ "events": [
+  {
+   "id": "3YgV7UitWdBz:Hii...RnN",
+   "timestamp": 1733350093,
+   "walletAddress": "HiiqhjDF8hgeBbnbZNdkyjx6Wvy2oefvh85GokojbRnN",
+   "tag": "WHALE",
+   "action": "BUY",
+   "amount": 968274,
+   "amountUnit": "USD",
+   "signature": "3YgV7UitWdBz2vuCDDJnHR8DjdEBL7kzPxRWsqLXZ1kgLj6YbTJr9Hwn5NXv2qGW9h3pGhHV7m8Fjwze2zuwZSDn",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 1 of the candidates by USD traded inside the replay window ($3,242,439); not a dev, insider or smart-exit wallet and not bot-like."
+    }
+   ],
+   "note": "Bought 175.78M HAWK for $968,274."
+  },
+  {
+   "id": "dWXLGviYbMzV:Hii...RnN:b20",
+   "timestamp": 1733350322,
+   "walletAddress": "HiiqhjDF8hgeBbnbZNdkyjx6Wvy2oefvh85GokojbRnN",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 1345716,
+   "amountUnit": "USD",
+   "signature": "dWXLGviYbMzVyCBwQvDbUkVMsWKpkobJtF8fv2sY2RBKppiVnZh85RK3YDS9SgEYXQ5Wf69MAdGL7cd6NQhmyxy",
+   "signatures": [
+    "dWXLGviYbMzVyCBwQvDbUkVMsWKpkobJtF8fv2sY2RBKppiVnZh85RK3YDS9SgEYXQ5Wf69MAdGL7cd6NQhmyxy",
+    "3iWkxEQva8n5d3uCwWdoxgHGdFoChDUgHwzsDMReDWrdZhAuiDFYEqMUk3tpEraXKsJVZe252WydYpoXWqeibtZU",
+    "4hDNJHQR4yrEX6n4HsJwtmZSCPc3xNFqWL8GAyRPrpvsxA9DHdzi33tG7SS8iJKizMuYUJkDm8BUB5j4anRJNDwC",
+    "wEiRmSKqLXnAvhQS8s17tQqtr6Gi5dgZJyN7xxPzwtnrPJgZTxUxUMoJJyVKvprSKwyuYogvxcSfrG7i3ACNhX3",
+    "2zRz8ocYFjUPrboVUDFpyuRBZegW4TJVBJjzHPaZvRdYZDQUB7CvhCaHSRcSW1F8dTLP1YevTK4P91w21rSFiEqd",
+    "53hLRumrqGreRAaD5eUWavHSnnALw6rQKkXrBzTH2bN5niPqeqgTRW1VGucVWBqfVbDpjJyVAMomBbHjgGKzoMcJ",
+    "5QengRtmzunSuiqsHKnSnkKjYMybKRXcGWPVWuBiQagZcm6QM7v6Y69TrxARTSLcpwLrSPniJCkatXt1S9LeP7Jp",
+    "59bx9hXYUCEJJAc2KbB83yMuyw5NUKj2m9JYjnkCgggb5UUviR8y3PgJbie7rZVBGo88UBUdZzZnVG2TffiasftT",
+    "iBk6HuJKNN1DMC39ePraXeARkCR6kkjnr8KLmYVj9fx7FKzEiUjc5jyMToFv3teavYRdwMxwVWsY8P8DFKLQomN",
+    "4f9rwoe18ENazswd81NMCaX6BWMQH5tLWvwXi15mSg3KrkAgSXVnNHpjRWexGwUsQ8zJY2N2CW9FNUtsnn6qpPy3",
+    "2u8fdpA3BpyVdjshjoMHSq8mwi72qyAULgWLdvFNMYApdKS9NDWpStN9Sxy4KobHewEHWcneZPamPtYx5PiYsFvv",
+    "3ziFXbLg1JREvfWjuxMEAqu91TduPVZ4owUeE9ryimEj8u5VgaMkKC7czgQTqV9Fv24PHuTs7LBminASmvBaXQM3",
+    "2423xgYaePzH9QctGakGeLUytjc158oEAxb7EY94draMBZfsarDa7sRGN5mheppgjjzKjz7Pb6kZbXSXLTMJhdd8",
+    "3mp41QWZ7nyX1eygAxFK3fpT2EaXvx34SHM1bc31q5z7DHzWLAHmna4uUSaPh2Xw8hAFE2biMr1NExDrimg5R3De",
+    "46kT6gjJNQj7McRu7WSpiLt4x7T8q1TchtNMWnWNnEZPoq3oHRTfkjAgW94ksgvdLNCEp1kai3GuNrQ8L6Yd9guW",
+    "3wFZdwvduuvQgB6QJw27N54A8vbXbKnLCbDgi19c5n8GY7gJtJS9MPhhP8H4uAjNps7Gw6HHbF8demVWzJ4fX7Lq",
+    "55fT1pefYngqRHwDHBHjijQUAnzaL1cSth9sYo1dAYQQ93nMkaR6GY2gJpozg3iz3xB5hQNugPkGpG4b3mEQXCZ4",
+    "jK8Z3mpqDDZvYEuxD73yzkysrBdaNKCYXTn8c2NEEVR4F7RKHREG9PfKNonXy9nRH98TSGZ5hCtxewzBk4qiQDL",
+    "3m1MfG32F5CSxvVKQe5Rieundc9jDVAcntrtZWXaJedKg85fwn47oPQGrH5MFTU3RpR9ddQT2uzJnv16tVAaHWdY",
+    "2egeTHNyLpeAfqdAFHgPJHL7eWpMojBnMGegmAxSaY7wtUD8oG4HEnhkxA8xwkAZPisijV84NphU6d38ZpLcYrB"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 1 of the candidates by USD traded inside the replay window ($3,242,439); not a dev, insider or smart-exit wallet and not bot-like."
+    }
+   ],
+   "note": "Sold 53.76M HAWK for $1,345,716 across 20 transactions (218s)."
+  },
+  {
+   "id": "3auvWXLUvkyV:ECs...HSL:b12",
+   "timestamp": 1733350552,
+   "walletAddress": "ECsx3WMyTsfxyWUp4aqMoHwf7gSxQQfB4ZzQ6V4yBHSL",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 140265,
+   "amountUnit": "USD",
+   "signature": "3auvWXLUvkyVo8WjVCKYZZaKjpnXFWmBYuYNXdF6TcMcsQHMwRNxox6ArxGN9ibGFV5PsqSXpia5iigBMq8XQsva",
+   "signatures": [
+    "3auvWXLUvkyVo8WjVCKYZZaKjpnXFWmBYuYNXdF6TcMcsQHMwRNxox6ArxGN9ibGFV5PsqSXpia5iigBMq8XQsva",
+    "4jEDEqgGH92xd1eHCcXSuZi8tvDoACdzgB9nk2tr2pMb3C5xa9SFrx95p9sWYUwEHowKMQhXvFHd4a481oGx3UGs",
+    "2M9XcsP8BtabzniqZAqmB8Mpr7mrDtD9vRHfbGVjPPvqzLiqsF9u89o9mz2CMxabxbUDoEco6oU23h5tqjg5r2cg",
+    "5yJAhMVzEuTFqrNtqxVzYnQywMA3MM1djR9SCU6AuteaksjnzCWK7wSF3ejY1vjqk73SCWreeQCaFhCZ5a8bqgBE",
+    "5L8wRNVR6aAZeQaf4bZr61No4tKcSs2tiAnmwRZ54HzaCuacG6fijKQ64cHt21F1nPQYGH82dmnrCWuexgtrkvtR",
+    "5iND5mcgp6AJibsRyrgwyBFMecaiT8yBziMhftoRmFxPhoHaXLNiMEToGz8fqJx5wHrxsug2eQjJ1s67FqVkGxHi",
+    "5yz3nPRe6wGZFBeB2SDaEK7Sk6uS1ghMaDkJCsui6t7spa6dVYz8WrUwnKExHZpVSg7smniymxfiTewWTegytDQ7",
+    "35kF8V2xYU1ineRYBMQfS5NtMsNtsHqUrAS4WY2w6dRh5o1prMX7cN7FUJadzqJsM2UdiWMzgtWB9E33rpouMuFg",
+    "4gmSm2BdPoYJWe2socMangYUEEbYUN1SDr9B49xebur9wdPScBvCGpBKrroymNGVgbo7XEC4KGQmQxnxyz2Fj8y9",
+    "5QZYwoxZG3agcNa45nw1g2nUW48T5RT4P1GyCgsK5uhuFLqrVosMauYur8ssqwJReBpccjWR4uDL1wvPZ5MKW8uX",
+    "qeVtjLEurKurDowTQMXjDACHtK6wWLFtx5Zg5gYWt7XrUpsSD4Jz1xEbQNe6oRMUgkid3HPerUmSHpHNpndHUzj",
+    "jcCQugfjsX4TAJ5whTXn6en7w654t4cBHHYZiUaET87GgxU2zAzh6JFmdUgk43TCpbw2DgvJiY7T7sVRqfm2fqg"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 2 of the candidates by USD traded inside the replay window ($365,591); not a dev, insider or smart-exit wallet and not bot-like."
+    }
+   ],
+   "note": "Sold 9.70M HAWK for $140,265 across 12 transactions (111s)."
+  },
+  {
+   "id": "5DKFZRb8ctZL:Hii...RnN:b18",
+   "timestamp": 1733350580,
+   "walletAddress": "HiiqhjDF8hgeBbnbZNdkyjx6Wvy2oefvh85GokojbRnN",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 737209,
+   "amountUnit": "USD",
+   "signature": "5DKFZRb8ctZL5dG3FL1YEwjBTRUus92Yqy135mKXNyR3Zw9zReVWAEwFz2Z1pQGqKE9SnnZSmDaDFvecCcNQiPpQ",
+   "signatures": [
+    "5DKFZRb8ctZL5dG3FL1YEwjBTRUus92Yqy135mKXNyR3Zw9zReVWAEwFz2Z1pQGqKE9SnnZSmDaDFvecCcNQiPpQ",
+    "5kxPGQDcr7WP5Ke7pTWwR15z7xnzbLmuaCnXPGAhRqexUnKMZ14uFpuhKa9UCixBzTvhz8Frccj4dyYdhp1VNywb",
+    "26NUKGy27ENso6nJqhryB8h8cjzHFPtTLbn7BjdcoXt73GCq5hR5jYzAzozuZoY9unLZ6aCJiymFHtmeaCXukd9h",
+    "44AkgaA8rjkRzMZyeduarpwT7WjTERpCSNKoGh33ZCRJ9hqd6QHiJ8iC58cfD7HZisy1PKEk8ngFWQNtjvFJi3ht",
+    "3QimWYKESAg5iDAsBwrSikaPkRJRVkPq75sVdwrc9STzGvsiqRWQmk2tfz37porK35md9woc2qryvdrScCejQSe",
+    "5ALjcbfqgm2WJSbxtErzwnKUftzqMkhaohzWVGczsKHMZC31mpfNuhbMTKV71vQgWFuEVPMgCk9VU8FVva1GPJRG",
+    "5zUXkSFEnFaiQk37KTj9LiB5ivqUHMs6qi8MEm9TJQHA5CFPepo6DRfJLpT8FeUd9Q6nrrntVHJyrzxcQz4LHcyQ",
+    "5rrpbpCwc51J4gfgFMRBBsUduaCRU5x6NAy6djr926XYceCsguQ2wx3KRNLW3skbawNNqXZS7Z2i5481DDm2en2T",
+    "2UkqKi4Zrh56pRyGWkCgzPX5UZgSdJzHuQPbKsaMBiEVXTvSb5ypsPr62nfPp5rRtpCnp5GB4ThC6w9vLbXYDzii",
+    "3msuwdTjUkw1w6RsHK6MGWkbF8wSZgYgthwqyXAZc1LYc4Cosq97xsoZ6aAyXyBFsettrd1wMQwq8qA7qhiDqdzs",
+    "d5Ccvhi4DEE3mFCKQ3aseSaJQDgaZSGRkPAQeuUnK7aAPKbHmmgrpZiHXApu8XR5R5thcVyTSRFVGXohD22CkRh",
+    "2Ji3Z1cCAZPonVPhEh2YdkqHwjriKNys57qanbGC8YhLqa5zb2ZScWEXryZP5m7Ro5wBoRUyjGx3JbcbdYmkF3H1",
+    "3CUTkNXU9bbECjTeeokRxuvkkSo3EkokZ6BpzmVJ3QLWjGnyvEtv7zUVUoWTHJFCazSmfEYdzbJJsP9XkqRj7GuN",
+    "4mrCy53FyXRVzprmFv2hSSi1bZgxjigSdD1KYgAmG9Si2Ubvxp4ebQiZUdj6ydLw82Lh7JZp4sYeKT4P3GXtBpKU",
+    "4cADDSuVMnsEStsz59sjGtv3Ksh5xrnZ5DgENPZZnPK1Nu4p9EJpugpDU29UrSgcVvouwVCDrvECGgLsbdHsKkTp",
+    "2UM4DWGvZTUPzTBxXtt46Q5yXy5vPSud2GhUZ58epnLMrzdmqJF3ePHfsqPeoToduUday1ugXFktx2JrJivYTPTd",
+    "31mD5XKmtxeq9zWSWQb9rvapu1W1GRJb98CLwkoYM9VkC18mXpPjNRCw8cpx8tdiZoucLhDS5UpVUP8w1Uao6sED",
+    "3Kh6XqiXBeDLdoZ8nhqffxjoC3MRNNAeieBeGhHHTsQDmWkna9AHotvEo91LxVAeqAV4tUmbvdNpzwMzGTcmtKq"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 1 of the candidates by USD traded inside the replay window ($3,242,439); not a dev, insider or smart-exit wallet and not bot-like."
+    }
+   ],
+   "note": "Sold 63.13M HAWK for $737,209 across 18 transactions (146s)."
+  },
+  {
+   "id": "2VLRGtkAaj9w:ECs...HSL:b10",
+   "timestamp": 1733350776,
+   "walletAddress": "ECsx3WMyTsfxyWUp4aqMoHwf7gSxQQfB4ZzQ6V4yBHSL",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 206489,
+   "amountUnit": "USD",
+   "signature": "2VLRGtkAaj9wArr2G9E7Ak84sNVy1VMpfDYPbUZD3Rg4sFsSM4medqqa3feZaCv6JUxqgXtL47bJbRadNCPyKazn",
+   "signatures": [
+    "2VLRGtkAaj9wArr2G9E7Ak84sNVy1VMpfDYPbUZD3Rg4sFsSM4medqqa3feZaCv6JUxqgXtL47bJbRadNCPyKazn",
+    "7T4AmAztbogv1ftpyoBTZb5GDQvvVngQZqYEcCtj5UTBPDa2Vmg2R2uRvkrv42egy3fqGmnAJZF5uf62WudqsJm",
+    "3JeRftgjNAjTdbsFK4SyP3xAtGD2PjXMBySNgRQKrmChjt8wAULpmpiiw9v3XVn3jBdJKAmiWNAo8eHzHhutLbaQ",
+    "4L1y388tPvhYq4WhSXwhNaVau9sRTK4JqudSqKVR4rQ3UHFcgXChgFK632pBuXELcKpiwTFs3TT3c4MdNbhGuXtz",
+    "5bDA4e4irVDGpj95agaxQBeTAtFyCbUy1vZqhcysQb3wWyZEyqndeAGP1RdFBNdr3H7xjQ5AMyq5PsVTzAhZPF9E",
+    "221uEKHTZGnufciNpSwvzNNT2vQ93TN7K6ww1UWNXuTQb6XfHcy6kwukXkZ6uus2b4u2WpW4buHtJekFWDXHo64t",
+    "5mFWGRYEvQAVt7p8zdMzQ5WNk48nF5PeMJ3X3hZZiYdmFvp6SLFJVUuzXvFgS3aMc8e8gDuwGgQmcVgimgjUrPW5",
+    "2FML8ZqbfthY6Eu8CJ1Par2GfdmT1weYqs66B5K2CRTrTEyTRAwA3UaMKZFiuwG2BeuBkwkpKJ6DXWmgLE34NjHE",
+    "4xMtXKKuLrSNEDBH9gKFAssLxt1BqaYvY3jFmGdmknqg8yDaD3csPjeE89uWgwPWkQy25t5KBArEqTTt5hVhEPyr",
+    "64a5Uj5BVfRPQYuA5nSdoDa2RWKQgfuWnuyxkXABEFQ4pyacVrrpN67sQT2YN4WzLe37Nk7uHSM694aoZZe7XxK3"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 2 of the candidates by USD traded inside the replay window ($365,591); not a dev, insider or smart-exit wallet and not bot-like."
+    }
+   ],
+   "note": "Sold 19.40M HAWK for $206,489 across 10 transactions (102s)."
+  },
+  {
+   "id": "4D5qSdXujRFH:Hii...RnN:b7",
+   "timestamp": 1733350785,
+   "walletAddress": "HiiqhjDF8hgeBbnbZNdkyjx6Wvy2oefvh85GokojbRnN",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 191239,
+   "amountUnit": "USD",
+   "signature": "4D5qSdXujRFHiTdzZuYo4dswZEZ2tjeUdKS6BLUumaATa3Je3rvTqduvSYeYRUmLcY2izyLjvbMnJt9GVQbeccBQ",
+   "signatures": [
+    "4D5qSdXujRFHiTdzZuYo4dswZEZ2tjeUdKS6BLUumaATa3Je3rvTqduvSYeYRUmLcY2izyLjvbMnJt9GVQbeccBQ",
+    "4uvgLevTE3yre1EaF7CfEffdbDg5hcP2fUbKmUFKZ2GF4YA6smNx6hZ7xwwN5AM6cuUjiRP7xyeeWg4RZcrPY1oB",
+    "5Ba73iWoKv7gTk965AXtF2swKZywr4tk65WPdCB2KUHjDtBSTyHVqd5DyzNx66eZJM3xtxDtRw7c3drszgEMCMXQ",
+    "5LsFdyFpytZpQmU4qrSz6Wnqh6MKJyDw8oBq84CxyyVZvSMG4KynwTimxiBhnzNGMLHxL9NqEQqeEkN6tzYmsAJu",
+    "JmV8ocaUHS2zxXSQGNDvo8d3PuYf24Hn8q3dG7wPRPG1oqHCfS4KudrJDzjkTJdKifzRQA2yrS8RLtuUveZ2Ab7",
+    "4Pos9ioQApEvRfgeqEqm4b3vXRa99fMUFCYpgKoZEMLdQsFLV27yEEt5KR1sknLXcb6rzeDpegY6F3fKUB9ey9fv",
+    "25AGKcDWyjPVYfN2G1PxvCyEMA81FPJ7t4JCXLi5zDpDGfHfZDu2yf8irBRePqvFBr8iq9vXXeeiFgF1c18Wt6tW"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 1 of the candidates by USD traded inside the replay window ($3,242,439); not a dev, insider or smart-exit wallet and not bot-like."
+    }
+   ],
+   "note": "Sold 19.16M HAWK for $191,239 across 7 transactions (62s)."
+  },
+  {
+   "id": "2JLKaDzNg7vm:burst12",
+   "timestamp": 1733350814,
+   "walletAddress": "HAWKXJXitdzwEopf2AtLtBkHR1WCUjGfZDk1uS8P4yAm",
+   "tag": "DEV",
+   "action": "SUPPLY_MOVE",
+   "amount": 35949672,
+   "amountUnit": "HAWK",
+   "signature": "2JLKaDzNg7vmZNsX8uaUeHatLGZxKk8V5dXLDdUZrJ7zjnym2HLD8hyiocwx4UNjjnpFY6xLCHYRrxnoJUxYVMnS",
+   "signatures": [
+    "2JLKaDzNg7vmZNsX8uaUeHatLGZxKk8V5dXLDdUZrJ7zjnym2HLD8hyiocwx4UNjjnpFY6xLCHYRrxnoJUxYVMnS",
+    "2nMHUhkRpkSc3btJFJL4ggn6KpGmsw8Sbc7GQneVLR9UfdfpVcRsoKRRE6PQYNNsDMPWAjW9RsMHb72zgURPBsDR",
+    "3gBnM5ytSWhG3YmEoYZXPwfV2jax5fcApCcGiqbeV339UHAJ75QXmVppYtD4QRcmiczmNFJCndYtDjeHW35gqN87",
+    "3igMGmbway1hFvwM4A6hjy5nTnYhHNE2tK1JLWVdf3z79sDvwhmMjFLXCD9RFqeRvpiBGZWNpmwQpojMw8RBDrSx",
+    "3QtSRdf8zLXQoKPKhCtMwiLGM6ptDho46HhxtA17ZmVfBoaxWsJStBz4NZMsG8TqXMo4NWs8dsXQyBGWWKhzBY7n",
+    "3n9BFCru1R9d7jY4hJHQUPftAJdhU1D73zCv9VEpXEdeMcFzXg6QEkSgLXJ5uNPk4LKoPdXfwCKPqv5wCTsvf92t",
+    "713ojEcq1tSHwGBqJLUMnL4uvCQ8XVF9ZiDJ4cjSprYAbXmKK7CC5co8hZkzGjiMQm3fu4k3qDAqnzY6g1FWpWv",
+    "3At7xhxYaH8AL8o8eGDTwXktqaKEVv6goYTFALjqALnYzEMuMqXWCaUAEKAoBH35tkJNJqV75YUVRJoUSHWBEEub",
+    "42Q4Aaw74spnr8YQx3D1hPyvDshZNxS7KR5M3y34xvuTXZJCsQv9ZHvCPXnyLFSJ8DQi76w3dRcQ1KMCy1teFCYN",
+    "3y9DYYbTXjEdK3okMHG7QDRTh6mLLZ7JnrgWibsxjnd6FaLMnQj3D6t7fWUdNdhfWDA9aKUGrgzCjptyCSTZHRKQ",
+    "5ZDEjtnfZ26paRGiT1CNRkQDaSAnATntUBwbomPQiKUEPLxZvay6gbfwSASFyJVWGe6nNnG8684KDmea4XYoBMsT",
+    "C3dCF8g68kbAZB9XgVXzJTMTzhTJ8Jee3jnoD8EYLuYKBHX4hXrUNADaFd94aHytqPpa7woPM1sGRagbVacx1CY"
+   ],
+   "source": "solana-rpc getTransaction",
+   "classification": [
+    {
+     "rule": "jupiter-asset-dev",
+     "detail": "Jupiter asset metadata lists HAW...yAm as the token's dev (creator) wallet."
+    }
+   ],
+   "note": "Dev wallet sent 35.95M HAWK (0.36% of supply) to 12 wallets in a burst of 12 transactions starting at 2024-12-04T22:20:14Z.",
+   "valueUsd": 359839
+  },
+  {
+   "id": "Xsodk41LrJz9:6YH...YXf:b4",
+   "timestamp": 1733350923,
+   "walletAddress": "6YHcrghddkYMf6zu9vs8WtZkBUMBTEQvvSPVUEqnDYXf",
+   "tag": "WHALE",
+   "action": "BUY",
+   "amount": 134529,
+   "amountUnit": "USD",
+   "signature": "Xsodk41LrJz922whUrBzWMNvVkSzgen8BB9U7gVxNzVFVRu4oS8tCuD4CNwv4dAf36JCf9p8a5jVEf4vCS9Tc8J",
+   "signatures": [
+    "Xsodk41LrJz922whUrBzWMNvVkSzgen8BB9U7gVxNzVFVRu4oS8tCuD4CNwv4dAf36JCf9p8a5jVEf4vCS9Tc8J",
+    "5RDSeyLHrv7ofv3X6rcytMSf2WsHDWaduyYCZDYzVf2udR72emwjfS8yz5gR4VqomdqcQdneFXxbCDWQ6X6yHCQm",
+    "4YRwdQjpoqYZgyzFLVfmxHtcEPPYrABEejsMKQYgdwgFGUwFwagMq1c8NS2ctucC24g9mMoLa8wxbee9BLKgbmEX",
+    "2PqpargywD79VWw6761UxUQUgArnReuvx5tfsdTcFmZHhgG3hXHX5S7otmwj53LwNH4UssnNUtNYvqQJWXCztXLY"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 3 of the candidates by USD traded inside the replay window ($202,271); not a dev, insider or smart-exit wallet and not bot-like."
+    }
+   ],
+   "note": "Bought 8.53M HAWK for $134,529 across 4 transactions (128s)."
+  },
+  {
+   "id": "2fZ4BiyfTyTJ:burst15",
+   "timestamp": 1733351092,
+   "walletAddress": "HAWKXJXitdzwEopf2AtLtBkHR1WCUjGfZDk1uS8P4yAm",
+   "tag": "DEV",
+   "action": "SUPPLY_MOVE",
+   "amount": 89874180,
+   "amountUnit": "HAWK",
+   "signature": "2fZ4BiyfTyTJVV6TM1tqTEmh7ctnJ5nXTpV46cxiJXs2LpzPfriE9XWYPZVaxUHnubNWThFhS2h7K6aRMSjaAWJZ",
+   "signatures": [
+    "2fZ4BiyfTyTJVV6TM1tqTEmh7ctnJ5nXTpV46cxiJXs2LpzPfriE9XWYPZVaxUHnubNWThFhS2h7K6aRMSjaAWJZ",
+    "2yAzb1D45Hz1YFfH7rzKyRjtP7dZXgeXtWy52KoqEGNPgnsrXJF9qej6wyMYdpeyzNFVE8n1b4Lku2zEzkguMjvP",
+    "3GsFC4fN2rTtDbJjHc8sNm5rTgmYQYLH1TZKFjTCD7XM5vwxDepEft4kDFeftp3r9BwpA3fcVjnmTCD79KpXa3Hz",
+    "eMKnanSzY69Sd49LphKdRkd76hiGiGMay6S7SLXC21mLYczgyYSV1mBqA5u6dCq5TjgzocXgR8gZSKzzgjajGfi",
+    "2LzugsdxmiPnR8s7Zq27uzxfmXqHQg1wefqX9jCHkYajWfuqkFTkaqnojJRwsWRJdQ6wbKZzoD2VRr9P9c3cK4Rj",
+    "5Vrqa3Qsp1tvZQLG1BBNVHCR1tRJEP7pqmbSVMQpGJCYwwzQHUqjKAMHpyqwJcyZX4XFMzarw1JFQRNvxMQe1qTu",
+    "4fAmYiBn9XhGcSsc9sKQRTsJ4gaek6BHRC8YZsVRLmmhzZpcJYRdxdDUDx2pXXam9yXnetWGSvNau9MwhpVzrMD5",
+    "6gEe5yFcYawxq9siHLf4cYhyAt89rYiAfQD4aZ4haWBuWtPPYuysvR3nF2seiQgHeLkTfojYKUx9X5ZuN6RvU1Q",
+    "66Jo5qvN4WFFALiWN66cg7Pj6AM8NnuoLzhhNwiLUzRbvuuUQoFnu7oxDo5NB6cBeJMc51A1rigVmG1rJfLjnWwr",
+    "3ckPjEmrrC4gypx7DdZAyWXyav2d9n6DLXU8PnSvTJ7N2T9bbvKYzM4Mj8uVVXuxSsMTzWE4adAesuHxcZEbbY3e",
+    "3eQfq5knBV7K4QqFkXWzW9moTY9uU91xY6WMpbQik2g7wo9DfBhTtSuGY5ifxiA3N1dGkaTt5DB5ALiTbVCGgmXj",
+    "4a1B6L9FpxDEag9LCjBiWzLv3HNFCC9nj79t91jx4ab5UvBuyAw5mzL9JrjKMEDFBnfGN1so8ube6wzkMwQTPJy3",
+    "5wV6Qkjgp7mKYfuHqJozbKaKQahhyTdMNxKaAgjZUw2Bq7W6NmQJMz2PcDjvaHiAw373Epewo8zWtgtxFqhWqALn",
+    "3BEaSemMXkpDLZAupkwZLwdkohCSM3w5asZ1jyvMrfGRSdwfZ38HpcX6btd3mENaphmwjbW7weeXaZzAVNmx25K6",
+    "BA3G6MdpcsPvu934p1VMDcDdvP9avJkDUwmfrz1nFgmAWZ5jnSbUB85s2LLY439MX8dv7yXTybidxSddQby6d8W"
+   ],
+   "source": "solana-rpc getTransaction",
+   "classification": [
+    {
+     "rule": "jupiter-asset-dev",
+     "detail": "Jupiter asset metadata lists HAW...yAm as the token's dev (creator) wallet."
+    }
+   ],
+   "note": "Dev wallet sent 89.87M HAWK (0.90% of supply) to 15 wallets in a burst of 15 transactions starting at 2024-12-04T22:24:52Z.",
+   "valueUsd": 1514730
+  },
+  {
+   "id": "3Gf8yAVYEnfU:burst26",
+   "timestamp": 1733351174,
+   "walletAddress": "HAWKXJXitdzwEopf2AtLtBkHR1WCUjGfZDk1uS8P4yAm",
+   "tag": "DEV",
+   "action": "SUPPLY_MOVE",
+   "amount": 155781912,
+   "amountUnit": "HAWK",
+   "signature": "3Gf8yAVYEnfUxaCS7sdndJFK3du9eavyD37vWpvFeQQAeWGog2uc2n9qVdVU32neqraY4MB6eA82EFe2B4PFqyg",
+   "signatures": [
+    "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"
+   ],
+   "source": "solana-rpc getTransaction",
+   "classification": [
+    {
+     "rule": "jupiter-asset-dev",
+     "detail": "Jupiter asset metadata lists HAW...yAm as the token's dev (creator) wallet."
+    }
+   ],
+   "note": "Dev wallet sent 155.78M HAWK (1.56% of supply) to 26 wallets in a burst of 26 transactions starting at 2024-12-04T22:26:14Z.",
+   "valueUsd": 2014654
+  },
+  {
+   "id": "47msgWQ3KdCh:burst20",
+   "timestamp": 1733351279,
+   "walletAddress": "HAWKXJXitdzwEopf2AtLtBkHR1WCUjGfZDk1uS8P4yAm",
+   "tag": "DEV",
+   "action": "SUPPLY_MOVE",
+   "amount": 119832240,
+   "amountUnit": "HAWK",
+   "signature": "47msgWQ3KdChmByJbu3kk1xGDzVB2kjg21k2xBeY34mhfp7bBqURRDNDagEYPDSV2ufjViw9nMmK2bVPJyi9e9eW",
+   "signatures": [
+    "47msgWQ3KdChmByJbu3kk1xGDzVB2kjg21k2xBeY34mhfp7bBqURRDNDagEYPDSV2ufjViw9nMmK2bVPJyi9e9eW",
+    "5msifehEiDcmVTrk7eEcZ9LShfDiBF6JtshqGj7fN2VdzSmVecESAUZmkPwhquD9KGLovFEEznMWqPiPDywL59iL",
+    "5rXKyZ4VczQEPt6HiJsFVLVSAdX64P8YtfL8sRJugZ6dQBhQXVAmbxSFiRYfauGLnX6X7iG7y5fctBW7bXa7qUQ2",
+    "66uJSD4ytXnEr7Hs5mhmnTRCwmbyo1VsrygocqpHQagpKqa472mfvWs88LQU8aBJdbNLLzAnwhVLEut26wwVpoS7",
+    "gvnHFwAsvp9dCfwaKA3bcSxrTXGSy2FpRRkPmh467YYKBkChxmF86UHkHkWCEH9RkAWkd1KzaUj4bzECpwbNFjh",
+    "3rLt934SRwsvXCJEjHu4ufLbwHnH9MPK3ai7iGLBLLNvMutkhTVH3XXyg5vZntadxaRSAcDH52sp4gsfyzPpQq4Q",
+    "3acevjtdrs1S7DWYeEGUb9Jrq33BMgfzhhbuFKQkWVv2VNZbym495B4Y4KzVVvt9z6wnEvzymLe7dD4YNNeLEyvM",
+    "3e55a84qMDReo8dmGH2E4VFHFP586Jb1MpKL3AC2yrRyzANu3RwDi1jEthzTu2Nof3DnDRZHpwDeNi63ioG7JiXD",
+    "3vCwPFHCtR6weHJpm4dQSWtVLqe2XdeHVKFbFbET4J5VHBhgZEbBkPtnowjYEoABq1Qg6Cv9drsichodsM5DMq56",
+    "47p7RLknz3YLRkGuBjVDUydDCBrNH3EnLtKeiqfE65pPL9BmS2dyZRLAA8YMGBsv3GNJm7We9VSCiBe67KXcnNxi",
+    "4vxkf7UfxpV6DHE54h8GXiokh3JDH7u9SfjRrt23A4uf1bywBWtD8kt1EVFKnjLmi85A3HVNWAzFqjb7aFKmkcQi",
+    "2maDAtZiq2kgGtpXGSrSWKjwV7aKnH18ggC9boXhexdf3bmpZCQznYBzsZ4mVqpZ4KZ7WmvhujA8VPQedgJvt8LM",
+    "2ok8QHaWhp4151TGQRgZ1xdQ5k6F7WtZfLVx88zLWZATb259f3yCBPr8YbbwGy1oBjfN21z4ftATJ7c7jSXJGVHH",
+    "4KXF5SbBZLhxNTiaaqyM6yGn9cEWXdA3J2KDdNJHtkhpaZgkYxbXkV7EKj1YRFN8FQSqNGkaGm9sr4JpTFaJe53F",
+    "4uD5nRzaxVVinAWjH3NUxLYQBQdabnu6kjfNdG1Zfv12sw61RLa1FaCC2zgpzakgMD7VSwLkAbhrLjRBDpKRHqZ8",
+    "2VEN4jB8GErBNATTUAxMFrbQe532GZUvXgnWgNnuBZwEXiyWrJwjPb3UdtDBnaM73eqYrpz1YcpEYABDRMMk72fg",
+    "2upX75wVSvvHgSBci4AscqucyLQ2GxuWywidzLYKANoTM1Ex1Wu1KUg2fyqSuSCk6ky63QUAXLGoToBUwLG15C4B",
+    "3KYr1dugsUgL88anh68BcbjuBwiWzhGdMjrvbYDXo2SKdrHbqUew7YwucfvFsrPzztfRdvyxkWFqeBA5pRvF6hcz",
+    "56QBVTxuCEFxNpPwGRqUiY1KkAz7rERAnpi2X1fwFmhGEjFQ3cPBtpx1KPwMPcnioyyKtJ1RLZ8DqcFb7KYGQ4vq",
+    "61owvTDj428oAQvVTp9qgoDBeNe4bgcFin7hHg1ahKuyv1TEEzAVENBFFBTRFphNXfgz9yuRdKEbfL9Q2LbKKqkV"
+   ],
+   "source": "solana-rpc getTransaction",
+   "classification": [
+    {
+     "rule": "jupiter-asset-dev",
+     "detail": "Jupiter asset metadata lists HAW...yAm as the token's dev (creator) wallet."
+    }
+   ],
+   "note": "Dev wallet sent 119.83M HAWK (1.20% of supply) to 20 wallets in a burst of 20 transactions starting at 2024-12-04T22:27:59Z.",
+   "valueUsd": 2067651
+  },
+  {
+   "id": "42oqBcSPDBLB:G93...iia",
+   "timestamp": 1733351356,
+   "walletAddress": "G93RgRZbpKSU9ami6gU3w4VED9weULPo7KK6pmncxiia",
+   "tag": "INSIDER",
+   "action": "SELL",
+   "amount": 36128,
+   "amountUnit": "USD",
+   "signature": "42oqBcSPDBLBHr5dsam23veWzbQSZU7XAi5MNYzy4yP4LLFEumhcFNyNcTmtnvSYVQr5xY7UKMEKvJ21wbsRJdYE",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:28:17Z.",
+     "signatures": [
+      "3acevjtdrs1S7DWYeEGUb9Jrq33BMgfzhhbuFKQkWVv2VNZbym495B4Y4KzVVvt9z6wnEvzymLe7dD4YNNeLEyvM"
+     ]
+    }
+   ],
+   "note": "Sold 2.91M HAWK for $36,128."
+  },
+  {
+   "id": "373vXypm63dm:burst29",
+   "timestamp": 1733351357,
+   "walletAddress": "HAWKXJXitdzwEopf2AtLtBkHR1WCUjGfZDk1uS8P4yAm",
+   "tag": "DEV",
+   "action": "SUPPLY_MOVE",
+   "amount": 173756748,
+   "amountUnit": "HAWK",
+   "signature": "373vXypm63dmqvEnzeVLxx5reJBLDEBodotyKEan6LMv5rZ8FSUG3jdFsxJwsv2SFSLLViYqns5md3aMektnfcQ9",
+   "signatures": [
+    "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"
+   ],
+   "source": "solana-rpc getTransaction",
+   "classification": [
+    {
+     "rule": "jupiter-asset-dev",
+     "detail": "Jupiter asset metadata lists HAW...yAm as the token's dev (creator) wallet."
+    }
+   ],
+   "note": "Dev wallet sent 173.76M HAWK (1.74% of supply) to 29 wallets in a burst of 29 transactions starting at 2024-12-04T22:29:17Z.",
+   "valueUsd": 2619952
+  },
+  {
+   "id": "4z4LQYQwf7oz:burst31",
+   "timestamp": 1733351481,
+   "walletAddress": "HAWKXJXitdzwEopf2AtLtBkHR1WCUjGfZDk1uS8P4yAm",
+   "tag": "DEV",
+   "action": "SUPPLY_MOVE",
+   "amount": 185739972,
+   "amountUnit": "HAWK",
+   "signature": "4z4LQYQwf7ozsGnG2Xrc5URciX1G6r6DGPY533bTN1FuMT7v4Xh5wHp7JDkkGJGnndM3Qv86Q4ZTvbmAGKbYgt86",
+   "signatures": [
+    "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"
+   ],
+   "source": "solana-rpc getTransaction",
+   "classification": [
+    {
+     "rule": "jupiter-asset-dev",
+     "detail": "Jupiter asset metadata lists HAW...yAm as the token's dev (creator) wallet."
+    }
+   ],
+   "note": "Dev wallet sent 185.74M HAWK (1.86% of supply) to 31 wallets in a burst of 31 transactions starting at 2024-12-04T22:31:21Z.",
+   "valueUsd": 1892300
+  },
+  {
+   "id": "4kPkSk4MR5G4:ASZ...Vqp:b10",
+   "timestamp": 1733351576,
+   "walletAddress": "ASZmL2X6Qr9yrgfXCwJcp1x564hiajb2sSnN4DWidVqp",
+   "tag": "INSIDER",
+   "action": "SELL",
+   "amount": 30527,
+   "amountUnit": "USD",
+   "signature": "4kPkSk4MR5G44t6ZU4saa611LvCtUFHdR5S79BNvGPvVfVkf9zo5enb6SCnYcuXFF3VPDLNBLwFcd6WyZt6NBsQJ",
+   "signatures": [
+    "4kPkSk4MR5G44t6ZU4saa611LvCtUFHdR5S79BNvGPvVfVkf9zo5enb6SCnYcuXFF3VPDLNBLwFcd6WyZt6NBsQJ",
+    "5Gi4JW9XU6hdhxeYPLQgZ3mKjv35XuTmvrzjijmNZV9AicyqaUayF1suAgpA1pgKp3m4CBXt5JDf3BmsfRZF2fCh",
+    "4x2We3JPCPqAU1V9RJSAcFR65s9zHUyFwa9yDaqJGaEj2dDnxQMrmaLwD9h6pyoZCc9irAf2iAAHZvB6r8Sd6zzk",
+    "36F21WRoc1xY6umv6pb62eR2Ac5BeeFbotjYSGXA629Egz2x3zLhB7B9zygfUhmFh9PZiFYyZetumH5aQmYKTdXZ",
+    "3FfEwWqQu1eM7zWiKrJEXLKJH4qEsb9FGvBbHXdADbSF1joELNTkSLtRLahMSWxmD6XRcAEoJiD5pbZ76hD3Eowm",
+    "QGATgokyiupDWZtxAuz6jCQSeiTbT7YjGTXXqmjWj3GGj2A8wCyXkJfMk4YkMWpjgpBJWhYSHRnm7rp93bJS12U",
+    "5QsikM872P9aGq3vJcdLRh9X27sgk7ohRPa9x2QPugd9a5fPrpUYXJWEncR3LJMiKpyyU8Tx557TM1iVKCPthG5P",
+    "3VCHjF9KNcXy6Ad7A2GaPQ2xNHKyABXKJrWwS72mqknLAor7gwqoBKVMgjEsk3FDMWhriAnGS4jmqCY1vpTyQVsh",
+    "FXdxvPbLXMBUsjW9eBjQTXzErvUy6aZ5uTUTBgMDnuGcxCy6fSGySVsKtLFp8VcoP47gvXjKBsWaA7VXNNiWuKn",
+    "2iWi5MWWjvA9x9v8FRVvt6mmhCqdhPMXfutKj6WfB1JXMYqfJYFjRvdumYMnKeVoBiTBY7t8RHBiuzsFvoZWwCAx"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 3.00M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:20:14Z.",
+     "signatures": [
+      "3gBnM5ytSWhG3YmEoYZXPwfV2jax5fcApCcGiqbeV339UHAJ75QXmVppYtD4QRcmiczmNFJCndYtDjeHW35gqN87"
+     ]
+    }
+   ],
+   "note": "Sold 2.99M HAWK for $30,527 across 10 transactions (112s)."
+  },
+  {
+   "id": "2R6CbqXJ2wXm:burst33",
+   "timestamp": 1733351613,
+   "walletAddress": "HAWKXJXitdzwEopf2AtLtBkHR1WCUjGfZDk1uS8P4yAm",
+   "tag": "DEV",
+   "action": "SUPPLY_MOVE",
+   "amount": 197723196,
+   "amountUnit": "HAWK",
+   "signature": "2R6CbqXJ2wXmbw9YZXZ9yAake3jZaFAJSG3vg2sDBbx97kgCPaKEF3yy7vGuUaPr8p2gcQhHmHDmodX1A2xkA7ui",
+   "signatures": [
+    "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"
+   ],
+   "source": "solana-rpc getTransaction",
+   "classification": [
+    {
+     "rule": "jupiter-asset-dev",
+     "detail": "Jupiter asset metadata lists HAW...yAm as the token's dev (creator) wallet."
+    }
+   ],
+   "note": "Dev wallet sent 197.72M HAWK (1.98% of supply) to 33 wallets in a burst of 33 transactions starting at 2024-12-04T22:33:33Z.",
+   "valueUsd": 2513985
+  },
+  {
+   "id": "3LbE1gx5ftvC:burst13",
+   "timestamp": 1733351741,
+   "walletAddress": "HAWKXJXitdzwEopf2AtLtBkHR1WCUjGfZDk1uS8P4yAm",
+   "tag": "DEV",
+   "action": "SUPPLY_MOVE",
+   "amount": 77890956,
+   "amountUnit": "HAWK",
+   "signature": "3LbE1gx5ftvCgBQtqfQHQeh31zEdMwhW7Xby8RBrFsjgYsAzjj14pt2r9S3t9JvT4EUvfX7qGx1JMmf2j5fDmGsq",
+   "signatures": [
+    "3LbE1gx5ftvCgBQtqfQHQeh31zEdMwhW7Xby8RBrFsjgYsAzjj14pt2r9S3t9JvT4EUvfX7qGx1JMmf2j5fDmGsq",
+    "3NJRSV394KqA56eJxZQWjGXRX4SYsFoJsRc7MEMmq4d5xrU8aDSqAFxLMbh6mxD6zZ4RyC8t5TXYippXqpZ8WjG9",
+    "2Js2smnusTiJXyu4v4Ckz9CEEPNMG7LcjoyXAgVR26uocby8TExvE3nQbWJn14VBgtJyehFBXZXdbmiTRvWQ4vna",
+    "43kjGGMN9AqYG1cWLpz9xasKTpwyuQZFqwHaaQAomoBjUv9VAw9G6B2qgjMUmuy1LnDUehCNKwKZjATWDgRGTCHR",
+    "5vMx7cqzCEoDiyQncErWcKgCGm1TnMEydHjJPVEUUtp83HmTvetqV74H1H4tPVWF936caTYk6otsjsNjnZrDE9zR",
+    "2H9ExR3ZSyv9MzCgkLGZKwSoMEL1bAkMtC6sCB12Cu6Wcq3X4s1wzPY9RocpEyDmj8NxWvKFMcD1c7r3JMDqtJxr",
+    "3kcgkbPCpTyQV1nZjfd6FmodfmVZa7wgxBJyZypk543pGLm3tC7f7bKHh4jf9BdhXuF6iK7XGpCJboFy4bPorZdW",
+    "2JKuzaBJpwaKgT8VA2iKhLpCRytjh56iMHN6G31GHkME25nugAYg5Fdg7dJqKvahBJN5W2WsQxYg9J1ddeh5JLd9",
+    "4fkbHLCTSC9U7QXoYRpgLtbgwzTyNvwN3iaJe32vSpyTbdfjmZ2pbmCHrLnaL1mtSFvvHk6Jx8Lx8Wkh4bcdL4iw",
+    "Tmxg1x2A6o3CVYm2utD5FmoL7pgM9UUK674Cuzcf18UFKndbASXfPd92Dji324ZAr5dPMeUP2V65rvYtk184E15",
+    "217Aixkf9UbudkGfBsp4M8Apyx4yzxGJDMjqZMMcSCg2Fe7bxovRohPUH13jftGEiFuLiZESg2HAYAHJwSYnLrfR",
+    "2nRCoB7xTs98AKdZLQ4bKVFJNFqiJ9MdcsKkC6wPEf7QG5hbRrF86xMgyoNbUfARhg9yuzdxGJgoBMrfcMKsWHwi",
+    "57oMjBXzWe3LCFUPi54gWzCDHRgVBShmKWfWL6BCgVgQ7UBeHpdodMAY1Mi132SDCyTaRWKndKCsSsKU6FqhG9mV"
+   ],
+   "source": "solana-rpc getTransaction",
+   "classification": [
+    {
+     "rule": "jupiter-asset-dev",
+     "detail": "Jupiter asset metadata lists HAW...yAm as the token's dev (creator) wallet."
+    }
+   ],
+   "note": "Dev wallet sent 77.89M HAWK (0.78% of supply) to 13 wallets in a burst of 13 transactions starting at 2024-12-04T22:35:41Z.",
+   "valueUsd": 875651
+  },
+  {
+   "id": "2DXVJhwjMJNc:burst7",
+   "timestamp": 1733351876,
+   "walletAddress": "HAWKXJXitdzwEopf2AtLtBkHR1WCUjGfZDk1uS8P4yAm",
+   "tag": "DEV",
+   "action": "SUPPLY_MOVE",
+   "amount": 41941284,
+   "amountUnit": "HAWK",
+   "signature": "2DXVJhwjMJNcFn6vsDrm4jNunUVuMcEr4os7YdLhfqSehKNNFY1fuzvvWY8suFtS5sDNzb7QMkAMRC7a4XhYzgMh",
+   "signatures": [
+    "2DXVJhwjMJNcFn6vsDrm4jNunUVuMcEr4os7YdLhfqSehKNNFY1fuzvvWY8suFtS5sDNzb7QMkAMRC7a4XhYzgMh",
+    "2J4nVQVv5cP87twQYJmRNDnBWJoXHeYSvznNWs42WhLZBNQdUdPKYeC3Et5tABHjJckXMs89gnxCGy8CYWSgUoRN",
+    "2ydZ8kYHARV6PjNZZiBgFnbje8QnfSb6eYL6YnMPG9NKqXdujVtFMDLPgotq1RQiD9A6fF8WQg99Kawnm4RS8hgn",
+    "4eAamVxcrrVL44ePKjNM3DSwSrq6bs6ENVDrY48jgYLbbxDamHCD4vKvKa9hzH87hACtuMQbTYrh4cGBPRZyDbkW",
+    "5Ti1wN8eXkrNDevonyzda3jtSE1QtDdWS6Ajt6qbmT2ZetRPGMA8m7TawD9taT3BGPipyUTWPhJvy4wddv7GxsGK",
+    "6WgxCyGUw52oABaF4MaiZfDqrjnfhZcFtGsWebVj8FnbDqa3TF6TauyhChQcs5hTyeXDShWUJaNcNwFoygnaeVf",
+    "N9AquMgdn9RAs3WDMXfHhrwzPVveAy6rxxxfw8fg2hBFmb7Jm8grW7ZQ1L6DQpY7ktqiiMEoNXXbxiEYFVog5zN"
+   ],
+   "source": "solana-rpc getTransaction",
+   "classification": [
+    {
+     "rule": "jupiter-asset-dev",
+     "detail": "Jupiter asset metadata lists HAW...yAm as the token's dev (creator) wallet."
+    }
+   ],
+   "note": "Dev wallet sent 41.94M HAWK (0.42% of supply) to 7 wallets in a burst of 7 transactions starting at 2024-12-04T22:37:56Z.",
+   "valueUsd": 306605
+  },
+  {
+   "id": "3M4se1cp7GD2:G9n...EVi:b6",
+   "timestamp": 1733352086,
+   "walletAddress": "G9npe7FKCQZJLDoAwoxkYw89i14zaC2G7pRS1h9FsEVi",
+   "tag": "INSIDER",
+   "action": "SELL",
+   "amount": 17826,
+   "amountUnit": "USD",
+   "signature": "3M4se1cp7GD2U12SP1367vrkT21gjDveAt7EaF7QUiZDZTYv6UEtiakr2xY4DR9hkprWGHrseeCmXRvXxoCwhzGd",
+   "signatures": [
+    "3M4se1cp7GD2U12SP1367vrkT21gjDveAt7EaF7QUiZDZTYv6UEtiakr2xY4DR9hkprWGHrseeCmXRvXxoCwhzGd",
+    "5mGePJAkDo6VDeWVNKczB11RXnPPGRo9SXPFz8nrQTbmVYEQ2aqzRyBSrNugitdrvUZYXwfzRmmMmvRg9ncWL8U8",
+    "MaFpaccQj2AYDvo89Z4iHjA9DCjtYQnhFERR58AGLxjaXdHySP5JyktEi4VQqA7VKcJauAvjeqLTtyoXeh57uKz",
+    "kSFTi8q6qxsLPnS7z4ETX96yQF8Kw5q6qnU8pzhRSTAXyXZyZzA8sCcjWRTy3SUQSPuQHTUVUY2rumLGJSUE56w",
+    "5mWkDGWXyEGXG6NbNkVtoiqDywDkhKEEqeRdukkeurRhtR3AoDwPcMihyWG2Xf812PucCtZDsEc3dCWbJyNp1ijp",
+    "3CL6mxq87cHxTqRLhb8C5wHqMYCNTUxPePjFmZ4a5GCmUG9BTPY6LuxgJrqwErqH5XubRmzMEUcybAiRiB6S8bVU"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:37:56Z.",
+     "signatures": [
+      "2DXVJhwjMJNcFn6vsDrm4jNunUVuMcEr4os7YdLhfqSehKNNFY1fuzvvWY8suFtS5sDNzb7QMkAMRC7a4XhYzgMh"
+     ]
+    }
+   ],
+   "note": "Sold 2.91M HAWK for $17,826 across 6 transactions (62s)."
+  },
+  {
+   "id": "4BQjb6oF81CJ:G9n...EVi:b5",
+   "timestamp": 1733352201,
+   "walletAddress": "G9npe7FKCQZJLDoAwoxkYw89i14zaC2G7pRS1h9FsEVi",
+   "tag": "INSIDER",
+   "action": "SELL",
+   "amount": 15939,
+   "amountUnit": "USD",
+   "signature": "4BQjb6oF81CJbfbyibGaAjP276tsniJKb31qc8MbGGf9CPYKt2KfKkkYs3UopELq14vmQeJsQi7eqknLLgGkEnQh",
+   "signatures": [
+    "4BQjb6oF81CJbfbyibGaAjP276tsniJKb31qc8MbGGf9CPYKt2KfKkkYs3UopELq14vmQeJsQi7eqknLLgGkEnQh",
+    "5EMtZdnMBMV4UgSW9257cjFjbDBFYH1uHcBDLLjh5r8fxVYSjPauNaBwzfaCgEtrSEsCf41uCbdsFioq5H9VgLec",
+    "SHVTqX3SecCYabamhqd5VcWpesscC5XAmMXnnXygopDDyCP1RBknscVVFmCeyAoiSdq2mWJufJERhoCZqV9FsN8",
+    "3gDJUxnsJhS7P6jw1t6Ffgb9FvVTA6WF8D6K83ePEwyaNQZQ2kxMp4zsZgACJgjdG3kijhHb23cejMdy3Sip4Sn5",
+    "YHDhSLYpkvu7R5DZRNKCq2ppRV3oYnUkddbuvMQtXRnFeWP6LBKa64wxGRpLxQJPKnMnCMk5i66wQW7uFniBN6p"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:37:56Z.",
+     "signatures": [
+      "2DXVJhwjMJNcFn6vsDrm4jNunUVuMcEr4os7YdLhfqSehKNNFY1fuzvvWY8suFtS5sDNzb7QMkAMRC7a4XhYzgMh"
+     ]
+    }
+   ],
+   "note": "Sold 2.47M HAWK for $15,939 across 5 transactions (113s)."
+  },
+  {
+   "id": "25gX2RtTfp5B:burst20",
+   "timestamp": 1733352264,
+   "walletAddress": "HAWKXJXitdzwEopf2AtLtBkHR1WCUjGfZDk1uS8P4yAm",
+   "tag": "DEV",
+   "action": "SUPPLY_MOVE",
+   "amount": 293588968,
+   "amountUnit": "HAWK",
+   "signature": "25gX2RtTfp5BuFRpaDuPMgnfPeSmQB5JnFjpeJvpUk5XiMmyWo1J28vkVSn6zgoSd29EQ871hFMx5v8gS6RUbiGR",
+   "signatures": [
+    "25gX2RtTfp5BuFRpaDuPMgnfPeSmQB5JnFjpeJvpUk5XiMmyWo1J28vkVSn6zgoSd29EQ871hFMx5v8gS6RUbiGR",
+    "2M9GZJfLonjX1CabkdbNm2eGtHXjJJX7c98yZTedYM4g6sjzQEqWkL6idNcHqeqiWqNvVB478TjJRFsABuctNktK",
+    "2Wks4zrPPWpxG6N9rLB56m2ENpMRuadckxaG4QtLFLRDSFwVo7QXJDiDXMRB2RpXhzWp9yiHDXZKzfyegCNwFfyN",
+    "2oy9xDwBsFHSTH9fTWnTVy48wVLiM2GRiaGTEbgdUp5h4DYQ562uDbjTzFqp69qpRuKeu3jrAFrqiRdvXAxHW1kd",
+    "3X6RnQQaz3UcYAdwZ4dF3SRWFUZGDwm17NwyyNSS5aFZFi7aHsxpNaMYN7iYLScbFHNfYBsKkjnepJUPx2odpeSB",
+    "3iQKuMBXpZYBWgaUzw6xHY4twCFo6XtYrdpUVsm6T1HxkwRZSrGsA8MuSfzr5UVUrxSSfMZqBH4cMbiepJNw1d4D",
+    "4aXEXkqQwFoeYeNBF1J3iCRzT47qW39xJdbprkqYtnWvH9v7ipWbM7Du1XumHCrbNuiYz1DiEmvVo6juzgLndQn3",
+    "4pnpHb2CCeiHNkikRV3caV7FWrgdAB1jhv8LYQwKYnYXmZHeUwJyxFggUp8baUCxPpkz3245BAt2amkd5RW3qx3T",
+    "4vvwx1wFuZUQvwWL69tRDDFWxDJb427efDSvpny8dsiwHdTySKDk1Crn91a16eU2wPPeerX644ZaiE6AFW9waLGt",
+    "5JJNtHgEgRGm5sxUqnYqEaVQTgm5geGxqECVSWvcJoxt3T62AejP9aCTjfEyZ1WaofPRkE85s8T262g2NCP31HpA",
+    "39c99Zsy9iJyuqtSn1X7xdt2PaAv6c6U5oii2EvXK7BkhhXK5jhJAKrAXDCXwGFb2yeUtCmz1q7xezCUnuJwxHp6",
+    "3z3m52X9zYeWq5wuHVhpgJPAnqfCkgBVW5nnym8w178oV6mvyrQA3mLFTciVqUnrTVKrFxrXHb1zwEiUTkk7YoHQ",
+    "4CJ875677cxW2yh5G8D2Go2vZntBjQ4knaEFkJBo9XoLpouX5Tf6TfJhcCnvfo53kAqv3j7JT7wfAZtkmijysqeN",
+    "4LSQEvVrLuC5py3KsNiZQrYyfjxJKndPSe5j84DGxYBGW9Gn2DVyiRYPzirgEmoNyXcWaqskT5kPqXZvtyeFvrwW",
+    "4mDce6CEi4EX4W73uoykGopFMQeJd2a9Q7y9ziuXstcNDhPw2UDSa8Q8A3tnteDYrgJ2ybDFkWfuoYRduyYNJcD9",
+    "5UHJsf9q7L7GAykibX6WSkGb5yijx2M2vYMs1NPBRwHLdqFFwUqPMp93xjWLaAgsGc3ragZQoABaajRCK9htsveu",
+    "BwqatuSkNUVsyWNWFY4t2hAR89x9qTTtWXzSb6ppoTXdvDpoYAUnHXcGb6E8UoabKBTqjXUTsLzHaSkVM1iUS4C",
+    "C6dpdmpVHdgwyF3UKdsp4JMhJ8KnQTR768gDQeVA9FCumQm7USFY6tuv4Tg2ywzTGKBZbRuQMARpaK7MP9bDG7Q",
+    "MkjfT2GtcMHqB7LiJyJc76hXkrd5siRoy98HG4jBcvjRh3s5DnMsvycq7PQJBsQL8tREx1Q3TUoEHMXnLPbGZTd",
+    "o2SAwPdNjgpypjfE5iMSqtyWPGBCX4n383J31g8wwysFXm5irQQQdUBwcxWGn69LK7p3SYtXVQgonVH4zxBaFPq"
+   ],
+   "source": "solana-rpc getTransaction",
+   "classification": [
+    {
+     "rule": "jupiter-asset-dev",
+     "detail": "Jupiter asset metadata lists HAW...yAm as the token's dev (creator) wallet."
+    }
+   ],
+   "note": "Dev wallet sent 293.59M HAWK (2.94% of supply) to 20 wallets in a burst of 20 transactions starting at 2024-12-04T22:44:24Z.",
+   "valueUsd": 2124211
+  },
+  {
+   "id": "2jtdwB3jwqZH:G93...iia",
+   "timestamp": 1733352341,
+   "walletAddress": "G93RgRZbpKSU9ami6gU3w4VED9weULPo7KK6pmncxiia",
+   "tag": "INSIDER",
+   "action": "BUY",
+   "amount": 16616,
+   "amountUnit": "USD",
+   "signature": "2jtdwB3jwqZHvhoCEi6Dv3fGCPN9Kuwm12oBEpcTUwR7StiHkpJD2UtMKP3vtf6mtBkjZ12oeGMJFSpQAjUu1pnY",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:28:17Z.",
+     "signatures": [
+      "3acevjtdrs1S7DWYeEGUb9Jrq33BMgfzhhbuFKQkWVv2VNZbym495B4Y4KzVVvt9z6wnEvzymLe7dD4YNNeLEyvM"
+     ]
+    }
+   ],
+   "note": "Bought 2.26M HAWK for $16,616."
+  },
+  {
+   "id": "3cujN3Lj9e3F:EpU...tQ6",
+   "timestamp": 1733352342,
+   "walletAddress": "EpUNtE9CCPXHEnJkHXpwAjyYVvZ82mHoSKnvA22tztQ6",
+   "tag": "INSIDER",
+   "action": "SELL",
+   "amount": 44214,
+   "amountUnit": "USD",
+   "signature": "3cujN3Lj9e3Fz54vuHkYYKN88L5yxabsYLyHAa4YsWZ7hxTUeBCBUxM7ZpBs2zBZfxHca6UjHPjmgsZHQBBaQynL",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 14.98M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:44:24Z.",
+     "signatures": [
+      "5JJNtHgEgRGm5sxUqnYqEaVQTgm5geGxqECVSWvcJoxt3T62AejP9aCTjfEyZ1WaofPRkE85s8T262g2NCP31HpA"
+     ]
+    }
+   ],
+   "note": "Sold 7.35M HAWK for $44,214."
+  },
+  {
+   "id": "3bnmnabsUgFp:9NP...wqD",
+   "timestamp": 1733352449,
+   "walletAddress": "9NPTGEBqzxVhnHt5yFxJpZjVQoUqKLzNnBcGL4XBCwqD",
+   "tag": "INSIDER",
+   "action": "SELL",
+   "amount": 18046,
+   "amountUnit": "USD",
+   "signature": "3bnmnabsUgFpiaoc6yM32qhyVLensy9omP9qFRLHHie65vVR64SvoFVWWTe4X1rKu9dvAZC1V5QWB4BaSpTeT4Mm",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 14.98M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:44:24Z.",
+     "signatures": [
+      "4aXEXkqQwFoeYeNBF1J3iCRzT47qW39xJdbprkqYtnWvH9v7ipWbM7Du1XumHCrbNuiYz1DiEmvVo6juzgLndQn3"
+     ]
+    }
+   ],
+   "note": "Sold 2.94M HAWK for $18,046."
+  },
+  {
+   "id": "2xbxMeNZonfU:Hfv...tx9",
+   "timestamp": 1733352757,
+   "walletAddress": "HfvjwBpr1qcJS7oaSYCqgyKkLAnwp4y7HxTboFcL1tx9",
+   "tag": "INSIDER",
+   "action": "SELL",
+   "amount": 24422,
+   "amountUnit": "USD",
+   "signature": "2xbxMeNZonfUPgzCi5QVVLFTLym9sDpcRYgChtcbFvA1BbEXVarrmuwZ4wQLJXJRKkK9HdFcuRHVvEfz7A8vsFnQ",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 14.98M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:44:24Z.",
+     "signatures": [
+      "2M9GZJfLonjX1CabkdbNm2eGtHXjJJX7c98yZTedYM4g6sjzQEqWkL6idNcHqeqiWqNvVB478TjJRFsABuctNktK"
+     ]
+    }
+   ],
+   "note": "Sold 4.68M HAWK for $24,422."
+  },
+  {
+   "id": "5a6TU7zfndpe:9uG...Bud",
+   "timestamp": 1733352809,
+   "walletAddress": "9uGdnYcoefHAWAqm23WWchKBZLVH6dKkQJU27co6yBud",
+   "tag": "INSIDER",
+   "action": "SELL",
+   "amount": 25950,
+   "amountUnit": "USD",
+   "signature": "5a6TU7zfndpeFVbjCbTzvdFqkgUhSm6Dorm86D3AfDmNZcEhbYJaFtdrvyVcoYfu4XvUjqkRCaqgJLdshEuwqoqL",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 14.98M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:44:24Z.",
+     "signatures": [
+      "4pnpHb2CCeiHNkikRV3caV7FWrgdAB1jhv8LYQwKYnYXmZHeUwJyxFggUp8baUCxPpkz3245BAt2amkd5RW3qx3T"
+     ]
+    }
+   ],
+   "note": "Sold 4.93M HAWK for $25,950."
+  },
+  {
+   "id": "3bLqECLQm7wf:9NP...wqD:b4",
+   "timestamp": 1733353042,
+   "walletAddress": "9NPTGEBqzxVhnHt5yFxJpZjVQoUqKLzNnBcGL4XBCwqD",
+   "tag": "INSIDER",
+   "action": "SELL",
+   "amount": 21436,
+   "amountUnit": "USD",
+   "signature": "3bLqECLQm7wfPNnFAfqY3oqQMzzundMo3WVTZHH3YdFG3CkDfJykczVHaewVuiurRC5VNGEVuYagP6yEAzpM5peF",
+   "signatures": [
+    "3bLqECLQm7wfPNnFAfqY3oqQMzzundMo3WVTZHH3YdFG3CkDfJykczVHaewVuiurRC5VNGEVuYagP6yEAzpM5peF",
+    "5N4eKZcVJFCjm2gqZzEWsmhCLRSC42EicohBbXMCNYBUseuhh1hGA7RTTZRnAtiGt1fPCy3gcbUpRGAj3DLotZpg",
+    "2H4548DZXAYFuGVuKt1fMjqecssjzLUX7g71xKv1VRZujRFHnoPmLPXN4JbECcMzXth2pHmfSCUAoeG3KYoFCZwv",
+    "4zL5Abzcm8QC6XDbnK2ia7WTUFyRQxYJEyt9Q9AKo7kes7rvrjhynfAjRhwSd5jEcaPZMAmgFVVSPcWiwMkJ9FNT"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 14.98M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:44:24Z.",
+     "signatures": [
+      "4aXEXkqQwFoeYeNBF1J3iCRzT47qW39xJdbprkqYtnWvH9v7ipWbM7Du1XumHCrbNuiYz1DiEmvVo6juzgLndQn3"
+     ]
+    }
+   ],
+   "note": "Sold 3.99M HAWK for $21,436 across 4 transactions (76s)."
+  },
+  {
+   "id": "Gn7hTijW48ST:72p...kaL",
+   "timestamp": 1733353088,
+   "walletAddress": "72p1RcXTjX6nuCowiqdZEMmpUntv9Cdm9pyDcxYtZkaL",
+   "tag": "INSIDER",
+   "action": "SELL",
+   "amount": 24666,
+   "amountUnit": "USD",
+   "signature": "Gn7hTijW48STbpuRLw7irqQENg2sje6LbBgcn9yvoYSaBnna1HELU4EnQsWd1ZScckyyvV3qeArbN7F3AsCzva5",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:36:15Z.",
+     "signatures": [
+      "4fkbHLCTSC9U7QXoYRpgLtbgwzTyNvwN3iaJe32vSpyTbdfjmZ2pbmCHrLnaL1mtSFvvHk6Jx8Lx8Wkh4bcdL4iw"
+     ]
+    }
+   ],
+   "note": "Sold 4.72M HAWK for $24,666."
+  }
+ ],
+ "wallets": [
+  {
+   "address": "HAWKXJXitdzwEopf2AtLtBkHR1WCUjGfZDk1uS8P4yAm",
+   "display": "HAW...yAm",
+   "tag": "DEV",
+   "evidence": [
+    {
+     "rule": "jupiter-asset-dev",
+     "detail": "Jupiter asset metadata lists HAW...yAm as the token's dev (creator) wallet."
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 0,
+    "buyTok": 0,
+    "sellTok": 0,
+    "first": null,
+    "last": 0,
+    "lastSell": 0,
+    "maxTrade": 0,
+    "trades": 0,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "2VrAjFUdnHohAjCghEUfN87uDmu79FZkrUQpdq4Yy8Vo",
+   "display": "2Vr...8Vo",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 14.98M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:44:28Z.",
+     "signatures": [
+      "3z3m52X9zYeWq5wuHVhpgJPAnqfCkgBVW5nnym8w178oV6mvyrQA3mLFTciVqUnrTVKrFxrXHb1zwEiUTkk7YoHQ"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 0,
+    "buyTok": 0,
+    "sellTok": 0,
+    "first": null,
+    "last": 0,
+    "lastSell": 0,
+    "maxTrade": 0,
+    "trades": 0,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "FcquwbWM35Ybg2vTGkAXgNuaeJCymitjs9E8iFE5LgxB",
+   "display": "Fcq...gxB",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 14.98M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:44:28Z.",
+     "signatures": [
+      "5UHJsf9q7L7GAykibX6WSkGb5yijx2M2vYMs1NPBRwHLdqFFwUqPMp93xjWLaAgsGc3ragZQoABaajRCK9htsveu"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 0,
+    "buyTok": 0,
+    "sellTok": 0,
+    "first": null,
+    "last": 0,
+    "lastSell": 0,
+    "maxTrade": 0,
+    "trades": 0,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "9hcbgR291rnBCNUomjKYHNWKistmvCsdqSDKj3bohFii",
+   "display": "9hc...Fii",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 14.98M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:44:28Z.",
+     "signatures": [
+      "4LSQEvVrLuC5py3KsNiZQrYyfjxJKndPSe5j84DGxYBGW9Gn2DVyiRYPzirgEmoNyXcWaqskT5kPqXZvtyeFvrwW"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 0,
+    "buyTok": 0,
+    "sellTok": 0,
+    "first": null,
+    "last": 0,
+    "lastSell": 0,
+    "maxTrade": 0,
+    "trades": 0,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "FDAhisWn8EFwEpWTRQKTuutXe4gvy56Z7cpyU572oaQZ",
+   "display": "FDA...aQZ",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 14.98M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:44:28Z.",
+     "signatures": [
+      "o2SAwPdNjgpypjfE5iMSqtyWPGBCX4n383J31g8wwysFXm5irQQQdUBwcxWGn69LK7p3SYtXVQgonVH4zxBaFPq"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 0,
+    "buyTok": 0,
+    "sellTok": 0,
+    "first": null,
+    "last": 0,
+    "lastSell": 0,
+    "maxTrade": 0,
+    "trades": 0,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "DK7o8NLoJXSPbmYnkx8njB8Fj893qvjmW66jgR3Bjvg4",
+   "display": "DK7...vg4",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 14.98M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:44:28Z.",
+     "signatures": [
+      "4mDce6CEi4EX4W73uoykGopFMQeJd2a9Q7y9ziuXstcNDhPw2UDSa8Q8A3tnteDYrgJ2ybDFkWfuoYRduyYNJcD9"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 0,
+    "buyTok": 0,
+    "sellTok": 0,
+    "first": null,
+    "last": 0,
+    "lastSell": 0,
+    "maxTrade": 0,
+    "trades": 0,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "ASaC6s1pUWZhS4q429azMDhGW6UhDLAb5f9bEYJCTw7H",
+   "display": "ASa...w7H",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 14.98M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:44:28Z.",
+     "signatures": [
+      "39c99Zsy9iJyuqtSn1X7xdt2PaAv6c6U5oii2EvXK7BkhhXK5jhJAKrAXDCXwGFb2yeUtCmz1q7xezCUnuJwxHp6"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 0,
+    "buyTok": 0,
+    "sellTok": 0,
+    "first": null,
+    "last": 0,
+    "lastSell": 0,
+    "maxTrade": 0,
+    "trades": 0,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "BG54apBJiZPNoUmErnQFXNSje3wDGhCkXs7Kg8PT9Njc",
+   "display": "BG5...Njc",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 14.98M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:44:28Z.",
+     "signatures": [
+      "4CJ875677cxW2yh5G8D2Go2vZntBjQ4knaEFkJBo9XoLpouX5Tf6TfJhcCnvfo53kAqv3j7JT7wfAZtkmijysqeN"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 0,
+    "buyTok": 0,
+    "sellTok": 0,
+    "first": null,
+    "last": 0,
+    "lastSell": 0,
+    "maxTrade": 0,
+    "trades": 0,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "DCdcSchTN2DGdmukxSmgdTehMN9Gns2GJPFi8aEWjzY1",
+   "display": "DCd...zY1",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 14.98M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:44:28Z.",
+     "signatures": [
+      "BwqatuSkNUVsyWNWFY4t2hAR89x9qTTtWXzSb6ppoTXdvDpoYAUnHXcGb6E8UoabKBTqjXUTsLzHaSkVM1iUS4C"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 0,
+    "buyTok": 0,
+    "sellTok": 0,
+    "first": null,
+    "last": 0,
+    "lastSell": 0,
+    "maxTrade": 0,
+    "trades": 0,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "3VCTHKxUKLd7HytPBFBtw44EsVbaWoq3vvVXoExzknez",
+   "display": "3VC...nez",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 14.98M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:44:28Z.",
+     "signatures": [
+      "C6dpdmpVHdgwyF3UKdsp4JMhJ8KnQTR768gDQeVA9FCumQm7USFY6tuv4Tg2ywzTGKBZbRuQMARpaK7MP9bDG7Q"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 0,
+    "buyTok": 0,
+    "sellTok": 0,
+    "first": null,
+    "last": 0,
+    "lastSell": 0,
+    "maxTrade": 0,
+    "trades": 0,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "2NxCFcyWhmCxxwRrQkmxKsaofs9tigAYLhuBm2m5pcCL",
+   "display": "2Nx...cCL",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 14.98M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:44:28Z.",
+     "signatures": [
+      "MkjfT2GtcMHqB7LiJyJc76hXkrd5siRoy98HG4jBcvjRh3s5DnMsvycq7PQJBsQL8tREx1Q3TUoEHMXnLPbGZTd"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 0,
+    "buyTok": 0,
+    "sellTok": 0,
+    "first": null,
+    "last": 0,
+    "lastSell": 0,
+    "maxTrade": 0,
+    "trades": 0,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "DxUTDBdpEaZP1DeusNERwCs1CsfjMDxfcCJifPhUDqTX",
+   "display": "DxU...qTX",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 11.98M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:44:24Z.",
+     "signatures": [
+      "2Wks4zrPPWpxG6N9rLB56m2ENpMRuadckxaG4QtLFLRDSFwVo7QXJDiDXMRB2RpXhzWp9yiHDXZKzfyegCNwFfyN"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 46761.63668955322,
+    "buyTok": 0,
+    "sellTok": 4990000,
+    "first": 1733353766,
+    "last": 1733353766,
+    "lastSell": 1733353766,
+    "maxTrade": 46761.63668955322,
+    "trades": 1,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "EpUNtE9CCPXHEnJkHXpwAjyYVvZ82mHoSKnvA22tztQ6",
+   "display": "EpU...tQ6",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 14.98M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:44:24Z.",
+     "signatures": [
+      "5JJNtHgEgRGm5sxUqnYqEaVQTgm5geGxqECVSWvcJoxt3T62AejP9aCTjfEyZ1WaofPRkE85s8T262g2NCP31HpA"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 44213.93246350026,
+    "buyTok": 0,
+    "sellTok": 7354703.239,
+    "first": 1733352342,
+    "last": 1733352342,
+    "lastSell": 1733352342,
+    "maxTrade": 40171.902584778305,
+    "trades": 2,
+    "mev": 0,
+    "windowUsd": 44213.93246350026
+   }
+  },
+  {
+   "address": "9NPTGEBqzxVhnHt5yFxJpZjVQoUqKLzNnBcGL4XBCwqD",
+   "display": "9NP...wqD",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 14.98M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:44:24Z.",
+     "signatures": [
+      "4aXEXkqQwFoeYeNBF1J3iCRzT47qW39xJdbprkqYtnWvH9v7ipWbM7Du1XumHCrbNuiYz1DiEmvVo6juzgLndQn3"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 75598.76395838265,
+    "buyTok": 0,
+    "sellTok": 12630869.363400001,
+    "first": 1733352449,
+    "last": 1733365865,
+    "lastSell": 1733365865,
+    "maxTrade": 18045.598178127875,
+    "trades": 18,
+    "mev": 0,
+    "windowUsd": 44658.81081214065
+   }
+  },
+  {
+   "address": "C9qWTVVYE3d9PJaGYyzVt6xnkE9s4Uuc2xSBWfGra8Fz",
+   "display": "C9q...8Fz",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 11.98M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:44:24Z.",
+     "signatures": [
+      "2oy9xDwBsFHSTH9fTWnTVy48wVLiM2GRiaGTEbgdUp5h4DYQ562uDbjTzFqp69qpRuKeu3jrAFrqiRdvXAxHW1kd"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 0,
+    "buyTok": 0,
+    "sellTok": 0,
+    "first": null,
+    "last": 0,
+    "lastSell": 0,
+    "maxTrade": 0,
+    "trades": 0,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "9UfK6FbBTHdrsvHpKQ18Tz125V3ttvarLuyBea7SSkdP",
+   "display": "9Uf...kdP",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 14.98M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:44:24Z.",
+     "signatures": [
+      "3iQKuMBXpZYBWgaUzw6xHY4twCFo6XtYrdpUVsm6T1HxkwRZSrGsA8MuSfzr5UVUrxSSfMZqBH4cMbiepJNw1d4D"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 0,
+    "buyTok": 0,
+    "sellTok": 0,
+    "first": null,
+    "last": 0,
+    "lastSell": 0,
+    "maxTrade": 0,
+    "trades": 0,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "44SXvj8m5DLXiKzrBdmWHcTF1R3vSc6sQifBUMK1JX7a",
+   "display": "44S...X7a",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 14.98M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:44:24Z.",
+     "signatures": [
+      "4vvwx1wFuZUQvwWL69tRDDFWxDJb427efDSvpny8dsiwHdTySKDk1Crn91a16eU2wPPeerX644ZaiE6AFW9waLGt"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 0,
+    "buyTok": 0,
+    "sellTok": 0,
+    "first": null,
+    "last": 0,
+    "lastSell": 0,
+    "maxTrade": 0,
+    "trades": 0,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "9uGdnYcoefHAWAqm23WWchKBZLVH6dKkQJU27co6yBud",
+   "display": "9uG...Bud",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 14.98M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:44:24Z.",
+     "signatures": [
+      "4pnpHb2CCeiHNkikRV3caV7FWrgdAB1jhv8LYQwKYnYXmZHeUwJyxFggUp8baUCxPpkz3245BAt2amkd5RW3qx3T"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 25949.8138903852,
+    "buyTok": 0,
+    "sellTok": 4930000,
+    "first": 1733352809,
+    "last": 1733352809,
+    "lastSell": 1733352809,
+    "maxTrade": 25949.8138903852,
+    "trades": 1,
+    "mev": 0,
+    "windowUsd": 25949.8138903852
+   }
+  },
+  {
+   "address": "6aiULxYJzk7BCVtqST59AtLgVRvNhqJUGDEhL6e5pLUk",
+   "display": "6ai...LUk",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 14.98M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:44:24Z.",
+     "signatures": [
+      "25gX2RtTfp5BuFRpaDuPMgnfPeSmQB5JnFjpeJvpUk5XiMmyWo1J28vkVSn6zgoSd29EQ871hFMx5v8gS6RUbiGR"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 0,
+    "buyTok": 0,
+    "sellTok": 0,
+    "first": null,
+    "last": 0,
+    "lastSell": 0,
+    "maxTrade": 0,
+    "trades": 0,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "71doURVXXtf9n9JDfEp13FWN5QkhvhG6NVSDYBU2ghF7",
+   "display": "71d...hF7",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 14.98M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:44:24Z.",
+     "signatures": [
+      "3X6RnQQaz3UcYAdwZ4dF3SRWFUZGDwm17NwyyNSS5aFZFi7aHsxpNaMYN7iYLScbFHNfYBsKkjnepJUPx2odpeSB"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 0,
+    "buyTok": 0,
+    "sellTok": 0,
+    "first": null,
+    "last": 0,
+    "lastSell": 0,
+    "maxTrade": 0,
+    "trades": 0,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "HfvjwBpr1qcJS7oaSYCqgyKkLAnwp4y7HxTboFcL1tx9",
+   "display": "Hfv...tx9",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 14.98M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:44:24Z.",
+     "signatures": [
+      "2M9GZJfLonjX1CabkdbNm2eGtHXjJJX7c98yZTedYM4g6sjzQEqWkL6idNcHqeqiWqNvVB478TjJRFsABuctNktK"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 61533.34272764575,
+    "buyTok": 0,
+    "sellTok": 14896162.5536,
+    "first": 1733352757,
+    "last": 1733367672,
+    "lastSell": 1733367672,
+    "maxTrade": 29764.28928560275,
+    "trades": 3,
+    "mev": 0,
+    "windowUsd": 24422.345896350384
+   }
+  },
+  {
+   "address": "G9npe7FKCQZJLDoAwoxkYw89i14zaC2G7pRS1h9FsEVi",
+   "display": "G9n...EVi",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:37:56Z.",
+     "signatures": [
+      "2DXVJhwjMJNcFn6vsDrm4jNunUVuMcEr4os7YdLhfqSehKNNFY1fuzvvWY8suFtS5sDNzb7QMkAMRC7a4XhYzgMh"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 1733351242,
+    "buyUsd": 0.973142563794062,
+    "sellUsd": 33765.07258875881,
+    "buyTok": 56.634128,
+    "sellTok": 5381835.261446,
+    "first": 1733351242,
+    "last": 1733352314,
+    "lastSell": 1733352314,
+    "maxTrade": 3566.916425964811,
+    "trades": 12,
+    "mev": 0,
+    "windowUsd": 33766.04573132261
+   }
+  },
+  {
+   "address": "9Z2nNiPJiMLAEYW7jxoGJkQGU3G7kgYAz77tZa7iYyET",
+   "display": "9Z2...yET",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:37:56Z.",
+     "signatures": [
+      "N9AquMgdn9RAs3WDMXfHhrwzPVveAy6rxxxfw8fg2hBFmb7Jm8grW7ZQ1L6DQpY7ktqiiMEoNXXbxiEYFVog5zN"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 0,
+    "buyTok": 0,
+    "sellTok": 0,
+    "first": null,
+    "last": 0,
+    "lastSell": 0,
+    "maxTrade": 0,
+    "trades": 0,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "HZ5kmaqGB3fT3y6pEJLDMhAsdZtuzzYgynZbCpJ45WnL",
+   "display": "HZ5...WnL",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:37:56Z.",
+     "signatures": [
+      "6WgxCyGUw52oABaF4MaiZfDqrjnfhZcFtGsWebVj8FnbDqa3TF6TauyhChQcs5hTyeXDShWUJaNcNwFoygnaeVf"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 0,
+    "buyTok": 0,
+    "sellTok": 0,
+    "first": null,
+    "last": 0,
+    "lastSell": 0,
+    "maxTrade": 0,
+    "trades": 0,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "CfcQTGyVLGdXe8g97sMBxwgjYntQcjTgZMghMARUNbS5",
+   "display": "Cfc...bS5",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:37:56Z.",
+     "signatures": [
+      "5Ti1wN8eXkrNDevonyzda3jtSE1QtDdWS6Ajt6qbmT2ZetRPGMA8m7TawD9taT3BGPipyUTWPhJvy4wddv7GxsGK"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 34766.34463552739,
+    "buyTok": 0,
+    "sellTok": 5980827.0984000005,
+    "first": 1733355433,
+    "last": 1733355433,
+    "lastSell": 1733355433,
+    "maxTrade": 31317.92868479161,
+    "trades": 2,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "BFXuUSmMJS7dbX4oNDnyP5HJBT4XX2VLTpoyjB8jzcaT",
+   "display": "BFX...caT",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:37:56Z.",
+     "signatures": [
+      "2J4nVQVv5cP87twQYJmRNDnBWJoXHeYSvznNWs42WhLZBNQdUdPKYeC3Et5tABHjJckXMs89gnxCGy8CYWSgUoRN"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 0,
+    "buyTok": 0,
+    "sellTok": 0,
+    "first": null,
+    "last": 0,
+    "lastSell": 0,
+    "maxTrade": 0,
+    "trades": 0,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "EgrMG9u6LgpTFn4yiygKmKoisxfXUy1TW92wj6ApjhQz",
+   "display": "Egr...hQz",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:37:56Z.",
+     "signatures": [
+      "4eAamVxcrrVL44ePKjNM3DSwSrq6bs6ENVDrY48jgYLbbxDamHCD4vKvKa9hzH87hACtuMQbTYrh4cGBPRZyDbkW"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 0,
+    "buyTok": 0,
+    "sellTok": 0,
+    "first": null,
+    "last": 0,
+    "lastSell": 0,
+    "maxTrade": 0,
+    "trades": 0,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "2976dm92KRUJS3nERBTabnSrSDmYJCHZCbWFTe5HgZ8M",
+   "display": "297...Z8M",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:37:56Z.",
+     "signatures": [
+      "2ydZ8kYHARV6PjNZZiBgFnbje8QnfSb6eYL6YnMPG9NKqXdujVtFMDLPgotq1RQiD9A6fF8WQg99Kawnm4RS8hgn"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 18144.173725338875,
+    "buyTok": 0,
+    "sellTok": 5982025.4208,
+    "first": 1733368811,
+    "last": 1733368811,
+    "lastSell": 1733368811,
+    "maxTrade": 14517.010676187561,
+    "trades": 2,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "89NinRFCmDDLa7WazqZaM6MeFQw1i6YdTGXNk7kZ9tD2",
+   "display": "89N...tD2",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:36:31Z.",
+     "signatures": [
+      "57oMjBXzWe3LCFUPi54gWzCDHRgVBShmKWfWL6BCgVgQ7UBeHpdodMAY1Mi132SDCyTaRWKndKCsSsKU6FqhG9mV"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 0,
+    "buyTok": 0,
+    "sellTok": 0,
+    "first": null,
+    "last": 0,
+    "lastSell": 0,
+    "maxTrade": 0,
+    "trades": 0,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "3GG86ivKQe3fshPQsW53v13qUVpQyWpR4swWixNThHAH",
+   "display": "3GG...HAH",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:36:22Z.",
+     "signatures": [
+      "217Aixkf9UbudkGfBsp4M8Apyx4yzxGJDMjqZMMcSCg2Fe7bxovRohPUH13jftGEiFuLiZESg2HAYAHJwSYnLrfR"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 0,
+    "buyTok": 0,
+    "sellTok": 0,
+    "first": null,
+    "last": 0,
+    "lastSell": 0,
+    "maxTrade": 0,
+    "trades": 0,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "5Nk3tnSveGRNiWoEpFoQNg7wREbxSPomGQqFTxeCLT3p",
+   "display": "5Nk...T3p",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:36:22Z.",
+     "signatures": [
+      "2nRCoB7xTs98AKdZLQ4bKVFJNFqiJ9MdcsKkC6wPEf7QG5hbRrF86xMgyoNbUfARhg9yuzdxGJgoBMrfcMKsWHwi"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 41492.536527818134,
+    "buyTok": 0,
+    "sellTok": 6017084.714,
+    "first": 1733356356,
+    "last": 1733359199,
+    "lastSell": 1733359199,
+    "maxTrade": 26665.847613212114,
+    "trades": 3,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "HauDstXrVdmihyZSsPEfczZtiFjUJWqL2qHXCUHRqgXr",
+   "display": "Hau...gXr",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:36:18Z.",
+     "signatures": [
+      "Tmxg1x2A6o3CVYm2utD5FmoL7pgM9UUK674Cuzcf18UFKndbASXfPd92Dji324ZAr5dPMeUP2V65rvYtk184E15"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 40452.318619040096,
+    "buyTok": 0,
+    "sellTok": 5943679.104,
+    "first": 1733353202,
+    "last": 1733353388,
+    "lastSell": 1733353388,
+    "maxTrade": 24085.924358202585,
+    "trades": 2,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "4yQJLE3DeXmFugVnLwZW8bxt4Mc1PE1XTG5WSArqojmz",
+   "display": "4yQ...jmz",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:36:15Z.",
+     "signatures": [
+      "2JKuzaBJpwaKgT8VA2iKhLpCRytjh56iMHN6G31GHkME25nugAYg5Fdg7dJqKvahBJN5W2WsQxYg9J1ddeh5JLd9"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 0,
+    "buyTok": 0,
+    "sellTok": 0,
+    "first": null,
+    "last": 0,
+    "lastSell": 0,
+    "maxTrade": 0,
+    "trades": 0,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "72p1RcXTjX6nuCowiqdZEMmpUntv9Cdm9pyDcxYtZkaL",
+   "display": "72p...kaL",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:36:15Z.",
+     "signatures": [
+      "4fkbHLCTSC9U7QXoYRpgLtbgwzTyNvwN3iaJe32vSpyTbdfjmZ2pbmCHrLnaL1mtSFvvHk6Jx8Lx8Wkh4bcdL4iw"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 30865.47635905156,
+    "buyTok": 0,
+    "sellTok": 5907729.432,
+    "first": 1733352896,
+    "last": 1733353088,
+    "lastSell": 1733353088,
+    "maxTrade": 24666.09871037203,
+    "trades": 3,
+    "mev": 0,
+    "windowUsd": 30865.47635905156
+   }
+  },
+  {
+   "address": "Hfz1MLzjjSwfhYvq51c2K66xaSY3qtxJqUdW1VNhDENC",
+   "display": "Hfz...ENC",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:36:01Z.",
+     "signatures": [
+      "2H9ExR3ZSyv9MzCgkLGZKwSoMEL1bAkMtC6sCB12Cu6Wcq3X4s1wzPY9RocpEyDmj8NxWvKFMcD1c7r3JMDqtJxr"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 2177.8305747762824,
+    "buyTok": 0,
+    "sellTok": 326549,
+    "first": 1733356827,
+    "last": 1733356827,
+    "lastSell": 1733356827,
+    "maxTrade": 2177.8305747762824,
+    "trades": 1,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "AbYgzWgFSYzPYos9KzgtsTfmDPhZTgFHghujkUD8T3KP",
+   "display": "AbY...3KP",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:36:01Z.",
+     "signatures": [
+      "3kcgkbPCpTyQV1nZjfd6FmodfmVZa7wgxBJyZypk543pGLm3tC7f7bKHh4jf9BdhXuF6iK7XGpCJboFy4bPorZdW"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 0,
+    "buyTok": 0,
+    "sellTok": 0,
+    "first": null,
+    "last": 0,
+    "lastSell": 0,
+    "maxTrade": 0,
+    "trades": 0,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "3gmXCm6rD2JUBW6TkVkX8k9VrsJFD2TFgJDMhZs8Jo7u",
+   "display": "3gm...o7u",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:35:53Z.",
+     "signatures": [
+      "5vMx7cqzCEoDiyQncErWcKgCGm1TnMEydHjJPVEUUtp83HmTvetqV74H1H4tPVWF936caTYk6otsjsNjnZrDE9zR"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 0,
+    "buyTok": 0,
+    "sellTok": 0,
+    "first": null,
+    "last": 0,
+    "lastSell": 0,
+    "maxTrade": 0,
+    "trades": 0,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "35gRuSGrifF4VQacQN4fqEo4Kh5oRjJgNdtGVpFcDiTD",
+   "display": "35g...iTD",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:35:53Z.",
+     "signatures": [
+      "43kjGGMN9AqYG1cWLpz9xasKTpwyuQZFqwHaaQAomoBjUv9VAw9G6B2qgjMUmuy1LnDUehCNKwKZjATWDgRGTCHR"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 0,
+    "buyTok": 0,
+    "sellTok": 0,
+    "first": null,
+    "last": 0,
+    "lastSell": 0,
+    "maxTrade": 0,
+    "trades": 0,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "B52kkg9f2VJh67umQSjR4KRkAxcdFAeKsjsNJjNT6MtA",
+   "display": "B52...MtA",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:35:51Z.",
+     "signatures": [
+      "2Js2smnusTiJXyu4v4Ckz9CEEPNMG7LcjoyXAgVR26uocby8TExvE3nQbWJn14VBgtJyehFBXZXdbmiTRvWQ4vna"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 0,
+    "buyTok": 0,
+    "sellTok": 0,
+    "first": null,
+    "last": 0,
+    "lastSell": 0,
+    "maxTrade": 0,
+    "trades": 0,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "7iG6gHFXpDCUU7QUwjbdk3JyTYQ79M3rPfu8RACAKp1h",
+   "display": "7iG...p1h",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:35:41Z.",
+     "signatures": [
+      "3NJRSV394KqA56eJxZQWjGXRX4SYsFoJsRc7MEMmq4d5xrU8aDSqAFxLMbh6mxD6zZ4RyC8t5TXYippXqpZ8WjG9"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 0,
+    "buyTok": 0,
+    "sellTok": 0,
+    "first": null,
+    "last": 0,
+    "lastSell": 0,
+    "maxTrade": 0,
+    "trades": 0,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "95XhfrLGtPxR71N2hjH9q5s82u4Pa49imXdP4UBVbpp1",
+   "display": "95X...pp1",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:35:41Z.",
+     "signatures": [
+      "3LbE1gx5ftvCgBQtqfQHQeh31zEdMwhW7Xby8RBrFsjgYsAzjj14pt2r9S3t9JvT4EUvfX7qGx1JMmf2j5fDmGsq"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 0,
+    "buyTok": 0,
+    "sellTok": 0,
+    "first": null,
+    "last": 0,
+    "lastSell": 0,
+    "maxTrade": 0,
+    "trades": 0,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "4Uny4xAeDfZ53ymZkJNTTc8DToHAqKCBjucdoqcsPgeC",
+   "display": "4Un...geC",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:35:32Z.",
+     "signatures": [
+      "2A7fwAKm2xUrTVWZUcRTM59qgJ3raWX9DoKj1dY1k2rWWiWvbpg48VqYkWabAGWULGgH5ox6P5TXoypxynb6hycq"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 0,
+    "buyTok": 0,
+    "sellTok": 0,
+    "first": null,
+    "last": 0,
+    "lastSell": 0,
+    "maxTrade": 0,
+    "trades": 0,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "JDfQ45JkTzfu34aBDhDH89vvjetoidkhuwQPMBgZBQjh",
+   "display": "JDf...Qjh",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:35:32Z.",
+     "signatures": [
+      "5mKDcXfbj1R8BdyTqHqUcRpn96ESifBeWxuQ4kFQqGpm6D4hgoZmr8HRgnkVdkYu1WcwwTXA7QTNnntTwsgXx2aL"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 0,
+    "buyTok": 0,
+    "sellTok": 0,
+    "first": null,
+    "last": 0,
+    "lastSell": 0,
+    "maxTrade": 0,
+    "trades": 0,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "ApnqmJnvZjUoixXe8HC7jpGwcAh8U1Mf5Fg3SGPkZt5C",
+   "display": "Apn...t5C",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:35:32Z.",
+     "signatures": [
+      "UwkYjy2pYZ1FFhfyihRxGkGVtbgGjCvXJPvWhJf2YvovbKfx2YRjKh3caD7UmqaHM1kLRJ4Tc4FTwkfWa7F8esG"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 0,
+    "buyTok": 0,
+    "sellTok": 0,
+    "first": null,
+    "last": 0,
+    "lastSell": 0,
+    "maxTrade": 0,
+    "trades": 0,
+    "mev": 0,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "8f47RFuzGvsfUZDXnGPgdaBUDQSNhR7s4Uyjh3m5LRiV",
+   "display": "8f4...RiV",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:35:12Z.",
+     "signatures": [
+      "2F7pBkxzPVbfdgr4QJ7pVRTxNnb5QoQe87sWaFLj1Zsc72JxLk56LpghAxqvhagKs2mkYmWcerirfkQyeSHbcSEy"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "2WHYU7MG3WCLdibcbQqkhtArqLXCsL4wrsGyngES2iKY",
+   "display": "2WH...iKY",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:35:09Z.",
+     "signatures": [
+      "36RYc4t88WhfhfNB2e2J9fGfbNhTBCxQqPLfbMS1rsVnmKEmw27rkwXj1x7ru3oq3SnJNh9nG9qZRBCuoQY7XGSH"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "GEpNNnqGcmJqqDQbkW5qw3aS6d5zxXX5aNqFrB7qZHri",
+   "display": "GEp...Hri",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:35:09Z.",
+     "signatures": [
+      "48ynr5b9zg3F6vRTS3cWgwXKG4acYHLvvtg5enoAxnHEtTa1ENMf8J2AQsBt4dVTYx5dCiQmgoD77g4HeKDBhmwy"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "FqAyiTu6seannxGmiiTeivCKJi9afCdsRvA5guwPeptu",
+   "display": "FqA...ptu",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:35:08Z.",
+     "signatures": [
+      "217bKkPt49u7je6u61DJxMYE2HzatBxFsAFMx8W4iu3EttBNr5zYYW9XJater53bdL4q6WPtzCgo7v1jNzzvQowG"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "6hN5DssWWbUAyesEw6AGLxMJc4AGRUdP75CXjqBn1r56",
+   "display": "6hN...r56",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:35:07Z.",
+     "signatures": [
+      "358WmjGfHpe6gct8NGUurmTpYx9dw4o2jy7Ta8XNxJFgi4oE7GEE1ZBKaWLSyPRD5UQJzrzTpSFpk3k6phbdoHxY"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "3ViCmq9xCtguiFL4LRqMcmztsPeijAwXjjvDeWKACizV",
+   "display": "3Vi...izV",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:34:55Z.",
+     "signatures": [
+      "4Hvdek5Baqc5CEQe21NtABP1uf6B4TaLMjUbmvYDhZQNaW1ttSfm4NhXNtE8gEsXwhEFSjEtxy8vec5zts6Ej9Qv"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "3KXNqBVsdJjMhSGWEZMx7mE9ErjSjz8yU9KaSVncoMff",
+   "display": "3KX...Mff",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:34:48Z.",
+     "signatures": [
+      "3ZZKwdtbYgqUvs1v2JhL97i3rhoUSB5KQa1NRmxE1mksZXDYvy7kY4Z8yrNtKZumXNDbooNjVfs3kk4QhmXnH7Pi"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "jeyikGcbkHDKZ6eL5tNqJBwLD2C3YsKwWeqMmHznM8C",
+   "display": "jey...M8C",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:34:48Z.",
+     "signatures": [
+      "3dg5rKsJwdz2MiLkYhK77Smtpd9VNagByWP6rfLrWZ161R7UsPijtG4jXVJECkRPNabT3ajDwtsY4DLqqKLZQBoy"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "22Ea4LsAtSjZ3HcfjtjHcAGEnfuymUEWMjSMqtHCHWTM",
+   "display": "22E...WTM",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:34:47Z.",
+     "signatures": [
+      "JY8HRKqhYnGaNycSoR1BUNxkCY7DyNaXeF1wAJtyww8xbCzbcGx5jPsYkMgcEtw5Ge5hvXEf2FSJn1hHh4KCPQ8"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "54w21m39VY7jnfZF8CEQZQbHrvzZ3cA1ue7uZLbLqX9i",
+   "display": "54w...X9i",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:34:47Z.",
+     "signatures": [
+      "4cP56YEdgrqvC7BVHrBZ3LTW795U98EiR6GK8efWCKgYAaDUh1MCyMXmdZwscLBmMdQHZjKgaYpDXCqtrK1usEhR"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "ADhkjAS1ZY1PreG4yCz7TqYVNDvAqUNUcHnXRANLRMiH",
+   "display": "ADh...MiH",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:34:29Z.",
+     "signatures": [
+      "5xpGb9BpemtVbJ4nUpe2B5RmoqZuMBnfySvoDabCErqoZGE7fhF6vhu4pzUTjQ2ZXmzHzcGXzy4swfc1HuhuxFYo"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "FwnHJjgMwmE99Gj5s8Cw9RffeeCHg9tMmNTJVRsy9nfz",
+   "display": "Fwn...nfz",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:34:29Z.",
+     "signatures": [
+      "wg6wVbEqEfbWczxyVbrFf8GkchfZqb2cBVsnNKeg1kVmbL9RGprT7tkpV3PRmmGumyoFER3UJQFmQyiCWg3KQpS"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "BZWbUXYmqdAEz4ytCq6tGfByYKDNPYtB1JGqgEzQGt4K",
+   "display": "BZW...t4K",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:34:29Z.",
+     "signatures": [
+      "4tYh91DCSammDzLbcx5aU7TssqBDpSaR4XSXDzc2Pr7DQyutFU6Cic7Sf8EdsqadZaoewQiZwETYaMoPbbLjex3K"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "FYXdkP8ECBigPbRymf5w8e48Zo3Sv92Cn9BMvzm4yM6c",
+   "display": "FYX...M6c",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:34:29Z.",
+     "signatures": [
+      "3XoT8o87eoPCY9RLetgmCRZ3X4tqeLWCGX2gX5dZdHSuhnP5m7oHwSPTvbMewyandpx4CWsMTFmxpJH6g9Au2D8w"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "Ak8EVX2uvui6Adr3mv6Ngror2rYLGmMnxqTWGwKPz6uP",
+   "display": "Ak8...6uP",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:34:27Z.",
+     "signatures": [
+      "53TCqxzxAzLFpDLDHTJMGKNj6PPPuBU4kqTDqLFSEHUgk9Nj2vVq87SmUisGWzKpSk8m6Qqho39CDfUFa9oL9Jut"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "9HXdzGRYvcRCyPcvRuGPGSftqDkHjGykLaAMXC884rtt",
+   "display": "9HX...rtt",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:34:12Z.",
+     "signatures": [
+      "2jPY1GbUn9bsawreNiKLw7izYe2PLJJDP4mW9thEyA2cfRRzW8yGY8MEwdUB1xLo9difDH3ZaicXCQuMy8q919oy"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "hTUcaBRfn5SzfV7oL6CPcpqJqZX818fkcuwtqTTJCWm",
+   "display": "hTU...CWm",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:34:12Z.",
+     "signatures": [
+      "2DdYVKQ6G9uhk3zSyLCr3rT6RWhSnw3bbi3QXbGvLRH6DnVpx5VvETYxTCDfcw64srcMatUHekyFzrzMNJQmQfnE"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "CGdDCjZZCxkEtdXnDGYbzxbNzkqUV9fpwBwUQVWVGLyn",
+   "display": "CGd...Lyn",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:34:09Z.",
+     "signatures": [
+      "5AdXFDEK5CaTzTT1uNtzZeh3ouFfuPQJbBJhVt43oBfwpxBWo5Vnbm7yMyn6V4LnzjnLQNfgjeMSyq1QyWpiqvDe"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "3Yk5mJ4pKxxf3GBAweskTP6tDceJNGKGwWFxzQ9Q492B",
+   "display": "3Yk...92B",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:34:09Z.",
+     "signatures": [
+      "2jBnebqXRRcCfvqdrUzCYs7AttDuMyKS1UPY9oKKeXrnXdhNf2hCwsWdqRQ2bd9aTTu1SHssUwFZxJ3KG16qTkde"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "5iPxQnJEju8ZVPiWH4Kcg8u5vgY8Z7NtGpuEi2iexHWi",
+   "display": "5iP...HWi",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:34:09Z.",
+     "signatures": [
+      "4WMpN77YmWBJsDtqJtNkguEiM5bAQm7aP28R3LSgnixC38bq7mL2Tp2SuDg717PL9KiMWACu8MNpXoTv8BMqrBRB"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "684jZm6hiMccfkFYFrzVACFJSwtKWrJd62S28daNVcFd",
+   "display": "684...cFd",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:33:52Z.",
+     "signatures": [
+      "3dkLp8Tsrf7QQcKCmervioUBxbS21wMdCaVbVErcTCSRmrbEnmtSQRyKNUut2ZAoWHE1RVsmz1ogWBfSFP3MXpWq"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "82Esh3jf2gSvrqcFyCAPETWbrNFqt6Lp4q3HrfN2uzAh",
+   "display": "82E...zAh",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:33:50Z.",
+     "signatures": [
+      "3Zn9Pw8iFidkVP8p6LV4Jai2GwH8R2NbE1iwbCYfHrbp8t6CtR9Xgf8GgkQHAC4UXCNdXiAAz5hEdqSzQ9jPiJvQ"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "A37VtvFXNZRVtzstLYb9bv5R9EiwaYKxNWqLciuFGGQB",
+   "display": "A37...GQB",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:33:50Z.",
+     "signatures": [
+      "fTmW3BDHzEaidSP2dnPJxAxCmwKyyp29S6dpFurYYGnsmqT6zFncEk2RKkefXNByE38t7ydt4AjEmALYuprv9as"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "G2Jw3SqrbA6thxULNS2vxtRjYqAJCNzNEDoSfTVnUJ7",
+   "display": "G2J...UJ7",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:33:50Z.",
+     "signatures": [
+      "itWnStUMPPRDmyrxmrCx1FzmRpckBt2vz1VShHgaF1J8hM4JDYNfgwd8nRLjKseyL7TdZfUHNVj1pBe43YuDvmc"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "77aXHY29GYN922nH8NwZnbUQFCmWC7SJStPb9Wo2Bjae",
+   "display": "77a...jae",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:33:50Z.",
+     "signatures": [
+      "32HyxmNuaiW9NYRZRU6Hdpn8sAPSw6g7XkZzMvhWff3Piy2iz3BpCNwbASPGBdCna9ZXUpmpouuWG4ydt9P7iaiJ"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 30231.99639260361,
+    "buyTok": 0,
+    "sellTok": 4821580,
+    "first": 1733351890,
+    "last": 1733352804,
+    "lastSell": 1733352804,
+    "maxTrade": 2638.1666450109205,
+    "trades": 27,
+    "mev": 0,
+    "windowUsd": 30231.99639260361
+   }
+  },
+  {
+   "address": "EjsuRJypL9oguUdCkv74SF5z9YSogqN3HXiiiU4FP5a5",
+   "display": "Ejs...5a5",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:33:34Z.",
+     "signatures": [
+      "NFbPSzjTyC2LsPGhWrrKMrxu3wuL7rqCBDWZfvNeBH1mcWe8L2Myi6LDSEFUkyN2CZEzhEhdCwBGxXvqEGLRRh7"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "3Wax3BVDLdKJ32ALpGVJwmouZTpHQZFhWipp3sj9jaav",
+   "display": "3Wa...aav",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:33:34Z.",
+     "signatures": [
+      "4WZm9eqhic6qgY3HRHKkCJvYwgz4nV7cdDdBTsP6EZvc2QduLd1vjdCfZ97yFWFhqWTC2h8aLkeanXB7qaY8XsKg"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "4quKrcTAuFmSnKG4JnB2V4rH8DsLTubT4Gk4Y6Z4EEFw",
+   "display": "4qu...EFw",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:33:33Z.",
+     "signatures": [
+      "5E4bCf7qyXWxkYV6dkHyHtRqPHRjMTpTSVV4EpLp6eQzoHWF6ukcfZv38U12vz3FpnqzMAS42DXHLBEk9NU9JS6S"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "8Db2Cd6osTRwDpRVGdNha6vFjDjSWHiw9tbd3uXdyboA",
+   "display": "8Db...boA",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:33:33Z.",
+     "signatures": [
+      "2R6CbqXJ2wXmbw9YZXZ9yAake3jZaFAJSG3vg2sDBbx97kgCPaKEF3yy7vGuUaPr8p2gcQhHmHDmodX1A2xkA7ui"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "GvuHQA7MRfyjwukSoEJxXmPEAkbDo4SU7fByxh628XHn",
+   "display": "Gvu...XHn",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:33:33Z.",
+     "signatures": [
+      "4c78hWWSKPwxiGeSjv1CML7zaQzpv57SeKaHov4dnk4BXLofVACNnssMX58XvfVNrWR2bdeA2sxkt9JiitzCqin5"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "FQJ31g84i5YmNYxqDsdHreunQ5XBTP1FXqCFNk6XM2VD",
+   "display": "FQJ...2VD",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:33:14Z.",
+     "signatures": [
+      "5WPS6g4UrF5NywYGrYiEeoBbDdKqwKSgBYEssMieRq8Lzjnj2i2ZBML3kF6TtYcJVvcmZ6j9jwZ7D9RbHRZs4XFL"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "Et7eP584pmp9ataJyvphofEFz1poTVPTAYrHvahCbhrq",
+   "display": "Et7...hrq",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:33:14Z.",
+     "signatures": [
+      "5gVK56tfRpAmb1GrVpfB7PjbJE2qBYYnNS9tLfCpKxwnP6WFSUEunFTijRWZyYv8S3RXR78ntt3tqoSaiA4Pd7CM"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "E2nEAdeQbxjGxwHzwmqbwH1ys2h61hrh8u8D1vyCBZXN",
+   "display": "E2n...ZXN",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:33:14Z.",
+     "signatures": [
+      "3UGFdLMnx4ViyKKueyKqi1sc4mUA5VquZcKai5Nfc5gED2safC7o2HFsz9cVaeDtDkhEBkJPisKFrcdJJCTMoGcN"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "6x1Vjqz4wZhSVfcEYxbUXtUWNPBjPrnw28QsWjaN39fY",
+   "display": "6x1...9fY",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:33:14Z.",
+     "signatures": [
+      "5LarS6AxyMG4EutKeBK4Vx5FggfB4QqQ7Kxo1hY4ur6zTvkfubP1Hn2KssMr5LdxrxFvBUVGk6tGdzU8z7eDszZM"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "GTES27uJXBCk82nGanSMniFWZCDv9MoP8GxACFRsnXpq",
+   "display": "GTE...Xpq",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:33:14Z.",
+     "signatures": [
+      "4YYquhdWkbqDWh2JCnxaKpUJGDMSLf2u5NACgq1pXXrdKThJRyjz2Zd8wQ1ffVaGrsz54s9mhHntAha4MAj32CfL"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "RsUkWdrP8PjtDi1PLWVDknJ5VRgE5r1k6c2Tuj1DVK9",
+   "display": "RsU...VK9",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:32:58Z.",
+     "signatures": [
+      "2HP7DVBhvJB57jXFwL5Q475hMFjoNZkGiJ2P83fyQMNrLshpb9mNwadsyimg9AA9btxpcCezQKbzRHTC9S55jsZx"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "7MJBC1XSTZNEfP67V1pJQp6ap9fHzpL588L6eb7jrRk1",
+   "display": "7MJ...Rk1",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:32:57Z.",
+     "signatures": [
+      "5spE2BGNcdZmRAGzisAp5wBQB59uSchr22evrvg28XdyLDgwbYMH1892gsCRZqofFtnKu3YnkYJAoL68hfgtwqX4"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "3R3u27G3MP5BjqrVgPumqrDusHVyz3guU1Tm2wdnLs8x",
+   "display": "3R3...s8x",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:32:57Z.",
+     "signatures": [
+      "2pLJvA1sE1S2CRB5QbV2vsP85Hsdptz2RygQ97o7GmepccYYxnELv3poEbBbriUKDaNGCYyn5BoihQJAJaxmWgzz"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "2Ch5myXWKxbwy14TVxK5J6KyDTg9ScFZskg7zhLK2L1f",
+   "display": "2Ch...L1f",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:32:57Z.",
+     "signatures": [
+      "2UXH5otzaQVRkfwtAiqHtQknQhZfoxGwgAiVvPjrxNDvostvzWpesSGpdWf4s3Fz2ZL9QfCyxoxUFMpqLRcFn4wM"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "9xcLZHGdTpyFPiR3f5RAjcZCargNdDmwuATrD1aKCEMZ",
+   "display": "9xc...EMZ",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:32:55Z.",
+     "signatures": [
+      "124tGADQF3zo5gz75vS7ArQALJLFaa6Bi1HtcFCt5j7Sy2Z5WpQhL8GNTyRPDtuJ6NndL1fmv45aEGJczPk9K7EM"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "6y8WCcQbAwGgGo5ae1Lwk8ZndarDMUyyX149KEU7RxzD",
+   "display": "6y8...xzD",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:32:40Z.",
+     "signatures": [
+      "4dnhPiyPvRN3fwZwJpo9VmNDJP9Yd914q2wWcoeVqSvyMiuLKkvkFcnMtNQMfVVrRJvHysE31tFkfk8XeZPwYzaN"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "5HdHYZ6QJuAMdnw3TNVfd75UanRWvkg79dKmrgQUejby",
+   "display": "5Hd...jby",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:32:40Z.",
+     "signatures": [
+      "4UN8cDazEpwSVFdB8cgV8vWt5cUNHNAtXBU7KiMKxF6F3mCeiU4NRx4ukiCAt9xvJNB4AUcjyHhvKqRqB1cr8rTv"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "56cGABk5NhRjn4UpAbd8ZpLorgoVXDT84N1Gs4Qbo9YZ",
+   "display": "56c...9YZ",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:32:40Z.",
+     "signatures": [
+      "53fQC5kX78ivV6M8NvePftrVurZakbhqRHdmcfzhQYJEMYtgiZngNctkq6tPrDCvXCQgoV1jY13PtzbgaHgVf22W"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "68btQnLRDckNUj5EnkE4vTcPQsxuj6GvXrdmr9BtRrta",
+   "display": "68b...rta",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:32:38Z.",
+     "signatures": [
+      "2j3zp4GrMGiTwBbDmXTkZGfZSu8KXVCUfTMKXxkDj8a53UNcSxZwzfmuLQDiYQ5SejBtrvgvQySixR8cksU8uHnZ"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "6RCyncMAWn6kbkJo1ZP9CxQMzke4u2NVhfVeaWvAjhVQ",
+   "display": "6RC...hVQ",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:32:38Z.",
+     "signatures": [
+      "25T3eWLxoc9eaPt9vhvYgjw6UArmjQQ1VuSeRoEJCeasdxpMUx5fakxe7M9ThCmJtXV2k4BauGaK1iE2xZ1q8AUC"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "4hjtBumv3aDrW5j59r25qXUXzvRoBUkKe5e1FEYPFLee",
+   "display": "4hj...Lee",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:32:19Z.",
+     "signatures": [
+      "4iTaEKsi4aYrG4LyRZNth7saRrLjN8V1BjJEstBuEAiEAzch9NtX4hbQPeoKpYc3axnaKJAEQKfSsUDbejMFuSqe"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "D232iab6uzUe2ALzhSo3TsFnaTjaA5YCAfqTbW8ZBse1",
+   "display": "D23...se1",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:32:18Z.",
+     "signatures": [
+      "4DGzh2wt6Nqo1C27E36PVZ2dbJjNyGubdVX57PEi2whYSAyo7XYhqNDQLcL22yhrFs253yJqc83rR6nacu8DP3ao"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "3CxoVMKTgxdiQTdaheqCFozDgfUCCVJf2u47FM6BzMh7",
+   "display": "3Cx...Mh7",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:32:17Z.",
+     "signatures": [
+      "4zHHjFr5NGxr1Dqe7G5ESYuL2CgGvpSHc9qGNQeFvUrWWu4tBB1oyREqgkkLuSF6L1mCGvyCSQputBXp7hLERoYP"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "CgjauVXyLaHpijtKu37kBAw1j8P5L983As4RLYyy1Czb",
+   "display": "Cgj...Czb",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:32:14Z.",
+     "signatures": [
+      "3RzxmZbAmdKnKhJfBdyPvK49osRQxvaBwgobNPbnAtF7npeHUb1Xmr5iibGQu9SnASXQ5Dz8WteX93ZG823zuw8h"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "9jYbqDinmDNCPLG716wh4mLjBDqXKSsrQZKmMDpgQRxj",
+   "display": "9jY...Rxj",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:32:12Z.",
+     "signatures": [
+      "3ACUbNNQAB1jPTxEDU7RTzHksBNQakbhKADv3rqpQsPpnjDqMiihHQsLH7gwi61XUgjDA76VcjEqWV8LCA7oE3dt"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "J8ye4rLZCrqGC6CYWJhvTAEPCHUVJhcBL1PX9RKWQw3v",
+   "display": "J8y...w3v",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:31:58Z.",
+     "signatures": [
+      "6vURRXTUerNgHt1F2Epbuk8Su1ePMkRzCgKK3xNKVaxtBCNF5NnSoJVbK16rdY4P6A3MQ81TULMjJbeBrwJD4tP"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "4uUdEZ5b7rnwnkYESWzwSCfaTdfmdyzxDu89FhDSfWVv",
+   "display": "4uU...WVv",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:31:51Z.",
+     "signatures": [
+      "24UzL27qAq14xWQPnshCktQ5KkNtornE8dBtKhjw5yiCZ3xtG9AMJEusWyxfKppm2PTf7dQWbivcrU62Bumbqb5u"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "EejyU351aiTNtDQ7J5VLx5g481oFjdLzvJppjfYZo5gZ",
+   "display": "Eej...5gZ",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:31:47Z.",
+     "signatures": [
+      "3hCg2Sqp28uzPAJ68fzQCsUuEjaLC1T418mKU6NE3jF2nhkWPmrX8bLmV5gPVzh1d3R6EcCYcn6YrKRRrZkfYsVJ"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "GVpipCQNB7qKQdmpez9MCbwv9zprGidPqJVg8mCDojQa",
+   "display": "GVp...jQa",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:31:47Z.",
+     "signatures": [
+      "42vfvsLqxP1eoCkrLWX9xqJJSE7hyYUiyJPg52JAqwCq6n7aT7mmBHwZfoYNitgtLFvwGioSNa4scaoRN6iH5VvH"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "BvVvyVVLjB7d4vUqoAxqSzgQXucNyLaaUnc99ygLj73B",
+   "display": "BvV...73B",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:31:47Z.",
+     "signatures": [
+      "2LwoTdEP2xrg2Ekt4HkguUJ3Tk2TDPa89heN5mqtcmCFV9hpvXadtG911FL2P2AHLUZig6Hx21E2CqEPndnw1wG8"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "4dCsWcFYYXaDzuuL8KFaLXiFVMTVwaiFohrXZ892DSjc",
+   "display": "4dC...Sjc",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:31:39Z.",
+     "signatures": [
+      "5opxLpQjbU9qhU6zjVkMSutbKPNVFdW2wcpinkxERVfGfkRrNV15ePYPVfKZN83G9jxFp1RcR6rk45jigCYDi8Z9"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "EuuFDbX6tBrRRrMZBxLRfmyvfsMJBRUoiqYFoBwPuxvQ",
+   "display": "Euu...xvQ",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:31:32Z.",
+     "signatures": [
+      "5uiDj1U3pAFVcEpmofUCrpaCXLj8xUcCFqWGLREJGMb33qktGhRpmPme27MmRctc2niCVRwxVdnSbaED4cC1SqnE"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "CzjndmLA94pZgWWtxTQ3kL3nRs3t3RXzTH2rwLsLuiky",
+   "display": "Czj...iky",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:31:24Z.",
+     "signatures": [
+      "33DDTZFMjUaMtqmrPeiQhpMuw7Xf6iShCE2DtPRprQkxwEe5rNjgkUEj6uGAZm9KAPTCy3JLEhyDevWA6RQHi6v3"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "4BiFckR8bjQf7zSnc5a4Lr6CQP46tYkdx8qww5gVLmcW",
+   "display": "4Bi...mcW",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:31:22Z.",
+     "signatures": [
+      "cAY3UWg5PPbXnKiaAzpvTuf6qBWVd43eoAjMPD1PbMnSJGTofjhr3RxgrKw3h4WHPzeUag3euW3ZvKodrs8qGLv"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "2YGh6DzeGysKUCdTo1EQFNRqknNpEfLo23MmiVosdkNi",
+   "display": "2YG...kNi",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:31:22Z.",
+     "signatures": [
+      "49YVrYLNjMEZwPaWNGTMxpgyhmsHoNAFH5MNKR8p44i4zx2gAjRZeiSqEAZx9hKJKsVj3JNozkyHqUHofCXmypVG"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "BsPLX6dv6Tiu8NSBoozAYhJL3CqPA3QLUkWommRWKFoZ",
+   "display": "BsP...FoZ",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:31:21Z.",
+     "signatures": [
+      "4z4LQYQwf7ozsGnG2Xrc5URciX1G6r6DGPY533bTN1FuMT7v4Xh5wHp7JDkkGJGnndM3Qv86Q4ZTvbmAGKbYgt86"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "5gwWDH2GjMDSB8A4Ectwcbf6vbY3Ph2H2sCbDXht8VFr",
+   "display": "5gw...VFr",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:31:08Z.",
+     "signatures": [
+      "2vA7DSmoYceg3xNAEDEd7EVhdCCK1PwAkcNu8jaccNipJj2TKacrz1vj1hVzb3i9sUNFD7DNbtKxNmJGqGgXQg59"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "ADw3jLRZ4uX6XrzqZM1nZBXW3evdY8qwCZF4XeTrehXd",
+   "display": "ADw...hXd",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:31:05Z.",
+     "signatures": [
+      "4JbG2HPixiBCkGKh4153W58APquU7qYuZ4Eh4r8VzXJFKaqSTis4adR1j6u5z9t41yNRTzW5DSb1ucYXZuGJkX8G"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "Et1irsCbbZXSTgVgSNxsg9EfRsjgUcuqUri1gUzDwdsx",
+   "display": "Et1...dsx",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:31:05Z.",
+     "signatures": [
+      "kqvo3LM5VtLoaAB27EkFKnhoHyEG3GRMzxUXV69ijVP5firunbeKaXTBv6tQWtgVy9TuKSFCkJ1xFvdx4QjhKY1"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "3D4GBjHbKm3ah3M9MKjijsGREUBB8AHK1uJghASucaCq",
+   "display": "3D4...aCq",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:30:58Z.",
+     "signatures": [
+      "cZGAMBqnP8V69TrNqadgTB7Qt9XArFVCMt7ETLPqhkTqQsuCWDNFVLzr3r1VTnv7gY6j6WPQFVFDPEAFnf6jyi2"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "8Q91m9NmrfUrJh3AHynGMqdGkryrz6V7RLsiP1S23Jsd",
+   "display": "8Q9...Jsd",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:30:58Z.",
+     "signatures": [
+      "5KwcGf8S94Vbkip2zDz4Q9nYeMq4wXsPY9anfRs2Dq71Z29zo8c7WJLZhKFftPf3vdoq6HbTmQhp7oDZnbqBW7mP"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "2MH2aE7Kq2vxRo1cnCXeEyRkWy98cZAbUCGERuUN3ERh",
+   "display": "2MH...ERh",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:30:45Z.",
+     "signatures": [
+      "3i9KpvZopibZsSaehXsD7VxZZSDKHM5fwpitTzrEMw6591xYv4XnPzWH5KcUMayNad3JDTcPRPForv5g2WUaxwPr"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "2yVcYG4Z4YiX5rm9rctimWtSQxeXkEugJygaqzUwmDaz",
+   "display": "2yV...Daz",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:30:45Z.",
+     "signatures": [
+      "2dXvnAbL5ZUsfhjMka8cVPWjsrak7gcfEz4rpWQbCcNKfbkyBPFwySNWEhcrce86T4nPdBVnHuB9ymX22yUtD7HY"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "FevQRipEefwHeFmjh36zWi81sDyg57znokzow9xWd1mo",
+   "display": "Fev...1mo",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:30:45Z.",
+     "signatures": [
+      "5bxcESWLV7MR8pVyHegckvPRacLNBAXkaFLxdT5An6J1STKFPFnQtXTDsTEbAhYiVEeU4T1b5J1XuqbJ3gw8ZpC1"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "sGFdJ9cKzZW13kRchG9h5FBfA2WKXNH3aK86jxQj2uY",
+   "display": "sGF...2uY",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:30:32Z.",
+     "signatures": [
+      "3NcgHoLAbgcSmnwN6NUTaDKgYq8DesaSFuZAFPEjuYsHawcpZoowxsFsuTHcnE9X2qqhrDNFutW51AmCaaEnHReN"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "3VoLoC36pGQYzjpo5ELMQDXXpo9Et47SnR1DqBozvSpw",
+   "display": "3Vo...Spw",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:30:20Z.",
+     "signatures": [
+      "26vTtGhAp2Fspxc9poGqQiG1vXssUDhsZALKFVcwkKZeqJhTuyHjrsbgT8VsxfwU1wYQm7MZQyJSybkWoqPqwUzW"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "FZVNaJhkvCnHNvNxdbxi4ujbu5ULwbTMEpQ6bX2Sznde",
+   "display": "FZV...nde",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:30:20Z.",
+     "signatures": [
+      "BkJxzLYejfVb2xpS4qzD1gFGDqcoD7TzsCAjgERAEpiRimPJo3vPFbsi59NfVYqru3E8vcxnYCWsjuj3fv1shXo"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "5q855eVut8381ELzR4cZw1kc2JudgV3UFkU9ph7CTFVL",
+   "display": "5q8...FVL",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:30:20Z.",
+     "signatures": [
+      "cyfABRp54VwKBGNDGWAEvfVmBwgoSN61BhkYkDJzCsFFptwuUHMbyRNMTVJRr5vZNLmCdp2gSTWkxDRR867Ubpi"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "hy5UsA1mQgH64TLbrVcXH6QjagpnbnCNaUMGRH1vUx7",
+   "display": "hy5...Ux7",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:30:20Z.",
+     "signatures": [
+      "3jDLACnndSsbRoQU7egD16A7pFJiqpJAA9S3DpMH9teLjZe6zeXKdz83H1hd8PH3DvikaUeeifpc4K6yuV7g4okq"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "4DUzyNsCahtCK6hy1LyvAUzdnkN4i6yPPL7ohMaRgMzL",
+   "display": "4DU...MzL",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:30:20Z.",
+     "signatures": [
+      "4GmA3cgYn3EjthJq8s9s5c2JDedpmN3YPo3gU9dZHeGMyzkbQWBXNNP8AgNm83kaWDwSvPkDxA8VibC2ezb8E7fc"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "2QCFNGRukdHxoDSTERKbbuWGrb2MAWRjMpKnZTUPu8QT",
+   "display": "2QC...8QT",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:30:01Z.",
+     "signatures": [
+      "5cmTGZDTKDHJJDbJ7mQyHRzNvgp8J5AD5JadNvwyiMnNpfKBWxn8ePQPJibHNhy6YjoQeQ3yeutENtx4d2VjQFYJ"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "FcDFMUjKMnDXmhVMN1qvaN9yFxfgJ9sGDARsR7gHJjUf",
+   "display": "FcD...jUf",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:30:01Z.",
+     "signatures": [
+      "2bLm4kt5nshbptbFC4nWt7om6ULKAWvmTXhLE2B1uDaDbwhj79p6s4akywvtBMmtBNsB6rps1amKZuUiCwFCdFgm"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "D1JZhuhUvfGczxoFS4w1b1NJV2z88fiJn2yCLdoqtXvo",
+   "display": "D1J...Xvo",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:30:01Z.",
+     "signatures": [
+      "3KoyZeD8tUagiZ2Me3YyVkrYubKEZmunTGHxMqXNCDtCfzitP17hSeCwyaPn4BuZQmifD6hLAqDjBWtfSuabiU8"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "FifJY3h2ieCR3SdbXNDytwQ2ukBuv1fwfF4wqjAY5iy9",
+   "display": "Fif...iy9",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:29:57Z.",
+     "signatures": [
+      "5iy39oT7NhpTebXh5CkLDvn25wfPfDULVNsjzk1CJhRumnQfAunnCEHhLv11fHzDPsQ7AGnig4TGJyRFJtn3o63x"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "32B9qSTWb7FkgJtDi1jCyLR8p4Dv5VueQogiuhjFW5ZW",
+   "display": "32B...5ZW",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:29:57Z.",
+     "signatures": [
+      "5hEtNF54P3G4Dad1kW2AuuuKSX7KUKzvp8Q6Zc67L165KeyqckCts1Mtdtim4SkJ2nnMUX3ikHHUqMHYCJqHYEMP"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "3SE2gw8ZptrA8mccAfLvx7oDhHi5p5v5AQzrx6w6qMHJ",
+   "display": "3SE...MHJ",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:29:40Z.",
+     "signatures": [
+      "3cAqcg4uNiJbcQrYP3PqQdeqPJAYjN5FEgdLLvVNaTRi3HfNA9a1YDvvrVkHLTANknu7fJLA7eUniqpVL4rmCeLm"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "5FEy32548dGtBCNBiGm6FpL7ScYBmVgT3B9A8869kxah",
+   "display": "5FE...xah",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:29:40Z.",
+     "signatures": [
+      "2hnzqhuQZcrpyKXi4GGwALvTS14Vc5EuRJuBs2rwdNKZ9xF2xGrDMCoxC2qfvcxFD1UyPn2NvAPx1EE7bVsCL7rn"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "6VuJn57rvwEUst7Bngg6jpp3kC7nwToehMPQWkJAGKyX",
+   "display": "6Vu...KyX",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:29:40Z.",
+     "signatures": [
+      "2UReGgibeawdMkSHgBXDJtzHMtSHLGGLe9n4w5CGeVMWCFubdb65T4vnT1vHmWUK7A3vHi5V1QZhHjVe6yRxny6G"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "63GLPGixEbvLLkGUz9zAt8NTTYMYawJZDvrNfLms4qp1",
+   "display": "63G...qp1",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:29:22Z.",
+     "signatures": [
+      "2AZFRR52QYyLR25KhKkDHReGfiJL9YkPJPmQspPsFU8zHBycZr12SEGLzF2CEFHQTcJGxbFarCsV783FhhAE18Rq"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "6u2uinvXWXgLvCvqm8dvXxkMGizXd6JXiqW8UPQfVYbm",
+   "display": "6u2...Ybm",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:29:22Z.",
+     "signatures": [
+      "3PQxRCSZXLiMkCSHFHJ7yCsQiGTqcBGkdhtozZACDbMa2sNbcqb2rcE1NBfN6RV4Uv9c9gkqB1rifPrv1AYByNK4"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "Gj8tkiXCumd6x17gAhag55EJ4E7Q1W24Lm2U1uDnUY8p",
+   "display": "Gj8...Y8p",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:29:19Z.",
+     "signatures": [
+      "5HAJ7CWstug25jSZhbi61fDhPcnA8ErrT5Mbvc2QYgPasXejwFz88RT6uSbF4zFVQ9Ssc11M8Lwyc4b2Fwqau6jg"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "7W6YBRZWDn13QQrKxf8tXyDJmfiwwXnfwrp7MPsTRDxY",
+   "display": "7W6...DxY",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:29:19Z.",
+     "signatures": [
+      "2FKvstA5ySjAQuv2dxSuKjWn1e3rLZSNYia7MJXGtXuVGfaixmJk4J57N3fEPN1C1gABV93T7eRpbj7cKWRJkpiK"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "Awhnjyk4QdTkVR5B4GTVXBw5zscURmmecfau8EXP98Qe",
+   "display": "Awh...8Qe",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:29:17Z.",
+     "signatures": [
+      "373vXypm63dmqvEnzeVLxx5reJBLDEBodotyKEan6LMv5rZ8FSUG3jdFsxJwsv2SFSLLViYqns5md3aMektnfcQ9"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "6fGgvZbupBT6ywbc5eL8f91fbUrkZsS9cBpKQhcUEwbG",
+   "display": "6fG...wbG",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:29:17Z.",
+     "signatures": [
+      "3X3WNkxFY16SF2sQGmYXxyFaFr3beFdFMcAuvNHuxtMDxafEsdPFu7FcfLWiHUGEYwSkKvtn7x7ANTChBqYcUbis"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "AnDbjqD4fP1QGH88bGV1LMAL6CPF7qFYHkDtHMshR4Uq",
+   "display": "AnD...4Uq",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:29:17Z.",
+     "signatures": [
+      "66RxsVwivNCssnNReSHecbf8SKAyNjVobCfTsESwsuDJpENJLq6UBYCpT3QK7XZKbyAatbkGaACHH1SzG4kYsBtp"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "FofhQKM7kphfZK5Pnis3ApzC11GFkVXwuXmdk1t7koRq",
+   "display": "Fof...oRq",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:28:55Z.",
+     "signatures": [
+      "3KYr1dugsUgL88anh68BcbjuBwiWzhGdMjrvbYDXo2SKdrHbqUew7YwucfvFsrPzztfRdvyxkWFqeBA5pRvF6hcz"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "7uwSRnSoRjywGk8hMXmKi28hz2KyWFPMoqZowWo1DJ38",
+   "display": "7uw...J38",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:28:55Z.",
+     "signatures": [
+      "2VEN4jB8GErBNATTUAxMFrbQe532GZUvXgnWgNnuBZwEXiyWrJwjPb3UdtDBnaM73eqYrpz1YcpEYABDRMMk72fg"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "4eUuQeZUnpf7kRMXUCo58vvQF9HMaNsLo2VVQP4CMVUB",
+   "display": "4eU...VUB",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:28:55Z.",
+     "signatures": [
+      "61owvTDj428oAQvVTp9qgoDBeNe4bgcFin7hHg1ahKuyv1TEEzAVENBFFBTRFphNXfgz9yuRdKEbfL9Q2LbKKqkV"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "6tqgMMemjKr1mhSapDkBiFEAfbqyrecnBgxZ6Xpb53WT",
+   "display": "6tq...3WT",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:28:55Z.",
+     "signatures": [
+      "2upX75wVSvvHgSBci4AscqucyLQ2GxuWywidzLYKANoTM1Ex1Wu1KUg2fyqSuSCk6ky63QUAXLGoToBUwLG15C4B"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "2VX4CTEmhRcL1CKNXgQhjSQ3H9VgEKPhXU6sTWgx44Uy",
+   "display": "2VX...4Uy",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:28:55Z.",
+     "signatures": [
+      "56QBVTxuCEFxNpPwGRqUiY1KkAz7rERAnpi2X1fwFmhGEjFQ3cPBtpx1KPwMPcnioyyKtJ1RLZ8DqcFb7KYGQ4vq"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "EXtZj57gLFipdeRrRRpcsBEmSP7JH5Y5W9zFbtKQfzET",
+   "display": "EXt...zET",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:28:35Z.",
+     "signatures": [
+      "4uD5nRzaxVVinAWjH3NUxLYQBQdabnu6kjfNdG1Zfv12sw61RLa1FaCC2zgpzakgMD7VSwLkAbhrLjRBDpKRHqZ8"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "CtvZ5q3Uq9p1v4fvFxD3ByseFdczg7QdnyADu2Ro4HfG",
+   "display": "Ctv...HfG",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:28:35Z.",
+     "signatures": [
+      "2maDAtZiq2kgGtpXGSrSWKjwV7aKnH18ggC9boXhexdf3bmpZCQznYBzsZ4mVqpZ4KZ7WmvhujA8VPQedgJvt8LM"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "ByXUJQASGMsbz8GyepaHaZSKCZw9RjhTDiLx6Dt9tN7U",
+   "display": "ByX...N7U",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:28:35Z.",
+     "signatures": [
+      "4KXF5SbBZLhxNTiaaqyM6yGn9cEWXdA3J2KDdNJHtkhpaZgkYxbXkV7EKj1YRFN8FQSqNGkaGm9sr4JpTFaJe53F"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "2vG4j5wxVE8HArRbMovKtfCXeQe7yXc4bv6fQZMrksVW",
+   "display": "2vG...sVW",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:28:35Z.",
+     "signatures": [
+      "2ok8QHaWhp4151TGQRgZ1xdQ5k6F7WtZfLVx88zLWZATb259f3yCBPr8YbbwGy1oBjfN21z4ftATJ7c7jSXJGVHH"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "3JsLVGr8JrR8erQpwCzRYa93WVgHgwG9dB8FothXxpvU",
+   "display": "3Js...pvU",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:28:34Z.",
+     "signatures": [
+      "4vxkf7UfxpV6DHE54h8GXiokh3JDH7u9SfjRrt23A4uf1bywBWtD8kt1EVFKnjLmi85A3HVNWAzFqjb7aFKmkcQi"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "3F1sAwhqqu6MoVKmdL73AxpWZ3K8smPfiaMZmkGs9mYj",
+   "display": "3F1...mYj",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:28:17Z.",
+     "signatures": [
+      "3e55a84qMDReo8dmGH2E4VFHFP586Jb1MpKL3AC2yrRyzANu3RwDi1jEthzTu2Nof3DnDRZHpwDeNi63ioG7JiXD"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "DVdhRkyUbgHWiANAP47amWJomUs9TRUF7VtdXKNb4ppB",
+   "display": "DVd...ppB",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:28:17Z.",
+     "signatures": [
+      "47p7RLknz3YLRkGuBjVDUydDCBrNH3EnLtKeiqfE65pPL9BmS2dyZRLAA8YMGBsv3GNJm7We9VSCiBe67KXcnNxi"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "G93RgRZbpKSU9ami6gU3w4VED9weULPo7KK6pmncxiia",
+   "display": "G93...iia",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:28:17Z.",
+     "signatures": [
+      "3acevjtdrs1S7DWYeEGUb9Jrq33BMgfzhhbuFKQkWVv2VNZbym495B4Y4KzVVvt9z6wnEvzymLe7dD4YNNeLEyvM"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 1733367192,
+    "buyUsd": 35174.538272637685,
+    "sellUsd": 71796.79136227237,
+    "buyTok": 7211448.728045,
+    "sellTok": 13103281.564836,
+    "first": 1733351356,
+    "last": 1733367949,
+    "lastSell": 1733367949,
+    "maxTrade": 36128.28580032084,
+    "trades": 7,
+    "mev": 0,
+    "windowUsd": 52744.51446811336
+   }
+  },
+  {
+   "address": "6B1NBhqRXMevu4vxQyuiuC2gK8dpVvBUaAZmy5vrFJdf",
+   "display": "6B1...Jdf",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:28:17Z.",
+     "signatures": [
+      "3vCwPFHCtR6weHJpm4dQSWtVLqe2XdeHVKFbFbET4J5VHBhgZEbBkPtnowjYEoABq1Qg6Cv9drsichodsM5DMq56"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "GU1945EX3uzdUuZ3AwNz1khdPp7869njBLbRbboXDo63",
+   "display": "GU1...o63",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:28:16Z.",
+     "signatures": [
+      "3rLt934SRwsvXCJEjHu4ufLbwHnH9MPK3ai7iGLBLLNvMutkhTVH3XXyg5vZntadxaRSAcDH52sp4gsfyzPpQq4Q"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "BuJY4cNqogPZGkcJw1duGRgtfdbSZTz2XuWzoHdaNg2r",
+   "display": "BuJ...g2r",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:27:59Z.",
+     "signatures": [
+      "5rXKyZ4VczQEPt6HiJsFVLVSAdX64P8YtfL8sRJugZ6dQBhQXVAmbxSFiRYfauGLnX6X7iG7y5fctBW7bXa7qUQ2"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "3x1qXExZPFCHM6R5a8gamDGLrqvMvwxMu1mRKLAr5qQc",
+   "display": "3x1...qQc",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:27:59Z.",
+     "signatures": [
+      "66uJSD4ytXnEr7Hs5mhmnTRCwmbyo1VsrygocqpHQagpKqa472mfvWs88LQU8aBJdbNLLzAnwhVLEut26wwVpoS7"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "6Cor235Cg5sMnnGKxW2TuMX5KwkoA93bnowY5V2cakXx",
+   "display": "6Co...kXx",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:27:59Z.",
+     "signatures": [
+      "gvnHFwAsvp9dCfwaKA3bcSxrTXGSy2FpRRkPmh467YYKBkChxmF86UHkHkWCEH9RkAWkd1KzaUj4bzECpwbNFjh"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "MDvE6qayZVCjoUwBD1Y8YTwKEGRp2vmpRPMW48hqKdn",
+   "display": "MDv...Kdn",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:27:59Z.",
+     "signatures": [
+      "47msgWQ3KdChmByJbu3kk1xGDzVB2kjg21k2xBeY34mhfp7bBqURRDNDagEYPDSV2ufjViw9nMmK2bVPJyi9e9eW"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "2Rv1pSziMJRAKLxQAtVHwg1gnLQ8RmbuBiLKGyYQuXyk",
+   "display": "2Rv...Xyk",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:27:59Z.",
+     "signatures": [
+      "5msifehEiDcmVTrk7eEcZ9LShfDiBF6JtshqGj7fN2VdzSmVecESAUZmkPwhquD9KGLovFEEznMWqPiPDywL59iL"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "FBA7Lz7U71aFxR9Q6tPZ8qaSbPPaJZj7HzDi517ci8Eo",
+   "display": "FBA...8Eo",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:27:35Z.",
+     "signatures": [
+      "5qK3U6sJA2iBLcU7JyGMA7PBZJ39QUqSVePSLBxKoTcNLSW1X2oseDywvr5mrEdfP3mhGpT91w6GfxzQa7SbdryF"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "8AJDKwxz921UFqUNA6nyLnfSKtpphDPcWDa1bnASzQ6T",
+   "display": "8AJ...Q6T",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:27:31Z.",
+     "signatures": [
+      "3cRhyYpkez9U8m84rPBmfS8q6W582Tj27Qcnba4n18oPrW7tdnkb5YR4A7rMiCZQNsmgczkah54yayHErG1Ms3sQ"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "7iwN3vgX9yjfW6VFzWiC1hGK261fgmC7RYrQiwu9Sukk",
+   "display": "7iw...ukk",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:27:30Z.",
+     "signatures": [
+      "dTuwSWNHCpXdhLYhhz41N8SB1ktSsZjPsJeQHy9TiHyzrFrV5mBocZypKGi2iM8eebTuEWQ48YWMCgVwz3Yn6J8"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "2Jg8D9GNGK7xpEAMeeJHi4kGsJKArpUR7gnPmusQtbaM",
+   "display": "2Jg...baM",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:27:30Z.",
+     "signatures": [
+      "3k2GCdQzSFz78SYWxatKQGXfgbYHQTpfEaYzC7eT5JEVoiNTDe7SE4h1B4m6JwcXryzgAAqZ1r83mErQoAencwSS"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "H1cFTkVLeTJ4fQaUyQX1XLF3oNMm9acnaAKRQSgt17Zq",
+   "display": "H1c...7Zq",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:27:30Z.",
+     "signatures": [
+      "2hX5scsfQB7pZ1vCG8xePY4u2ik5FchJ993QjGL8rXYCa4XugTRVkeB61zksSui1zbCWm8ABrRGSv9suL37sdhq4"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "2keLPfdWUpcKzox4SNifJbGivjXc6ZLorQuxUyBYeAtU",
+   "display": "2ke...AtU",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:27:30Z.",
+     "signatures": [
+      "4oQNG4mUR5JDBrWpr34ECYHgp6izPHUEW7Tg5ybJnkD88kX2MnkxvxZ1gZbvEA5XofLesWbVJcEbM1NaUTevkCdp"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "6xkUcK8NH68z9NNRMUf9EvaJfbcU2m8HQvarJir2VSdA",
+   "display": "6xk...SdA",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:27:30Z.",
+     "signatures": [
+      "2RqXAtgvqfdPYZFeEJua2YFkzR1MrJv2KxnCfhYzq1tpvPFkG3p98kThrpK6e2UbYu2hTbkNCybEBwnUspSGcRgB"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "7fKTdwQPz3J3WDpdRBp6R2XxDJ5iuy52jnQbkyVt7M7t",
+   "display": "7fK...M7t",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:27:13Z.",
+     "signatures": [
+      "2JxJ8GzNEnxpHC4WZujnBFE13p8WpM7horFz9iSC6ooZWQ4eHoiDTmakmzordWmG5ZTPY9V82ZdimWB1poGUr2d7"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "CNN721XGfTPYdGEb9svjucgoKgaMuw84WEXpJY1mjsMv",
+   "display": "CNN...sMv",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:27:13Z.",
+     "signatures": [
+      "AqX9k1sUg5FAU7dY3JwtL5KdiJifSfdoCyZ1vx2ccCcijdcwdfagoj1sZDwdT4kw4ahi7TLwMn3fK98E1AaU5vJ"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 38897.48121493241,
+    "buyTok": 0,
+    "sellTok": 5975277.1088000005,
+    "first": 1733352446,
+    "last": 1733362322,
+    "lastSell": 1733362322,
+    "maxTrade": 4372.368610181529,
+    "trades": 15,
+    "mev": 0,
+    "windowUsd": 13307.873184381333
+   }
+  },
+  {
+   "address": "7RtYS61rMaH3QnAK37BQrPLBbeD5omYTXUy76KtzqDLN",
+   "display": "7Rt...DLN",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:27:11Z.",
+     "signatures": [
+      "3nVrvqZMFkGqf2Y4FaK7g3fHuCPM7epypYTM9kJaKHcShPYQ3AZF59diQSRgfjzfBQKFs64YXv2L9ch2MdnyxHj6"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "Cu6F7vKWBS8WRSsV8tuandtcutMCTqJytGQU2gvsQpWM",
+   "display": "Cu6...pWM",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:27:11Z.",
+     "signatures": [
+      "XMY9urasJxCdPiUcYAYKgopWeAjWQNezvBsFu5nU7dVbe5tjnp2wbRu77N6NGnccG1x6upAQt4d1RrcEGybmwAe"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "BTpGHf3rypEhPEGemTJURUB8otMi32BDphd6DXF2PCbL",
+   "display": "BTp...CbL",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:27:11Z.",
+     "signatures": [
+      "34FA99Yxe5SdjE14daebj8bMTSaQSKRuqbnVxLu9VfNZT5rtDioFaamE8L11RAECkr1jLM7eKJZhtwqmi4oSGMZQ"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "Bx4FnJHtWNrZtYmpotvyLF1EZLa1DMVnf6ka2dgyGiTY",
+   "display": "Bx4...iTY",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:26:54Z.",
+     "signatures": [
+      "NzXnj13E5SkKxTzUWDtrVkLNxYUmZsPf9jFP3rVmw4pUDa7EDzSpnyWyWBVeatrkVpwyidNqNCsemc6BPvnwLC6"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "viuZ4fKLLC41MUwULPAiYdsZKnMc915PHJ7WBgB7gnP",
+   "display": "viu...gnP",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:26:54Z.",
+     "signatures": [
+      "3qVACBpiGuERRSAf8gAsUcMXMswHobksGxesuvr4XqY8ZNavJhRsxmbZfNcRRQhoeTjVjttVDVDEz1MdDwiL1rg5"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "AZbcUPtQywecPXZAaJRpNVCiiiDPWjvyygKNBwwnPmj3",
+   "display": "AZb...mj3",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:26:52Z.",
+     "signatures": [
+      "wv6E1wR6gtrCcX3kHQkDhXybrDNEPB9TobrsBTPSt1CynZkjxDcg6paeazmfsU72a8xciu4nN5itZotyvfHB3hV"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "69X4Un6qqC8QBeBKk6zrqUVKGccnWqgUkwdLcC7wiLFB",
+   "display": "69X...LFB",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:26:52Z.",
+     "signatures": [
+      "2pYtSXg9ASLoEpJhVR3B4vg3BXVMEN2eNULNqMvX8CentqwW24oDNHn6j17x2Kz4ApvhHa7S8GyzAt2mKcHQjKpX"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "3fzT6Ndg9cy8MNwv6nXKSZtA9A4bh4KEcLx2e35Wfrb7",
+   "display": "3fz...rb7",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:26:52Z.",
+     "signatures": [
+      "3Ja8rTgT6YeiVuJbZVTdrDX4x9k3xSWLwXqMgYzRAhnesF9KJjTBT4Jd7pRhx8ZXG6VPEF83V1ZzwwH512kH18z5"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "Ec98xDxG8i23uxHQZ1wXyfC4Y5uXq1jxw2T7mqxzMvNk",
+   "display": "Ec9...vNk",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:26:32Z.",
+     "signatures": [
+      "s9Etcbt1yMomDAL2mYWfBLtNkccw6vohJdRBL9eUg1xwfqN5NZUqGQrADGLgfbn1urNqyAzCZvAkWuZu2U1RP1L"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "9R3Qn8At6zsdyBQNTUVNA6fXSNoTYvyCNCrXE3P5V8o3",
+   "display": "9R3...8o3",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:26:32Z.",
+     "signatures": [
+      "25cM6pX2Uu5R4ibjcjFKmT5sb32TAJCdjozDHtCShpiLespkiC7wvJJ2GdgkzXB7hAR9U4txTfqW7rWrcGGXKxXm"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "6uedBHjGibFU27XhVFaZEyKyK2dhVdMqE8Fvw95SkAcw",
+   "display": "6ue...Acw",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:26:32Z.",
+     "signatures": [
+      "2Z5nMAEX5qome9hSkh4iUpPPxGXaXBic1ujhae2wyvWpWZbCjNHFDZYJ9AggD2TqyyNTRGtdF7imPyPVbGLuGSFg"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "Dv5w9PMa1UXsgrbcnuiiTYWLGiSALAdHB5JsKJe5DXjs",
+   "display": "Dv5...Xjs",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:26:32Z.",
+     "signatures": [
+      "2K5xpzE6LUiWZ66tzMbSXJDDCqe5dosdrPdptxbRsDEcucqXoXg8NCLFADJDPHTigkT1baeQ4zJa8NDvNYogZ41q"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "CtmLWYaHJTh8K2kfVGXKFLSnSj2AVSy8BwpYcW1882kp",
+   "display": "Ctm...2kp",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:26:21Z.",
+     "signatures": [
+      "31bEQMiqU1iPabxRWHXsL6EDE41CemL8cRwPQJVY35n69wFte6SSKeTjuz9KTnEJcjGCd9NNfPNUxyZgrm3KCwSi"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "5euvEJSn31FK2kMGrg6a8WG2Zy32ostcJxjFssTH3bV",
+   "display": "5eu...3bV",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:26:21Z.",
+     "signatures": [
+      "4Egc3pQckLxyfd3b5Ld79q5v2AaQ6f25vnGwnfVcNB3hRKBMR8gA4BBnFJYa5W9aLbYnkUVVaEeLiwtZgnZ1DDD7"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "CVhWfUgAEsY4LfHU8t1mvyU5w7x643PSyu17NvYsMVeU",
+   "display": "CVh...VeU",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:26:14Z.",
+     "signatures": [
+      "3Gf8yAVYEnfUxaCS7sdndJFK3du9eavyD37vWpvFeQQAeWGog2uc2n9qVdVU32neqraY4MB6eA82EFe2B4PFqyg"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "5aXYwDDaZaJcVR85sQrnvid6bkcvaM83Rfr8c1odYfeF",
+   "display": "5aX...feF",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:26:14Z.",
+     "signatures": [
+      "53gmGAQ97qB7J4E4e2Uw7KzHA8yxT6gyZVdVaovDLAQAj9381BbnHCDgBsxkM9HqagNn2vcjYmAhezuGrutSbd4H"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "9V2XCiCVdoymenZ22rkYiyeFHaJ5hYzLtoFoADgWBKbr",
+   "display": "9V2...Kbr",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:26:14Z.",
+     "signatures": [
+      "4o3EF4K3CcuKkUqtXTg5sFkNARqK8jBX519MjXpSgpTxgUaEBCvwXymPxHbHH2vZL6GzjWPuX5ibwNTKwjc2BMAv"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "8RRdJUzmzBuY6rz1WtnZCc6G8dKwYMJLJYbT1eG3hccg",
+   "display": "8RR...ccg",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:25:52Z.",
+     "signatures": [
+      "3BEaSemMXkpDLZAupkwZLwdkohCSM3w5asZ1jyvMrfGRSdwfZ38HpcX6btd3mENaphmwjbW7weeXaZzAVNmx25K6"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "CJGrgLZoUhsa5jNGc9UTKczGy6CvB6RjpFLdrauxZBdG",
+   "display": "CJG...BdG",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:25:52Z.",
+     "signatures": [
+      "BA3G6MdpcsPvu934p1VMDcDdvP9avJkDUwmfrz1nFgmAWZ5jnSbUB85s2LLY439MX8dv7yXTybidxSddQby6d8W"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "3gyPmdcRZzo2juUnJmVfj3UeYqCWbhmxDFbsEEch6d3c",
+   "display": "3gy...d3c",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:25:50Z.",
+     "signatures": [
+      "5wV6Qkjgp7mKYfuHqJozbKaKQahhyTdMNxKaAgjZUw2Bq7W6NmQJMz2PcDjvaHiAw373Epewo8zWtgtxFqhWqALn"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "E45GbTLz1NaWUDMURSS4KQTYkjy6pKQZQGTZi9ccCLLE",
+   "display": "E45...LLE",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:25:50Z.",
+     "signatures": [
+      "4a1B6L9FpxDEag9LCjBiWzLv3HNFCC9nj79t91jx4ab5UvBuyAw5mzL9JrjKMEDFBnfGN1so8ube6wzkMwQTPJy3"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "Bfxn377iQXwrMkbT24ybfHYMpHJy7cskmpWjMJEqYqMm",
+   "display": "Bfx...qMm",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:25:44Z.",
+     "signatures": [
+      "3eQfq5knBV7K4QqFkXWzW9moTY9uU91xY6WMpbQik2g7wo9DfBhTtSuGY5ifxiA3N1dGkaTt5DB5ALiTbVCGgmXj"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "Er8DUgchB8rSc2exJfnpfMy7C51tzCpvK6igfzK6dje4",
+   "display": "Er8...je4",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:25:32Z.",
+     "signatures": [
+      "3ckPjEmrrC4gypx7DdZAyWXyav2d9n6DLXU8PnSvTJ7N2T9bbvKYzM4Mj8uVVXuxSsMTzWE4adAesuHxcZEbbY3e"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "BiRtJjNG8mJpmdU6owXdwizNcnTQPsWSioxLRo9zx478",
+   "display": "BiR...478",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:25:31Z.",
+     "signatures": [
+      "66Jo5qvN4WFFALiWN66cg7Pj6AM8NnuoLzhhNwiLUzRbvuuUQoFnu7oxDo5NB6cBeJMc51A1rigVmG1rJfLjnWwr"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "56FVkGP1Zgo4nSRqAmJg2wefYYvFe8gd9PcyfqxP4gw2",
+   "display": "56F...gw2",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:25:29Z.",
+     "signatures": [
+      "6gEe5yFcYawxq9siHLf4cYhyAt89rYiAfQD4aZ4haWBuWtPPYuysvR3nF2seiQgHeLkTfojYKUx9X5ZuN6RvU1Q"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "43dBfiyVmApd6HBoCLGum1AC6mt6v5cgHJivKLaS6yYA",
+   "display": "43d...yYA",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:25:29Z.",
+     "signatures": [
+      "4fAmYiBn9XhGcSsc9sKQRTsJ4gaek6BHRC8YZsVRLmmhzZpcJYRdxdDUDx2pXXam9yXnetWGSvNau9MwhpVzrMD5"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "4W3Wvixg2mNVmHJtKhHQwCfwNogwbX7J2DfQvpNvMn4E",
+   "display": "4W3...n4E",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:25:12Z.",
+     "signatures": [
+      "2LzugsdxmiPnR8s7Zq27uzxfmXqHQg1wefqX9jCHkYajWfuqkFTkaqnojJRwsWRJdQ6wbKZzoD2VRr9P9c3cK4Rj"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "DmkaK9opxAXHjMNFwd4Rs6QQHxXWXX3uqc7wwPMN7vww",
+   "display": "Dmk...vww",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:25:12Z.",
+     "signatures": [
+      "5Vrqa3Qsp1tvZQLG1BBNVHCR1tRJEP7pqmbSVMQpGJCYwwzQHUqjKAMHpyqwJcyZX4XFMzarw1JFQRNvxMQe1qTu"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "Fhn1HPkiPwgaM52VWKynyy37oW75hU8ScHrhB9cguv9J",
+   "display": "Fhn...v9J",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:24:52Z.",
+     "signatures": [
+      "2fZ4BiyfTyTJVV6TM1tqTEmh7ctnJ5nXTpV46cxiJXs2LpzPfriE9XWYPZVaxUHnubNWThFhS2h7K6aRMSjaAWJZ"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "9KGSkPsf3DakRbY8hf18gNbfVr8sKeVAqNQqqLr5WXS",
+   "display": "9KG...WXS",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:24:52Z.",
+     "signatures": [
+      "3GsFC4fN2rTtDbJjHc8sNm5rTgmYQYLH1TZKFjTCD7XM5vwxDepEft4kDFeftp3r9BwpA3fcVjnmTCD79KpXa3Hz"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "6YWqkT4R589FtLsiDpmKJUt886eP83qTQdk8E5JLEvBD",
+   "display": "6YW...vBD",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:24:52Z.",
+     "signatures": [
+      "eMKnanSzY69Sd49LphKdRkd76hiGiGMay6S7SLXC21mLYczgyYSV1mBqA5u6dCq5TjgzocXgR8gZSKzzgjajGfi"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "FWUZtk2yc91opheKvChwgYc4qjRDLesJXtX4f3W6xX9M",
+   "display": "FWU...X9M",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.99M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:24:52Z.",
+     "signatures": [
+      "2yAzb1D45Hz1YFfH7rzKyRjtP7dZXgeXtWy52KoqEGNPgnsrXJF9qej6wyMYdpeyzNFVE8n1b4Lku2zEzkguMjvP"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "CgvtbcWnBvAFtRVyzw6YCvunLiYvQnnSKTS5XBrkvzaM",
+   "display": "Cgv...zaM",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 3.00M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:20:41Z.",
+     "signatures": [
+      "5ZDEjtnfZ26paRGiT1CNRkQDaSAnATntUBwbomPQiKUEPLxZvay6gbfwSASFyJVWGe6nNnG8684KDmea4XYoBMsT"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "9Y6j3Cm7K162HEPVbNif4MKpnsCagpAzJtTLjSU2qQZP",
+   "display": "9Y6...QZP",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 3.00M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:20:41Z.",
+     "signatures": [
+      "C3dCF8g68kbAZB9XgVXzJTMTzhTJ8Jee3jnoD8EYLuYKBHX4hXrUNADaFd94aHytqPpa7woPM1sGRagbVacx1CY"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "39kFYW3gFz9LoXrVMfMv3TjwPn84SFVpfN5x4Dgobtc1",
+   "display": "39k...tc1",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 3.00M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:20:41Z.",
+     "signatures": [
+      "3y9DYYbTXjEdK3okMHG7QDRTh6mLLZ7JnrgWibsxjnd6FaLMnQj3D6t7fWUdNdhfWDA9aKUGrgzCjptyCSTZHRKQ"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "3cPzK8HDviM5jhWLnZ1NJ3WNKnK4F6udYHAr36Wjsakd",
+   "display": "3cP...akd",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 3.00M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:20:31Z.",
+     "signatures": [
+      "3At7xhxYaH8AL8o8eGDTwXktqaKEVv6goYTFALjqALnYzEMuMqXWCaUAEKAoBH35tkJNJqV75YUVRJoUSHWBEEub"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "C6vP9qorrfdAK41GgLVqngL7T4wrz3SgQAvfYevPNeSd",
+   "display": "C6v...eSd",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 3.00M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:20:31Z.",
+     "signatures": [
+      "42Q4Aaw74spnr8YQx3D1hPyvDshZNxS7KR5M3y34xvuTXZJCsQv9ZHvCPXnyLFSJ8DQi76w3dRcQ1KMCy1teFCYN"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "971r6LdYfitXPuEWLiScFtGM5qjRNoT9nLUE6Vs4Jcf8",
+   "display": "971...cf8",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 3.00M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:20:30Z.",
+     "signatures": [
+      "3n9BFCru1R9d7jY4hJHQUPftAJdhU1D73zCv9VEpXEdeMcFzXg6QEkSgLXJ5uNPk4LKoPdXfwCKPqv5wCTsvf92t"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "f2z6dYtH5BZaSHw6dpVqjQQKkVrhFTMmeHovhhUyiEt",
+   "display": "f2z...iEt",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 3.00M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:20:30Z.",
+     "signatures": [
+      "3QtSRdf8zLXQoKPKhCtMwiLGM6ptDho46HhxtA17ZmVfBoaxWsJStBz4NZMsG8TqXMo4NWs8dsXQyBGWWKhzBY7n"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "6bNnuYNrAVZQXgCZj6phvCUu3vkvu4rmsRbJx5B2Z1nM",
+   "display": "6bN...1nM",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 3.00M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:20:30Z.",
+     "signatures": [
+      "713ojEcq1tSHwGBqJLUMnL4uvCQ8XVF9ZiDJ4cjSprYAbXmKK7CC5co8hZkzGjiMQm3fu4k3qDAqnzY6g1FWpWv"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "9V3KZ7aMZQBvpbMjiHoEE26iDz2DGz6iACMDHHscacnx",
+   "display": "9V3...cnx",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 3.00M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:20:14Z.",
+     "signatures": [
+      "2JLKaDzNg7vmZNsX8uaUeHatLGZxKk8V5dXLDdUZrJ7zjnym2HLD8hyiocwx4UNjjnpFY6xLCHYRrxnoJUxYVMnS"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "ASZmL2X6Qr9yrgfXCwJcp1x564hiajb2sSnN4DWidVqp",
+   "display": "ASZ...Vqp",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 3.00M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:20:14Z.",
+     "signatures": [
+      "3gBnM5ytSWhG3YmEoYZXPwfV2jax5fcApCcGiqbeV339UHAJ75QXmVppYtD4QRcmiczmNFJCndYtDjeHW35gqN87"
+     ]
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 30527.008236293743,
+    "buyTok": 0,
+    "sellTok": 2988702.794758,
+    "first": 1733351576,
+    "last": 1733351688,
+    "lastSell": 1733351688,
+    "maxTrade": 3277.71551427986,
+    "trades": 13,
+    "mev": 0,
+    "windowUsd": 30527.008236293743
+   }
+  },
+  {
+   "address": "GezQLfQGLbA1Aa6CyHLt5XRfbyX3zwaa2XASGQ3tUUeM",
+   "display": "Gez...UeM",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 3.00M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:20:14Z.",
+     "signatures": [
+      "2nMHUhkRpkSc3btJFJL4ggn6KpGmsw8Sbc7GQneVLR9UfdfpVcRsoKRRE6PQYNNsDMPWAjW9RsMHb72zgURPBsDR"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "9rxUYZGRwhZGCMymngMcDL71b7QAhKEBSK1mFLHdsAx6",
+   "display": "9rx...Ax6",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 3.00M HAWK directly from the dev wallet in one transaction at 2024-12-04T22:20:14Z.",
+     "signatures": [
+      "3igMGmbway1hFvwM4A6hjy5nTnYhHNE2tK1JLWVdf3z79sDvwhmMjFLXCD9RFqeRvpiBGZWNpmwQpojMw8RBDrSx"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "HiiqhjDF8hgeBbnbZNdkyjx6Wvy2oefvh85GokojbRnN",
+   "display": "Hii...RnN",
+   "tag": "WHALE",
+   "evidence": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 1 of the candidates by USD traded inside the replay window ($3,242,439); not a dev, insider or smart-exit wallet and not bot-like."
+    }
+   ],
+   "stats": {
+    "lastBuy": 1733350093,
+    "buyUsd": 968274.2143801178,
+    "sellUsd": 2274164.346069414,
+    "buyTok": 175777981.432051,
+    "sellTok": 136052374.04147,
+    "first": 1733350093,
+    "last": 1733350847,
+    "lastSell": 1733350847,
+    "maxTrade": 968274.2143801178,
+    "trades": 46,
+    "mev": 0,
+    "windowUsd": 3242438.5604495322
+   }
+  },
+  {
+   "address": "ECsx3WMyTsfxyWUp4aqMoHwf7gSxQQfB4ZzQ6V4yBHSL",
+   "display": "ECs...HSL",
+   "tag": "WHALE",
+   "evidence": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 2 of the candidates by USD traded inside the replay window ($365,591); not a dev, insider or smart-exit wallet and not bot-like."
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 365590.8433006219,
+    "buyTok": 0,
+    "sellTok": 30089419.400011003,
+    "first": 1733350482,
+    "last": 1733350878,
+    "lastSell": 1733350878,
+    "maxTrade": 33785.28948884581,
+    "trades": 23,
+    "mev": 0,
+    "windowUsd": 365590.8433006219
+   }
+  },
+  {
+   "address": "6YHcrghddkYMf6zu9vs8WtZkBUMBTEQvvSPVUEqnDYXf",
+   "display": "6YH...YXf",
+   "tag": "WHALE",
+   "evidence": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 3 of the candidates by USD traded inside the replay window ($202,271); not a dev, insider or smart-exit wallet and not bot-like."
+    }
+   ],
+   "stats": {
+    "lastBuy": 1733352777,
+    "buyUsd": 202270.92842970163,
+    "sellUsd": 119680.988669504,
+    "buyTok": 16736323.883074999,
+    "sellTok": 16702851.235313,
+    "first": 1733350863,
+    "last": 1733355241,
+    "lastSell": 1733355241,
+    "maxTrade": 44837.658042698095,
+    "trades": 15,
+    "mev": 0,
+    "windowUsd": 202270.92842970163
+   }
+  }
+ ]
+}

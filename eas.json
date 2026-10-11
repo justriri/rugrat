@@ -1,0 +1,28 @@
+{
+  "cli": {
+    "version": ">= 16.0.0",
+    "appVersionSource": "local"
+  },
+  "build": {
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_BADGE_METADATA_URI": "https://rugrat-badge.expo.app/rug-hunter.json",
+        "EXPO_PUBLIC_SOLANA_CLUSTER": "devnet"
+      }
+    },
+    "production": {
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_BADGE_METADATA_URI": "https://rugrat-badge.expo.app/rug-hunter.json",
+        "EXPO_PUBLIC_SOLANA_CLUSTER": "mainnet-beta"
+      },
+      "environment": "production"
+    }
+  }
+}

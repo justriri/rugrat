@@ -1,0 +1,39 @@
+{
+  "slug": "barron",
+  "name": "Official Barron Meme",
+  "symbol": "BARRON",
+  "mint": "ECY31gWwxy4s2VnMkYhmqDkrV75KrwR2yTtsnrnSpump",
+  "ticks": 181,
+  "events": 25,
+  "byTag": {
+    "SMART": 16,
+    "WHALE": 9
+  },
+  "peak": {
+    "timestamp": 1737361740,
+    "price": 0.42719620021814597
+  },
+  "collapse": {
+    "timestamp": 1737362820,
+    "price": 0.20217806470160762
+  },
+  "paperSolUsd": 263.45,
+  "signalEvent": {
+    "id": "1u2J7KBwkApg:HYW...ENp:b28",
+    "at": "2025-01-20T07:58:04Z",
+    "wallet": "HYW...ENp",
+    "usd": 498962
+  },
+  "taggedWallets": {
+    "DEV": 1,
+    "SMART": 3,
+    "WHALE": 3
+  },
+  "cleaning": {
+    "rawCandles": 543,
+    "malformedDropped": 0,
+    "duplicateTimestampsDropped": 0,
+    "outOfOrderResorted": false,
+    "outsideWindowDropped": 362
+  }
+}

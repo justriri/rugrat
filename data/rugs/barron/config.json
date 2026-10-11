@@ -1,0 +1,62 @@
+{
+  "slug": "barron",
+  "id": "barron-2025-01-20",
+  "mint": "ECY31gWwxy4s2VnMkYhmqDkrV75KrwR2yTtsnrnSpump",
+  "rugType": "FAST_DUMP",
+  "date": "2025-01-20",
+  "window": {
+    "from": "2025-01-20T07:15:00Z",
+    "to": "2025-01-20T10:15:00Z"
+  },
+  "priceInterval": "1_MINUTE",
+  "playbackSpeed": 160,
+  "collapse": {
+    "kind": "peak-drawdown",
+    "fraction": 0.5
+  },
+  "devOnchain": {
+    "lookbackSec": 3600,
+    "txCap": 300
+  },
+  "rules": {
+    "tapeSampleStepSec": 20,
+    "candidateTopN": 40,
+    "whaleSingleTradeUsd": 20000,
+    "maxRecipientCandidates": 30,
+    "walletMaxPages": 80,
+    "botFilter": {
+      "maxMevTradeFraction": 0.1
+    },
+    "smart": {
+      "topN": 5,
+      "minRealizedProfitUsd": 100000,
+      "minSoldFractionOfBought": 0.8,
+      "lastSellBeforeCollapse": true,
+      "lastBuyBeforePeak": true
+    },
+    "whale": {
+      "topN": 3
+    },
+    "eventMinUsd": {
+      "INSIDER": 0,
+      "SMART": 60000,
+      "WHALE": 200000,
+      "DEV": 0
+    },
+    "devMove": {
+      "minPctSupply": 0.002,
+      "burstGapSec": 30,
+      "burstMaxSec": 120
+    },
+    "tradeBurst": {
+      "gapSec": 45,
+      "maxSec": 240
+    }
+  },
+  "signal": {
+    "tag": "SMART",
+    "action": "SELL",
+    "minUsd": 400000,
+    "description": "First SMART SELL burst of at least $400,000: a wallet with an early, profitable exit (sold out before the collapse) selling half a million dollars within a few minutes while the price was still climbing. The floor is set for this token, where the largest sampled single trades are about $300K."
+  }
+}

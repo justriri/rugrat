@@ -1,0 +1,62 @@
+{
+  "slug": "hawk",
+  "id": "hawk-2024-12-04",
+  "mint": "HAWKThXRcNL9ZGZKqgUXLm4W8tnRZ7U6MVdEepSutj34",
+  "rugType": "DEV_EXIT",
+  "date": "2024-12-04",
+  "window": {
+    "from": "2024-12-04T22:08:00Z",
+    "to": "2024-12-04T23:00:00Z"
+  },
+  "priceInterval": "15_SECOND",
+  "playbackSpeed": 36,
+  "collapse": {
+    "kind": "peak-drawdown",
+    "fraction": 0.15
+  },
+  "devOnchain": {
+    "lookbackSec": 4200,
+    "txCap": 400
+  },
+  "rules": {
+    "tapeSampleStepSec": 20,
+    "candidateTopN": 40,
+    "whaleSingleTradeUsd": 50000,
+    "maxRecipientCandidates": 40,
+    "walletMaxPages": 80,
+    "botFilter": {
+      "maxMevTradeFraction": 0.1
+    },
+    "smart": {
+      "topN": 5,
+      "minRealizedProfitUsd": 50000,
+      "minSoldFractionOfBought": 0.8,
+      "lastSellBeforeCollapse": true,
+      "lastBuyBeforePeak": true
+    },
+    "whale": {
+      "topN": 3
+    },
+    "eventMinUsd": {
+      "INSIDER": 10000,
+      "SMART": 30000,
+      "WHALE": 100000,
+      "DEV": 0
+    },
+    "devMove": {
+      "minPctSupply": 0.002,
+      "burstGapSec": 20,
+      "burstMaxSec": 120
+    },
+    "tradeBurst": {
+      "gapSec": 45,
+      "maxSec": 240
+    }
+  },
+  "signal": {
+    "tag": "DEV",
+    "action": "SUPPLY_MOVE",
+    "minUsd": 250000,
+    "description": "First dev-wallet supply move worth at least $250,000 (tokens x the price in force): the token's creator wallet begins sending out a large share of total supply. It happens before the price completes its fall to 15% of the peak."
+  }
+}

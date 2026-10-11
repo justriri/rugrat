@@ -1,0 +1,40 @@
+{
+  "slug": "hawk",
+  "name": "Hawk Tuah",
+  "symbol": "HAWK",
+  "mint": "HAWKThXRcNL9ZGZKqgUXLm4W8tnRZ7U6MVdEepSutj34",
+  "ticks": 208,
+  "events": 28,
+  "byTag": {
+    "WHALE": 7,
+    "DEV": 10,
+    "INSIDER": 11
+  },
+  "peak": {
+    "timestamp": 1733350305,
+    "price": 0.04925586190189037
+  },
+  "collapse": {
+    "timestamp": 1733351865,
+    "price": 0.00731033002433553
+  },
+  "paperSolUsd": 231.06,
+  "signalEvent": {
+    "id": "2JLKaDzNg7vm:burst12",
+    "at": "2024-12-04T22:20:14Z",
+    "wallet": "HAW...yAm",
+    "usd": 35949672
+  },
+  "taggedWallets": {
+    "DEV": 1,
+    "INSIDER": 206,
+    "WHALE": 3
+  },
+  "cleaning": {
+    "rawCandles": 208,
+    "malformedDropped": 0,
+    "duplicateTimestampsDropped": 0,
+    "outOfOrderResorted": false,
+    "outsideWindowDropped": 0
+  }
+}

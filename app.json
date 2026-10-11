@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "Rugrat",
+    "slug": "rug-replay",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#10161f",
+    "icon": "./assets/icon.png",
+    "android": {
+      "package": "com.rugreplay.app",
+      "versionCode": 3,
+      "permissions": [],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#8fd6ff"
+      }
+    },
+    "plugins": [
+      "expo-status-bar",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 220,
+          "backgroundColor": "#8fd6ff",
+          "resizeMode": "contain"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "17b4e42c-6b0a-484a-bd37-2c73e46319e3"
+      }
+    },
+    "owner": "riri_unfiltered"
+  }
+}

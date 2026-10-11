@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" shape-rendering="crispEdges">
+  <!-- RUGRAT: the game's own character (rat ears, orange shirt, gold stack) on the game's sky and grass.
+       Source for assets/*.png; regenerate with `node scripts/make-icons.mjs`. -->
+  <defs>
+    <g id="rugrat">
+      <rect x="1.6" y="0.6" width="4.8" height="3.8" fill="#4a2608"/>
+      <rect x="9.6" y="0.6" width="4.8" height="3.8" fill="#4a2608"/>
+      <rect x="2" y="1" width="4" height="3" fill="#9aa0a6"/>
+      <rect x="10" y="1" width="4" height="3" fill="#9aa0a6"/>
+      <rect x="3" y="2" width="2" height="1.5" fill="#f2a6b8"/>
+      <rect x="11" y="2" width="2" height="1.5" fill="#f2a6b8"/>
+      <rect x="2.5" y="2.5" width="11" height="9" fill="#4a2608"/>
+      <rect x="3" y="3" width="10" height="8" fill="#f2c9a0"/>
+      <rect x="5" y="6" width="1.2" height="2.2" fill="#1b1b22"/>
+      <rect x="9.8" y="6" width="1.2" height="2.2" fill="#1b1b22"/>
+      <rect x="5" y="6" width="0.5" height="0.7" fill="#ffffff"/>
+      <rect x="9.8" y="6" width="0.5" height="0.7" fill="#ffffff"/>
+      <rect x="7" y="8.2" width="2" height="1.1" fill="#f2a6b8"/>
+      <rect x="7" y="10" width="2" height="0.5" fill="#7a3b2e"/>
+      <rect x="0.4" y="8.3" width="2.8" height="0.3" fill="#f4f1e8"/>
+      <rect x="0.7" y="9.4" width="2.6" height="0.3" fill="#f4f1e8"/>
+      <rect x="12.8" y="8.3" width="2.8" height="0.3" fill="#f4f1e8"/>
+      <rect x="12.7" y="9.4" width="2.6" height="0.3" fill="#f4f1e8"/>
+      <rect x="1.6" y="10.6" width="12.8" height="5.4" fill="#4a2608"/>
+      <rect x="2" y="11" width="12" height="5" fill="#f08a24"/>
+      <rect x="5" y="12.2" width="6" height="1.1" fill="#f7c53b"/>
+      <rect x="5" y="13.7" width="6" height="1.1" fill="#f7c53b"/>
+    </g>
+  </defs>
+  <rect width="16" height="16" fill="#8fd6ff"/>
+  <rect x="9.5" y="0.4" width="4" height="1" fill="#ffffff"/>
+  <rect x="0.5" y="4.6" width="2.4" height="0.9" fill="#ffffff"/>
+  <rect y="13" width="16" height="3" fill="#6fb85a"/>
+  <rect y="13" width="4" height="1.5" fill="#62a84f"/>
+  <rect x="8" y="13" width="4" height="1.5" fill="#62a84f"/>
+  <use href="#rugrat"/>
+</svg>

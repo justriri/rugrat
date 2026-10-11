@@ -1,0 +1,995 @@
+{
+ "id": "barron-2025-01-20",
+ "token": "BARRON",
+ "name": "Official Barron Meme",
+ "symbol": "BARRON",
+ "mint": "ECY31gWwxy4s2VnMkYhmqDkrV75KrwR2yTtsnrnSpump",
+ "logoUrl": "https://ipfs.io/ipfs/QmcufMnTwyAbFAjFhafDMp8f46ZQG3nEy3ic3XxP8xpNb1",
+ "logoSource": "Jupiter asset metadata (datapi.jup.ag/v1/assets/search), icon field",
+ "rugType": "FAST_DUMP",
+ "date": "2025-01-20",
+ "replayStart": 1737357300,
+ "replayEnd": 1737368100,
+ "signal": {
+  "tag": "SMART",
+  "action": "SELL",
+  "minUsd": 400000,
+  "description": "First SMART SELL burst of at least $400,000: a wallet with an early, profitable exit (sold out before the collapse) selling half a million dollars within a few minutes while the price was still climbing. The floor is set for this token, where the largest sampled single trades are about $300K."
+ },
+ "collapseReason": "First tick after the replay's peak (0.4272 at 2025-01-20T08:29:00Z) whose price is at or below 50% of that peak: 0.2022 at 2025-01-20T08:47:00Z. A price-only rule, stored with this replay; the engine does not know it.",
+ "source": "Jupiter chart API (datapi.jup.ag/v2/charts) (https://datapi.jup.ag/v2/charts/ECY31gWwxy4s2VnMkYhmqDkrV75KrwR2yTtsnrnSpump?interval=1_MINUTE&baseAsset=ECY31gWwxy4s2VnMkYhmqDkrV75KrwR2yTtsnrnSpump&from=1737357600000&to=1737368400000&candles=1000&type=price)",
+ "ticks": [
+  {
+   "timestamp": 1737357300,
+   "price": 0.07618038062344515
+  },
+  {
+   "timestamp": 1737357360,
+   "price": 0.0862229380822153
+  },
+  {
+   "timestamp": 1737357420,
+   "price": 0.07876299940231768
+  },
+  {
+   "timestamp": 1737357480,
+   "price": 0.0698045318538876
+  },
+  {
+   "timestamp": 1737357540,
+   "price": 0.06639946962687962
+  },
+  {
+   "timestamp": 1737357600,
+   "price": 0.06845680907006516
+  },
+  {
+   "timestamp": 1737357660,
+   "price": 0.06741933962080537
+  },
+  {
+   "timestamp": 1737357720,
+   "price": 0.05867382211110323
+  },
+  {
+   "timestamp": 1737357780,
+   "price": 0.04831908036227041
+  },
+  {
+   "timestamp": 1737357840,
+   "price": 0.05643035540200039
+  },
+  {
+   "timestamp": 1737357900,
+   "price": 0.06373857008753614
+  },
+  {
+   "timestamp": 1737357960,
+   "price": 0.0706587692279208
+  },
+  {
+   "timestamp": 1737358020,
+   "price": 0.07032124931276916
+  },
+  {
+   "timestamp": 1737358080,
+   "price": 0.06351392389233443
+  },
+  {
+   "timestamp": 1737358140,
+   "price": 0.05777484061223748
+  },
+  {
+   "timestamp": 1737358200,
+   "price": 0.0650033344342761
+  },
+  {
+   "timestamp": 1737358260,
+   "price": 0.0744460372805403
+  },
+  {
+   "timestamp": 1737358320,
+   "price": 0.07216224960994007
+  },
+  {
+   "timestamp": 1737358380,
+   "price": 0.07558611703524473
+  },
+  {
+   "timestamp": 1737358440,
+   "price": 0.07385132114952922
+  },
+  {
+   "timestamp": 1737358500,
+   "price": 0.07406447194363384
+  },
+  {
+   "timestamp": 1737358560,
+   "price": 0.08158540270701137
+  },
+  {
+   "timestamp": 1737358620,
+   "price": 0.08098468745256089
+  },
+  {
+   "timestamp": 1737358680,
+   "price": 0.08284068475292303
+  },
+  {
+   "timestamp": 1737358740,
+   "price": 0.08494865422130468
+  },
+  {
+   "timestamp": 1737358800,
+   "price": 0.09039092380904057
+  },
+  {
+   "timestamp": 1737358860,
+   "price": 0.09240175125474867
+  },
+  {
+   "timestamp": 1737358920,
+   "price": 0.085543305520932
+  },
+  {
+   "timestamp": 1737358980,
+   "price": 0.09572567063027661
+  },
+  {
+   "timestamp": 1737359040,
+   "price": 0.09156204746010169
+  },
+  {
+   "timestamp": 1737359100,
+   "price": 0.09649619368148854
+  },
+  {
+   "timestamp": 1737359160,
+   "price": 0.09633708220358435
+  },
+  {
+   "timestamp": 1737359220,
+   "price": 0.09704335215285703
+  },
+  {
+   "timestamp": 1737359280,
+   "price": 0.09995555558583566
+  },
+  {
+   "timestamp": 1737359340,
+   "price": 0.10323544662575362
+  },
+  {
+   "timestamp": 1737359400,
+   "price": 0.10486568116912776
+  },
+  {
+   "timestamp": 1737359460,
+   "price": 0.10461823174887866
+  },
+  {
+   "timestamp": 1737359520,
+   "price": 0.1348260077144899
+  },
+  {
+   "timestamp": 1737359580,
+   "price": 0.1299956218040807
+  },
+  {
+   "timestamp": 1737359640,
+   "price": 0.1253104982825413
+  },
+  {
+   "timestamp": 1737359700,
+   "price": 0.12458520769856339
+  },
+  {
+   "timestamp": 1737359760,
+   "price": 0.13178036936628815
+  },
+  {
+   "timestamp": 1737359820,
+   "price": 0.13833240860593027
+  },
+  {
+   "timestamp": 1737359880,
+   "price": 0.15216562019467172
+  },
+  {
+   "timestamp": 1737359940,
+   "price": 0.17868877934641578
+  },
+  {
+   "timestamp": 1737360000,
+   "price": 0.18450901975957237
+  },
+  {
+   "timestamp": 1737360060,
+   "price": 0.19734380227694373
+  },
+  {
+   "timestamp": 1737360120,
+   "price": 0.21716819698635567
+  },
+  {
+   "timestamp": 1737360180,
+   "price": 0.18613174290508344
+  },
+  {
+   "timestamp": 1737360240,
+   "price": 0.18671164208961344
+  },
+  {
+   "timestamp": 1737360300,
+   "price": 0.15605921403852793
+  },
+  {
+   "timestamp": 1737360360,
+   "price": 0.16372799480872705
+  },
+  {
+   "timestamp": 1737360420,
+   "price": 0.1871641396238169
+  },
+  {
+   "timestamp": 1737360480,
+   "price": 0.17572234911302823
+  },
+  {
+   "timestamp": 1737360540,
+   "price": 0.16380213047096645
+  },
+  {
+   "timestamp": 1737360600,
+   "price": 0.1743444610002068
+  },
+  {
+   "timestamp": 1737360660,
+   "price": 0.19561980741689058
+  },
+  {
+   "timestamp": 1737360720,
+   "price": 0.1808687782690421
+  },
+  {
+   "timestamp": 1737360780,
+   "price": 0.18947760667400607
+  },
+  {
+   "timestamp": 1737360840,
+   "price": 0.201730799440532
+  },
+  {
+   "timestamp": 1737360900,
+   "price": 0.19096686487033898
+  },
+  {
+   "timestamp": 1737360960,
+   "price": 0.17009070409241422
+  },
+  {
+   "timestamp": 1737361020,
+   "price": 0.19392628957596658
+  },
+  {
+   "timestamp": 1737361080,
+   "price": 0.20590049754518652
+  },
+  {
+   "timestamp": 1737361140,
+   "price": 0.19722128266534786
+  },
+  {
+   "timestamp": 1737361200,
+   "price": 0.22660482875625867
+  },
+  {
+   "timestamp": 1737361260,
+   "price": 0.2557394899057829
+  },
+  {
+   "timestamp": 1737361320,
+   "price": 0.27166036149674383
+  },
+  {
+   "timestamp": 1737361380,
+   "price": 0.28932919952114694
+  },
+  {
+   "timestamp": 1737361440,
+   "price": 0.28996871004280905
+  },
+  {
+   "timestamp": 1737361500,
+   "price": 0.30103819610595767
+  },
+  {
+   "timestamp": 1737361560,
+   "price": 0.3066168925739801
+  },
+  {
+   "timestamp": 1737361620,
+   "price": 0.34551724741876644
+  },
+  {
+   "timestamp": 1737361680,
+   "price": 0.37724175235455976
+  },
+  {
+   "timestamp": 1737361740,
+   "price": 0.42719620021814597
+  },
+  {
+   "timestamp": 1737361800,
+   "price": 0.37224569440989114
+  },
+  {
+   "timestamp": 1737361860,
+   "price": 0.33455903755061295
+  },
+  {
+   "timestamp": 1737361920,
+   "price": 0.33649271752110643
+  },
+  {
+   "timestamp": 1737361980,
+   "price": 0.3440887710549239
+  },
+  {
+   "timestamp": 1737362040,
+   "price": 0.34902262011935736
+  },
+  {
+   "timestamp": 1737362100,
+   "price": 0.3296580086075205
+  },
+  {
+   "timestamp": 1737362160,
+   "price": 0.328603124099461
+  },
+  {
+   "timestamp": 1737362220,
+   "price": 0.2749917188601654
+  },
+  {
+   "timestamp": 1737362280,
+   "price": 0.2543305833463099
+  },
+  {
+   "timestamp": 1737362340,
+   "price": 0.22827453779040927
+  },
+  {
+   "timestamp": 1737362400,
+   "price": 0.280422540049943
+  },
+  {
+   "timestamp": 1737362460,
+   "price": 0.3024403510161563
+  },
+  {
+   "timestamp": 1737362520,
+   "price": 0.2791802422626231
+  },
+  {
+   "timestamp": 1737362580,
+   "price": 0.25411095951069174
+  },
+  {
+   "timestamp": 1737362640,
+   "price": 0.2786985676668878
+  },
+  {
+   "timestamp": 1737362700,
+   "price": 0.271767464517936
+  },
+  {
+   "timestamp": 1737362760,
+   "price": 0.24503873744939184
+  },
+  {
+   "timestamp": 1737362820,
+   "price": 0.20217806470160762
+  },
+  {
+   "timestamp": 1737362880,
+   "price": 0.1859566274127411
+  },
+  {
+   "timestamp": 1737362940,
+   "price": 0.1735287715237751
+  },
+  {
+   "timestamp": 1737363000,
+   "price": 0.20916701526784057
+  },
+  {
+   "timestamp": 1737363060,
+   "price": 0.2192768648285288
+  },
+  {
+   "timestamp": 1737363120,
+   "price": 0.22692317628891914
+  },
+  {
+   "timestamp": 1737363180,
+   "price": 0.23631867151085156
+  },
+  {
+   "timestamp": 1737363240,
+   "price": 0.23798473934817768
+  },
+  {
+   "timestamp": 1737363300,
+   "price": 0.24671834568655854
+  },
+  {
+   "timestamp": 1737363360,
+   "price": 0.2641069075107444
+  },
+  {
+   "timestamp": 1737363420,
+   "price": 0.2880516236625236
+  },
+  {
+   "timestamp": 1737363480,
+   "price": 0.29508792357521263
+  },
+  {
+   "timestamp": 1737363540,
+   "price": 0.3206675765557189
+  },
+  {
+   "timestamp": 1737363600,
+   "price": 0.2549967458709685
+  },
+  {
+   "timestamp": 1737363660,
+   "price": 0.21624457039130146
+  },
+  {
+   "timestamp": 1737363720,
+   "price": 0.2392933623835472
+  },
+  {
+   "timestamp": 1737363780,
+   "price": 0.24399286509845827
+  },
+  {
+   "timestamp": 1737363840,
+   "price": 0.22473494034370037
+  },
+  {
+   "timestamp": 1737363900,
+   "price": 0.1922746412372837
+  },
+  {
+   "timestamp": 1737363960,
+   "price": 0.198994134545098
+  },
+  {
+   "timestamp": 1737364020,
+   "price": 0.22376106095118975
+  },
+  {
+   "timestamp": 1737364080,
+   "price": 0.22876399912806047
+  },
+  {
+   "timestamp": 1737364140,
+   "price": 0.22876521819654866
+  },
+  {
+   "timestamp": 1737364200,
+   "price": 0.22009185793908556
+  },
+  {
+   "timestamp": 1737364260,
+   "price": 0.19925249008743545
+  },
+  {
+   "timestamp": 1737364320,
+   "price": 0.16198887371651785
+  },
+  {
+   "timestamp": 1737364380,
+   "price": 0.18149693203746275
+  },
+  {
+   "timestamp": 1737364440,
+   "price": 0.17432963909321056
+  },
+  {
+   "timestamp": 1737364500,
+   "price": 0.1860228230730921
+  },
+  {
+   "timestamp": 1737364560,
+   "price": 0.19183915418129324
+  },
+  {
+   "timestamp": 1737364620,
+   "price": 0.19625337171469334
+  },
+  {
+   "timestamp": 1737364680,
+   "price": 0.16284321639078292
+  },
+  {
+   "timestamp": 1737364740,
+   "price": 0.13777077549857314
+  },
+  {
+   "timestamp": 1737364800,
+   "price": 0.1225295871183744
+  },
+  {
+   "timestamp": 1737364860,
+   "price": 0.1463250352655138
+  },
+  {
+   "timestamp": 1737364920,
+   "price": 0.12754789914606604
+  },
+  {
+   "timestamp": 1737364980,
+   "price": 0.11752624277253511
+  },
+  {
+   "timestamp": 1737365040,
+   "price": 0.09787214805513333
+  },
+  {
+   "timestamp": 1737365100,
+   "price": 0.08305318582298435
+  },
+  {
+   "timestamp": 1737365160,
+   "price": 0.061267686775744075
+  },
+  {
+   "timestamp": 1737365220,
+   "price": 0.07039462141302455
+  },
+  {
+   "timestamp": 1737365280,
+   "price": 0.07562952942533617
+  },
+  {
+   "timestamp": 1737365340,
+   "price": 0.07857700869200335
+  },
+  {
+   "timestamp": 1737365400,
+   "price": 0.08676827488925345
+  },
+  {
+   "timestamp": 1737365460,
+   "price": 0.09722627400169252
+  },
+  {
+   "timestamp": 1737365520,
+   "price": 0.07741723753688612
+  },
+  {
+   "timestamp": 1737365580,
+   "price": 0.06996041903334364
+  },
+  {
+   "timestamp": 1737365640,
+   "price": 0.08570325353469246
+  },
+  {
+   "timestamp": 1737365700,
+   "price": 0.0822139984958538
+  },
+  {
+   "timestamp": 1737365760,
+   "price": 0.0711407374010374
+  },
+  {
+   "timestamp": 1737365820,
+   "price": 0.0611820325473322
+  },
+  {
+   "timestamp": 1737365880,
+   "price": 0.064485616112997
+  },
+  {
+   "timestamp": 1737365940,
+   "price": 0.07611734486979757
+  },
+  {
+   "timestamp": 1737366000,
+   "price": 0.07107919892790632
+  },
+  {
+   "timestamp": 1737366060,
+   "price": 0.06104368195734285
+  },
+  {
+   "timestamp": 1737366120,
+   "price": 0.04537509080583306
+  },
+  {
+   "timestamp": 1737366180,
+   "price": 0.04312647708916353
+  },
+  {
+   "timestamp": 1737366240,
+   "price": 0.0534016869062268
+  },
+  {
+   "timestamp": 1737366300,
+   "price": 0.052910099009039056
+  },
+  {
+   "timestamp": 1737366360,
+   "price": 0.04843613440663109
+  },
+  {
+   "timestamp": 1737366420,
+   "price": 0.04890374548867937
+  },
+  {
+   "timestamp": 1737366480,
+   "price": 0.05811933047901988
+  },
+  {
+   "timestamp": 1737366540,
+   "price": 0.06087927534936583
+  },
+  {
+   "timestamp": 1737366600,
+   "price": 0.05901568126920068
+  },
+  {
+   "timestamp": 1737366660,
+   "price": 0.06709289279764531
+  },
+  {
+   "timestamp": 1737366720,
+   "price": 0.06204605194495786
+  },
+  {
+   "timestamp": 1737366780,
+   "price": 0.04601193215244469
+  },
+  {
+   "timestamp": 1737366840,
+   "price": 0.05241597596004163
+  },
+  {
+   "timestamp": 1737366900,
+   "price": 0.049949597713256834
+  },
+  {
+   "timestamp": 1737366960,
+   "price": 0.05844233393486868
+  },
+  {
+   "timestamp": 1737367020,
+   "price": 0.061790631199509546
+  },
+  {
+   "timestamp": 1737367080,
+   "price": 0.05216733553141759
+  },
+  {
+   "timestamp": 1737367140,
+   "price": 0.05664545605321295
+  },
+  {
+   "timestamp": 1737367200,
+   "price": 0.04976903675705748
+  },
+  {
+   "timestamp": 1737367260,
+   "price": 0.04940030645484006
+  },
+  {
+   "timestamp": 1737367320,
+   "price": 0.05235460300839229
+  },
+  {
+   "timestamp": 1737367380,
+   "price": 0.0521260065639917
+  },
+  {
+   "timestamp": 1737367440,
+   "price": 0.053648714884071906
+  },
+  {
+   "timestamp": 1737367500,
+   "price": 0.05864937753017064
+  },
+  {
+   "timestamp": 1737367560,
+   "price": 0.06080510325300633
+  },
+  {
+   "timestamp": 1737367620,
+   "price": 0.059635699955580296
+  },
+  {
+   "timestamp": 1737367680,
+   "price": 0.05688327450367484
+  },
+  {
+   "timestamp": 1737367740,
+   "price": 0.06003883453066047
+  },
+  {
+   "timestamp": 1737367800,
+   "price": 0.06935679162668672
+  },
+  {
+   "timestamp": 1737367860,
+   "price": 0.06664531660873643
+  },
+  {
+   "timestamp": 1737367920,
+   "price": 0.06533262065315391
+  },
+  {
+   "timestamp": 1737367980,
+   "price": 0.06935028195765805
+  },
+  {
+   "timestamp": 1737368040,
+   "price": 0.07184697602159049
+  },
+  {
+   "timestamp": 1737368100,
+   "price": 0.06292242114683443
+  }
+ ],
+ "events": [
+  {
+   "id": "38FSv8JJ7H4n:EpD...n5D:b7",
+   "timestamp": 1737357983,
+   "wallet": "EpD...n5D",
+   "tag": "SMART",
+   "action": "BUY",
+   "amount": 61824,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "4XweDw5zatHJ:HYW...ENp:b17",
+   "timestamp": 1737357988,
+   "wallet": "HYW...ENp",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 217831,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "31X2qAyVhYua:HYW...ENp:b13",
+   "timestamp": 1737358474,
+   "wallet": "HYW...ENp",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 123319,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "2cfeaBM9Dhx1:HYW...ENp:b10",
+   "timestamp": 1737358700,
+   "wallet": "HYW...ENp",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 105732,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "258b3iZ75Rkt:HYW...ENp:b24",
+   "timestamp": 1737359101,
+   "wallet": "HYW...ENp",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 227339,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "93qxTS1Fc7vW:HYW...ENp:b23",
+   "timestamp": 1737359349,
+   "wallet": "HYW...ENp",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 218670,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "5c5dnm2mRbRj:HYW...ENp:b11",
+   "timestamp": 1737359592,
+   "wallet": "HYW...ENp",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 150014,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "2iRMXdCvkSYX:6yk...Wtx:b6",
+   "timestamp": 1737359778,
+   "wallet": "6yk...Wtx",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 185295,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "1u2J7KBwkApg:HYW...ENp:b28",
+   "timestamp": 1737359884,
+   "wallet": "HYW...ENp",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 498962,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "2dYLbawemUs1:HYW...ENp:b7",
+   "timestamp": 1737360135,
+   "wallet": "HYW...ENp",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 171618,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "5A9M21EJBc8Q:EpD...n5D:b4",
+   "timestamp": 1737360509,
+   "wallet": "EpD...n5D",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 63636,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "2jtkHeVtmwyz:EpD...n5D:b3",
+   "timestamp": 1737361204,
+   "wallet": "EpD...n5D",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 63982,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "2s1fJAroiwMD:EpD...n5D:b3",
+   "timestamp": 1737361450,
+   "wallet": "EpD...n5D",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 84643,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "JXLrBX1WRNGA:EpD...n5D:b3",
+   "timestamp": 1737361689,
+   "wallet": "EpD...n5D",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 107264,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "2uYtgajnwZ7L:EpD...n5D:b10",
+   "timestamp": 1737361824,
+   "wallet": "EpD...n5D",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 278462,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "3x68Evv36hKu:5k4...vGC:b4",
+   "timestamp": 1737362001,
+   "wallet": "5k4...vGC",
+   "tag": "WHALE",
+   "action": "BUY",
+   "amount": 240339,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "4d4Kar2zMJif:EpD...n5D:b7",
+   "timestamp": 1737362136,
+   "wallet": "EpD...n5D",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 186762,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "jJETKVUTno3j:5k4...vGC:b2",
+   "timestamp": 1737362350,
+   "wallet": "5k4...vGC",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 200756,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "g3v1zJ9ESfnp:CgP...V94:b10",
+   "timestamp": 1737362466,
+   "wallet": "CgP...V94",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 277813,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "3btLDUiSUxXK:FLF...xcm:b11",
+   "timestamp": 1737365116,
+   "wallet": "FLF...xcm",
+   "tag": "WHALE",
+   "action": "BUY",
+   "amount": 363030,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "4M6zTMrzwQPw:FLF...xcm:b9",
+   "timestamp": 1737365515,
+   "wallet": "FLF...xcm",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 222742,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "2yTw4bmpAcKR:CgP...V94:b15",
+   "timestamp": 1737365650,
+   "wallet": "CgP...V94",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 237709,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "247b4YeiuBfF:CgP...V94:b4",
+   "timestamp": 1737365952,
+   "wallet": "CgP...V94",
+   "tag": "WHALE",
+   "action": "BUY",
+   "amount": 202238,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "3bCkquPJoQqc:CgP...V94:b21",
+   "timestamp": 1737366273,
+   "wallet": "CgP...V94",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 234975,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "TH9E9ez6EhP8:FLF...xcm:b7",
+   "timestamp": 1737366779,
+   "wallet": "FLF...xcm",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 276648,
+   "amountUnit": "USD"
+  }
+ ],
+ "rugTimestamp": 1737362820,
+ "playbackSpeed": 160,
+ "paperSolUsd": 263.45,
+ "meta": {
+  "priceUnit": "USD",
+  "priceField": "close of each candle, at the candle timestamp (epoch seconds)",
+  "interval": "1_MINUTE",
+  "rawDir": "data/rugs/barron/raw",
+  "fetchedAt": "2026-10-07T15:59:14.674Z",
+  "devWallet": "2N7...xmi",
+  "cleaning": {
+   "rawCandles": 543,
+   "malformedDropped": 0,
+   "duplicateTimestampsDropped": 0,
+   "outOfOrderResorted": false,
+   "outsideWindowDropped": 362
+  },
+  "walletData": "Jupiter trades API (trader-filtered histories of sampled candidate wallets) + Solana public RPC (dev wallet transactions). No Helius/Birdeye key was used.",
+  "candidates": 183,
+  "cappedWalletsExcludedFromProfitRules": 3
+ }
+}

@@ -1,0 +1,63 @@
+{
+  "slug": "melania",
+  "id": "melania-2025-01-19",
+  "mint": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P",
+  "rugType": "SLOW_BLEED",
+  "date": "2025-01-19",
+  "window": {
+    "from": "2025-01-19T21:05:00Z",
+    "to": "2025-01-21T00:00:00Z"
+  },
+  "priceInterval": "5_MINUTE",
+  "playbackSpeed": 1400,
+  "collapse": {
+    "kind": "peak-drawdown",
+    "fraction": 0.5
+  },
+  "devOnchain": {
+    "lookbackSec": 3600,
+    "txCap": 300
+  },
+  "rules": {
+    "tapeSampleStepSec": 90,
+    "candidateTopN": 40,
+    "whaleSingleTradeUsd": 250000,
+    "maxRecipientCandidates": 30,
+    "walletMaxPages": 100,
+    "botFilter": {
+      "maxMevTradeFraction": 0.1
+    },
+    "smart": {
+      "topN": 5,
+      "minRealizedProfitUsd": 1000000,
+      "minSoldFractionOfBought": 0.8,
+      "lastSellBeforeCollapse": true,
+      "lastBuyBeforePeak": true
+    },
+    "whale": {
+      "topN": 3
+    },
+    "eventMinUsd": {
+      "INSIDER": 0,
+      "SMART": 800000,
+      "WHALE": 8000000,
+      "DEV": 0
+    },
+    "devMove": {
+      "minPctSupply": 0.002,
+      "burstGapSec": 30,
+      "burstMaxSec": 120
+    },
+    "tradeBurst": {
+      "gapSec": 180,
+      "maxSec": 900
+    }
+  },
+  "signal": {
+    "tag": "SMART",
+    "action": "SELL",
+    "minUsd": 1500000,
+    "description": "First SMART SELL burst of at least $1,500,000: a wallet that exited profitably (stopped buying before the peak and sold out before the collapse) selling one and a half million dollars within a few minutes. The floor is set for this token, where the largest sampled single trades are several million dollars."
+  },
+  "notes": "The creator wallet moved none of the token in the replay window (checked on-chain: net token movement 0.00% of supply), so there are no DEV events; dev.json was therefore not fetched."
+}

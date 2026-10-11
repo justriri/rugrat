@@ -1,0 +1,17 @@
+{
+  "name": "Rug Hunter",
+  "symbol": "RUGHUNT",
+  "description": "Earned by surviving 3 unique historical rug pulls in Rug Replay.",
+  "image": "https://rugrat-badge.expo.app/rug-hunter.png",
+  "attributes": [
+    { "trait_type": "Achievement", "value": "Rug Hunter" },
+    { "trait_type": "Rugs Survived", "value": "3" },
+    { "trait_type": "Game", "value": "Rug Replay" },
+    { "trait_type": "Achievement Version", "value": "1" },
+    { "trait_type": "Non-Demo", "value": "true" }
+  ],
+  "properties": {
+    "files": [{ "uri": "https://rugrat-badge.expo.app/rug-hunter.png", "type": "image/png" }],
+    "category": "image"
+  }
+}

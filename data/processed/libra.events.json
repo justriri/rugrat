@@ -1,0 +1,1185 @@
+{
+ "paperSolUsd": {
+  "value": 199.51,
+  "samples": 18873,
+  "min": 198.43,
+  "max": 200.86,
+  "method": "median of usdVolume/nativeVolume over in-window trades in the candidate histories"
+ },
+ "window": {
+  "from": "2025-02-14T22:30:26Z",
+  "to": "2025-02-14T23:55:56Z",
+  "collapseMarker": "2025-02-14T23:26:43Z"
+ },
+ "rules": {
+  "candidates": "see data/raw/candidates.json (top early buyers, top sellers, single trades >= $500k, direct recipients of dev supply)",
+  "botFilter": {
+   "maxMevTradeFraction": 0.1
+  },
+  "smart": {
+   "topN": 5,
+   "rankBy": "realized profit (USD sold - USD bought)",
+   "minRealizedProfitUsd": 1000000,
+   "minSoldFractionOfBought": 0.8,
+   "lastSellBeforeCollapseMarker": true
+  },
+  "whale": {
+   "topN": 3,
+   "rankBy": "total USD traded inside the replay window",
+   "excludes": "DEV, INSIDER, SMART, bots"
+  },
+  "eventMinUsd": {
+   "INSIDER": 0,
+   "SMART": 250000,
+   "WHALE": 750000
+  }
+ },
+ "generatedFrom": {
+  "tapeTrades": 30766
+ },
+ "duplicatesDropped": 0,
+ "events": [
+  {
+   "id": "5NYNEGe5MomH:3ap...1LF",
+   "timestamp": 1739572234,
+   "walletAddress": "DefcyKc4yAjRsCLZjdxWuSUzVohXtLna9g22y3pBCm2z",
+   "tag": "DEV",
+   "action": "SUPPLY_MOVE",
+   "amount": 650000,
+   "amountUnit": "LIBRA",
+   "signature": "5NYNEGe5MomHZAfgq76W9yrBMdg2WMJ7t1V3Eo9NeRtqKniDVeyY7MocPegMcRbCLdkyGZt9bFgNDDZqwy2Yo2r3",
+   "source": "solana-rpc getTransaction",
+   "classification": [
+    {
+     "rule": "jupiter-asset-dev",
+     "detail": "Jupiter asset metadata lists Def...m2z as the token's dev (creator) wallet."
+    },
+    {
+     "rule": "onchain-mint-creator",
+     "detail": "This wallet is the fee payer of the LIBRA InitializeMint2 transaction.",
+     "signatures": [
+      "3vtogCe5Q52iUYbY6CLRTV3RUf2ggSDoAkPtCYpJrvpvdoqx71mJbS5zgwvze7CDHTBzNohbg4eJiFPw5kUnu5Dh"
+     ]
+    },
+    {
+     "rule": "onchain-initial-supply",
+     "detail": "This wallet is the fee payer of the transaction that minted the initial LIBRA supply.",
+     "signatures": [
+      "3Wbtz4JR9L3Dt8YJA5dHN9tKgSzqBt5ndhvo1SSRvQk789tBArAUAu7KHvHPwHbRpv8gAAhEZ5Akz3oqorHQdv24"
+     ]
+    },
+    {
+     "rule": "onchain-pool-creator",
+     "detail": "This wallet is the fee payer of the Meteora pool initialisation for LIBRA.",
+     "signatures": [
+      "ydzeZfhtfM4vwU2dH7ALB3acavcNBh5oTSuPgCCBPonoQvm4AbCo5P2Rw4WqyWUvRJj4D3mUN68JzTK1uwqF8Ej"
+     ]
+    }
+   ],
+   "note": "Dev wallet transferred 0.65M LIBRA to 3ap...1LF."
+  },
+  {
+   "id": "5NYNEGe5MomH:3ap...1LF:recv",
+   "timestamp": 1739572234,
+   "walletAddress": "3apupKwTisjy4Wx1zVndXVegmxtR9majPEgHatBRZ1LF",
+   "tag": "INSIDER",
+   "action": "SUPPLY_MOVE",
+   "amount": 650000,
+   "amountUnit": "LIBRA",
+   "signature": "5NYNEGe5MomHZAfgq76W9yrBMdg2WMJ7t1V3Eo9NeRtqKniDVeyY7MocPegMcRbCLdkyGZt9bFgNDDZqwy2Yo2r3",
+   "source": "solana-rpc getTransaction",
+   "classification": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 0.65M LIBRA directly from the dev wallet in one transaction at 2025-02-14T22:30:34.000Z.",
+     "signatures": [
+      "5NYNEGe5MomHZAfgq76W9yrBMdg2WMJ7t1V3Eo9NeRtqKniDVeyY7MocPegMcRbCLdkyGZt9bFgNDDZqwy2Yo2r3"
+     ]
+    }
+   ],
+   "note": "Received 0.65M LIBRA directly from the dev wallet."
+  },
+  {
+   "id": "5w5X57uGYCQj:FS5...rcy",
+   "timestamp": 1739572273,
+   "walletAddress": "FS52oWvGn7gmo4fve1n8DPTfa84C5GH6fDhFoyZqRrcy",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 487583,
+   "amountUnit": "USD",
+   "signature": "5w5X57uGYCQjYNLkReLnhaJfkvW3Vxh5d8W4hSo72PfzVH4NvpQFCR3v8KWiLiV5dhzsseDs5KpYbugrbAhEjmhj",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 5 of the candidates by realised profit. Recorded trades 2025-02-14T22:01:04Z to 2025-02-14T23:19:11Z: bought $499,947, sold $3,587,500 (realised $3,087,553); sold 84% of the LIBRA bought; last sell 2025-02-14T23:19:11Z, before the collapse marker 2025-02-14T23:26:43Z."
+    }
+   ],
+   "note": "Sold 0.15M LIBRA for $487,583."
+  },
+  {
+   "id": "vunqNruhFwwu:BXo...j42",
+   "timestamp": 1739572374,
+   "walletAddress": "DefcyKc4yAjRsCLZjdxWuSUzVohXtLna9g22y3pBCm2z",
+   "tag": "DEV",
+   "action": "SUPPLY_MOVE",
+   "amount": 5000000,
+   "amountUnit": "LIBRA",
+   "signature": "vunqNruhFwwuaq4HrNiPiGQiqzSsktm9ZQQpZAjmyPumc6NCum8UVSTR24zVaELRkcCvgz9YMD6uo6y7Dth6eH9",
+   "source": "solana-rpc getTransaction",
+   "classification": [
+    {
+     "rule": "jupiter-asset-dev",
+     "detail": "Jupiter asset metadata lists Def...m2z as the token's dev (creator) wallet."
+    },
+    {
+     "rule": "onchain-mint-creator",
+     "detail": "This wallet is the fee payer of the LIBRA InitializeMint2 transaction.",
+     "signatures": [
+      "3vtogCe5Q52iUYbY6CLRTV3RUf2ggSDoAkPtCYpJrvpvdoqx71mJbS5zgwvze7CDHTBzNohbg4eJiFPw5kUnu5Dh"
+     ]
+    },
+    {
+     "rule": "onchain-initial-supply",
+     "detail": "This wallet is the fee payer of the transaction that minted the initial LIBRA supply.",
+     "signatures": [
+      "3Wbtz4JR9L3Dt8YJA5dHN9tKgSzqBt5ndhvo1SSRvQk789tBArAUAu7KHvHPwHbRpv8gAAhEZ5Akz3oqorHQdv24"
+     ]
+    },
+    {
+     "rule": "onchain-pool-creator",
+     "detail": "This wallet is the fee payer of the Meteora pool initialisation for LIBRA.",
+     "signatures": [
+      "ydzeZfhtfM4vwU2dH7ALB3acavcNBh5oTSuPgCCBPonoQvm4AbCo5P2Rw4WqyWUvRJj4D3mUN68JzTK1uwqF8Ej"
+     ]
+    }
+   ],
+   "note": "Dev wallet transferred 5.00M LIBRA to BXo...j42."
+  },
+  {
+   "id": "vunqNruhFwwu:BXo...j42:recv",
+   "timestamp": 1739572374,
+   "walletAddress": "BXoCWWijZiVQFXNRqcZAiHQroYkaUnjkRznnZrt9gj42",
+   "tag": "INSIDER",
+   "action": "SUPPLY_MOVE",
+   "amount": 5000000,
+   "amountUnit": "LIBRA",
+   "signature": "vunqNruhFwwuaq4HrNiPiGQiqzSsktm9ZQQpZAjmyPumc6NCum8UVSTR24zVaELRkcCvgz9YMD6uo6y7Dth6eH9",
+   "source": "solana-rpc getTransaction",
+   "classification": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.00M LIBRA directly from the dev wallet in one transaction at 2025-02-14T22:32:54.000Z.",
+     "signatures": [
+      "vunqNruhFwwuaq4HrNiPiGQiqzSsktm9ZQQpZAjmyPumc6NCum8UVSTR24zVaELRkcCvgz9YMD6uo6y7Dth6eH9"
+     ]
+    }
+   ],
+   "note": "Received 5.00M LIBRA directly from the dev wallet."
+  },
+  {
+   "id": "5PEgP28C75TX:FS5...rcy",
+   "timestamp": 1739572477,
+   "walletAddress": "FS52oWvGn7gmo4fve1n8DPTfa84C5GH6fDhFoyZqRrcy",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 376613,
+   "amountUnit": "USD",
+   "signature": "5PEgP28C75TXLHvZ7atm5vSubRbJoQd8pzSTw7YNDsHzKWyRNSYbfBmnTSeoy3172Cy9MCKYz4R8vqSyeDV3ZGbK",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 5 of the candidates by realised profit. Recorded trades 2025-02-14T22:01:04Z to 2025-02-14T23:19:11Z: bought $499,947, sold $3,587,500 (realised $3,087,553); sold 84% of the LIBRA bought; last sell 2025-02-14T23:19:11Z, before the collapse marker 2025-02-14T23:26:43Z."
+    }
+   ],
+   "note": "Sold 0.10M LIBRA for $376,613."
+  },
+  {
+   "id": "3hqMMhz9To6i:21n...VBo",
+   "timestamp": 1739572664,
+   "walletAddress": "21nqTkc6EU3GHZnmTxTtjzV5PNLx747PgoFD5VeskVBo",
+   "tag": "WHALE",
+   "action": "BUY",
+   "amount": 1171497,
+   "amountUnit": "USD",
+   "signature": "3hqMMhz9To6itF1XTE4LryxR3U8u9UWE8rAahUVueA1qHPCfRxNt6eJ2PbQFeEoSHmzV1YBBJjRV7xWbqndmF5kB",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 2 of the candidates by USD traded inside the replay window ($14,013,303); not a dev, insider or smart-exit wallet and not bot-like (MEV-flagged trades <= 10%)."
+    }
+   ],
+   "note": "Bought 0.33M LIBRA for $1,171,497."
+  },
+  {
+   "id": "5Mr2q4h7rDR2:Bzz...Szz",
+   "timestamp": 1739572684,
+   "walletAddress": "DefcyKc4yAjRsCLZjdxWuSUzVohXtLna9g22y3pBCm2z",
+   "tag": "DEV",
+   "action": "SUPPLY_MOVE",
+   "amount": 978739.4400469996,
+   "amountUnit": "LIBRA",
+   "signature": "5Mr2q4h7rDR2svCWozzcpRziGqLq2xYnEqL9U4Qp5Kw743pydjyohzHffWCEeKhYoUiextNwETLN1BKvB63RDvy2",
+   "source": "solana-rpc getTransaction",
+   "classification": [
+    {
+     "rule": "jupiter-asset-dev",
+     "detail": "Jupiter asset metadata lists Def...m2z as the token's dev (creator) wallet."
+    },
+    {
+     "rule": "onchain-mint-creator",
+     "detail": "This wallet is the fee payer of the LIBRA InitializeMint2 transaction.",
+     "signatures": [
+      "3vtogCe5Q52iUYbY6CLRTV3RUf2ggSDoAkPtCYpJrvpvdoqx71mJbS5zgwvze7CDHTBzNohbg4eJiFPw5kUnu5Dh"
+     ]
+    },
+    {
+     "rule": "onchain-initial-supply",
+     "detail": "This wallet is the fee payer of the transaction that minted the initial LIBRA supply.",
+     "signatures": [
+      "3Wbtz4JR9L3Dt8YJA5dHN9tKgSzqBt5ndhvo1SSRvQk789tBArAUAu7KHvHPwHbRpv8gAAhEZ5Akz3oqorHQdv24"
+     ]
+    },
+    {
+     "rule": "onchain-pool-creator",
+     "detail": "This wallet is the fee payer of the Meteora pool initialisation for LIBRA.",
+     "signatures": [
+      "ydzeZfhtfM4vwU2dH7ALB3acavcNBh5oTSuPgCCBPonoQvm4AbCo5P2Rw4WqyWUvRJj4D3mUN68JzTK1uwqF8Ej"
+     ]
+    }
+   ],
+   "note": "Dev wallet added 0.98M LIBRA to a Meteora liquidity pool."
+  },
+  {
+   "id": "JEkTN3zeKvY1:Bzz...Szz",
+   "timestamp": 1739572684,
+   "walletAddress": "DefcyKc4yAjRsCLZjdxWuSUzVohXtLna9g22y3pBCm2z",
+   "tag": "DEV",
+   "action": "SUPPLY_MOVE",
+   "amount": 49021260.559885,
+   "amountUnit": "LIBRA",
+   "signature": "JEkTN3zeKvY1htpeSUcjFn15sVE1YPRStZJjKKFYtJBVzV3RQHA8csakdJziz91M3GcdHoKTSXboAugDP6oExHa",
+   "source": "solana-rpc getTransaction",
+   "classification": [
+    {
+     "rule": "jupiter-asset-dev",
+     "detail": "Jupiter asset metadata lists Def...m2z as the token's dev (creator) wallet."
+    },
+    {
+     "rule": "onchain-mint-creator",
+     "detail": "This wallet is the fee payer of the LIBRA InitializeMint2 transaction.",
+     "signatures": [
+      "3vtogCe5Q52iUYbY6CLRTV3RUf2ggSDoAkPtCYpJrvpvdoqx71mJbS5zgwvze7CDHTBzNohbg4eJiFPw5kUnu5Dh"
+     ]
+    },
+    {
+     "rule": "onchain-initial-supply",
+     "detail": "This wallet is the fee payer of the transaction that minted the initial LIBRA supply.",
+     "signatures": [
+      "3Wbtz4JR9L3Dt8YJA5dHN9tKgSzqBt5ndhvo1SSRvQk789tBArAUAu7KHvHPwHbRpv8gAAhEZ5Akz3oqorHQdv24"
+     ]
+    },
+    {
+     "rule": "onchain-pool-creator",
+     "detail": "This wallet is the fee payer of the Meteora pool initialisation for LIBRA.",
+     "signatures": [
+      "ydzeZfhtfM4vwU2dH7ALB3acavcNBh5oTSuPgCCBPonoQvm4AbCo5P2Rw4WqyWUvRJj4D3mUN68JzTK1uwqF8Ej"
+     ]
+    }
+   ],
+   "note": "Dev wallet added 49.02M LIBRA to a Meteora liquidity pool."
+  },
+  {
+   "id": "2H4WT5gxwFTZ:7qN...ao7",
+   "timestamp": 1739573062,
+   "walletAddress": "7qN8RpRpqgQf1gH6pE11vCrWfSH6t9WGZqepR33g5ao7",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 562577,
+   "amountUnit": "USD",
+   "signature": "2H4WT5gxwFTZiwyoUED3dUkBPwbBSmpb9JW5zU3NjheDHwigbr4QkNiVKc54pMV2Q3SLNdR7BqByWD4d8NFqJoiR",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 3 of the candidates by realised profit. Recorded trades 2025-02-14T22:01:07Z to 2025-02-14T22:52:27Z: bought $1,600,998, sold $7,063,669 (realised $5,462,671); sold 100% of the LIBRA bought; last sell 2025-02-14T22:52:27Z, before the collapse marker 2025-02-14T23:26:43Z."
+    }
+   ],
+   "note": "Sold 0.13M LIBRA for $562,577."
+  },
+  {
+   "id": "27YX1qwkiigY:7qN...ao7",
+   "timestamp": 1739573344,
+   "walletAddress": "7qN8RpRpqgQf1gH6pE11vCrWfSH6t9WGZqepR33g5ao7",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 311546,
+   "amountUnit": "USD",
+   "signature": "27YX1qwkiigYCW5HgMZ3mTfc1bwXR48a8zH8o2hdH9dsv5dB6gse39MZ5z8cVYNoXxprxrr31iFZjsfsg9JePHke",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 3 of the candidates by realised profit. Recorded trades 2025-02-14T22:01:07Z to 2025-02-14T22:52:27Z: bought $1,600,998, sold $7,063,669 (realised $5,462,671); sold 100% of the LIBRA bought; last sell 2025-02-14T22:52:27Z, before the collapse marker 2025-02-14T23:26:43Z."
+    }
+   ],
+   "note": "Sold 0.08M LIBRA for $311,546."
+  },
+  {
+   "id": "5y29AFDLuzjg:FS5...rcy",
+   "timestamp": 1739573410,
+   "walletAddress": "FS52oWvGn7gmo4fve1n8DPTfa84C5GH6fDhFoyZqRrcy",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 604915,
+   "amountUnit": "USD",
+   "signature": "5y29AFDLuzjgpMQ6i6f4vSXQFjiMzFbHsqNFDrV4YabFVF8h2zoyn2mUc3vE4ngP8DxNFKtb2U2kDcT3XBtwX1MM",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 5 of the candidates by realised profit. Recorded trades 2025-02-14T22:01:04Z to 2025-02-14T23:19:11Z: bought $499,947, sold $3,587,500 (realised $3,087,553); sold 84% of the LIBRA bought; last sell 2025-02-14T23:19:11Z, before the collapse marker 2025-02-14T23:26:43Z."
+    }
+   ],
+   "note": "Sold 0.15M LIBRA for $604,915."
+  },
+  {
+   "id": "4u9AnroADrdA:7qN...ao7",
+   "timestamp": 1739573471,
+   "walletAddress": "7qN8RpRpqgQf1gH6pE11vCrWfSH6t9WGZqepR33g5ao7",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 286903,
+   "amountUnit": "USD",
+   "signature": "4u9AnroADrdATPPaam7PbyakVi3nPVVjN6RdXgo6SMpua25BYEzojipHDXLZiDeJEnTzvhD1Bh4H5Rmt7tY6xTdo",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 3 of the candidates by realised profit. Recorded trades 2025-02-14T22:01:07Z to 2025-02-14T22:52:27Z: bought $1,600,998, sold $7,063,669 (realised $5,462,671); sold 100% of the LIBRA bought; last sell 2025-02-14T22:52:27Z, before the collapse marker 2025-02-14T23:26:43Z."
+    }
+   ],
+   "note": "Sold 0.08M LIBRA for $286,903."
+  },
+  {
+   "id": "AtuU9fFY8j37:7qN...ao7",
+   "timestamp": 1739573524,
+   "walletAddress": "7qN8RpRpqgQf1gH6pE11vCrWfSH6t9WGZqepR33g5ao7",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 386268,
+   "amountUnit": "USD",
+   "signature": "AtuU9fFY8j375zBe1QLYnpftjgsJPryL8NTAXauvPbtge4ESRkP9nJ2NsEjM6zF921pBH3fC32MJH2uB9rnF8Bk",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 3 of the candidates by realised profit. Recorded trades 2025-02-14T22:01:07Z to 2025-02-14T22:52:27Z: bought $1,600,998, sold $7,063,669 (realised $5,462,671); sold 100% of the LIBRA bought; last sell 2025-02-14T22:52:27Z, before the collapse marker 2025-02-14T23:26:43Z."
+    }
+   ],
+   "note": "Sold 0.11M LIBRA for $386,268."
+  },
+  {
+   "id": "5ybnox4VQcd9:Bpk...p6b",
+   "timestamp": 1739573938,
+   "walletAddress": "Bpk7VVctpzXYx4BuPnZzs3VSSAWSAQJVq9VufFAq5p6b",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 1589095,
+   "amountUnit": "USD",
+   "signature": "5ybnox4VQcd9CDWoV24SHewvBh4PD1QGKVebNtXgp1BdXRn7swH6jyrdTEpTH5GxR6bTYkCw9taG7PKWPsgEmm6X",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 3 of the candidates by USD traded inside the replay window ($12,445,569); not a dev, insider or smart-exit wallet and not bot-like (MEV-flagged trades <= 10%)."
+    }
+   ],
+   "note": "Sold 0.70M LIBRA for $1,589,095."
+  },
+  {
+   "id": "5bB6FdMk7sHq:Bpk...p6b",
+   "timestamp": 1739574049,
+   "walletAddress": "Bpk7VVctpzXYx4BuPnZzs3VSSAWSAQJVq9VufFAq5p6b",
+   "tag": "WHALE",
+   "action": "BUY",
+   "amount": 1499853,
+   "amountUnit": "USD",
+   "signature": "5bB6FdMk7sHq19UMKbgWUQKd5HhkEudZRfk71hN8MgebmHirH8V3qjVLRa1MbB7Xwk9z9929XrzeKxwdRfhNws4D",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 3 of the candidates by USD traded inside the replay window ($12,445,569); not a dev, insider or smart-exit wallet and not bot-like (MEV-flagged trades <= 10%)."
+    }
+   ],
+   "note": "Bought 0.51M LIBRA for $1,499,853."
+  },
+  {
+   "id": "3o8URdQZQzET:Gr3...4eb",
+   "timestamp": 1739574381,
+   "walletAddress": "Gr3eiFhPfLAaA4SSHYqan8hcBB9dHLxRC176tfRtS4eb",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 263656,
+   "amountUnit": "USD",
+   "signature": "3o8URdQZQzETed6mm8oNueZMEqe26kX8CCSxjyW4TJyW5kuvyLBm1z3QJJQbeKfeaUEhv3JhmGUV8bL9TdEoUprL",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 1 of the candidates by realised profit. Recorded trades 2025-02-14T22:01:01Z to 2025-02-14T23:14:55Z: bought $999,894, sold $9,349,785 (realised $8,349,891); sold 97% of the LIBRA bought; last sell 2025-02-14T23:14:55Z, before the collapse marker 2025-02-14T23:26:43Z."
+    }
+   ],
+   "note": "Sold 0.11M LIBRA for $263,656."
+  },
+  {
+   "id": "5W3hBdXPnzwg:Gr3...4eb",
+   "timestamp": 1739574395,
+   "walletAddress": "Gr3eiFhPfLAaA4SSHYqan8hcBB9dHLxRC176tfRtS4eb",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 268314,
+   "amountUnit": "USD",
+   "signature": "5W3hBdXPnzwgSjsds9d7qhyrCz7QzdnNfgBeH1tPxap1mkwLcNrooTY9nYLt6NvnyDonM3oZTGrJHDf7oy1DNRox",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 1 of the candidates by realised profit. Recorded trades 2025-02-14T22:01:01Z to 2025-02-14T23:14:55Z: bought $999,894, sold $9,349,785 (realised $8,349,891); sold 97% of the LIBRA bought; last sell 2025-02-14T23:14:55Z, before the collapse marker 2025-02-14T23:26:43Z."
+    }
+   ],
+   "note": "Sold 0.11M LIBRA for $268,314."
+  },
+  {
+   "id": "2uxswmpvfNEJ:Bpk...p6b",
+   "timestamp": 1739574640,
+   "walletAddress": "Bpk7VVctpzXYx4BuPnZzs3VSSAWSAQJVq9VufFAq5p6b",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 931792,
+   "amountUnit": "USD",
+   "signature": "2uxswmpvfNEJyi7TefmReZCBGDgMgYZKmbusTmAEsUybJWFQrDQbs6NrUer5P9ues97UAwtDdgNweedjtFfzn5Eh",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 3 of the candidates by USD traded inside the replay window ($12,445,569); not a dev, insider or smart-exit wallet and not bot-like (MEV-flagged trades <= 10%)."
+    }
+   ],
+   "note": "Sold 0.51M LIBRA for $931,792."
+  },
+  {
+   "id": "2aEgLZmykxz6:DYa...NRB",
+   "timestamp": 1739574645,
+   "walletAddress": "DYan6HdoEof2rPZMYxntpBcghAjcFeaGcWVxWzsUHNRB",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 3448328,
+   "amountUnit": "USD",
+   "signature": "2aEgLZmykxz62wAAcGKDxhCJXuXpntXa1wt3RGcm7K7jEAZVae419yq7sGHz5sV4Xm2H3FejYnuFsaX98ywXj2F2",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 1 of the candidates by USD traded inside the replay window ($17,979,646); not a dev, insider or smart-exit wallet and not bot-like (MEV-flagged trades <= 10%)."
+    }
+   ],
+   "note": "Sold 2.00M LIBRA for $3,448,328."
+  },
+  {
+   "id": "2syY9kwPhr1F:DYa...NRB",
+   "timestamp": 1739574758,
+   "walletAddress": "DYan6HdoEof2rPZMYxntpBcghAjcFeaGcWVxWzsUHNRB",
+   "tag": "WHALE",
+   "action": "BUY",
+   "amount": 944313,
+   "amountUnit": "USD",
+   "signature": "2syY9kwPhr1F2dEJHDG9Zjb1J9Qpg4U7vkTPvLdh8gtNenMjKYbPgWF44XTiyatEJyfEBG9noJCPzDWuGSzz4LNk",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 1 of the candidates by USD traded inside the replay window ($17,979,646); not a dev, insider or smart-exit wallet and not bot-like (MEV-flagged trades <= 10%)."
+    }
+   ],
+   "note": "Bought 0.56M LIBRA for $944,313."
+  },
+  {
+   "id": "gb5SMAhr6ayg:Bpk...p6b",
+   "timestamp": 1739574853,
+   "walletAddress": "Bpk7VVctpzXYx4BuPnZzs3VSSAWSAQJVq9VufFAq5p6b",
+   "tag": "WHALE",
+   "action": "BUY",
+   "amount": 1084567,
+   "amountUnit": "USD",
+   "signature": "gb5SMAhr6ayg78x8zhbZiYLcXRrgrxg9f3xdtUoz5AhJc4DQ7GjK3mZEBUbaGocM9NvEFeJnb1ENkqxqyTSEkUE",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 3 of the candidates by USD traded inside the replay window ($12,445,569); not a dev, insider or smart-exit wallet and not bot-like (MEV-flagged trades <= 10%)."
+    }
+   ],
+   "note": "Bought 0.55M LIBRA for $1,084,567."
+  },
+  {
+   "id": "562yLp2sfnWz:DYa...NRB",
+   "timestamp": 1739574931,
+   "walletAddress": "DYan6HdoEof2rPZMYxntpBcghAjcFeaGcWVxWzsUHNRB",
+   "tag": "WHALE",
+   "action": "BUY",
+   "amount": 1999888,
+   "amountUnit": "USD",
+   "signature": "562yLp2sfnWzZ9DUhkXeiLXrSV37miMtbsjnCUaH7mMhqNq8s69aQSjt84RvT1kMKBCnf9PCD6a9JF5hRdNj9DLD",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 1 of the candidates by USD traded inside the replay window ($17,979,646); not a dev, insider or smart-exit wallet and not bot-like (MEV-flagged trades <= 10%)."
+    }
+   ],
+   "note": "Bought 0.96M LIBRA for $1,999,888."
+  },
+  {
+   "id": "42WMRLqR2SMY:2Qm...wyh",
+   "timestamp": 1739575042,
+   "walletAddress": "DefcyKc4yAjRsCLZjdxWuSUzVohXtLna9g22y3pBCm2z",
+   "tag": "DEV",
+   "action": "SUPPLY_MOVE",
+   "amount": 5000000,
+   "amountUnit": "LIBRA",
+   "signature": "42WMRLqR2SMYtAELRpwAYzyKdbPbMZZXXNiudhBeSU7RNjv9Bkf47qWhdjHaKQQKBuXR1gPiT11feioULRuxyw6Y",
+   "source": "solana-rpc getTransaction",
+   "classification": [
+    {
+     "rule": "jupiter-asset-dev",
+     "detail": "Jupiter asset metadata lists Def...m2z as the token's dev (creator) wallet."
+    },
+    {
+     "rule": "onchain-mint-creator",
+     "detail": "This wallet is the fee payer of the LIBRA InitializeMint2 transaction.",
+     "signatures": [
+      "3vtogCe5Q52iUYbY6CLRTV3RUf2ggSDoAkPtCYpJrvpvdoqx71mJbS5zgwvze7CDHTBzNohbg4eJiFPw5kUnu5Dh"
+     ]
+    },
+    {
+     "rule": "onchain-initial-supply",
+     "detail": "This wallet is the fee payer of the transaction that minted the initial LIBRA supply.",
+     "signatures": [
+      "3Wbtz4JR9L3Dt8YJA5dHN9tKgSzqBt5ndhvo1SSRvQk789tBArAUAu7KHvHPwHbRpv8gAAhEZ5Akz3oqorHQdv24"
+     ]
+    },
+    {
+     "rule": "onchain-pool-creator",
+     "detail": "This wallet is the fee payer of the Meteora pool initialisation for LIBRA.",
+     "signatures": [
+      "ydzeZfhtfM4vwU2dH7ALB3acavcNBh5oTSuPgCCBPonoQvm4AbCo5P2Rw4WqyWUvRJj4D3mUN68JzTK1uwqF8Ej"
+     ]
+    }
+   ],
+   "note": "Dev wallet transferred 5.00M LIBRA to 2Qm...wyh."
+  },
+  {
+   "id": "42WMRLqR2SMY:2Qm...wyh:recv",
+   "timestamp": 1739575042,
+   "walletAddress": "2QmyirshoyT2ApsQU8bXdeGa2vTsNp1rxEzv4qhzTwyh",
+   "tag": "INSIDER",
+   "action": "SUPPLY_MOVE",
+   "amount": 5000000,
+   "amountUnit": "LIBRA",
+   "signature": "42WMRLqR2SMYtAELRpwAYzyKdbPbMZZXXNiudhBeSU7RNjv9Bkf47qWhdjHaKQQKBuXR1gPiT11feioULRuxyw6Y",
+   "source": "solana-rpc getTransaction",
+   "classification": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.00M LIBRA directly from the dev wallet in one transaction at 2025-02-14T23:17:22.000Z.",
+     "signatures": [
+      "42WMRLqR2SMYtAELRpwAYzyKdbPbMZZXXNiudhBeSU7RNjv9Bkf47qWhdjHaKQQKBuXR1gPiT11feioULRuxyw6Y"
+     ]
+    }
+   ],
+   "note": "Received 5.00M LIBRA directly from the dev wallet."
+  },
+  {
+   "id": "2t5TyPamgh3z:Bpk...p6b",
+   "timestamp": 1739575275,
+   "walletAddress": "Bpk7VVctpzXYx4BuPnZzs3VSSAWSAQJVq9VufFAq5p6b",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 1018944,
+   "amountUnit": "USD",
+   "signature": "2t5TyPamgh3zcqXJEutfSFezHFibJ84eDEewyS9cgGyysncHnZSDDvmf6Q5To7wvGVQdMs8a3chqR2GGz8iYRMau",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 3 of the candidates by USD traded inside the replay window ($12,445,569); not a dev, insider or smart-exit wallet and not bot-like (MEV-flagged trades <= 10%)."
+    }
+   ],
+   "note": "Sold 0.55M LIBRA for $1,018,944."
+  },
+  {
+   "id": "2ByUdj66cTY1:Bpk...p6b",
+   "timestamp": 1739575540,
+   "walletAddress": "Bpk7VVctpzXYx4BuPnZzs3VSSAWSAQJVq9VufFAq5p6b",
+   "tag": "WHALE",
+   "action": "BUY",
+   "amount": 1018950,
+   "amountUnit": "USD",
+   "signature": "2ByUdj66cTY1j9aiezEzQMRzxyVJyUBzwSbgH1DumKJxnZU7Jz2HpwiJXGkXBqdUjJPMQR4b54THaRbt6xvLpFrB",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 3 of the candidates by USD traded inside the replay window ($12,445,569); not a dev, insider or smart-exit wallet and not bot-like (MEV-flagged trades <= 10%)."
+    }
+   ],
+   "note": "Bought 0.52M LIBRA for $1,018,950."
+  },
+  {
+   "id": "64WbZn41V2p3:DYa...NRB",
+   "timestamp": 1739575799,
+   "walletAddress": "DYan6HdoEof2rPZMYxntpBcghAjcFeaGcWVxWzsUHNRB",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 1116034,
+   "amountUnit": "USD",
+   "signature": "64WbZn41V2p3JMHSxB9FkRapyTpKMwyKHtm2UrmDV4f2d7MiZkKHGK7qYiscqrDzrDsU7ibta5KDaFqopiCY3JD6",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 1 of the candidates by USD traded inside the replay window ($17,979,646); not a dev, insider or smart-exit wallet and not bot-like (MEV-flagged trades <= 10%)."
+    }
+   ],
+   "note": "Sold 0.55M LIBRA for $1,116,034."
+  },
+  {
+   "id": "2dqWdqbHBcnB:Bpk...p6b",
+   "timestamp": 1739575817,
+   "walletAddress": "Bpk7VVctpzXYx4BuPnZzs3VSSAWSAQJVq9VufFAq5p6b",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 976783,
+   "amountUnit": "USD",
+   "signature": "2dqWdqbHBcnBj441Xx8DPyGqSYR37egbrMLHDkV7EgrcmTf8pRv4sGvSe2rmbk3BgVkwEGENy2MRgABZnmV9Mxar",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 3 of the candidates by USD traded inside the replay window ($12,445,569); not a dev, insider or smart-exit wallet and not bot-like (MEV-flagged trades <= 10%)."
+    }
+   ],
+   "note": "Sold 0.52M LIBRA for $976,783."
+  },
+  {
+   "id": "3ssS4896EqYa:DYa...NRB",
+   "timestamp": 1739575817,
+   "walletAddress": "DYan6HdoEof2rPZMYxntpBcghAjcFeaGcWVxWzsUHNRB",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 961540,
+   "amountUnit": "USD",
+   "signature": "3ssS4896EqYaQhyV528mm4e9LuVy45u7PqNqaj1gReop8LkjLWopA7mvW9r1Wxfciu18X4R2Gqqb7kXhTLV88aac",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 1 of the candidates by USD traded inside the replay window ($17,979,646); not a dev, insider or smart-exit wallet and not bot-like (MEV-flagged trades <= 10%)."
+    }
+   ],
+   "note": "Sold 0.50M LIBRA for $961,540."
+  },
+  {
+   "id": "yoFJVcvYCfaX:DYa...NRB",
+   "timestamp": 1739575841,
+   "walletAddress": "DYan6HdoEof2rPZMYxntpBcghAjcFeaGcWVxWzsUHNRB",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 1650189,
+   "amountUnit": "USD",
+   "signature": "yoFJVcvYCfaXtTLyBaUufak3nSKDaXWDAoUy6eGCde3AiCg2kqo8Rp7YSNr1q8AwowLDSn8yhL73tNDJnJ2vF6r",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 1 of the candidates by USD traded inside the replay window ($17,979,646); not a dev, insider or smart-exit wallet and not bot-like (MEV-flagged trades <= 10%)."
+    }
+   ],
+   "note": "Sold 1.00M LIBRA for $1,650,189."
+  },
+  {
+   "id": "42xbAVnmqy7y:Bpk...p6b",
+   "timestamp": 1739576108,
+   "walletAddress": "Bpk7VVctpzXYx4BuPnZzs3VSSAWSAQJVq9VufFAq5p6b",
+   "tag": "WHALE",
+   "action": "BUY",
+   "amount": 976829,
+   "amountUnit": "USD",
+   "signature": "42xbAVnmqy7y8K1EPhYUNw82CJki3K7g87ST4eQtwFdWLZyXy3PmwNu58TZeyg7RJUftU1pRAZe4WeNAy47LPuCQ",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 3 of the candidates by USD traded inside the replay window ($12,445,569); not a dev, insider or smart-exit wallet and not bot-like (MEV-flagged trades <= 10%)."
+    }
+   ],
+   "note": "Bought 0.71M LIBRA for $976,829."
+  },
+  {
+   "id": "42QsDsMac37Z:Bpk...p6b",
+   "timestamp": 1739576274,
+   "walletAddress": "Bpk7VVctpzXYx4BuPnZzs3VSSAWSAQJVq9VufFAq5p6b",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 941061,
+   "amountUnit": "USD",
+   "signature": "42QsDsMac37ZTnvdjvVdUxkMWDd5bm9JkP7fNwEnBC3SnKU7Fm7FZtaibKwhSBhXMApyvK9XWoDYUyjCUu4hdDJ1",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 3 of the candidates by USD traded inside the replay window ($12,445,569); not a dev, insider or smart-exit wallet and not bot-like (MEV-flagged trades <= 10%)."
+    }
+   ],
+   "note": "Sold 0.71M LIBRA for $941,061."
+  },
+  {
+   "id": "4c65NNt9Uxnv:Bpk...p6b",
+   "timestamp": 1739576468,
+   "walletAddress": "Bpk7VVctpzXYx4BuPnZzs3VSSAWSAQJVq9VufFAq5p6b",
+   "tag": "WHALE",
+   "action": "BUY",
+   "amount": 1203418,
+   "amountUnit": "USD",
+   "signature": "4c65NNt9UxnvBh7jVwFswEBuCn8pq7DdsHDAmcg2eWwggWWCp8jU78uEQZoNgQxghzm6GWzKpJBrC81bFdEzi9Si",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 3 of the candidates by USD traded inside the replay window ($12,445,569); not a dev, insider or smart-exit wallet and not bot-like (MEV-flagged trades <= 10%)."
+    }
+   ],
+   "note": "Bought 0.84M LIBRA for $1,203,418."
+  },
+  {
+   "id": "4zvmXze1m276:Bpk...p6b",
+   "timestamp": 1739576573,
+   "walletAddress": "Bpk7VVctpzXYx4BuPnZzs3VSSAWSAQJVq9VufFAq5p6b",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 1204279,
+   "amountUnit": "USD",
+   "signature": "4zvmXze1m2761hF86Qic758WCSyQV2hSnx2w4HZZKLQ9Ejcfu32N7zFqzBDAc6cBLY232b19y5Wjd8ECyXD35Wd6",
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 3 of the candidates by USD traded inside the replay window ($12,445,569); not a dev, insider or smart-exit wallet and not bot-like (MEV-flagged trades <= 10%)."
+    }
+   ],
+   "note": "Sold 0.84M LIBRA for $1,204,279."
+  }
+ ],
+ "wallets": [
+  {
+   "address": "DefcyKc4yAjRsCLZjdxWuSUzVohXtLna9g22y3pBCm2z",
+   "display": "Def...m2z",
+   "tag": "DEV",
+   "evidence": [
+    {
+     "rule": "jupiter-asset-dev",
+     "detail": "Jupiter asset metadata lists Def...m2z as the token's dev (creator) wallet."
+    },
+    {
+     "rule": "onchain-mint-creator",
+     "detail": "This wallet is the fee payer of the LIBRA InitializeMint2 transaction.",
+     "signatures": [
+      "3vtogCe5Q52iUYbY6CLRTV3RUf2ggSDoAkPtCYpJrvpvdoqx71mJbS5zgwvze7CDHTBzNohbg4eJiFPw5kUnu5Dh"
+     ]
+    },
+    {
+     "rule": "onchain-initial-supply",
+     "detail": "This wallet is the fee payer of the transaction that minted the initial LIBRA supply.",
+     "signatures": [
+      "3Wbtz4JR9L3Dt8YJA5dHN9tKgSzqBt5ndhvo1SSRvQk789tBArAUAu7KHvHPwHbRpv8gAAhEZ5Akz3oqorHQdv24"
+     ]
+    },
+    {
+     "rule": "onchain-pool-creator",
+     "detail": "This wallet is the fee payer of the Meteora pool initialisation for LIBRA.",
+     "signatures": [
+      "ydzeZfhtfM4vwU2dH7ALB3acavcNBh5oTSuPgCCBPonoQvm4AbCo5P2Rw4WqyWUvRJj4D3mUN68JzTK1uwqF8Ej"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "2QmyirshoyT2ApsQU8bXdeGa2vTsNp1rxEzv4qhzTwyh",
+   "display": "2Qm...wyh",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.00M LIBRA directly from the dev wallet in one transaction at 2025-02-14T23:17:22.000Z.",
+     "signatures": [
+      "42WMRLqR2SMYtAELRpwAYzyKdbPbMZZXXNiudhBeSU7RNjv9Bkf47qWhdjHaKQQKBuXR1gPiT11feioULRuxyw6Y"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "BXoCWWijZiVQFXNRqcZAiHQroYkaUnjkRznnZrt9gj42",
+   "display": "BXo...j42",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.00M LIBRA directly from the dev wallet in one transaction at 2025-02-14T22:32:54.000Z.",
+     "signatures": [
+      "vunqNruhFwwuaq4HrNiPiGQiqzSsktm9ZQQpZAjmyPumc6NCum8UVSTR24zVaELRkcCvgz9YMD6uo6y7Dth6eH9"
+     ]
+    },
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.00M LIBRA directly from the dev wallet in one transaction at 2025-02-14T22:04:13.000Z.",
+     "signatures": [
+      "2rjw9WkqxdZyNQcdLFYVSkzBWVnuqMZ5ABLZjogCvfBKxRZnGPDKEvFifeU2aKTxZyLRNAHjuUzBB1FDJyrUw3Vc"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "3apupKwTisjy4Wx1zVndXVegmxtR9majPEgHatBRZ1LF",
+   "display": "3ap...1LF",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 0.65M LIBRA directly from the dev wallet in one transaction at 2025-02-14T22:30:34.000Z.",
+     "signatures": [
+      "5NYNEGe5MomHZAfgq76W9yrBMdg2WMJ7t1V3Eo9NeRtqKniDVeyY7MocPegMcRbCLdkyGZt9bFgNDDZqwy2Yo2r3"
+     ]
+    }
+   ],
+   "stats": {
+    "buyUsd": 5553273.893471719,
+    "sellUsd": 0,
+    "buyTok": 2237417.1119559994,
+    "sellTok": 0,
+    "first": 1739570984,
+    "last": 1739571833,
+    "lastSell": 0,
+    "maxTrade": 277236.91243635415,
+    "trades": 46,
+    "mev": 0
+   }
+  },
+  {
+   "address": "5fnahDWBtUB8QBTXWHm2QzfAoAVHToxvMf38i3a7okGe",
+   "display": "5fn...kGe",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 10.00M LIBRA directly from the dev wallet in one transaction at 2025-02-14T22:04:13.000Z.",
+     "signatures": [
+      "2rjw9WkqxdZyNQcdLFYVSkzBWVnuqMZ5ABLZjogCvfBKxRZnGPDKEvFifeU2aKTxZyLRNAHjuUzBB1FDJyrUw3Vc"
+     ]
+    }
+   ],
+   "stats": {
+    "buyUsd": 0,
+    "sellUsd": 44231.60010321147,
+    "buyTok": 0,
+    "sellTok": 20000,
+    "first": 1739571133,
+    "last": 1739571383,
+    "lastSell": 1739571383,
+    "maxTrade": 23090.29440433849,
+    "trades": 2,
+    "mev": 0
+   }
+  },
+  {
+   "address": "8NScYncjpY1mKrbxVJFFdVqNPEocyXTnQqy9GW1hg4j3",
+   "display": "8NS...4j3",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 10.00M LIBRA directly from the dev wallet in one transaction at 2025-02-14T22:04:13.000Z.",
+     "signatures": [
+      "2rjw9WkqxdZyNQcdLFYVSkzBWVnuqMZ5ABLZjogCvfBKxRZnGPDKEvFifeU2aKTxZyLRNAHjuUzBB1FDJyrUw3Vc"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "EFrg9SXbnCfuVqJPJf2hKKY3CtTPLHvipEpgrHjBkb4L",
+   "display": "EFr...b4L",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 10.00M LIBRA directly from the dev wallet in one transaction at 2025-02-14T22:04:13.000Z.",
+     "signatures": [
+      "2rjw9WkqxdZyNQcdLFYVSkzBWVnuqMZ5ABLZjogCvfBKxRZnGPDKEvFifeU2aKTxZyLRNAHjuUzBB1FDJyrUw3Vc"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "5Wsjee6FgZQtxjUBedfNq9ZbV6RN7wgb4N422LyV3ZEr",
+   "display": "5Ws...ZEr",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 10.00M LIBRA directly from the dev wallet in one transaction at 2025-02-14T22:04:13.000Z.",
+     "signatures": [
+      "2rjw9WkqxdZyNQcdLFYVSkzBWVnuqMZ5ABLZjogCvfBKxRZnGPDKEvFifeU2aKTxZyLRNAHjuUzBB1FDJyrUw3Vc"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "jwudCiJ5QUUmfxPXN41jaqYKnSc3UmKo5RoRGkZzomN",
+   "display": "jwu...omN",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 5.00M LIBRA directly from the dev wallet in one transaction at 2025-02-14T22:04:13.000Z.",
+     "signatures": [
+      "2rjw9WkqxdZyNQcdLFYVSkzBWVnuqMZ5ABLZjogCvfBKxRZnGPDKEvFifeU2aKTxZyLRNAHjuUzBB1FDJyrUw3Vc"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "Gj9esbWVNJyy55SDJzYudMAznewqmW3Xb6GpUakcCNwT",
+   "display": "Gj9...NwT",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 200.00M LIBRA directly from the dev wallet in one transaction at 2025-02-14T21:38:48.000Z.",
+     "signatures": [
+      "NjmUdbC9mc3y3BZdjbfdLK1Zoe8G4iTAdBzURBock2xucbV4dNTkh9D5gipYhTedHpERrfcLaKb3iUYnz5FGXZY"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "FdWhTThthSN7mbcmBgh18dzogi1dXqQqBb6BnnzZEJJn",
+   "display": "FdW...JJn",
+   "tag": "INSIDER",
+   "evidence": [
+    {
+     "rule": "direct-recipient-of-dev-supply",
+     "detail": "Received 500.00M LIBRA directly from the dev wallet in one transaction at 2025-02-14T21:38:48.000Z.",
+     "signatures": [
+      "NjmUdbC9mc3y3BZdjbfdLK1Zoe8G4iTAdBzURBock2xucbV4dNTkh9D5gipYhTedHpERrfcLaKb3iUYnz5FGXZY"
+     ]
+    }
+   ],
+   "stats": null
+  },
+  {
+   "address": "Gr3eiFhPfLAaA4SSHYqan8hcBB9dHLxRC176tfRtS4eb",
+   "display": "Gr3...4eb",
+   "tag": "SMART",
+   "evidence": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 1 of the candidates by realised profit. Recorded trades 2025-02-14T22:01:01Z to 2025-02-14T23:14:55Z: bought $999,894, sold $9,349,785 (realised $8,349,891); sold 97% of the LIBRA bought; last sell 2025-02-14T23:14:55Z, before the collapse marker 2025-02-14T23:26:43Z."
+    }
+   ],
+   "stats": {
+    "buyUsd": 999894.1076588461,
+    "sellUsd": 9349785.373320263,
+    "buyTok": 3340162.670843,
+    "sellTok": 3249809.670843,
+    "first": 1739570461,
+    "last": 1739574895,
+    "lastSell": 1739574895,
+    "maxTrade": 268314.2488485889,
+    "trades": 68,
+    "mev": 0
+   }
+  },
+  {
+   "address": "2NHGzdMGW4Zoe4Szypj3QpQuZR2mq3qRgQk6ek1KkH7V",
+   "display": "2NH...H7V",
+   "tag": "SMART",
+   "evidence": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 2 of the candidates by realised profit. Recorded trades 2025-02-14T22:01:00Z to 2025-02-14T22:37:04Z: bought $1,099,884, sold $7,425,267 (realised $6,325,383); sold 89% of the LIBRA bought; last sell 2025-02-14T22:37:04Z, before the collapse marker 2025-02-14T23:26:43Z."
+    }
+   ],
+   "stats": {
+    "buyUsd": 1099883.5184247307,
+    "sellUsd": 7425266.817818321,
+    "buyTok": 5099784.759897,
+    "sellTok": 4549784.759897,
+    "first": 1739570460,
+    "last": 1739572624,
+    "lastSell": 1739572624,
+    "maxTrade": 1099883.5184247307,
+    "trades": 52,
+    "mev": 0
+   }
+  },
+  {
+   "address": "7qN8RpRpqgQf1gH6pE11vCrWfSH6t9WGZqepR33g5ao7",
+   "display": "7qN...ao7",
+   "tag": "SMART",
+   "evidence": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 3 of the candidates by realised profit. Recorded trades 2025-02-14T22:01:07Z to 2025-02-14T22:52:27Z: bought $1,600,998, sold $7,063,669 (realised $5,462,671); sold 100% of the LIBRA bought; last sell 2025-02-14T22:52:27Z, before the collapse marker 2025-02-14T23:26:43Z."
+    }
+   ],
+   "stats": {
+    "buyUsd": 1600998.0117029722,
+    "sellUsd": 7063669.017049003,
+    "buyTok": 3890503.676964,
+    "sellTok": 3890503.676964,
+    "first": 1739570467,
+    "last": 1739573547,
+    "lastSell": 1739573547,
+    "maxTrade": 1499841.1614882692,
+    "trades": 16,
+    "mev": 0
+   }
+  },
+  {
+   "address": "HyzGo2wCce9oiRfz1ox9DJZB63gjn8TAbcv819XZmz8Q",
+   "display": "Hyz...z8Q",
+   "tag": "SMART",
+   "evidence": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 4 of the candidates by realised profit. Recorded trades 2025-02-14T22:01:00Z to 2025-02-14T22:44:02Z: bought $499,947, sold $5,507,113 (realised $5,007,166); sold 98% of the LIBRA bought; last sell 2025-02-14T22:44:02Z, before the collapse marker 2025-02-14T23:26:43Z."
+    }
+   ],
+   "stats": {
+    "buyUsd": 499947.05382942304,
+    "sellUsd": 5507112.881172398,
+    "buyTok": 1976005.467696,
+    "sellTok": 1936005.467696,
+    "first": 1739570460,
+    "last": 1739573042,
+    "lastSell": 1739573042,
+    "maxTrade": 499947.05382942304,
+    "trades": 37,
+    "mev": 0
+   }
+  },
+  {
+   "address": "FS52oWvGn7gmo4fve1n8DPTfa84C5GH6fDhFoyZqRrcy",
+   "display": "FS5...rcy",
+   "tag": "SMART",
+   "evidence": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 5 of the candidates by realised profit. Recorded trades 2025-02-14T22:01:04Z to 2025-02-14T23:19:11Z: bought $499,947, sold $3,587,500 (realised $3,087,553); sold 84% of the LIBRA bought; last sell 2025-02-14T23:19:11Z, before the collapse marker 2025-02-14T23:26:43Z."
+    }
+   ],
+   "stats": {
+    "buyUsd": 499947.05382942304,
+    "sellUsd": 3587500.444063251,
+    "buyTok": 1502292.695839,
+    "sellTok": 1260000,
+    "first": 1739570464,
+    "last": 1739575151,
+    "lastSell": 1739575151,
+    "maxTrade": 604915.3740853455,
+    "trades": 10,
+    "mev": 0
+   }
+  },
+  {
+   "address": "DYan6HdoEof2rPZMYxntpBcghAjcFeaGcWVxWzsUHNRB",
+   "display": "DYa...NRB",
+   "tag": "WHALE",
+   "evidence": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 1 of the candidates by USD traded inside the replay window ($17,979,646); not a dev, insider or smart-exit wallet and not bot-like (MEV-flagged trades <= 10%)."
+    }
+   ],
+   "stats": {
+    "buyUsd": 10534314.437822107,
+    "sellUsd": 16265924.211531376,
+    "buyTok": 7910801.055451001,
+    "sellTok": 7667490.176604,
+    "first": 1739570500,
+    "last": 1739577122,
+    "lastSell": 1739575841,
+    "maxTrade": 3499629.3768059616,
+    "trades": 33,
+    "mev": 0
+   }
+  },
+  {
+   "address": "21nqTkc6EU3GHZnmTxTtjzV5PNLx747PgoFD5VeskVBo",
+   "display": "21n...VBo",
+   "tag": "WHALE",
+   "evidence": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 2 of the candidates by USD traded inside the replay window ($14,013,303); not a dev, insider or smart-exit wallet and not bot-like (MEV-flagged trades <= 10%)."
+    }
+   ],
+   "stats": {
+    "buyUsd": 7737401.072280382,
+    "sellUsd": 7538459.227246668,
+    "buyTok": 4263138.512426,
+    "sellTok": 3821383.1078790003,
+    "first": 1739572197,
+    "last": 1739577588,
+    "lastSell": 1739577588,
+    "maxTrade": 1171497.3475433518,
+    "trades": 37,
+    "mev": 0
+   }
+  },
+  {
+   "address": "Bpk7VVctpzXYx4BuPnZzs3VSSAWSAQJVq9VufFAq5p6b",
+   "display": "Bpk...p6b",
+   "tag": "WHALE",
+   "evidence": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 3 of the candidates by USD traded inside the replay window ($12,445,569); not a dev, insider or smart-exit wallet and not bot-like (MEV-flagged trades <= 10%)."
+    }
+   ],
+   "stats": {
+    "buyUsd": 7570072.20251118,
+    "sellUsd": 7118107.462162974,
+    "buyTok": 4372744.191515,
+    "sellTok": 4372744.191515001,
+    "first": 1739570492,
+    "last": 1739576573,
+    "lastSell": 1739576573,
+    "maxTrade": 1589094.8372500974,
+    "trades": 20,
+    "mev": 0
+   }
+  }
+ ]
+}

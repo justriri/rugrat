@@ -1,0 +1,1140 @@
+{
+ "id": "hawk-2024-12-04",
+ "token": "HAWK",
+ "name": "Hawk Tuah",
+ "symbol": "HAWK",
+ "mint": "HAWKThXRcNL9ZGZKqgUXLm4W8tnRZ7U6MVdEepSutj34",
+ "logoUrl": "https://gateway.irys.xyz/xKOmdMzW3is3mZJL5eWvnNmcvIRke0ilEhHxoI8CvCs",
+ "logoSource": "Jupiter asset metadata (datapi.jup.ag/v1/assets/search), icon field",
+ "rugType": "DEV_EXIT",
+ "date": "2024-12-04",
+ "replayStart": 1733350080,
+ "replayEnd": 1733353185,
+ "signal": {
+  "tag": "DEV",
+  "action": "SUPPLY_MOVE",
+  "minUsd": 250000,
+  "description": "First dev-wallet supply move worth at least $250,000 (tokens x the price in force): the token's creator wallet begins sending out a large share of total supply. It happens before the price completes its fall to 15% of the peak."
+ },
+ "collapseReason": "First tick after the replay's peak (0.04926 at 2024-12-04T22:11:45Z) whose price is at or below 15% of that peak: 0.007310 at 2024-12-04T22:37:45Z. A price-only rule, stored with this replay; the engine does not know it.",
+ "source": "Jupiter chart API (datapi.jup.ag/v2/charts) (https://datapi.jup.ag/v2/charts/HAWKThXRcNL9ZGZKqgUXLm4W8tnRZ7U6MVdEepSutj34?interval=15_SECOND&baseAsset=HAWKThXRcNL9ZGZKqgUXLm4W8tnRZ7U6MVdEepSutj34&from=1733350080000&to=1733353200000&candles=1000&type=price)",
+ "ticks": [
+  {
+   "timestamp": 1733350080,
+   "price": 0.01441953900127888
+  },
+  {
+   "timestamp": 1733350095,
+   "price": 0.016604254686901198
+  },
+  {
+   "timestamp": 1733350110,
+   "price": 0.02049300257599136
+  },
+  {
+   "timestamp": 1733350125,
+   "price": 0.026278739394946016
+  },
+  {
+   "timestamp": 1733350140,
+   "price": 0.028858339016292263
+  },
+  {
+   "timestamp": 1733350155,
+   "price": 0.031547576630256355
+  },
+  {
+   "timestamp": 1733350170,
+   "price": 0.03458796394542743
+  },
+  {
+   "timestamp": 1733350185,
+   "price": 0.037804130552893334
+  },
+  {
+   "timestamp": 1733350200,
+   "price": 0.044305940464490476
+  },
+  {
+   "timestamp": 1733350215,
+   "price": 0.040675776925043323
+  },
+  {
+   "timestamp": 1733350230,
+   "price": 0.042881427723346154
+  },
+  {
+   "timestamp": 1733350245,
+   "price": 0.04293823472576128
+  },
+  {
+   "timestamp": 1733350260,
+   "price": 0.04433959018261209
+  },
+  {
+   "timestamp": 1733350275,
+   "price": 0.04608211782029698
+  },
+  {
+   "timestamp": 1733350290,
+   "price": 0.047580641465597866
+  },
+  {
+   "timestamp": 1733350305,
+   "price": 0.04925586190189037
+  },
+  {
+   "timestamp": 1733350320,
+   "price": 0.03361113190178798
+  },
+  {
+   "timestamp": 1733350335,
+   "price": 0.04399142346865078
+  },
+  {
+   "timestamp": 1733350350,
+   "price": 0.04352937428637046
+  },
+  {
+   "timestamp": 1733350365,
+   "price": 0.0426082363716596
+  },
+  {
+   "timestamp": 1733350380,
+   "price": 0.03849881490117782
+  },
+  {
+   "timestamp": 1733350395,
+   "price": 0.038915421783236294
+  },
+  {
+   "timestamp": 1733350410,
+   "price": 0.032016259987621566
+  },
+  {
+   "timestamp": 1733350425,
+   "price": 0.030022760970580657
+  },
+  {
+   "timestamp": 1733350440,
+   "price": 0.025817588073069865
+  },
+  {
+   "timestamp": 1733350455,
+   "price": 0.02043993027785623
+  },
+  {
+   "timestamp": 1733350470,
+   "price": 0.018984311993798134
+  },
+  {
+   "timestamp": 1733350485,
+   "price": 0.02406459185317599
+  },
+  {
+   "timestamp": 1733350500,
+   "price": 0.024443395722006357
+  },
+  {
+   "timestamp": 1733350515,
+   "price": 0.023584487363356256
+  },
+  {
+   "timestamp": 1733350530,
+   "price": 0.022242762581875714
+  },
+  {
+   "timestamp": 1733350545,
+   "price": 0.02208132252585192
+  },
+  {
+   "timestamp": 1733350560,
+   "price": 0.021543859800906524
+  },
+  {
+   "timestamp": 1733350575,
+   "price": 0.018567779650291917
+  },
+  {
+   "timestamp": 1733350590,
+   "price": 0.018303428448410316
+  },
+  {
+   "timestamp": 1733350605,
+   "price": 0.017861673296156483
+  },
+  {
+   "timestamp": 1733350620,
+   "price": 0.016327615192554445
+  },
+  {
+   "timestamp": 1733350635,
+   "price": 0.015713596840973686
+  },
+  {
+   "timestamp": 1733350650,
+   "price": 0.01414055544016918
+  },
+  {
+   "timestamp": 1733350665,
+   "price": 0.012580296394592487
+  },
+  {
+   "timestamp": 1733350680,
+   "price": 0.013804580776370961
+  },
+  {
+   "timestamp": 1733350695,
+   "price": 0.014161294770146342
+  },
+  {
+   "timestamp": 1733350710,
+   "price": 0.013569883453794429
+  },
+  {
+   "timestamp": 1733350725,
+   "price": 0.013821947813181506
+  },
+  {
+   "timestamp": 1733350740,
+   "price": 0.01271225815447277
+  },
+  {
+   "timestamp": 1733350755,
+   "price": 0.016973769017091418
+  },
+  {
+   "timestamp": 1733350770,
+   "price": 0.0168337183364626
+  },
+  {
+   "timestamp": 1733350785,
+   "price": 0.014275938552347505
+  },
+  {
+   "timestamp": 1733350800,
+   "price": 0.010009512557185563
+  },
+  {
+   "timestamp": 1733350815,
+   "price": 0.013404081534735289
+  },
+  {
+   "timestamp": 1733350830,
+   "price": 0.010275005635429515
+  },
+  {
+   "timestamp": 1733350845,
+   "price": 0.01018781346219965
+  },
+  {
+   "timestamp": 1733350860,
+   "price": 0.010748762021216773
+  },
+  {
+   "timestamp": 1733350875,
+   "price": 0.013569980346929045
+  },
+  {
+   "timestamp": 1733350890,
+   "price": 0.01370762090494817
+  },
+  {
+   "timestamp": 1733350905,
+   "price": 0.010696900692467067
+  },
+  {
+   "timestamp": 1733350920,
+   "price": 0.014201227018650819
+  },
+  {
+   "timestamp": 1733350935,
+   "price": 0.011023429425276333
+  },
+  {
+   "timestamp": 1733350950,
+   "price": 0.014756817827454713
+  },
+  {
+   "timestamp": 1733350965,
+   "price": 0.012601072818838068
+  },
+  {
+   "timestamp": 1733350980,
+   "price": 0.012663522008186559
+  },
+  {
+   "timestamp": 1733350995,
+   "price": 0.016714970511733238
+  },
+  {
+   "timestamp": 1733351010,
+   "price": 0.017500083535831584
+  },
+  {
+   "timestamp": 1733351025,
+   "price": 0.01633306084526494
+  },
+  {
+   "timestamp": 1733351040,
+   "price": 0.01674328621718192
+  },
+  {
+   "timestamp": 1733351055,
+   "price": 0.016378816012377968
+  },
+  {
+   "timestamp": 1733351070,
+   "price": 0.01655413321968793
+  },
+  {
+   "timestamp": 1733351085,
+   "price": 0.01685389745475751
+  },
+  {
+   "timestamp": 1733351100,
+   "price": 0.016709049316406564
+  },
+  {
+   "timestamp": 1733351115,
+   "price": 0.016787217594904542
+  },
+  {
+   "timestamp": 1733351130,
+   "price": 0.016746065525197862
+  },
+  {
+   "timestamp": 1733351145,
+   "price": 0.016755001116401633
+  },
+  {
+   "timestamp": 1733351160,
+   "price": 0.012932526966779193
+  },
+  {
+   "timestamp": 1733351175,
+   "price": 0.016889781277477714
+  },
+  {
+   "timestamp": 1733351190,
+   "price": 0.016881429875098476
+  },
+  {
+   "timestamp": 1733351205,
+   "price": 0.016960632865523965
+  },
+  {
+   "timestamp": 1733351220,
+   "price": 0.017112149887877733
+  },
+  {
+   "timestamp": 1733351235,
+   "price": 0.017219235450912536
+  },
+  {
+   "timestamp": 1733351250,
+   "price": 0.017536327169142905
+  },
+  {
+   "timestamp": 1733351265,
+   "price": 0.017254549442041665
+  },
+  {
+   "timestamp": 1733351280,
+   "price": 0.017290464021034787
+  },
+  {
+   "timestamp": 1733351295,
+   "price": 0.017323913557423503
+  },
+  {
+   "timestamp": 1733351310,
+   "price": 0.01682208184371712
+  },
+  {
+   "timestamp": 1733351325,
+   "price": 0.01695210634386999
+  },
+  {
+   "timestamp": 1733351340,
+   "price": 0.012703528031098322
+  },
+  {
+   "timestamp": 1733351355,
+   "price": 0.015078274181158088
+  },
+  {
+   "timestamp": 1733351370,
+   "price": 0.01138808743669626
+  },
+  {
+   "timestamp": 1733351385,
+   "price": 0.014843876306087071
+  },
+  {
+   "timestamp": 1733351400,
+   "price": 0.011400728222562233
+  },
+  {
+   "timestamp": 1733351415,
+   "price": 0.010922986022469779
+  },
+  {
+   "timestamp": 1733351430,
+   "price": 0.010818877961248807
+  },
+  {
+   "timestamp": 1733351445,
+   "price": 0.014054144733035328
+  },
+  {
+   "timestamp": 1733351460,
+   "price": 0.013998156151116362
+  },
+  {
+   "timestamp": 1733351475,
+   "price": 0.010187899509356195
+  },
+  {
+   "timestamp": 1733351490,
+   "price": 0.013244004143316402
+  },
+  {
+   "timestamp": 1733351505,
+   "price": 0.013293219121635756
+  },
+  {
+   "timestamp": 1733351520,
+   "price": 0.010097935250809658
+  },
+  {
+   "timestamp": 1733351535,
+   "price": 0.010096766073087642
+  },
+  {
+   "timestamp": 1733351550,
+   "price": 0.010050908572204231
+  },
+  {
+   "timestamp": 1733351565,
+   "price": 0.013012811091209164
+  },
+  {
+   "timestamp": 1733351580,
+   "price": 0.012988551389705776
+  },
+  {
+   "timestamp": 1733351595,
+   "price": 0.009897444638598474
+  },
+  {
+   "timestamp": 1733351610,
+   "price": 0.012714669516963642
+  },
+  {
+   "timestamp": 1733351625,
+   "price": 0.009709032213137143
+  },
+  {
+   "timestamp": 1733351640,
+   "price": 0.00958262626022664
+  },
+  {
+   "timestamp": 1733351655,
+   "price": 0.009527236884749513
+  },
+  {
+   "timestamp": 1733351670,
+   "price": 0.012401800902252428
+  },
+  {
+   "timestamp": 1733351685,
+   "price": 0.009193548613090333
+  },
+  {
+   "timestamp": 1733351700,
+   "price": 0.011924046852671653
+  },
+  {
+   "timestamp": 1733351715,
+   "price": 0.011942006290804991
+  },
+  {
+   "timestamp": 1733351730,
+   "price": 0.01124201373360838
+  },
+  {
+   "timestamp": 1733351745,
+   "price": 0.008144521901868965
+  },
+  {
+   "timestamp": 1733351760,
+   "price": 0.010598895104196404
+  },
+  {
+   "timestamp": 1733351775,
+   "price": 0.01061825871040075
+  },
+  {
+   "timestamp": 1733351790,
+   "price": 0.01061280153660164
+  },
+  {
+   "timestamp": 1733351805,
+   "price": 0.007921581762039777
+  },
+  {
+   "timestamp": 1733351820,
+   "price": 0.007651676990594915
+  },
+  {
+   "timestamp": 1733351835,
+   "price": 0.009681503784263789
+  },
+  {
+   "timestamp": 1733351850,
+   "price": 0.00952783167400141
+  },
+  {
+   "timestamp": 1733351865,
+   "price": 0.00731033002433553
+  },
+  {
+   "timestamp": 1733351880,
+   "price": 0.00691577599664508
+  },
+  {
+   "timestamp": 1733351895,
+   "price": 0.008602907766910625
+  },
+  {
+   "timestamp": 1733351910,
+   "price": 0.008548408674243455
+  },
+  {
+   "timestamp": 1733351925,
+   "price": 0.008541630515281243
+  },
+  {
+   "timestamp": 1733351940,
+   "price": 0.00851186777204495
+  },
+  {
+   "timestamp": 1733351955,
+   "price": 0.006616608094393756
+  },
+  {
+   "timestamp": 1733351970,
+   "price": 0.008354369376838595
+  },
+  {
+   "timestamp": 1733351985,
+   "price": 0.006564802426230057
+  },
+  {
+   "timestamp": 1733352000,
+   "price": 0.006494092320125407
+  },
+  {
+   "timestamp": 1733352015,
+   "price": 0.006417439181293697
+  },
+  {
+   "timestamp": 1733352030,
+   "price": 0.008377299574921773
+  },
+  {
+   "timestamp": 1733352045,
+   "price": 0.006239416771853187
+  },
+  {
+   "timestamp": 1733352060,
+   "price": 0.008124409191795301
+  },
+  {
+   "timestamp": 1733352075,
+   "price": 0.008089661781302885
+  },
+  {
+   "timestamp": 1733352090,
+   "price": 0.006210783316079196
+  },
+  {
+   "timestamp": 1733352105,
+   "price": 0.007760059950399428
+  },
+  {
+   "timestamp": 1733352120,
+   "price": 0.005986172879397998
+  },
+  {
+   "timestamp": 1733352135,
+   "price": 0.007737334416088153
+  },
+  {
+   "timestamp": 1733352150,
+   "price": 0.0059560970636489165
+  },
+  {
+   "timestamp": 1733352165,
+   "price": 0.005808648687006369
+  },
+  {
+   "timestamp": 1733352180,
+   "price": 0.007550293199581766
+  },
+  {
+   "timestamp": 1733352195,
+   "price": 0.007327251423970018
+  },
+  {
+   "timestamp": 1733352210,
+   "price": 0.0071626396938356375
+  },
+  {
+   "timestamp": 1733352225,
+   "price": 0.006091590035420776
+  },
+  {
+   "timestamp": 1733352240,
+   "price": 0.006112518358151125
+  },
+  {
+   "timestamp": 1733352255,
+   "price": 0.007235323487685603
+  },
+  {
+   "timestamp": 1733352270,
+   "price": 0.005925970205367062
+  },
+  {
+   "timestamp": 1733352285,
+   "price": 0.007127018621458022
+  },
+  {
+   "timestamp": 1733352300,
+   "price": 0.006025491803601701
+  },
+  {
+   "timestamp": 1733352315,
+   "price": 0.007222284602139463
+  },
+  {
+   "timestamp": 1733352330,
+   "price": 0.005985608379454473
+  },
+  {
+   "timestamp": 1733352345,
+   "price": 0.0071138423164105215
+  },
+  {
+   "timestamp": 1733352360,
+   "price": 0.0071306747576871665
+  },
+  {
+   "timestamp": 1733352375,
+   "price": 0.007148474482259643
+  },
+  {
+   "timestamp": 1733352390,
+   "price": 0.007370544603857882
+  },
+  {
+   "timestamp": 1733352405,
+   "price": 0.006216737718915641
+  },
+  {
+   "timestamp": 1733352420,
+   "price": 0.007373451277039195
+  },
+  {
+   "timestamp": 1733352435,
+   "price": 0.007168682742723642
+  },
+  {
+   "timestamp": 1733352450,
+   "price": 0.00710338181210518
+  },
+  {
+   "timestamp": 1733352465,
+   "price": 0.0071902366213898875
+  },
+  {
+   "timestamp": 1733352480,
+   "price": 0.007184739597902869
+  },
+  {
+   "timestamp": 1733352495,
+   "price": 0.006033607526116656
+  },
+  {
+   "timestamp": 1733352510,
+   "price": 0.006796832698479948
+  },
+  {
+   "timestamp": 1733352525,
+   "price": 0.005734650165613054
+  },
+  {
+   "timestamp": 1733352540,
+   "price": 0.005733532911072773
+  },
+  {
+   "timestamp": 1733352555,
+   "price": 0.006466522479251728
+  },
+  {
+   "timestamp": 1733352570,
+   "price": 0.006474152125598305
+  },
+  {
+   "timestamp": 1733352585,
+   "price": 0.006471643620405362
+  },
+  {
+   "timestamp": 1733352600,
+   "price": 0.0057588636529412075
+  },
+  {
+   "timestamp": 1733352615,
+   "price": 0.006511661346899725
+  },
+  {
+   "timestamp": 1733352630,
+   "price": 0.006161987802753096
+  },
+  {
+   "timestamp": 1733352645,
+   "price": 0.006157566998086181
+  },
+  {
+   "timestamp": 1733352660,
+   "price": 0.005459800824418915
+  },
+  {
+   "timestamp": 1733352675,
+   "price": 0.006080988148089348
+  },
+  {
+   "timestamp": 1733352690,
+   "price": 0.00536292006042688
+  },
+  {
+   "timestamp": 1733352705,
+   "price": 0.005998857391419604
+  },
+  {
+   "timestamp": 1733352720,
+   "price": 0.005992260357856167
+  },
+  {
+   "timestamp": 1733352735,
+   "price": 0.005336678797387674
+  },
+  {
+   "timestamp": 1733352750,
+   "price": 0.005796570001371948
+  },
+  {
+   "timestamp": 1733352765,
+   "price": 0.005423595462571372
+  },
+  {
+   "timestamp": 1733352780,
+   "price": 0.005405550043242915
+  },
+  {
+   "timestamp": 1733352795,
+   "price": 0.005263653933141014
+  },
+  {
+   "timestamp": 1733352810,
+   "price": 0.005772862262611013
+  },
+  {
+   "timestamp": 1733352825,
+   "price": 0.005805389619820601
+  },
+  {
+   "timestamp": 1733352840,
+   "price": 0.0058123870546190936
+  },
+  {
+   "timestamp": 1733352855,
+   "price": 0.005234681634542282
+  },
+  {
+   "timestamp": 1733352870,
+   "price": 0.00587199902976568
+  },
+  {
+   "timestamp": 1733352885,
+   "price": 0.005857293542235183
+  },
+  {
+   "timestamp": 1733352900,
+   "price": 0.005204671322474344
+  },
+  {
+   "timestamp": 1733352915,
+   "price": 0.0052035010493644415
+  },
+  {
+   "timestamp": 1733352930,
+   "price": 0.005198185454622715
+  },
+  {
+   "timestamp": 1733352945,
+   "price": 0.005913395339398857
+  },
+  {
+   "timestamp": 1733352960,
+   "price": 0.005898564819035166
+  },
+  {
+   "timestamp": 1733352975,
+   "price": 0.005889842528375893
+  },
+  {
+   "timestamp": 1733352990,
+   "price": 0.005231122685272249
+  },
+  {
+   "timestamp": 1733353005,
+   "price": 0.0052424375255363
+  },
+  {
+   "timestamp": 1733353020,
+   "price": 0.0058585946974601365
+  },
+  {
+   "timestamp": 1733353035,
+   "price": 0.00597432604319255
+  },
+  {
+   "timestamp": 1733353050,
+   "price": 0.0060119094186458525
+  },
+  {
+   "timestamp": 1733353065,
+   "price": 0.005399228952071738
+  },
+  {
+   "timestamp": 1733353080,
+   "price": 0.0057391688586974415
+  },
+  {
+   "timestamp": 1733353095,
+   "price": 0.005784514768615496
+  },
+  {
+   "timestamp": 1733353110,
+   "price": 0.005833314297273698
+  },
+  {
+   "timestamp": 1733353125,
+   "price": 0.00520183607127087
+  },
+  {
+   "timestamp": 1733353140,
+   "price": 0.005847541162629274
+  },
+  {
+   "timestamp": 1733353155,
+   "price": 0.006093675172125347
+  },
+  {
+   "timestamp": 1733353170,
+   "price": 0.006094337972716316
+  },
+  {
+   "timestamp": 1733353185,
+   "price": 0.006141618535062093
+  }
+ ],
+ "events": [
+  {
+   "id": "3YgV7UitWdBz:Hii...RnN",
+   "timestamp": 1733350093,
+   "wallet": "Hii...RnN",
+   "tag": "WHALE",
+   "action": "BUY",
+   "amount": 968274,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "dWXLGviYbMzV:Hii...RnN:b20",
+   "timestamp": 1733350322,
+   "wallet": "Hii...RnN",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 1345716,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "3auvWXLUvkyV:ECs...HSL:b12",
+   "timestamp": 1733350552,
+   "wallet": "ECs...HSL",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 140265,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "5DKFZRb8ctZL:Hii...RnN:b18",
+   "timestamp": 1733350580,
+   "wallet": "Hii...RnN",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 737209,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "2VLRGtkAaj9w:ECs...HSL:b10",
+   "timestamp": 1733350776,
+   "wallet": "ECs...HSL",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 206489,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "4D5qSdXujRFH:Hii...RnN:b7",
+   "timestamp": 1733350785,
+   "wallet": "Hii...RnN",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 191239,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "2JLKaDzNg7vm:burst12",
+   "timestamp": 1733350814,
+   "wallet": "HAW...yAm",
+   "tag": "DEV",
+   "action": "SUPPLY_MOVE",
+   "amount": 35949672,
+   "amountUnit": "HAWK",
+   "valueUsd": 359839
+  },
+  {
+   "id": "Xsodk41LrJz9:6YH...YXf:b4",
+   "timestamp": 1733350923,
+   "wallet": "6YH...YXf",
+   "tag": "WHALE",
+   "action": "BUY",
+   "amount": 134529,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "2fZ4BiyfTyTJ:burst15",
+   "timestamp": 1733351092,
+   "wallet": "HAW...yAm",
+   "tag": "DEV",
+   "action": "SUPPLY_MOVE",
+   "amount": 89874180,
+   "amountUnit": "HAWK",
+   "valueUsd": 1514730
+  },
+  {
+   "id": "3Gf8yAVYEnfU:burst26",
+   "timestamp": 1733351174,
+   "wallet": "HAW...yAm",
+   "tag": "DEV",
+   "action": "SUPPLY_MOVE",
+   "amount": 155781912,
+   "amountUnit": "HAWK",
+   "valueUsd": 2014654
+  },
+  {
+   "id": "47msgWQ3KdCh:burst20",
+   "timestamp": 1733351279,
+   "wallet": "HAW...yAm",
+   "tag": "DEV",
+   "action": "SUPPLY_MOVE",
+   "amount": 119832240,
+   "amountUnit": "HAWK",
+   "valueUsd": 2067651
+  },
+  {
+   "id": "42oqBcSPDBLB:G93...iia",
+   "timestamp": 1733351356,
+   "wallet": "G93...iia",
+   "tag": "INSIDER",
+   "action": "SELL",
+   "amount": 36128,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "373vXypm63dm:burst29",
+   "timestamp": 1733351357,
+   "wallet": "HAW...yAm",
+   "tag": "DEV",
+   "action": "SUPPLY_MOVE",
+   "amount": 173756748,
+   "amountUnit": "HAWK",
+   "valueUsd": 2619952
+  },
+  {
+   "id": "4z4LQYQwf7oz:burst31",
+   "timestamp": 1733351481,
+   "wallet": "HAW...yAm",
+   "tag": "DEV",
+   "action": "SUPPLY_MOVE",
+   "amount": 185739972,
+   "amountUnit": "HAWK",
+   "valueUsd": 1892300
+  },
+  {
+   "id": "4kPkSk4MR5G4:ASZ...Vqp:b10",
+   "timestamp": 1733351576,
+   "wallet": "ASZ...Vqp",
+   "tag": "INSIDER",
+   "action": "SELL",
+   "amount": 30527,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "2R6CbqXJ2wXm:burst33",
+   "timestamp": 1733351613,
+   "wallet": "HAW...yAm",
+   "tag": "DEV",
+   "action": "SUPPLY_MOVE",
+   "amount": 197723196,
+   "amountUnit": "HAWK",
+   "valueUsd": 2513985
+  },
+  {
+   "id": "3LbE1gx5ftvC:burst13",
+   "timestamp": 1733351741,
+   "wallet": "HAW...yAm",
+   "tag": "DEV",
+   "action": "SUPPLY_MOVE",
+   "amount": 77890956,
+   "amountUnit": "HAWK",
+   "valueUsd": 875651
+  },
+  {
+   "id": "2DXVJhwjMJNc:burst7",
+   "timestamp": 1733351876,
+   "wallet": "HAW...yAm",
+   "tag": "DEV",
+   "action": "SUPPLY_MOVE",
+   "amount": 41941284,
+   "amountUnit": "HAWK",
+   "valueUsd": 306605
+  },
+  {
+   "id": "3M4se1cp7GD2:G9n...EVi:b6",
+   "timestamp": 1733352086,
+   "wallet": "G9n...EVi",
+   "tag": "INSIDER",
+   "action": "SELL",
+   "amount": 17826,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "4BQjb6oF81CJ:G9n...EVi:b5",
+   "timestamp": 1733352201,
+   "wallet": "G9n...EVi",
+   "tag": "INSIDER",
+   "action": "SELL",
+   "amount": 15939,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "25gX2RtTfp5B:burst20",
+   "timestamp": 1733352264,
+   "wallet": "HAW...yAm",
+   "tag": "DEV",
+   "action": "SUPPLY_MOVE",
+   "amount": 293588968,
+   "amountUnit": "HAWK",
+   "valueUsd": 2124211
+  },
+  {
+   "id": "2jtdwB3jwqZH:G93...iia",
+   "timestamp": 1733352341,
+   "wallet": "G93...iia",
+   "tag": "INSIDER",
+   "action": "BUY",
+   "amount": 16616,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "3cujN3Lj9e3F:EpU...tQ6",
+   "timestamp": 1733352342,
+   "wallet": "EpU...tQ6",
+   "tag": "INSIDER",
+   "action": "SELL",
+   "amount": 44214,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "3bnmnabsUgFp:9NP...wqD",
+   "timestamp": 1733352449,
+   "wallet": "9NP...wqD",
+   "tag": "INSIDER",
+   "action": "SELL",
+   "amount": 18046,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "2xbxMeNZonfU:Hfv...tx9",
+   "timestamp": 1733352757,
+   "wallet": "Hfv...tx9",
+   "tag": "INSIDER",
+   "action": "SELL",
+   "amount": 24422,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "5a6TU7zfndpe:9uG...Bud",
+   "timestamp": 1733352809,
+   "wallet": "9uG...Bud",
+   "tag": "INSIDER",
+   "action": "SELL",
+   "amount": 25950,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "3bLqECLQm7wf:9NP...wqD:b4",
+   "timestamp": 1733353042,
+   "wallet": "9NP...wqD",
+   "tag": "INSIDER",
+   "action": "SELL",
+   "amount": 21436,
+   "amountUnit": "USD"
+  },
+  {
+   "id": "Gn7hTijW48ST:72p...kaL",
+   "timestamp": 1733353088,
+   "wallet": "72p...kaL",
+   "tag": "INSIDER",
+   "action": "SELL",
+   "amount": 24666,
+   "amountUnit": "USD"
+  }
+ ],
+ "rugTimestamp": 1733351865,
+ "playbackSpeed": 36,
+ "paperSolUsd": 231.06,
+ "meta": {
+  "priceUnit": "USD",
+  "priceField": "close of each candle, at the candle timestamp (epoch seconds)",
+  "interval": "15_SECOND",
+  "rawDir": "data/rugs/hawk/raw",
+  "fetchedAt": "2026-10-07T16:54:04.506Z",
+  "devWallet": "HAW...yAm",
+  "cleaning": {
+   "rawCandles": 208,
+   "malformedDropped": 0,
+   "duplicateTimestampsDropped": 0,
+   "outOfOrderResorted": false,
+   "outsideWindowDropped": 0
+  },
+  "walletData": "Jupiter trades API (trader-filtered histories of sampled candidate wallets) + Solana public RPC (dev wallet transactions). No Helius/Birdeye key was used.",
+  "candidates": 108,
+  "cappedWalletsExcludedFromProfitRules": 1
+ }
+}

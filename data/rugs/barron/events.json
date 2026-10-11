@@ -1,0 +1,982 @@
+{
+ "paperSolUsd": 263.45,
+ "window": {
+  "from": "2025-01-20T07:15:00Z",
+  "to": "2025-01-20T10:15:00Z",
+  "collapse": "2025-01-20T08:47:00Z"
+ },
+ "rules": {
+  "tapeSampleStepSec": 20,
+  "candidateTopN": 40,
+  "whaleSingleTradeUsd": 20000,
+  "maxRecipientCandidates": 30,
+  "walletMaxPages": 80,
+  "botFilter": {
+   "maxMevTradeFraction": 0.1
+  },
+  "smart": {
+   "topN": 5,
+   "minRealizedProfitUsd": 100000,
+   "minSoldFractionOfBought": 0.8,
+   "lastSellBeforeCollapse": true,
+   "lastBuyBeforePeak": true
+  },
+  "whale": {
+   "topN": 3
+  },
+  "eventMinUsd": {
+   "INSIDER": 0,
+   "SMART": 60000,
+   "WHALE": 200000,
+   "DEV": 0
+  },
+  "devMove": {
+   "minPctSupply": 0.002,
+   "burstGapSec": 30,
+   "burstMaxSec": 120
+  },
+  "tradeBurst": {
+   "gapSec": 45,
+   "maxSec": 240
+  }
+ },
+ "duplicatesDropped": 0,
+ "events": [
+  {
+   "id": "38FSv8JJ7H4n:EpD...n5D:b7",
+   "timestamp": 1737357983,
+   "walletAddress": "EpD8takm6HvCqqjHAxjgW7m68PVRy28RsvDVdi3sMn5D",
+   "tag": "SMART",
+   "action": "BUY",
+   "amount": 61824,
+   "amountUnit": "USD",
+   "signature": "38FSv8JJ7H4nyksMEHRdRNoxtgtgNNFxiVkDnbwdGUPyomt6YUDMi9D1u6w6VnuUW6i28YvzmVvQ4usEL9Es9Xfz",
+   "signatures": [
+    "38FSv8JJ7H4nyksMEHRdRNoxtgtgNNFxiVkDnbwdGUPyomt6YUDMi9D1u6w6VnuUW6i28YvzmVvQ4usEL9Es9Xfz",
+    "2HyyXBU29uxuXnjwg1h1wuHoxeFVqjuy2mEuhyM73j6u7p5qfMMw7udTKzhcbbvX98tWJvmVkwrXuPJYSF7E4xw7",
+    "5cU5eS3jC4bmqqEqzsW9kZJ2V4n8tAZ7RRFA54AS757KyAMx9bvVJ5QQPE2c5oXKTcvuNyhagkyEibSefHmGNbVk",
+    "3Wuebb3aZydwTG2U3MsEPiZNfwWgzfQccDeTtimL8qf2YWNgywxMyD84muRAeAT34SpVDAy2C5LR2XH4FSTAxDWZ",
+    "366bSEQaMMyfwYndK3EXvrnf3PjnTSz2jDsPEmKjkuzRAvWo2LaP8NsZ6peeXfXUseRmjkuG59YFHhdnD4ndqMez",
+    "5HcvGSzMVTKDH61qWZULMHjDNE2tyMGbPSDSvLzQNJQPbPKTvtZQcMV7nuSEogiSrwuSBK9gxDHipF3ebeqDYuNS",
+    "2MWVTysuBg94ZBc8paXYuxMG7QpVUdzJGcKCTja2D6DSfnuhGvYmkebC5iGBYXRe144erPq9iXL5GgHq2cscisuY"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 2 of the candidates by realised profit. Recorded trades 2025-01-20T06:52:30Z to 2025-01-20T08:39:58Z: bought $291,221, sold $993,960 (realised $702,740); sold 90% of the BARRON bought; last sell 2025-01-20T08:39:58Z, before the collapse marker 2025-01-20T08:47:00Z; last buy 2025-01-20T07:32:28Z, before the peak 2025-01-20T08:29:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "note": "Bought 923.9K BARRON for $61,824 across 7 transactions (195s)."
+  },
+  {
+   "id": "4XweDw5zatHJ:HYW...ENp:b17",
+   "timestamp": 1737357988,
+   "walletAddress": "HYWo71Wk9PNDe5sBaRKazPnVyGnQDiwgXCFKvgAQ1ENp",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 217831,
+   "amountUnit": "USD",
+   "signature": "4XweDw5zatHJ1vYJTD8s7J9F7J8NPUW5CpNz6x7rj3U61rQDuLCzQyx5AzYp8jdgSBd91Hndas9gYee9Dj962QSp",
+   "signatures": [
+    "4XweDw5zatHJ1vYJTD8s7J9F7J8NPUW5CpNz6x7rj3U61rQDuLCzQyx5AzYp8jdgSBd91Hndas9gYee9Dj962QSp",
+    "PxqXZ5UZgTZ4B9fKWKq6ENvmiXbtzf4TBC6bejzTFinyj8Cxxtv91ipPsYA4teMchrLxhXKeSFbHyktAK3zvYMF",
+    "44bj1SJyfEFKkQRRigV6WiKqWKHiUPCSfjGtZuokRxvQSNVgPSU7tuTtuEGs14cwR36ZfFAypw14zFEDAdbE2kAx",
+    "4i3sicVgMCJqdQgpjjwyafTAkZX2FfGF8mjRYR4oduvX5pEeFnLU1kmPzQYByU4tVkp7NnxmCpB346LVxBDVaJQE",
+    "3a1Qoac9PVQ5XREZNuXSXeJdTTXWUkrdqjHL4uojxJuLwbnUArFyjMUPz3wphvPh9BNsJzWwQ49YouKBmyw4SbiR",
+    "E4D1JnRAiEfsVsDCU9o4KV1UnrzeDF3AsdqcEJ6mYg7wqFiz7mAg3pYKdapA77PchU1yES6eH8eeGsNDfzZND5F",
+    "P5uUM3aXZoNB37YrGWxM37kR1DWH3YB6VtywBjSYLU4wEggeKNfmovtRK1mS3kdouJq77dtaC3kGyaXgcJDrcSe",
+    "6sz8mKEpPKi8nu2EUYathyDNBTQ2cdVswbnQ9PAuse7rquEyL3DZngMpXmK3eJorBv2YevU95KjtncsbhKxRA6t",
+    "4qoPPmcMz6vRtNNFYH6GzmRvhiy72vHFxZnbVwiJ8jiV7wtXwSfJAzgZj9481Tnhy6Euhvyg4124uxVNZ9t4BxtU",
+    "64FdxALB3p1U5hcJfWLH8aVAokCN5CVxd5RFBfkFwFeFKRPBrHFJWvG4zkAdKsKLdT8kZAs4obWi19bZDtg8HEzv",
+    "4pZk4qf7FSbkotXLQQxYiGuLP9LLr7UaS9Q8i6xq6mCUinQzZ4XScsxatXf3E8UFuuKuQRiqZ44CUhDhDLZe2Ekw",
+    "5yXei7Fsr47qdbAyGyVk61iTc3PE9ffEp12inECJgCb6CWvwEKUELdXqGpbqhX6WL4V4cAWjupyteZAQvgbwUU1b",
+    "4fZCK6N2CVLRKueH6GtsFZnnGzb2JjrrCTW1p72ar7wY8zoZqPpgBRzhqUgpj8jeonbxSuT4GXWkTEyVe9ijA3aR",
+    "2YGdrKTaBuyMJCH3GE9c8Pmj3pNUB25W8kJBUmx3Ee2YUuAWGSWuivu3axUY626KcxEVS2KuEn6fHJZeJdspfHrK",
+    "2WvMnD2erMgDsucLfEwb2N5RmSQBQWYcsntE3q5eTZHYQbFUV7hwzeYECnJRcD46D34wtSviBicEanRRnMQAmrph",
+    "2rK1LZgkoxJnJTFCmRjzX4kpcG8apig8aWbKzH8scqxWPtvZPwnoFALxNQMvgwQNCo67GXE7Wg7a1mEZniRofvqk",
+    "Tgr3RMoxjLWZ4rtgtLzQGX1SnJZ3HEgyPakvFBYu6sjJFnKDUu967WWTV51qEruK9VwwiotmD5mBFhDBWaNPqCq"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 1 of the candidates by realised profit. Recorded trades 2025-01-20T01:48:01Z to 2025-01-20T08:03:52Z: bought $109,641, sold $1,816,816 (realised $1,707,175); sold 97% of the BARRON bought; last sell 2025-01-20T08:03:52Z, before the collapse marker 2025-01-20T08:47:00Z; last buy 2025-01-20T02:49:45Z, before the peak 2025-01-20T08:29:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "note": "Sold 3.25M BARRON for $217,831 across 17 transactions (164s)."
+  },
+  {
+   "id": "31X2qAyVhYua:HYW...ENp:b13",
+   "timestamp": 1737358474,
+   "walletAddress": "HYWo71Wk9PNDe5sBaRKazPnVyGnQDiwgXCFKvgAQ1ENp",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 123319,
+   "amountUnit": "USD",
+   "signature": "31X2qAyVhYuaQ2yQ8R9hJdhSxjPZ91vcKxB8AzaWwJGcBiCdAKm2Pi28RRhyyABnyXfxQkHqiFd6vgjz1vRw2dKY",
+   "signatures": [
+    "31X2qAyVhYuaQ2yQ8R9hJdhSxjPZ91vcKxB8AzaWwJGcBiCdAKm2Pi28RRhyyABnyXfxQkHqiFd6vgjz1vRw2dKY",
+    "4LnQ6voytizQUjdLHdDQfpwV7WV8n8apLgBY2Cojiy87NsA3NWiwTveTEie6GnwtaRW3vDGoBjpaqPdGrKqnXn6S",
+    "HL9a2cx5TuFr1RjbRS3ygiHRFvFuARhvDyLbs9pNE6vuKsWkLR9fUm3eyt2G1JrDxB6tXAJVrMbfw2vFCFnkWJE",
+    "2VpeBDJysnafo8HtNNtmpnyQFJPoHXveLWhKUa7hixte9wHuqyneGVGgwXCn8QtcKpJSMY3gZTcDRbiUvXNW55XN",
+    "adAYcXigF5Xs4i2hbf9ma7ChLY5qadEXkNP5r8GKHMBRFGvqef6sSVrVvAUdF7mLnqcEfdJ3bxkQhGPaCiRMNRj",
+    "52MoypuWkRvjoBCyNBA1SEHT1Y5TtxghDkAu4G637gdhgKyuAerk1WLTHqNjhYKsFSA9Qi4CL5wE4JWZn2qsbt42",
+    "5Jm9Dty1h2S33GskPoTrhD5nDP4Hmrj1qfPRGPzVc95QKRw2mUMehkRJ8CpbnBCXgHPU8ABXhY8uNZR1bFknwtKj",
+    "EQiWAeHNbMm9DSVegFTA24Cg7enB3eDVpxKuoZgmizibqoKxjajMQb96AzzszZbVTymEwvp5nZuFWdDA2vLUfZZ",
+    "2HfdwQwAAtQJPkcCsxdz6Y8G46jCxqbxRiehJUgHVmjEm7YRvmkXJTcqnJMjr3SZzkMgvb5ddDvcGxPtX9LtaAjF",
+    "5pShT9ubxpih5YdP3V5bF6Kz9uYBJVxj4wV9xn1AWrebxKwXgBbU7m9rAd482WuMNURWphM9FW5iEinjcznKkSfo",
+    "aSQQ7r2ANgS4WhK2vBcHNQjozhi4LTTRD77kEPudj6VVvzzex9wvefzAzEK8YR6xLU1id5YJxBh1ksDfUoZfHFq",
+    "5Q9PpRAsUmtpt1XB4RY992FaVDzVMvFtsuPGVEobZ8ZZ2H92wMS1iFyMzCwFr1JdkGNJ4gzn8dBufEBiZreXKB3S",
+    "5nJnLeLYEwzLyVUhWRX4qcjsqVE9YWvt1Nqz389yWfQwLj8tb6CRzRJsQUrMr4pDTC6kLRpa3A1s8ZhfbLNcArfF"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 1 of the candidates by realised profit. Recorded trades 2025-01-20T01:48:01Z to 2025-01-20T08:03:52Z: bought $109,641, sold $1,816,816 (realised $1,707,175); sold 97% of the BARRON bought; last sell 2025-01-20T08:03:52Z, before the collapse marker 2025-01-20T08:47:00Z; last buy 2025-01-20T02:49:45Z, before the peak 2025-01-20T08:29:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "note": "Sold 1.60M BARRON for $123,319 across 13 transactions (170s)."
+  },
+  {
+   "id": "2cfeaBM9Dhx1:HYW...ENp:b10",
+   "timestamp": 1737358700,
+   "walletAddress": "HYWo71Wk9PNDe5sBaRKazPnVyGnQDiwgXCFKvgAQ1ENp",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 105732,
+   "amountUnit": "USD",
+   "signature": "2cfeaBM9Dhx17FvzPAayqsJ4TdHrfgyk8ceT1QPFQ4k2v2nVd6zkCAWKPPAYEvjjggvXyorfTQSRVzf8YykH3NQi",
+   "signatures": [
+    "2cfeaBM9Dhx17FvzPAayqsJ4TdHrfgyk8ceT1QPFQ4k2v2nVd6zkCAWKPPAYEvjjggvXyorfTQSRVzf8YykH3NQi",
+    "3oXofL2baEN4v2jZfHqYshsCF1Csi5pqcTjq29QPzcynqTKnFcEvC1fBHjB2w89XHe4JwTSjTacNmV4i5QreLxH2",
+    "4k5r7g6Dp3ybxKLkw8mg8JyfKxPBGDpeUKu1EZgyMxjpHf2qmgpeapwXtDWMqRg61YTVAAN6EoY3dwH5NeE5XvMu",
+    "2WSjv6q3bfc5YCGneaYpbdtDkRdCUjLjW8cr6Yc886Sxp9or4S8bgWR7Lqh9eweKJVJQnb8g8o4RbfvhCNMwNJtu",
+    "2tHC4CVB1HrxEdc3JT6RCL2bgAgDESxL3UpEJCTrAbRTKT2678Xd3ZjMtzrpXwM146XtuCeLD3TYbJMNeVcKf9Lg",
+    "4ajMemf6TfwrcBTCCEhLUp3ZZQNw5mMGgDGvowRDCJDep5f9ubcBJa1dEUY9MRTDpoSywt5LqZMuBJLUmohU8L5p",
+    "51jzXpdNe8UVs2PeqRYiMJCPzar1d7aaYLNWiSWuNRMFAnU68aahMS9b91fkByTa9GzMTUqAHi6qURSmL2rUgw6j",
+    "4WKPMurtzetuNVzNvPy1V42GDybxVRaStJfwjAz4fneifKRC3EWoTEF4mTSeURqWMr5N5oYLQABfVnfXFRePg6Cz",
+    "3VHPSEkhqoVAjBjPfob5Zzs8xkdi6jdNjNSJC979cEDZHmSyV4de85dQMV14ymb4erCu6p6PEzjEMYThCrhE4HSF",
+    "2q63oqzvCiewU4319MygKqNzsviVERh636oZexptHBZYXbHnqB3hnAJvkajmrN2CbQNpVjxQSrZgMeujewaChyey"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 1 of the candidates by realised profit. Recorded trades 2025-01-20T01:48:01Z to 2025-01-20T08:03:52Z: bought $109,641, sold $1,816,816 (realised $1,707,175); sold 97% of the BARRON bought; last sell 2025-01-20T08:03:52Z, before the collapse marker 2025-01-20T08:47:00Z; last buy 2025-01-20T02:49:45Z, before the peak 2025-01-20T08:29:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "note": "Sold 1.20M BARRON for $105,732 across 10 transactions (148s)."
+  },
+  {
+   "id": "258b3iZ75Rkt:HYW...ENp:b24",
+   "timestamp": 1737359101,
+   "walletAddress": "HYWo71Wk9PNDe5sBaRKazPnVyGnQDiwgXCFKvgAQ1ENp",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 227339,
+   "amountUnit": "USD",
+   "signature": "258b3iZ75RktzidvNpdxw32qhSzaeGe29VadaNHsj8RBej2s5oVGuPRyMuV5xJCif98kDtZjAGvwJLCHRgfJ9NB6",
+   "signatures": [
+    "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"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 1 of the candidates by realised profit. Recorded trades 2025-01-20T01:48:01Z to 2025-01-20T08:03:52Z: bought $109,641, sold $1,816,816 (realised $1,707,175); sold 97% of the BARRON bought; last sell 2025-01-20T08:03:52Z, before the collapse marker 2025-01-20T08:47:00Z; last buy 2025-01-20T02:49:45Z, before the peak 2025-01-20T08:29:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "note": "Sold 2.36M BARRON for $227,339 across 24 transactions (239s)."
+  },
+  {
+   "id": "93qxTS1Fc7vW:HYW...ENp:b23",
+   "timestamp": 1737359349,
+   "walletAddress": "HYWo71Wk9PNDe5sBaRKazPnVyGnQDiwgXCFKvgAQ1ENp",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 218670,
+   "amountUnit": "USD",
+   "signature": "93qxTS1Fc7vWTt9JBK48YwTjfdfubY3WrR7vRzMxSEVAW4JKGuepGgRiKUVGihvBAEa6Rba5jPjzzTD3zKxoHxt",
+   "signatures": [
+    "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"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 1 of the candidates by realised profit. Recorded trades 2025-01-20T01:48:01Z to 2025-01-20T08:03:52Z: bought $109,641, sold $1,816,816 (realised $1,707,175); sold 97% of the BARRON bought; last sell 2025-01-20T08:03:52Z, before the collapse marker 2025-01-20T08:47:00Z; last buy 2025-01-20T02:49:45Z, before the peak 2025-01-20T08:29:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "note": "Sold 1.98M BARRON for $218,670 across 23 transactions (232s)."
+  },
+  {
+   "id": "5c5dnm2mRbRj:HYW...ENp:b11",
+   "timestamp": 1737359592,
+   "walletAddress": "HYWo71Wk9PNDe5sBaRKazPnVyGnQDiwgXCFKvgAQ1ENp",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 150014,
+   "amountUnit": "USD",
+   "signature": "5c5dnm2mRbRj4h3SibbfEh5wx82Q9apXHn76hdj32heaJ8e6tMUKyurtU6bDrp5WQCkAKzxS73Eu4cHcHVfztstq",
+   "signatures": [
+    "5c5dnm2mRbRj4h3SibbfEh5wx82Q9apXHn76hdj32heaJ8e6tMUKyurtU6bDrp5WQCkAKzxS73Eu4cHcHVfztstq",
+    "4ky3F5TsMfhvdh6MubpVcD72E1kaxua2f4WxP3rvXW6cgCiyPRKmGfqavg81hhQvMXiUqPKP6kazTtZpi15KqoqP",
+    "4pfRZcAdo4uwAup4qUNzTkBtZS3WiHFrNpMJPZuURWX38JE1N7rRWZUuVw5tdgTGbcn7hB4vYn6Sk6TLh7t3n1aB",
+    "PmLSkV1muqnqTG6YS3FAakq2kVLkKfpFZY56YG5C1fHGefaPteQiV69MQ7XotABPJriAZL7mAjYoqCR9Yss2n7L",
+    "62d5nu5xE8LVRGYiA4H8wpRtAKWr9j56g7a1aVJ4KxJBiH8h4UmXeYb9EpWahQWamqCbK2oWUhr6NXxzi7BnzNPV",
+    "2TLPP6BCYNZwPUCFSukw6vzfEG4DNf59QPCD7MoKoHDWECyoqPfmW7M8EeEBNLehbZCMPQ5gsFEU1Z19y5AR42Uh",
+    "CWYkbB1kCSQgWnYzWJTxNXksMejYJZThgP8aXMV3JuUxCx2WNzpjBQvfwDne7d721Zx39y787tnnfDn3ToSQoKT",
+    "4E2iv7QjeJUEv3JUfJsgMgCEzVzUkSBhedTiqSRmJmW3BSEz2bGg7HTXcNorJnBEuVWW8ASjh1TGoy8Y1cgV2ny2",
+    "3FvtR7xBAQfGDgoUXX8U9xc9iiNyX4EJm2qFr9kDZH21MjJJWBT6Yt1gBpeojYQ2Uj3cAQJJ5kCecKmZFtCrSu5z",
+    "3o3ujWTjyiwciSXFa39xKisqTc3LCDqAxscn2zkrsJvm68DYa5HfjDvL1nLSAojEFd1fuEjtQL8ZGHv5ikwFCcoW",
+    "NudXqJRweoKkMCkpAuiJL41zA6oTkgW26NBf2FYZQnACbo5GBwdKTptK3gSapyndViByjxiMDXqUsHMJMQUg73N"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 1 of the candidates by realised profit. Recorded trades 2025-01-20T01:48:01Z to 2025-01-20T08:03:52Z: bought $109,641, sold $1,816,816 (realised $1,707,175); sold 97% of the BARRON bought; last sell 2025-01-20T08:03:52Z, before the collapse marker 2025-01-20T08:47:00Z; last buy 2025-01-20T02:49:45Z, before the peak 2025-01-20T08:29:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "note": "Sold 1.19M BARRON for $150,014 across 11 transactions (110s)."
+  },
+  {
+   "id": "2iRMXdCvkSYX:6yk...Wtx:b6",
+   "timestamp": 1737359778,
+   "walletAddress": "6ykoioDZEcC9Rk1vexd2F49KDHzP63nHh21Hm4CqrWtx",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 185295,
+   "amountUnit": "USD",
+   "signature": "2iRMXdCvkSYXyH989sF1ZumNhDS42xspUJGj8f2LANvpvn7Q42P5zmr9xw7NupuJsxFZf7sKDsncxrjWMjZ4xXC3",
+   "signatures": [
+    "2iRMXdCvkSYXyH989sF1ZumNhDS42xspUJGj8f2LANvpvn7Q42P5zmr9xw7NupuJsxFZf7sKDsncxrjWMjZ4xXC3",
+    "4XvPsNBWRvXq3Km7EL7WdxwkXNsuPN7f8QcCokZa4ramFsZXf3cqsDcFXSY6QkEuM316FCfJZhknK9sxHU9PyGEL",
+    "434VvNU2CT3vzyQXxU7i1xVDZGmTA2AnABMLMKq5FNc7nHLWk2FA6dFTcAaqBHTt74GzPqS1VZ6KXoDYNEenScoY",
+    "5Wgk6zzJxKiMTT66fggvpDgSPSAmHjGutBTbd1z3k7p1Jm1A2TSQxCQgn1jFtGDHYfTubasdEvCVaMYzsj9C6z5h",
+    "3DvNcw3dVWPqLpqbCUD8bwMuue3gAhFHK3eXWrBozjqwUJHh1fi2wwjE8PESnncDdqNQem425njsmx78jDeiUZtE",
+    "5yzpTmqRfnwJNwVCRD36tBcfedQAnadsAbAKgs81T6VJzN9sCSwxNJ3sku8WN1si6LaL7M6v6HhvMy64T8Ra5RKk"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 3 of the candidates by realised profit. Recorded trades 2025-01-20T02:18:49Z to 2025-01-20T07:57:27Z: bought $222,853, sold $328,591 (realised $105,738); sold 100% of the BARRON bought; last sell 2025-01-20T07:57:27Z, before the collapse marker 2025-01-20T08:47:00Z; last buy 2025-01-20T07:25:17Z, before the peak 2025-01-20T08:29:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "note": "Sold 1.49M BARRON for $185,295 across 6 transactions (69s)."
+  },
+  {
+   "id": "1u2J7KBwkApg:HYW...ENp:b28",
+   "timestamp": 1737359884,
+   "walletAddress": "HYWo71Wk9PNDe5sBaRKazPnVyGnQDiwgXCFKvgAQ1ENp",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 498962,
+   "amountUnit": "USD",
+   "signature": "1u2J7KBwkApgUqoEnGxmS8P3aWHvqnACkuk7r2BPHTSXHJa5z7cGwvjFYueLchBrrMdrNcsJGLXJQRvEvLsgaec",
+   "signatures": [
+    "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"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 1 of the candidates by realised profit. Recorded trades 2025-01-20T01:48:01Z to 2025-01-20T08:03:52Z: bought $109,641, sold $1,816,816 (realised $1,707,175); sold 97% of the BARRON bought; last sell 2025-01-20T08:03:52Z, before the collapse marker 2025-01-20T08:47:00Z; last buy 2025-01-20T02:49:45Z, before the peak 2025-01-20T08:29:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "note": "Sold 2.91M BARRON for $498,962 across 28 transactions (239s)."
+  },
+  {
+   "id": "2dYLbawemUs1:HYW...ENp:b7",
+   "timestamp": 1737360135,
+   "walletAddress": "HYWo71Wk9PNDe5sBaRKazPnVyGnQDiwgXCFKvgAQ1ENp",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 171618,
+   "amountUnit": "USD",
+   "signature": "2dYLbawemUs1JC33Fpt9fzkq8FdkB8gjD6kwrKSE7ewKzqmCH6TiuzW6qKFfmjmHWP2HjePmYjQM6jaFTq2pcMAX",
+   "signatures": [
+    "2dYLbawemUs1JC33Fpt9fzkq8FdkB8gjD6kwrKSE7ewKzqmCH6TiuzW6qKFfmjmHWP2HjePmYjQM6jaFTq2pcMAX",
+    "3SWgxu43MZ3AUyAnBQRxEbaFGcsWiWmUuT95xUz5xptYNvemjGvt2c9TbrJAfkhzEPTL4zoEBcChrhBXDMUxK8br",
+    "59ZNpUcd5c7H3tqsJ9KYKgnfof36KxDGEVYwrf5bCKXvPMY9SJYrFiXeeFC3Hi1pLZmejKjTpggvhCiZzeBWZg8f",
+    "aiDCMmM8XmQyWQJPgki7StR5iPguFDXGEb1zqwuB3Xxb6AVd6NGPc9RQDwr3vZNrto9nb7Azdyon98fvekQAbtt",
+    "3MRwKgrWYr54W53V5oUW2oMrafmPT8DqsWWVRqjoh8gZZi5aSCRQb21PW8P34QrgegjrWMd5gw1xbAbySUWh5wDw",
+    "54gEBggx15HXZQnQACbJY28qYVtX7ykdVgfFMnoqaR7uKTDDYU5d1dvbDi7eGp7T9vfMeWcxLTgoCcSkSDkgBAZh",
+    "5kK9EyXJ47jUd38jaQTrXCbitpXQEYqcWC9EdQ67BpxVcFRpK8GNXNF7EvrodEiPmVvW6vGfHtiRyXUWCCEPG3WT"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 1 of the candidates by realised profit. Recorded trades 2025-01-20T01:48:01Z to 2025-01-20T08:03:52Z: bought $109,641, sold $1,816,816 (realised $1,707,175); sold 97% of the BARRON bought; last sell 2025-01-20T08:03:52Z, before the collapse marker 2025-01-20T08:47:00Z; last buy 2025-01-20T02:49:45Z, before the peak 2025-01-20T08:29:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "note": "Sold 818.9K BARRON for $171,618 across 7 transactions (97s)."
+  },
+  {
+   "id": "5A9M21EJBc8Q:EpD...n5D:b4",
+   "timestamp": 1737360509,
+   "walletAddress": "EpD8takm6HvCqqjHAxjgW7m68PVRy28RsvDVdi3sMn5D",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 63636,
+   "amountUnit": "USD",
+   "signature": "5A9M21EJBc8Q3RGduYUtANcHZMkbEwf7XjvM6VkCdh4xuNKgeKrZbqP4B2K9LDfofpHeHsykxT4ktLGdhvMLX8Qy",
+   "signatures": [
+    "5A9M21EJBc8Q3RGduYUtANcHZMkbEwf7XjvM6VkCdh4xuNKgeKrZbqP4B2K9LDfofpHeHsykxT4ktLGdhvMLX8Qy",
+    "3mag677oGJA6WXu9hqZHckxtK1ypkPn2y1WHs2SYqbTpEjkPEQcX6jKE1pbGGbASMUDaJ5Dw3eqxtJigCFi1XVSa",
+    "4RGDLoadcqCxD8uZjpxPVKGaif4iZ7SmCPmAD1hqGPeLgw6brhKsf2J25MHAziyXkVocptNQnn1s7C647BMwkMvd",
+    "xRcXitujkqsaa1YPkuRSVusKTkWMeahryV1azAqkzCzrSSFJHyHDc4KqrXLEe5V4Kbfw9guCqs11LBxjZ6P1KmC"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 2 of the candidates by realised profit. Recorded trades 2025-01-20T06:52:30Z to 2025-01-20T08:39:58Z: bought $291,221, sold $993,960 (realised $702,740); sold 90% of the BARRON bought; last sell 2025-01-20T08:39:58Z, before the collapse marker 2025-01-20T08:47:00Z; last buy 2025-01-20T07:32:28Z, before the peak 2025-01-20T08:29:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "note": "Sold 380.0K BARRON for $63,636 across 4 transactions (83s)."
+  },
+  {
+   "id": "2jtkHeVtmwyz:EpD...n5D:b3",
+   "timestamp": 1737361204,
+   "walletAddress": "EpD8takm6HvCqqjHAxjgW7m68PVRy28RsvDVdi3sMn5D",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 63982,
+   "amountUnit": "USD",
+   "signature": "2jtkHeVtmwyztsk8ixSamA38UFmzdxPdyZqJEFSbtNG63bC85qsFUbqiX81zLKNPK5KmLAB5d4QTP5BsQcsedBvr",
+   "signatures": [
+    "2jtkHeVtmwyztsk8ixSamA38UFmzdxPdyZqJEFSbtNG63bC85qsFUbqiX81zLKNPK5KmLAB5d4QTP5BsQcsedBvr",
+    "32rAzcqQ3NUGF8kDFCUe7c54Kk6ZGFFFYiAqPQ4z5hNWy7GCucMhb6TXKt38R2YWE6dtbhZECf8dFrMxUJmMba3U",
+    "jnmrnF8J149AqhWTjLYeXFazJNxZsoEaoyBzzkzLTHrynwidJ5tgRB8vF6vKTwV6N9gUK4CPrjChtpsEjxZct5X"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 2 of the candidates by realised profit. Recorded trades 2025-01-20T06:52:30Z to 2025-01-20T08:39:58Z: bought $291,221, sold $993,960 (realised $702,740); sold 90% of the BARRON bought; last sell 2025-01-20T08:39:58Z, before the collapse marker 2025-01-20T08:47:00Z; last buy 2025-01-20T07:32:28Z, before the peak 2025-01-20T08:29:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "note": "Sold 300.0K BARRON for $63,982 across 3 transactions (63s)."
+  },
+  {
+   "id": "2s1fJAroiwMD:EpD...n5D:b3",
+   "timestamp": 1737361450,
+   "walletAddress": "EpD8takm6HvCqqjHAxjgW7m68PVRy28RsvDVdi3sMn5D",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 84643,
+   "amountUnit": "USD",
+   "signature": "2s1fJAroiwMDM6h1SZpDEeSQBkRjqPQe71t5CkeJrk6Jabzr73rKZ5dLW8p4TCFoUsVGkSxoXkYMhDLTxYiow5FR",
+   "signatures": [
+    "2s1fJAroiwMDM6h1SZpDEeSQBkRjqPQe71t5CkeJrk6Jabzr73rKZ5dLW8p4TCFoUsVGkSxoXkYMhDLTxYiow5FR",
+    "2s34FEN2CEnDecZwvCkL3HnsJUcgp6Gg3CGW5ZRGomE2bQnbCXjDPG8GWTQe5YZxazsdNCgDWKdKUcarUbaZH1JK",
+    "Qw5t1EM4ZbS6N1YKcy5GRBo4Lb9xf2CbGkjCcEFXzzZgNLaejeTSYRR99QBVMMv86JrDk5DZeRLNhFohdpiT4t8"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 2 of the candidates by realised profit. Recorded trades 2025-01-20T06:52:30Z to 2025-01-20T08:39:58Z: bought $291,221, sold $993,960 (realised $702,740); sold 90% of the BARRON bought; last sell 2025-01-20T08:39:58Z, before the collapse marker 2025-01-20T08:47:00Z; last buy 2025-01-20T07:32:28Z, before the peak 2025-01-20T08:29:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "note": "Sold 290.0K BARRON for $84,643 across 3 transactions (75s)."
+  },
+  {
+   "id": "JXLrBX1WRNGA:EpD...n5D:b3",
+   "timestamp": 1737361689,
+   "walletAddress": "EpD8takm6HvCqqjHAxjgW7m68PVRy28RsvDVdi3sMn5D",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 107264,
+   "amountUnit": "USD",
+   "signature": "JXLrBX1WRNGAypMP2zeweByyCxiusm7wid8M6JRSqSTBaSH7qJ3Vtu3AVBSN5jefd5zeUqHtGpWPbyDj3VLpCJZ",
+   "signatures": [
+    "JXLrBX1WRNGAypMP2zeweByyCxiusm7wid8M6JRSqSTBaSH7qJ3Vtu3AVBSN5jefd5zeUqHtGpWPbyDj3VLpCJZ",
+    "dnQjAZkZMiP6ssJdmPKBKkYM3RK872bFJA5AWDVwusGHwwGVRsG6h2VXQzQg1dj9MjssnAUWPn3trvfAV6Nk3Tm",
+    "2tzzPq5mvbMSKkJprULHPNXt1QCxaRfNf6hVHQmv2boqSFMD6DcCZsm8fXwECwekQFLqMpnV29ocXL3FHGvtdZDU"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 2 of the candidates by realised profit. Recorded trades 2025-01-20T06:52:30Z to 2025-01-20T08:39:58Z: bought $291,221, sold $993,960 (realised $702,740); sold 90% of the BARRON bought; last sell 2025-01-20T08:39:58Z, before the collapse marker 2025-01-20T08:47:00Z; last buy 2025-01-20T07:32:28Z, before the peak 2025-01-20T08:29:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "note": "Sold 300.0K BARRON for $107,264 across 3 transactions (46s)."
+  },
+  {
+   "id": "2uYtgajnwZ7L:EpD...n5D:b10",
+   "timestamp": 1737361824,
+   "walletAddress": "EpD8takm6HvCqqjHAxjgW7m68PVRy28RsvDVdi3sMn5D",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 278462,
+   "amountUnit": "USD",
+   "signature": "2uYtgajnwZ7LQncVXe3rirKhP2E9wV69eoCMPVhUN7wrKHcGiG9VPdfGYzaN7q9e919TtZFevwbk6nJ6ao6MZUbh",
+   "signatures": [
+    "2uYtgajnwZ7LQncVXe3rirKhP2E9wV69eoCMPVhUN7wrKHcGiG9VPdfGYzaN7q9e919TtZFevwbk6nJ6ao6MZUbh",
+    "4M2BeouNVmBdZEk3juDearDQNusvpDs2zt1w5QQfFh7t6Uv4gQ3yprUYV32Z7jG7C3nzxZFfS9xHdH4U9itDXGZQ",
+    "3nqd88kqmQvkvFZiyLMcJXG5QH6waDECCuV75YNcR4ktk9mTbGj7XjT3AjkhoF4UGXsy1NWhGC27Wxrc7hxmpS1J",
+    "2k2XmafQtxeneP4gT3D8Yf94a79cV65VzkCNtC4rdoBqFm9h5ZnX3qGcVPcG3rmzxP4TtVz1BSTprE9Y2iKASX73",
+    "2BEc4KXJRh8DrVM98KTGnFYAYcsTxMZQsyy1rKTNrBgB9efUH6yKMXuoAtNP6A8B1DqmAgCWXH3ps1th3WaGnSRv",
+    "4xtcPVwCou1soH2cE7ZPeeuELSYKTAwFcPpJXaxgtQqFuE4sEppRsXWkfXc6xrV6mmUk9hvy3DJ7kyT3SmDvHq2x",
+    "d7nEP1knn6A1P8gstPX5KWgMNTB4T3dEsRrCicreP5YKpyaxzUsvuHWjqoJEF62xdcqvnzdrRMT3ddjdptbypJJ",
+    "44sn2s7kc3v4uu15zD8NYiRhLcvFa3furaR82KEPkfiTXAXprQw7dozVYcBnJ2epLMJ6ZW1LzCEGaDfYMHvpwx4S",
+    "3eiMQ7AstNEfuFapo7mzhZ81HqNTFv3Am84MQQBk1txPdpQsJrypqoAMFFGnM7dPTY41ML8PdTxqbuHqWE1NRjL3",
+    "5coVtNQFnMfRofyJe4UCitTqB8V544uTX6L26j8outWx1hEiXPuFaXkY8NMxFC54BMvtg2poxbEfQ87rAuTnZjtA"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 2 of the candidates by realised profit. Recorded trades 2025-01-20T06:52:30Z to 2025-01-20T08:39:58Z: bought $291,221, sold $993,960 (realised $702,740); sold 90% of the BARRON bought; last sell 2025-01-20T08:39:58Z, before the collapse marker 2025-01-20T08:47:00Z; last buy 2025-01-20T07:32:28Z, before the peak 2025-01-20T08:29:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "note": "Sold 830.0K BARRON for $278,462 across 10 transactions (216s)."
+  },
+  {
+   "id": "3x68Evv36hKu:5k4...vGC:b4",
+   "timestamp": 1737362001,
+   "walletAddress": "5k4cQ4xQ5cNrDbdYAVFyoujmneCyxEuUhvrjSMtm9vGC",
+   "tag": "WHALE",
+   "action": "BUY",
+   "amount": 240339,
+   "amountUnit": "USD",
+   "signature": "3x68Evv36hKuUmrTccee3CafDC2XuegdYSHWjLwNv3D9yg3uz632HwYyGaBPggcM2eFwEiHPYMKxMnmwqLNj49T7",
+   "signatures": [
+    "3x68Evv36hKuUmrTccee3CafDC2XuegdYSHWjLwNv3D9yg3uz632HwYyGaBPggcM2eFwEiHPYMKxMnmwqLNj49T7",
+    "3ajuaH8DggucZczrbz5p6tDCbG8p91KMytUSbMjtAd4Vy9WmzDYDtK8eEnjg8Jin5qmSA8miGqRDqLCTZUocXbDe",
+    "4dPBHsXn7K9eqKvbmAKgjQ28PAE7MvfpBd4sGb2atLDW93og6c2RYVR1EH7pELH2kTQZUpskahNebGjRH9t6b9sE",
+    "2ueXoLgX1p9GKTxo5nZboxxhs7dCaHBaTvdi1bKpMNVDpVkbGho7qfw3JymfDAeiqVrRk33hcqUgPnF8E7jZww4J"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 2 of the candidates by USD traded inside the replay window ($2,199,752); not a dev, insider or smart-exit wallet and not bot-like."
+    }
+   ],
+   "note": "Bought 713.6K BARRON for $240,339 across 4 transactions (96s)."
+  },
+  {
+   "id": "4d4Kar2zMJif:EpD...n5D:b7",
+   "timestamp": 1737362136,
+   "walletAddress": "EpD8takm6HvCqqjHAxjgW7m68PVRy28RsvDVdi3sMn5D",
+   "tag": "SMART",
+   "action": "SELL",
+   "amount": 186762,
+   "amountUnit": "USD",
+   "signature": "4d4Kar2zMJif2NBKkZjzztxVoR9KCJAP7bvVXgM2BT8LnULBq6f1SMZTJ9S17QwnnzdjyCE9EaYKfGCa1dzxWP6z",
+   "signatures": [
+    "4d4Kar2zMJif2NBKkZjzztxVoR9KCJAP7bvVXgM2BT8LnULBq6f1SMZTJ9S17QwnnzdjyCE9EaYKfGCa1dzxWP6z",
+    "2yABZtKmyXX4NxJZBVDzqZ7bZfoEDUL4rrsmvNKqi9Jc7muvM2Phsj7Cf21UKXpt7QsJmeHeHUDdra6gey2n9aPs",
+    "TeZT2LKPsVqjdgaDSPsuNmJ8vhS8Dw2ZETveCSxazF2K9Yf3zxeLjPkwMGYiWRaYU7YDnXRR9MHP91Q4AKfX8ur",
+    "2rquJd4LCRSkCLM2RCFhbHto3xAreujQ2yyvDSDYC3oatkRwJntKCHkN17JsMjYd9u2ei5gzBSbg9DCmCNkcvFcF",
+    "cMbcUB8RfonjEnju3cveEn1ezHiQN6sA6Sg5aLzNx6F5ADGRvVdSUxSoTUsAvVMLKfhU7wdQcaKB5vbVL3YatD7",
+    "3qwXjBmxHpsdSwzyg58M7U4Prz1Tp5QJL7NpiMuEvAd3xahJYu3FQUMYKn8JafH8jkkqFqzcUCwR5qvAiv8jRR65",
+    "2oEzoaiqSTirnKHzdRsNVdRJcKNkQB913xWPQcc3kK5n61x6Fo8WsoKm8N6YzCBjrPsuMwZ6aiD8txuaKgwVwWhr"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 2 of the candidates by realised profit. Recorded trades 2025-01-20T06:52:30Z to 2025-01-20T08:39:58Z: bought $291,221, sold $993,960 (realised $702,740); sold 90% of the BARRON bought; last sell 2025-01-20T08:39:58Z, before the collapse marker 2025-01-20T08:47:00Z; last buy 2025-01-20T07:32:28Z, before the peak 2025-01-20T08:29:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "note": "Sold 620.0K BARRON for $186,762 across 7 transactions (194s)."
+  },
+  {
+   "id": "jJETKVUTno3j:5k4...vGC:b2",
+   "timestamp": 1737362350,
+   "walletAddress": "5k4cQ4xQ5cNrDbdYAVFyoujmneCyxEuUhvrjSMtm9vGC",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 200756,
+   "amountUnit": "USD",
+   "signature": "jJETKVUTno3jrosyqXV8ph4zZZs9auDesVDKKY9wbBwwTTE7AHZRkiS3tS9gvgve1RGYkVUAMKWpePKMqXXGHpb",
+   "signatures": [
+    "jJETKVUTno3jrosyqXV8ph4zZZs9auDesVDKKY9wbBwwTTE7AHZRkiS3tS9gvgve1RGYkVUAMKWpePKMqXXGHpb",
+    "23JBULHKo4WPsUd5uS64Kcn4DPkUmhry7jpNU5svsRxtUSyarbM1qi3hB76prDp2jPs2iWzEMtiC4HJtRKnPtkJe"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 2 of the candidates by USD traded inside the replay window ($2,199,752); not a dev, insider or smart-exit wallet and not bot-like."
+    }
+   ],
+   "note": "Sold 863.1K BARRON for $200,756 across 2 transactions (23s)."
+  },
+  {
+   "id": "g3v1zJ9ESfnp:CgP...V94:b10",
+   "timestamp": 1737362466,
+   "walletAddress": "CgPBgQYvk2FUNCcSX8kDfQf8NJYPWwwiojhtriQzZV94",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 277813,
+   "amountUnit": "USD",
+   "signature": "g3v1zJ9ESfnp8Vf6nTHTdbTQdphPae6msgb7v7rmMpUqFbabZMXSirRgEj31w8XWgUL3AhbPno2AKK4BQuHF2Va",
+   "signatures": [
+    "g3v1zJ9ESfnp8Vf6nTHTdbTQdphPae6msgb7v7rmMpUqFbabZMXSirRgEj31w8XWgUL3AhbPno2AKK4BQuHF2Va",
+    "F3ZrbQXgQGcA95TAqk2rzjy8z2vdc3B2KaBtCNPMpiYDQRiYbxK2H96UWqWDwAEjS6k2vJYL79G43CAwgF7t44L",
+    "2NBgCGuLqUqxkQzQKT6ogRKQKsovn2h16fH8DVQMBGuJGjmpfrBPLsYimdLD9UiuUrTCwKmrtb61MEuDiHoSbsbh",
+    "2No5yFmgmf52dMzYQCyJDNcVeWhoyc1R1cZKx4WtHmxc3D3pVd6jmDsqMD5Th44Mb47XAnB3BnbUdyyAtySidRUz",
+    "4FjAz6kdXCYcusLGXDuU9BZefm89qa4DKGcyv7vrut1m4PrstbKL5qAYyrNegJYFmBeBNqjBSoiUunP25fGYE1Ak",
+    "5gcCxFpCvPc91BKt599Vh2ECTX7ALPMMiWTzm13JnCGMJZC5RLPe7hfRLhnqzGpXP9gAouxZ5eAM3ysfRshPbVDk",
+    "3uQpcsTNZeGSXxxUhtq5BvNdH3GJhGQJwR3oxogUqPkiEjpPsg2kfjBJFxZ3svrER1iT6F5Xd9daHiLc2Vfb8Rvv",
+    "KDivJJWv5qxh5THTzH6H4xMq8XmGKT3TSRkVSPiZY8Eji2Vfh1pv8gTTAADajxNMzo4DhUCKvthnhyTRdH2Hwbo",
+    "4yxYW17L1wHcFwBMjh8c3igbomPJddJ5XbgZnoAcy5PWGuRZUnCx3wLSh69KzmrGUKVvyUMce6MQ7vkZC1JHxNsE",
+    "YkmsL3LEZjrKaMPh9SUMmNxb3SAULQbLpr4JdXEufX5CRyZJ6YMV7ETsZKAHYd16bVeDKLBNXWdiubA3duD8wEj"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 1 of the candidates by USD traded inside the replay window ($3,621,847); not a dev, insider or smart-exit wallet and not bot-like."
+    }
+   ],
+   "note": "Sold 916.9K BARRON for $277,813 across 10 transactions (102s)."
+  },
+  {
+   "id": "3btLDUiSUxXK:FLF...xcm:b11",
+   "timestamp": 1737365116,
+   "walletAddress": "FLFYnnfW19H378L2Fxir2hfKB4bn1w16JE5QRkNN4xcm",
+   "tag": "WHALE",
+   "action": "BUY",
+   "amount": 363030,
+   "amountUnit": "USD",
+   "signature": "3btLDUiSUxXKAMTDTyzvWgGsBRbpH2fW97pNcwv3xqUqbsQ7NrpKXYwmYLSgnJa1kDuBGDPk71bZLG2Dx18TZ4Pb",
+   "signatures": [
+    "3btLDUiSUxXKAMTDTyzvWgGsBRbpH2fW97pNcwv3xqUqbsQ7NrpKXYwmYLSgnJa1kDuBGDPk71bZLG2Dx18TZ4Pb",
+    "3cjmRuAdbbvGy7tvkU6DEPBZ3Vv3mCxUs4J64yeHVtMF4wYh8hHmf5krUN1zt1PZh9HFdndNkKNvQs1t2WyXxk8g",
+    "2cV4euGd9EzEmuSv6qiwnyLo83dZc1oqZR6MkhfACSJPtXuB5x9GTZP99AoBr16bXHX8pCLF6rQzctDQ7wamc4FP",
+    "32r24D4drLhc7drccHmaPSqYkiTkE5EuafuTqNJSvmXr3ct9PQY3EMBgdVH8HueyEfh1eRhK3kRgXLy5mFmfCYW2",
+    "3urDdsLx15qbtoEdy5vfKnTXHmJS1MpGnSBb8Tnq49hs9W8XtzmNdC5gazk54Fw5iJSEeCwjSfWXKbkp6tZSb1J7",
+    "4LhVQVFApPyAzKyP2tATgfv8qjyiuUs1A1dmXKCeJyJ2ebHzaTPnVkJ7MAkf2dgRLniEgTvWNNeVCFyqVqW3ZFfx",
+    "91pRLodYuiJPdHsgrWetg87X6gQoDiegSxcBQe5646EhscXftriceFCwVnA9zXEDANFeVuWdc1znAvw8Diy3nWj",
+    "2CPGLG1Uv2bPyadJMAhCgoC4cKxbTrFnVGvMwuc1k4g9B5bTUcP4HZchHBWBHsAhGG3kyuRxppB3q67f62G7tG31",
+    "57gDsaigEpEiKBQa692Rakc7u4Ntr2xiux8MGhCUC13p3QnGfcA58H4GVdcEEEPfzJ5jSqi6kEarh3PGSfu8XkQe",
+    "5aKFEbRez1AWtCvGzGyquqBgErHeKpB5RbBpkV3WghAtgiJMzeaUFKasSsJbZFupyNT7QMoLfAgxDPf8Zq8LNaj7",
+    "YX1ercbcLMFPdfM43L9ZYjXLCNp56ozA2mkpedfFEXGHFtCrfdG6DBwQkAX5oysnQJwFf3DNAd2Gqgg37GoiCL9"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 3 of the candidates by USD traded inside the replay window ($2,037,727); not a dev, insider or smart-exit wallet and not bot-like."
+    }
+   ],
+   "note": "Bought 4.60M BARRON for $363,030 across 11 transactions (126s)."
+  },
+  {
+   "id": "4M6zTMrzwQPw:FLF...xcm:b9",
+   "timestamp": 1737365515,
+   "walletAddress": "FLFYnnfW19H378L2Fxir2hfKB4bn1w16JE5QRkNN4xcm",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 222742,
+   "amountUnit": "USD",
+   "signature": "4M6zTMrzwQPwtyiEWatug7UoXRgUUHZhgSpr7KWiKqeqwymRB8nkDg79gGhnTiYSPbavcmRDveBn6B7fBguRgpxb",
+   "signatures": [
+    "4M6zTMrzwQPwtyiEWatug7UoXRgUUHZhgSpr7KWiKqeqwymRB8nkDg79gGhnTiYSPbavcmRDveBn6B7fBguRgpxb",
+    "5jswYQZanDKPLa3Wk5cvgEQDKeBXykc7UrJGhAndzW6JebVrZByypA23Rtg7x2MGbgXpseRtwExqeRQjoYeNgrgE",
+    "MR44gdey82yUEHft8CPTfmwLuN83EFzueaBJHAiMcSDNt5vycrwjdJWFQiWtnAnE4BZ2ZHRPCoUbSAM7SELVojQ",
+    "xtzTBmSinrokdu7mg87B3EUXnNsSut5kfozaVXtzigeEiMxBaNXq2ErB7gikyMZTgCgPthcAZ7L7ppaTZj4skWn",
+    "5ehcWdhsh1sMNLeBCcBUwvG1SJtZHGLwXmPYMh3aPVmwdLpT1FvvaUEjirLNdVQfxEWEvqGBfpMyY4XntDQaR6jR",
+    "5BACzGNCdW9pFn3XcWjt38nZ3txjoPGizrMQhXdPtUhv7FcGxppSc626MztkQYb3uTYoGcUcmeUjm79wC6HwZEEY",
+    "5yHM1HSjrebkCAuHphnTcUpoqNUFvDGu9NULv4Jf31iF1w7MeaKPihzCo1DivsB8B9RU4jbitwjMj9hvfmHxNGdJ",
+    "2ZHn4R3aMaGJugbpBFfpXFtLpqrmjNJydpBbtpAcruBGPtaa8pKbzwauK1tm4Wa28MmkvUzJb6G6Ycfo42Fsa4bW",
+    "41YAVggqpVvXrYton91YFMBBX5aATHg6PoDKeGvRj4CgtoWqxqPYB3cr8RKLowjhUfXBiioeQ2LfxK7mpaWy7PjU"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 3 of the candidates by USD traded inside the replay window ($2,037,727); not a dev, insider or smart-exit wallet and not bot-like."
+    }
+   ],
+   "note": "Sold 2.58M BARRON for $222,742 across 9 transactions (65s)."
+  },
+  {
+   "id": "2yTw4bmpAcKR:CgP...V94:b15",
+   "timestamp": 1737365650,
+   "walletAddress": "CgPBgQYvk2FUNCcSX8kDfQf8NJYPWwwiojhtriQzZV94",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 237709,
+   "amountUnit": "USD",
+   "signature": "2yTw4bmpAcKRt8QMCBnodFw73o9vJNzpQJt5qT1bG64uhTRRpRS8Qy2PxLqzBuAFQPJ7jw7JUSPFXa7QLRRQYrFp",
+   "signatures": [
+    "2yTw4bmpAcKRt8QMCBnodFw73o9vJNzpQJt5qT1bG64uhTRRpRS8Qy2PxLqzBuAFQPJ7jw7JUSPFXa7QLRRQYrFp",
+    "3aKrtrJU1915szCBFEE49HrgZ4buzVvK4gptaDESXittFp37AgwVLXr1CzuTGzcipnghHYdMQ4fYjqTDAuo1Z1ff",
+    "2SPFfeMSi3X8PuNodY9YkEMhzjWqiAAdYyxxXUM1xxq3nqN74tmY82tSr4YeD86jaCeYp7AhKBJPHjVbzuoksrFr",
+    "2r3nZSqf4zZmSN2aNy9ieG5wrvTndYcBeYJJHFsBxyqyh139bv21DsXapzXRLqdFSN9EyKbHEhN7XUM4t9FNCesx",
+    "5NNcS39cErhzZMPPAnDjX4qZwuRPykCcHdrptqEHUbmyZq3W8aF5YNVPPqZM8HvAaBSojCZWQRqFTCy6gtXnpL6B",
+    "1GmXKE4GMNmMXRzVT1Eu8Zd3pv3HoTokHrETbSJXPUyZLYmnurK8Nqw37Cffa7HhHesvw6rduKsCAoPMYdEMS6j",
+    "4qGV1Q8XVWqSgd6WgUnKjSCWrgYyTuZECK631JT5b7dUvZc4b4W9Crp2mDYrQ6BEeeaKWeTpERGKr226oZpy6s6o",
+    "a7AQW1e1Xw964Sh1uyvBd7gdKuJxPbGPy27erAvRczpzs4qDVuuwWjiMJhRYjFEJAVEx7TfxZuYmX4vDweFweg7",
+    "4DyMrM3aEEVzuwQ4bepQWPfUwciZNwHhXU7pdpQUCMcE3Mxhb9M7bXfzAVb5LcU9w6sdvia7HLLziJzo8ZKomEtY",
+    "SHeudhi5V9XSfEYd8uK7v5ej8dmrMfTq4z1JA62LZVEx2ohQf6SXVzTaGSAp3WUsg8PAiri816Avc9vxsmS6xig",
+    "5RPJ3mVXfWHKFmT7zVgQhviRktW6bTFTJWD6EfT4KRn9bUUArWa8HPdWtYZVdqR2QpRBsHzPjPuEo6NxnMKwg9fF",
+    "66YPVcLwpWf8o6R9RGvQEZ2cX6oJQ53dV6tnf7KYiihU26GfELiWMrQFD4iaojPcpuFHHypaApodTxmuQprbuWDU",
+    "5kwejy82JW72CoTY114TbGN428saVovhCzYeTak7vut7wJynwcTFS6BA6Rvra1FZd11nY5yN5BqARDGBqNxYLHvy",
+    "1WJkrLbUG453sotrAWCnaCPbqkR4GzqsQgswFCtCp8CTe5LPNHPTdHLRYWVvs38ezv9tqmgryNRNCatKUq9SosD",
+    "qYDPqjRnYZwZyWPZABK71yncBaKPvSXNk51JAe9AFvBxVKnAXN3anf3FmzQ2FdHdmVY6Jh83Bhr3d7gKpdzJF3f"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 1 of the candidates by USD traded inside the replay window ($3,621,847); not a dev, insider or smart-exit wallet and not bot-like."
+    }
+   ],
+   "note": "Sold 3.21M BARRON for $237,709 across 15 transactions (233s)."
+  },
+  {
+   "id": "247b4YeiuBfF:CgP...V94:b4",
+   "timestamp": 1737365952,
+   "walletAddress": "CgPBgQYvk2FUNCcSX8kDfQf8NJYPWwwiojhtriQzZV94",
+   "tag": "WHALE",
+   "action": "BUY",
+   "amount": 202238,
+   "amountUnit": "USD",
+   "signature": "247b4YeiuBfFQ9y3umzcnMUTFt1wQFo7FJuJbyyp5HyqQ3c18r9CuaVT2soUMMWeBz4ChipGJ7NoUzpKLvMjK5kH",
+   "signatures": [
+    "247b4YeiuBfFQ9y3umzcnMUTFt1wQFo7FJuJbyyp5HyqQ3c18r9CuaVT2soUMMWeBz4ChipGJ7NoUzpKLvMjK5kH",
+    "39FmN7xuhF2mGskwqw37WXKtud6jRHSvyqNs88TX6fUAxF9vJib6iXfrxj9orwQBz5EE1vsc29wuiXZU4zJ3TZ9b",
+    "2sXs1dGH9KZaPPUAfPmFnBy2PJntqRgjZSpwgKD8jLiJhPeLW2MArTLyGq5TweopdjxpU7c9mRnc8eDMRweuqQGE",
+    "4KoQbtAEFFGdJt49schh4AyHrm8nabaoPSmmJewVD2jbmKU45YXvMHV8RMV6x3TJANumy8qwJsKCPjLFN7yrFb5U"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 1 of the candidates by USD traded inside the replay window ($3,621,847); not a dev, insider or smart-exit wallet and not bot-like."
+    }
+   ],
+   "note": "Bought 2.73M BARRON for $202,238 across 4 transactions (73s)."
+  },
+  {
+   "id": "3bCkquPJoQqc:CgP...V94:b21",
+   "timestamp": 1737366273,
+   "walletAddress": "CgPBgQYvk2FUNCcSX8kDfQf8NJYPWwwiojhtriQzZV94",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 234975,
+   "amountUnit": "USD",
+   "signature": "3bCkquPJoQqcHFLE7bwSFRTpmpLS7EdcKV3LRfLv6U9AVRH2Tj9Pa7Dk61u5C12SkZxxDveXqrbjcrv3X27zYQBa",
+   "signatures": [
+    "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"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 1 of the candidates by USD traded inside the replay window ($3,621,847); not a dev, insider or smart-exit wallet and not bot-like."
+    }
+   ],
+   "note": "Sold 4.76M BARRON for $234,975 across 21 transactions (194s)."
+  },
+  {
+   "id": "TH9E9ez6EhP8:FLF...xcm:b7",
+   "timestamp": 1737366779,
+   "walletAddress": "FLFYnnfW19H378L2Fxir2hfKB4bn1w16JE5QRkNN4xcm",
+   "tag": "WHALE",
+   "action": "SELL",
+   "amount": 276648,
+   "amountUnit": "USD",
+   "signature": "TH9E9ez6EhP8BKycfsCK62pAej6XBC2LXaY9DpWaM9hc1pvhAKNk3XTnyxiBM7J9fZeHhsK1r9XrrpuoWMJ9XHT",
+   "signatures": [
+    "TH9E9ez6EhP8BKycfsCK62pAej6XBC2LXaY9DpWaM9hc1pvhAKNk3XTnyxiBM7J9fZeHhsK1r9XrrpuoWMJ9XHT",
+    "U8bqMbsF56LDfUaQpjeQYMNgs2iJECq9JMnd7PVBKbrtNNMUXWmAGYHGngQCwEW72XPzPMAViAdfG6C9Hvh2nkj",
+    "5QLZedkz3bw7XTkAZHhokQKi2MvAWnLjtpok3G8dDFt7WmwHd16pFPKyA8kfB7Uvx3Cbpt6PjJD56ksmkWyUxsqM",
+    "JR8ZER3gD2Cvus9h5B3FUhCcTmPkSf9fqUjSTxysXomgSBveyu3aQi1QtBeSjfZ5pPtY6JG9hZwzR989h4vE4G5",
+    "54hz2YKmm6hmWijKMyngeTrJ4KyFYN44zE3s4hX7VBmbX7Ckckbbd3RFbge3fRptQpXMH86LRCv6QKVo4xXwMpXX",
+    "4oLpWzHQiqadMCrbjpb12GzUWmWdTiv1pDyEvYyEcMGLPTCNFn9FnPQiVWkQPQZ9ZX4jj3rMy9EvYC9F3jtL1v19",
+    "5ye7yysgX21WtiNhZvD58NVxyM84gvkH9Uwtyxwdnt9sbcL9TFkhq7XsqmdrxppRPp9g2mNg18tcaaJ8wY5Mza9n"
+   ],
+   "source": "jupiter datapi /v1/txs (trade tape)",
+   "classification": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 3 of the candidates by USD traded inside the replay window ($2,037,727); not a dev, insider or smart-exit wallet and not bot-like."
+    }
+   ],
+   "note": "Sold 4.78M BARRON for $276,648 across 7 transactions (39s)."
+  }
+ ],
+ "wallets": [
+  {
+   "address": "2N7qg9a3N6DXgDBXvgZ5JGnXvxUnX1YhBEC5Y7waqxmi",
+   "display": "2N7...xmi",
+   "tag": "DEV",
+   "evidence": [
+    {
+     "rule": "jupiter-asset-dev",
+     "detail": "Jupiter asset metadata lists 2N7...xmi as the token's dev (creator) wallet."
+    }
+   ],
+   "stats": {
+    "lastBuy": 0,
+    "buyUsd": 0,
+    "sellUsd": 90644.58710766122,
+    "buyTok": 0,
+    "sellTok": 153285713,
+    "first": 1737336013,
+    "last": 1737336320,
+    "lastSell": 1737336320,
+    "maxTrade": 61609.45997208474,
+    "trades": 6,
+    "mev": 4,
+    "windowUsd": 0
+   }
+  },
+  {
+   "address": "HYWo71Wk9PNDe5sBaRKazPnVyGnQDiwgXCFKvgAQ1ENp",
+   "display": "HYW...ENp",
+   "tag": "SMART",
+   "evidence": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 1 of the candidates by realised profit. Recorded trades 2025-01-20T01:48:01Z to 2025-01-20T08:03:52Z: bought $109,641, sold $1,816,816 (realised $1,707,175); sold 97% of the BARRON bought; last sell 2025-01-20T08:03:52Z, before the collapse marker 2025-01-20T08:47:00Z; last buy 2025-01-20T02:49:45Z, before the peak 2025-01-20T08:29:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "stats": {
+    "lastBuy": 1737341385,
+    "buyUsd": 109641.22368018022,
+    "sellUsd": 1816816.091702832,
+    "buyTok": 16997494.190359,
+    "sellTok": 16436602.246301994,
+    "first": 1737337681,
+    "last": 1737360232,
+    "lastSell": 1737360232,
+    "maxTrade": 44754.65357454259,
+    "trades": 152,
+    "mev": 0,
+    "windowUsd": 1816816.091702832
+   }
+  },
+  {
+   "address": "EpD8takm6HvCqqjHAxjgW7m68PVRy28RsvDVdi3sMn5D",
+   "display": "EpD...n5D",
+   "tag": "SMART",
+   "evidence": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 2 of the candidates by realised profit. Recorded trades 2025-01-20T06:52:30Z to 2025-01-20T08:39:58Z: bought $291,221, sold $993,960 (realised $702,740); sold 90% of the BARRON bought; last sell 2025-01-20T08:39:58Z, before the collapse marker 2025-01-20T08:47:00Z; last buy 2025-01-20T07:32:28Z, before the peak 2025-01-20T08:29:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "stats": {
+    "lastBuy": 1737358348,
+    "buyUsd": 291220.85948384885,
+    "sellUsd": 993960.3945977475,
+    "buyTok": 4043313.9597079996,
+    "sellTok": 3647425.027574,
+    "first": 1737355950,
+    "last": 1737362398,
+    "lastSell": 1737362398,
+    "maxTrade": 37067.65002544952,
+    "trades": 96,
+    "mev": 0,
+    "windowUsd": 1085051.0095129209
+   }
+  },
+  {
+   "address": "6ykoioDZEcC9Rk1vexd2F49KDHzP63nHh21Hm4CqrWtx",
+   "display": "6yk...Wtx",
+   "tag": "SMART",
+   "evidence": [
+    {
+     "rule": "early-profitable-exit",
+     "detail": "Rank 3 of the candidates by realised profit. Recorded trades 2025-01-20T02:18:49Z to 2025-01-20T07:57:27Z: bought $222,853, sold $328,591 (realised $105,738); sold 100% of the BARRON bought; last sell 2025-01-20T07:57:27Z, before the collapse marker 2025-01-20T08:47:00Z; last buy 2025-01-20T07:25:17Z, before the peak 2025-01-20T08:29:00Z (stopped buying: an exit, not a flipper)."
+    }
+   ],
+   "stats": {
+    "lastBuy": 1737357917,
+    "buyUsd": 222852.68445091048,
+    "sellUsd": 328590.61947511305,
+    "buyTok": 4311457.494246,
+    "sellTok": 4311457.4942459995,
+    "first": 1737339529,
+    "last": 1737359847,
+    "lastSell": 1737359847,
+    "maxTrade": 78164.7191318041,
+    "trades": 24,
+    "mev": 1,
+    "windowUsd": 208684.16770830093
+   }
+  },
+  {
+   "address": "CgPBgQYvk2FUNCcSX8kDfQf8NJYPWwwiojhtriQzZV94",
+   "display": "CgP...V94",
+   "tag": "WHALE",
+   "evidence": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 1 of the candidates by USD traded inside the replay window ($3,621,847); not a dev, insider or smart-exit wallet and not bot-like."
+    }
+   ],
+   "stats": {
+    "lastBuy": 1737366859,
+    "buyUsd": 1871124.5656579088,
+    "sellUsd": 1795852.0714474802,
+    "buyTok": 18610703.94321399,
+    "sellTok": 19841064.749006003,
+    "first": 1737341253,
+    "last": 1737367236,
+    "lastSell": 1737367236,
+    "maxTrade": 51646.8966194166,
+    "trades": 222,
+    "mev": 0,
+    "windowUsd": 3621847.049107226
+   }
+  },
+  {
+   "address": "5k4cQ4xQ5cNrDbdYAVFyoujmneCyxEuUhvrjSMtm9vGC",
+   "display": "5k4...vGC",
+   "tag": "WHALE",
+   "evidence": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 2 of the candidates by USD traded inside the replay window ($2,199,752); not a dev, insider or smart-exit wallet and not bot-like."
+    }
+   ],
+   "stats": {
+    "lastBuy": 1737363503,
+    "buyUsd": 1167200.8771693578,
+    "sellUsd": 1168487.2525709355,
+    "buyTok": 9129839.111047,
+    "sellTok": 8366367.485200997,
+    "first": 1737338850,
+    "last": 1737363983,
+    "lastSell": 1737363983,
+    "maxTrade": 90653.28690676393,
+    "trades": 91,
+    "mev": 0,
+    "windowUsd": 2199751.934437671
+   }
+  },
+  {
+   "address": "FLFYnnfW19H378L2Fxir2hfKB4bn1w16JE5QRkNN4xcm",
+   "display": "FLF...xcm",
+   "tag": "WHALE",
+   "evidence": [
+    {
+     "rule": "largest-in-window-volume",
+     "detail": "Rank 3 of the candidates by USD traded inside the replay window ($2,037,727); not a dev, insider or smart-exit wallet and not bot-like."
+    }
+   ],
+   "stats": {
+    "lastBuy": 1737389391,
+    "buyUsd": 1222852.2035264364,
+    "sellUsd": 1194201.8991711023,
+    "buyTok": 15919874.539984997,
+    "sellTok": 15812799.559001999,
+    "first": 1737362363,
+    "last": 1737389455,
+    "lastSell": 1737389455,
+    "maxTrade": 61650.36690232271,
+    "trades": 103,
+    "mev": 0,
+    "windowUsd": 2037726.5605290122
+   }
+  }
+ ]
+}

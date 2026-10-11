@@ -1,0 +1,38 @@
+{
+ "events": [],
+ "excluded": [
+  {
+   "signature": "2Sp8M73Eqxzty7yZ5MyqcVoS7pyBsHidoNmCg5mx6PRJLBg8hCsj2USYCksnnzLWskoWBH8TQimXLntLBWzb8wV7",
+   "timestamp": 1739575621,
+   "at": "2025-02-14T23:27:01.000Z",
+   "payer": "Def...m2z",
+   "vaultUsdcDelta": -10216571.607711,
+   "instructions": [
+    "ClaimFee"
+   ],
+   "reason": "liquidity-related but not a removal (e.g. fee claim)"
+  },
+  {
+   "signature": "5XoxZa7Hdr1NE2HisoAkXDg4vHo7MPZQeib6GykoJakFi7bMQJGrPd3wzj6T7G5wHbFdHff79G9zAYG3gh8UkRb",
+   "timestamp": 1739575623,
+   "at": "2025-02-14T23:27:03.000Z",
+   "payer": "Def...m2z",
+   "vaultUsdcDelta": -2720660.0238220003,
+   "instructions": [
+    "ClaimFee"
+   ],
+   "reason": "liquidity-related but not a removal (e.g. fee claim)"
+  },
+  {
+   "signature": "2oz8w6GmmwznzHsrQBdMLT89qQK5s5uxyVVCgZ54zZdb4ub8ugkzYmzqFF347V2iMhK6uyPX7pcniGFWHY3B4Zsc",
+   "timestamp": 1739575625,
+   "at": "2025-02-14T23:27:05.000Z",
+   "payer": "Def...m2z",
+   "vaultUsdcDelta": -123250.55580899864,
+   "instructions": [
+    "ClaimFee"
+   ],
+   "reason": "liquidity-related but not a removal (e.g. fee claim)"
+  }
+ ]
+}
