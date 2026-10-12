@@ -70,6 +70,11 @@ export function SkrPanel() {
       <Text style={styles.section}>HOLDER PERKS</Text>
       <Perk title="SKR RUGRAT SKIN" text="A purple and green Rugrat with a headband." on={perks.characterSkin} />
       <Perk title="SKR TWILIGHT ARENA" text="A starry twilight sky for every replay." on={perks.arena} />
+      <Text style={styles.section}>WHAT SKR DOES HERE</Text>
+      <Text style={styles.small}>
+        1. Holding SKR unlocks the two cosmetic perks above. This is read live from your wallet; nothing is stored.{'\n'}
+        2. SKR is the payment token for Rug Hunter badge upgrades (BADGE tab). Those upgrades are not active yet: no price or issuer is set, so nothing can be bought with SKR today.
+      </Text>
       <Text style={styles.note}>
         Perks are cosmetic only. SKR never changes your score, verdict, trading or ranking, and it is never needed to play. Any SKR balance above zero counts; the check only reads your balance, it never sends a transaction.
       </Text>

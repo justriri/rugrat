@@ -2,9 +2,13 @@ import { useEffect, useState } from 'react';
 import { ActivityIndicator, Linking, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 
 import { RUG_HUNTER_REQUIRED, uniqueVerifiedSurvivingRugs } from '../badge/achievement';
+import { affordability, badgeCatalogue, CatalogueStatus } from '../badge/catalogue';
+import { formatSkr } from '../skr/balance';
+import { SKR_DECIMALS } from '../skr/config';
+import { useSkr } from '../skr/SkrContext';
 import { fetchOwnedTiers, upgradeTier } from '../upgrade/client';
 import { upgradeAvailability } from '../upgrade/config';
-import { formatPrice, PRICES_ARE_FINAL, tierViews } from '../upgrade/tiers';
+import { PRICES_ARE_FINAL, tierViews } from '../upgrade/tiers';
 import { useChain } from '../chain/ChainContext';
 import { CHAIN_BADGE_LABEL } from '../chain/labels';
 import { CLUSTER, explorerAddressUrl, explorerTxUrl, shortAddress } from '../chain/config';
@@ -13,6 +17,8 @@ import { colors, mono } from '../theme';
 
 const STATUS_COLOR = { LOCKED: colors.muted, UNLOCKED: colors.gold, CLAIMED: colors.green } as const;
 const VERDICT_LABEL = { CLEAN_EXIT: 'CLEAN', LATE_EXIT: 'LATE' } as const;
+const CAT_LABEL: Record<CatalogueStatus, string> = { LOCKED: 'LOCKED', READY: 'READY', EARNED: 'EARNED', COMING_SOON: 'COMING SOON', UNKNOWN: 'CHECKING' };
+const CAT_COLOR: Record<CatalogueStatus, string> = { LOCKED: colors.muted, READY: colors.gold, EARNED: colors.green, COMING_SOON: colors.muted, UNKNOWN: colors.muted };
 
 /** Rug Hunter: progress comes only from score records read back from the chain and checked against the game's rules. */
 export function BadgePanel() {
@@ -22,10 +28,13 @@ export function BadgePanel() {
   const [message, setMessage] = useState<string | null>(null);
   const [owned, setOwned] = useState<number[]>([]);
   const [upgrading, setUpgrading] = useState<number | null>(null);
+  const { state: skrState } = useSkr();
   const avail = upgradeAvailability();
   // upgrades are offered (and priced) only once real prices are configured
   const upgradesActive = avail.available && PRICES_ARE_FINAL;
-  const views = tierViews(progress ?? uniqueVerifiedSurvivingRugs([], '', REPLAYS), owned);
+  const prog = progress ?? uniqueVerifiedSurvivingRugs([], '', REPLAYS);
+  const views = tierViews(prog, owned);
+  const catalogue = badgeCatalogue({ progress: prog, badge, tiers: views, upgradesActive, skr: skrState, catalogueSize: REPLAYS.length });
   useEffect(() => {
     if (session && avail.available) void fetchOwnedTiers(session).then(setOwned);
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -136,29 +145,35 @@ export function BadgePanel() {
         </View>
       )}
 
-      <Text style={styles.section}>BADGE UPGRADES</Text>
-      {views.map((v) => (
-        <View key={v.tier.tier} style={styles.line}>
-          <View style={{ flex: 1 }}>
-            <Text style={styles.cell}>{v.tier.name}</Text>
-            <Text style={styles.small}>
-              {v.have} / {v.tier.requiredRugs} unique rugs{upgradesActive ? ` · ${formatPrice(v.tier.priceBaseUnits)} SKR` : ' · not active yet'}
-            </Text>
+      <Text style={styles.section}>ALL BADGES</Text>
+      {catalogue.map((e) => {
+        const tier = views.find((v) => `rug-hunter-${v.tier.tier}` === e.id);
+        const afford = tier ? affordability(skrState, tier.tier.priceBaseUnits) : null;
+        const canUpgrade = !!tier && e.status === 'READY' && !!session;
+        return (
+          <View key={e.id} style={styles.line}>
+            <View style={{ flex: 1, gap: 2 }}>
+              <Text style={styles.cell}>{e.name}</Text>
+              <Text style={styles.small}>{e.kind === 'ONCHAIN_NFT' ? 'ONCHAIN NFT' : 'IN-GAME STATUS (not an NFT)'}</Text>
+              <Text style={styles.small}>{e.condition}</Text>
+              {e.progress && e.id !== 'rug-hunter' && <Text style={styles.small}>{e.progress.have} / {e.progress.need} unique rugs</Text>}
+              {e.note && <Text style={styles.small}>{e.note}</Text>}
+              {canUpgrade && afford?.kind === 'INSUFFICIENT' && <Text style={styles.hint}>Need {formatSkr(afford.short, SKR_DECIMALS)} more SKR (you have {formatSkr(afford.balance, SKR_DECIMALS)}).</Text>}
+              {canUpgrade && afford?.kind === 'UNKNOWN' && <Text style={styles.small}>SKR balance not read yet; open the SKR tab and refresh.</Text>}
+            </View>
+            {canUpgrade && tier && afford?.kind === 'OK' ? (
+              <Pressable style={[styles.upBtn, upgrading !== null && styles.dim]} onPress={() => doUpgrade(tier.tier.tier)} disabled={upgrading !== null}>
+                {upgrading === tier.tier.tier ? <ActivityIndicator color="#0c1118" /> : <Text style={styles.btnText}>UPGRADE</Text>}
+              </Pressable>
+            ) : (
+              <Text style={[styles.cell, { color: CAT_COLOR[e.status] }]}>{canUpgrade ? 'NEED SKR' : CAT_LABEL[e.status]}</Text>
+            )}
           </View>
-          {v.status === 'OWNED' ? (
-            <Text style={[styles.cell, { color: colors.green }]}>OWNED</Text>
-          ) : v.status === 'ELIGIBLE' && session && upgradesActive ? (
-            <Pressable style={[styles.upBtn, upgrading !== null && styles.dim]} onPress={() => doUpgrade(v.tier.tier)} disabled={upgrading !== null}>
-              {upgrading === v.tier.tier ? <ActivityIndicator color="#0c1118" /> : <Text style={styles.btnText}>UPGRADE</Text>}
-            </Pressable>
-          ) : (
-            <Text style={styles.small}>{v.status === 'ELIGIBLE' ? (upgradesActive ? 'connect wallet' : 'COMING SOON') : 'LOCKED'}</Text>
-          )}
-        </View>
-      ))}
+        );
+      })}
       <Text style={styles.small}>
-        {upgradesActive ? 'Upgrades are cosmetic badges only. They never change score, rank or prizes.' : 'Badge upgrades are not active yet. Prices have not been set.'}
-        {' '}Eligibility comes from your runs recorded onchain. Tiers beyond the first need more rugs than the catalogue holds today.
+        {upgradesActive ? 'Upgrades are cosmetic badges only. They never change score, rank or prizes.' : 'Badge upgrades are not active yet: no issuer, treasury or price is set, so nothing can be bought with SKR.'}
+        {' '}Progress comes from your runs recorded onchain.
       </Text>
 
       {session && (

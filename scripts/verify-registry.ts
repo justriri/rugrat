@@ -91,7 +91,7 @@ for (const r of [...REPLAYS, demoReplay]) {
 }
 
 // the flow suites that are not per-replay: rug selection + competition, onchain score + badge
-for (const [label, file] of [['selection+competition', 'scripts/.verify-competition.cjs'], ['onchain score + badge', 'scripts/.verify-onchain.cjs'], ['SKR holder perks', 'scripts/.verify-skr.cjs'], ['SKR upgrades + prize pool', 'scripts/.verify-upgrade.cjs'], ['menu + world selection', 'scripts/.verify-menu.cjs'], ['submission fixes', 'scripts/.verify-submission.cjs'], ['mainnet safety', 'scripts/.verify-mainnet.cjs']] as const) {
+for (const [label, file] of [['selection+competition', 'scripts/.verify-competition.cjs'], ['onchain score + badge', 'scripts/.verify-onchain.cjs'], ['SKR holder perks', 'scripts/.verify-skr.cjs'], ['SKR upgrades + prize pool', 'scripts/.verify-upgrade.cjs'], ['badge catalogue + SKR affordability', 'scripts/.verify-badges.cjs'], ['menu + world selection', 'scripts/.verify-menu.cjs'], ['submission fixes', 'scripts/.verify-submission.cjs'], ['mainnet safety', 'scripts/.verify-mainnet.cjs']] as const) {
   let out = '';
   try {
     out = execFileSync('node', [file], { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 });

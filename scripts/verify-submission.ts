@@ -118,8 +118,10 @@ console.log('\n== 3. placeholder SKR prices are not shown as real ==');
   check(PRICES_ARE_FINAL === false, 'prices are flagged as not final');
   const b = strip(read('src/screens/BadgePanel.tsx'));
   check(/const upgradesActive = avail\.available && PRICES_ARE_FINAL;/.test(b), 'the screen derives "active" from the flag and the configuration');
-  check(/upgradesActive \? ` · \$\{formatPrice\(v\.tier\.priceBaseUnits\)\} SKR` : ' · not active yet'/.test(b), 'a price is rendered only when upgrades are active; otherwise "not active yet"');
-  check(/v\.status === 'ELIGIBLE' && session && upgradesActive \?/.test(b) && /COMING SOON/.test(b), 'the UPGRADE button exists only when active; otherwise COMING SOON');
+  // the price/upgrade rendering moved from BadgePanel into the pure badge catalogue; the guarantees are the same
+  const cat = strip(read('src/badge/catalogue.ts'));
+  check(/upgradesActive \? ` and pay \$\{formatPrice\(v\.tier\.priceBaseUnits\)\} SKR` : ''/.test(cat) && !/formatPrice/.test(b), 'a price is rendered only when upgrades are active (catalogue); the screen never prints one itself');
+  check(/ELIGIBLE'\) status = i\.upgradesActive \? 'READY' : 'COMING_SOON'/.test(cat) && /e\.status === 'READY' && !!session/.test(b) && /COMING SOON/.test(b), 'the UPGRADE button exists only for READY (active) tiers; otherwise COMING SOON');
   check(!/(10|25|50)\s*SKR/.test(uiFiles.map((f) => strip(read(f))).join('\n')), 'no literal placeholder price appears in any screen');
   check(/Badge upgrades are not active yet/.test(b), 'the screen says badge upgrades are not active yet');
   check(TIERS.length === 3 && tierViews(uniqueVerifiedSurvivingRugs([], '', REPLAYS), []).every((v) => v.status === 'LOCKED'), 'the tier logic itself is unchanged');
